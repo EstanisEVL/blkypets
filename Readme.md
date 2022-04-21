@@ -7,3 +7,5 @@ BLKY Pets es un proyecto en el cual se desarrolla un sitio web diseñado para la
 ## Demo
 
 Para probar mi sitio ingresa al siguiente [link](https://estanisevl.github.io/blkypets/).
+
+* 21/04/22 Agregadas animaciones, transformaciones y transiciones.
