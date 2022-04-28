@@ -9,152 +9,154 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <div>
-            <header class="header">
-                <nav class="navbar">
-                    <ul>
-                        <li>
-                            <a href="pages/tienda.html#perros">Perros</a>
-                            <ul>
-                                <li><a href="pages/tienda.html#perros">Arneses</a></li>
-                                <li><a href="pages/tienda.html#perros">Collares</a></li>
-                                <li><a href="pages/tienda.html#perros">Correas</a></li>
-                                <li><a href="pages/tienda.html#perros">Moños</a></li>
-                                <li><a href="pages/tienda.html#perros">Portabolsitas</a></li>
-                                <li><a href="pages/tienda.html#perros">Pretales</a></li>
+        <div class="container-fluid">
+            <header class="row header">
+                <nav class="navbar navbar-expand-lg">
+                    <ul class="navbar-nav collapse navbar-collapse flex-column flex-lg-row" id="navbarTogglerDemo02">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-1" href="pages/tienda.html#perros" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perros</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#perros">Arneses</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#perros">Collares</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#perros">Correas</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#perros">Moños</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#perros">Portabolsitas</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#perros">Pretales</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="pages/tienda.html#gatos">Gatos</a>
-                            <ul>
-                                <li><a href="pages/tienda.html#gatos">Arneses</a></li>
-                                <li><a href="pages/tienda.html#gatos">Collares</a></li>
-                                <li><a href="pages/tienda.html#gatos">Correas</a></li>
-                                <li><a href="pages/tienda.html#gatos">Moños</a></li>
-                                <li><a href="pages/tienda.html#gatos">Portabolsitas</a></li>
-                                <li><a href="pages/tienda.html#gatos">Pretales</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-1" href="pages/tienda.html#gatos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gatos</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#gatos">Arneses</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#gatos">Collares</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#gatos">Correas</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#gatos">Moños</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#gatos">Portabolsitas</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#gatos">Pretales</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="pages/tienda.html#humanos">Humanos</a>
-                            <ul>
-                                <li><a href="pages/tienda.html#humanos">Giftcards</a></li>
-                                <li><a href="pages/tienda.html#humanos">Gorros</a></li>
-                                <li><a href="pages/tienda.html#humanos">Llaveros</a></li>
-                                <li><a href="pages/tienda.html#humanos">Remeras</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-1" href="pages/tienda.html#humanos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Humanos</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#humanos">Giftcards</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#humanos">Gorros</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#humanos">Llaveros</a></li>
+                                <li><a class="dropdown-item fs-2" href="pages/tienda.html#humanos">Remeras</a></li>
                             </ul>
                         </li>
-                        <li><a href="index.html"><img src="images/logo0blanco.png" alt="logo BLKYPets" title="Ir a Inicio"></a></li>
-                        <li><a href="pages/venta-mayorista.html">Mayoristas</a></li>
-                        <li><a href="pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="pages/contacto.html">Contacto</a></li>
-                        <li class="carrito"><a href="#"><img src="images/gato_carrito.png" alt="carrito" title="Ir al carrito"></a></li>
+                        <li class="nav-item"><a class="navbar-brand" href="index.html"><img class="img-fluid" src="images/logo0blanco.png" alt="logo BLKYPets" title="Ir a Inicio"></a></li>
+                        <li class="nav-item"><a class="nav-link fs-1" href="pages/venta-mayorista.html">Mayoristas</a></li>
+                        <li class="nav-item"><a class="nav-link fs-1" href="pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link fs-1" href="pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item carrito"><a class="nav-link" href="#"><img class="img-fluid" src="images/gato_carrito.png" alt="carrito" title="Ir al carrito"></a></li>
                     </ul>
+                    <button class="navbar-toggler btn-outline-light iconoToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 </nav>
             </header>
 
-            <main class="row main">
-                <section class="slider">
-                    <h1>BLKY PETS</h1>
-                    <p>¡Tenemos de todo para tu mascota!</p>
+            <main class="row fondo">
+                <section class="col-sm-12 col-md-12 col-lg-12 text-wrap slider">
+                    <h1 class="h1 fs-1">BLKY PETS</h1>
+                    <p class="fs-2">¡Tenemos de todo para tu mascota!</p>
                     <a href="pages/tienda.html">Ver más</a>
                 </section>
 
-                <section class="colecciones">
-                    <h2 class="colecciones__titulo">NUESTRAS COLECCIONES</h2>
-                    <article class="colecciones__felipe">
-                        <h3>Felipe</h3>
+                <section class="row colecciones">
+                    <h2 class="colecciones__titulo text-wrap">NUESTRAS COLECCIONES</h2>
+                    <article class="col-sm-12 col-md-5 col-lg-5 colecciones__felipe">
+                        <h3 class="h3 fs-1">Felipe</h3>
                         <a href="pages/tienda.html">VER COLECCIÓN</a>
                     </article>
-                    <article class="colecciones__henry">
-                        <h3>Henry</h3>
+                    <article class="col-sm-12 col-md-5 offset-md-2 col-lg-5 colecciones__henry">
+                        <h3 class="h3 fs-1">Henry</h3>
                         <a href="pages/tienda.html">VER COLECCIÓN</a>
                     </article>
                 </section>
 
-                <section class="categorias">
+                <section class="row categorias">
                     <h2 class="categorias__titulo">CATEGORÍAS</h2>
-                    <article class="categorias__perros">
-                        <h3>PERROS</h3>
+                    <article class="col-sm-12 col-md-4 col-lg-3 categorias__perros">
+                        <h3 class="h3 fs-1">PERROS</h3>
                         <a href="pages/tienda.html#perros">Ver productos</a>
                     </article>
-                    <article class="categorias__gatos">
-                        <h3>GATOS</h3>
+                    <article class="col-sm-12 col-md-4 col-lg-3 categorias__gatos">
+                        <h3 class="h3 fs-1">GATOS</h3>
                         <a href="pages/tienda.html#gatos">Ver productos</a>
                     </article>
-                    <article class="categorias__humanos">
-                        <h3>HUMANOS</h3>
+                    <article class="col-sm-12 col-md-4 col-lg-3 categorias__humanos">
+                        <h3 class="h3 fs-1">HUMANOS</h3>
                         <a href="pages/tienda.html#humanos">Ver productos</a>
                     </article>
                 </section>
 
-                <section class="destacados">
-                    <h2>DESTACADOS</h2>
-                    <div>
-                        <img class="img-fluid" src="images/Arnés Felipe.jpg" alt="foto destacado 1">
-                        <img class="img-fluid" src="images/Collar Henry.jpg" alt="foto destacado 2">
-                        <img class="img-fluid" src="images/Correa Ramé.jpg" alt="foto destacado 3">
-                        <img class="img-fluid" src="images/Monio Bahamas.jpg" alt="foto destacado 4">
-                        <img class="img-fluid" src="images/Portabolsitas Felipe.jpg" alt="foto destacado 5">
+                <section class="row destacados">
+                    <h2 class="h2 fs-1">DESTACADOS</h2>
+                    <div class="row">
+                        <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Arnés Felipe.jpg" alt="foto destacado 1">
+                        <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Collar Henry.jpg" alt="foto destacado 2">
+                        <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Correa Ramé.jpg" alt="foto destacado 3">
+                        <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Monio Bahamas.jpg" alt="foto destacado 4">
+                        <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Portabolsitas Felipe.jpg" alt="foto destacado 5">
                     </div>
-                    <p>¡Conocé todas nuestras novedades y artículos más populares elegidos por nuestros clientes! </p>
+                    <p class="fs-2 word-wrap">¡Conocé todas nuestras novedades y artículos más populares elegidos por nuestros clientes! </p>
                     <a href="pages/tienda.html">Ver más</a>
                 </section>
 
                 <section class="row clientes">
-                    <h2 class="col-lg-2" >Nuestros clientes</h2>
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/foto muestra clientes 1.jpg" class="d-block w-25" alt="foto clientes 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/foto muestra clientes 2.jpg" class="d-block w-25" alt="foto clientes 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/foto muestra clientes 3.jpg" class="d-block w-25" alt="foto clientes 3">
+                    <a class="fs-1" href="https://www.instagram.com/blkypets/?hl=es">¡Seguinos en @blkypets!</a>
+                    <div class="row">
+                        <div class="col carousel slide" id="carouselExampleSlidesOnly"  data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/foto muestra clientes 1.jpg" class="img-fluid img-thumbnail mx-auto d-block w-25" alt="foto clientes 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/foto muestra clientes 2.jpg" class="img-fluid img-thumbnail mx-auto d-block w-25" alt="foto clientes 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/foto muestra clientes 3.jpg" class="img-fluid img-thumbnail mx-auto d-block w-25" alt="foto clientes 3">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <a href="https://www.instagram.com/blkypets/?hl=es">¡Seguinos en @blkypets!</a>
                 </section>
             </main>
 
             <footer class="row footer">
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-sm-12 col-md-3 col-lg-2 footer__contacto">
                     <div>
-                        <h4>¡Contactanos!</h4>
-                        <a href="mailto:info@blkypets.com.ar">info@blkypets.com.ar</a>
+                        <h4 class="h4">¡Contactanos!</h4>
+                        <a class="fs-4" href="mailto:info@blkypets.com.ar">info@blkypets.com.ar</a>
                     </div>
                     <div>
-                        <h4>Ubicación</h4>
-                        <p>calle BLKYPets 123, C.A.B.A., Argentina.</p>
+                        <h4 class="h4">Ubicación</h4>
+                        <p class="fs-4">calle BLKYPets 123, C.A.B.A., Argentina.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12">
-                    <a href="https://es-la.facebook.com/"><img src="images/facebook.png" alt="icono facebook"></a>
-                    <a href="https://www.instagram.com/blkypets/?hl=es"><img src="images/instagram.png" alt="icono instagram"></a>
-                    <a href="https://www.whatsapp.com/?lang=es"><img src="images/whatsapp.png" alt="icono whatsapp"></a>
+                <div class="col-sm-12 col-md-3 offset-md-1 col-lg-6 footer__redes">
+                    <a href="https://es-la.facebook.com/"><img class="img-fluid" src="images/facebook.png" alt="icono facebook"></a>
+                    <a href="https://www.instagram.com/blkypets/?hl=es"><img class="img-fluid" src="images/instagram.png" alt="icono instagram"></a>
+                    <a href="https://www.whatsapp.com/?lang=es"><img class="img-fluid" src="images/whatsapp.png" alt="icono whatsapp"></a>
                 </div>
-                <div class="col-lg-4 col-sm-12">
-                    <h4>¿Necesitás ayuda?</h4>
+                <div class="col-sm-12 col-md-3 offset-md-1 col-lg-2 footer__ayuda">
+                    <h4 class="h4">¿Necesitás ayuda?</h4>
                     <ul>
-                        <li><a href="pages/contacto.html#nuestros-productos">Nuestros productos.</a></li>
-                        <li><a href="pages/contacto.html#cambios-y-devoluciones">Cambios / Devoluciones.</a></li>
-                        <li><a href="pages/contacto.html#formas-de-envio">Formas de envío.</a></li>
-                        <li><a href="pages/contacto.html">F.A.Q. / Contacto</a></li>
+                        <li><a class="fs-3" href="pages/contacto.html#nuestros-productos">Nuestros productos.</a></li>
+                        <li><a class="fs-3" href="pages/contacto.html#cambios-y-devoluciones">Cambios / Devoluciones.</a></li>
+                        <li><a class="fs-3" href="pages/contacto.html#formas-de-envio">Formas de envío.</a></li>
+                        <li><a class="fs-3" href="pages/contacto.html">F.A.Q. / Contacto</a></li>
                     </ul>
                 </div>
-                <div class="footer__mediosDePago">
-                    <img class="mediosDePago__imagen" src="images/american express.png" alt="icono american express">
-                    <img class="mediosDePago__imagen" src="images/visa.png" alt="incono visa">
-                    <img class="mediosDePago__imagen" src="images/mastercard.png" alt="icono mastercard">
-                    <img class="mediosDePago__imagen" src="images/Cabal@2x.png" alt="icono cabal">
-                    <img class="mediosDePago__imagen" src="images/mepa@2x.png" alt="icono mercadopago">
-                    <img class="mediosDePago__imagen" src="images/banelco@2x.png" alt="icono banelco">
+                <div class="col-sm-12 col-md-12 col-lg-12 footer__mediosDePago">
+                    <img class="img-fluid mediosDePago__imagen" src="images/american express.png" alt="icono american express">
+                    <img class="img-fluid mediosDePago__imagen" src="images/visa.png" alt="incono visa">
+                    <img class="img-fluid mediosDePago__imagen" src="images/mastercard.png" alt="icono mastercard">
+                    <img class="img-fluid mediosDePago__imagen" src="images/Cabal@2x.png" alt="icono cabal">
+                    <img class="img-fluid mediosDePago__imagen" src="images/mepa@2x.png" alt="icono mercadopago">
+                    <img class="img-fluid mediosDePago__imagen" src="images/banelco@2x.png" alt="icono banelco">
                 </div>
-                <div class="footer__copyright">
-                    <a href="">© BLKYPets 2022 | Todos los derechos reservados.</a>
+                <div class="row footer__copyright">
+                    <a class="fs-5" href="">© BLKYPets 2022 | Todos los derechos reservados.</a>
                 </div>
             </footer>
         </div>
