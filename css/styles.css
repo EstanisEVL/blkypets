@@ -9,1027 +9,6 @@ body{
     font-family: helvetica;
 }
 
-/*---- VISTA MOBILE ----*/
-/* @media only screen and (max-width: 360px){ */
-/*---- MOBILE/HEADER ----*/
-    /* .header{
-        width: 100%;
-        grid-area: header;
-        background-color:#000000;
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-        text-align: center;
-    } */
-/*---- MOBILE/BARRA DE NAVEGACIÓN ----*/
-    /* .navbar{
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .navbar ul{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-    }
-    .navbar ul li{
-        font-size: 2rem;
-        line-height: 5rem;
-    }
-    .navbar ul ul{
-        position: absolute;
-        display: none;
-    }
-    .navbar ul ul li{
-        width: 100%;
-        font-size: 1.5rem;
-        line-height: 5rem;
-        background-color: #000000;
-    }
-    .navbar ul li a{
-        text-decoration: none;
-        color: #F5EDED;
-        text-transform: uppercase;
-    }
-    ul li:hover ul{
-        display:none;
-    }
-    .header nav ul li a:hover{
-        color: #3E3636;
-    }
-    .navbar ul li{
-        display: block; 
-    }*/
-    /*---- MOBILE/FOOTER ----*/
-    /* .footer{
-        grid-area: footer;
-        background-color: #3E3636;
-        border-top: solid 0.2rem #000000;
-        font-size: 1.25rem;
-        text-transform: uppercase;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 20% 20% 35% 5%;
-        grid-template-areas: 
-        "contacto"
-        "redes"
-        "ayuda"
-        "pago"
-        "copyright"
-        ;
-    }
-    .footer__contacto{
-        grid-area: contacto;
-        margin-top: 4rem;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer__contacto h4{
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    .footer__contacto a{
-        color: #F5EDED;
-        text-transform: lowercase;
-        font-style: italic;
-        text-decoration: none;
-    }
-    .footer__contacto div{
-        text-align: center;
-        line-height: 3rem;
-    }
-    .footer__contacto div p{
-        font-style: italic;
-    }
-    .footer__redes{
-        grid-area: redes;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .footer__ayuda{
-        grid-area: ayuda;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5rem;
-        line-height: 2.5rem;
-    }
-    .footer a{
-        text-decoration: none;
-        color:#F5EDED;
-    }
-    .footer__ayuda h4{
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    .footer__ayuda ul{
-        padding-top: 2rem;
-        font-size: 0;
-    }
-    .footer__ayuda ul li{
-        list-style: none;
-        font-size: 2rem;
-        line-height: 2rem;
-        text-align: center;
-    }
-    .footer__mediosDePago{
-        grid-area: pago;
-        display:flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer__copyright{
-        grid-area: copyright;
-        font-size: 1rem;
-        text-align: center;
-    }
-} */
-/*---- MOBILE/INDEX/MAIN ----*/
-    /* .main{
-        width: 100%;
-        grid-area: main;
-        background-color: #F5EDED;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 25rem 35rem 35rem 50rem 20rem;
-        grid-template-areas: 
-        "hero"
-        "colecciones"
-        "categorias"
-        "destacados"
-        "clientes"
-        ;
-    } */
-/*---- MOBILE/INDEX/MAIN/SECCIÓN HERO ----*/
-    /* .hero{
-        grid-area: hero;
-        width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url(../images/Monios-banner.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-content: center;
-        border-bottom: solid 0.2rem #000000;
-    }
-    .hero h1{
-        color: #F5EDED;
-        font-weight: bold;
-        font-size: 4rem;
-        text-align: center;
-    }
-    .hero p{
-        color: #F5EDED;
-        font-size: 2rem;
-    }
-    .hero a{
-        background-color:#000000;
-        color:#F5EDED;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 1.5rem;
-        margin-top: 3rem;
-        margin-left: 10rem;
-        margin-right: 10rem;
-        padding: 2rem;
-    }
-    .hero a:hover{
-        background-color: #3E3636;
-    } */
-/*---- MOBILE/INDEX/MAIN/COLECCIONES ----*/
-    /* .colecciones{
-        grid-area: colecciones;
-        display: flex;
-        flex-flow: column wrap;
-        border-bottom: solid 0.2rem #000000;
-    }
-    .colecciones h2{
-        display: none;
-    }
-    .colecciones h3{
-        font-size: 2rem;
-        color: #F5EDED;
-        text-transform: uppercase;
-    }
-    .colecciones a{
-        background-color: #F5EDED;
-        color:#000000;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-        margin-right: 20rem;
-    }
-    .colecciones__felipe{
-        width: 100%;
-        height: 50%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.502), rgba(0, 0, 0, 0)), url(../images/PruebaCategoríaNuevaColección2.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .colecciones__henry{
-        width: 100%;
-        height: 50%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.502), rgba(0, 0, 0, 0)), url(../images/PruebaCategoríaNuevaColección1.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .colecciones a:hover{
-    background-color:#3E3636;
-    } */
-/*---- MOBILE/INDEX/MAIN/CATEGORÍAS ----*/
-    /* .categorias{
-        width: 100%;
-        grid-area: categorias;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .categorias h2{
-        display: none;
-    }
-    .categorias div{
-        width: 100%;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .categorias h3{
-        color: #F5EDED;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-    }
-    .categorias a{
-        background-color: #F5EDED;
-        color:#000000;
-        font-size: 1rem;
-        font-weight: bold;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin-right: 8rem;
-    }
-    .categorias a:hover{
-        background-color:#3E3636;
-    }
-    .categorias__perros{
-        width: 50%;
-        height: 33%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0)), url(../images/Perros.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-end;
-    }
-    .categorias__gatos{
-        width: 50%;
-        height: 33%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0)), url(../images/Gatos.jpg);
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-end;
-    }
-    .categorias__humanos{
-        width: 50%;
-        height: 33%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0)), url(../images/Humanos.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-end;
-    } */
-/*---- MOBILE/INDEX/MAIN/DESTACADOS ----*/
-    /* .destacados{
-        grid-area: destacados;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        border-top: solid 0.2rem #000000;
-    }
-    .destacados h2{
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    .destacados div{
-        width: 50%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-    .destacados div img{
-        border: solid 0.1rem #000000;
-        width: 50%;
-    }
-    .destacados p{
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 2rem;
-    }
-    .destacados a{
-        background-color:#000000;
-        color:#F5EDED;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 1rem;
-        padding: 1rem;
-    }
-    .destacados a:hover{
-        background-color:#3E3636;
-    } */
-/*---- MOBILE/INDEX/MAIN/CLIENTES ----*/
-    /* .clientes{
-        grid-area: clientes;
-        border-top: solid 0.2rem #000000;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .clientes h2{
-        display: none;
-    }
-    .clientes div{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .clientes div img{
-        width: 30%;
-    }
-    .clientes a{
-        color: #000000;
-        font-size: 2rem;
-        font-weight: bold;
-        text-decoration: none;
-    } */
-
-/*---- MOBILE/TIENDA ----*/
-    /* .container__tienda{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 80% 10%;
-        grid-template-areas:
-        "header"
-        "mainTienda"
-        "footer";
-    }
-    .main__tienda{
-        grid-area: mainTienda;
-        background-color: #F5EDED;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 12rem 130rem 100rem 210rem;
-        grid-template-areas: 
-        "titulo"
-        "sec1"
-        "colec"
-        "categ";
-        align-items: center;
-    }
-    .main__tienda > div{
-        grid-area: titulo;
-        background-color: #D72323;
-    }
-    .main__tienda > div h1{
-        color:#F5EDED;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        font-weight: bold;
-        font-size: 4rem;
-        text-align: center;
-    } */
-/*---- MOBILE/TIENDA/MAIN/NOVEDADES Y GUÍA DE TALLES ----*/
-    /* .tienda__seccion1{
-        grid-area: sec1;
-        align-self: flex-start;
-        margin-top: 5rem;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .tienda__seccion1 > div h2{
-        color:#000000;
-        font-weight: bold;
-        font-size: 3rem;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 2.5rem;
-    }
-    .seccion1__div1{
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .seccion1__novedades{
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .card{
-        margin-bottom: 2rem;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .card img{
-        width: 25%;
-        border: #000000 solid 0.1rem;
-    }
-    .card p{
-        margin-top: 1rem;
-        font-size: 1.25rem;
-        text-align: justify;
-    }
-    .card a{
-        color:#F5EDED;
-        background-color: #000000;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        margin-top: 1rem;
-        padding: 1rem;
-    }
-    .seccion1__div2{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        margin-top: 5rem;
-    }
-    .seccion1__div2 img{
-        width: 100%;
-        border:#000000 solid 0.1rem;
-        margin-bottom: 5rem;
-    } */
-/*---- MOBILE/TIENDA/MAIN/COLECCIONES ----*/
-    /* .tienda__colecciones{
-        grid-area: colec;
-        align-self: flex-start;
-        border-top: #000000 solid 0.2rem;
-        display:flex;
-        flex-flow: column;
-        border-bottom:#000000 solid 0.2rem;
-    }
-    .colecciones__contenedor{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: stretch;
-        align-items: center;
-    }
-    .contenedor__h2Felipe{
-        width: 100%;
-        background-image: url(../images/PruebaCategoríaNuevaColección2.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-bottom: 15rem;
-        color: #F5EDED;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    .colecciones__contenedor p{
-        margin: 2.5rem;
-        font-size: 1.25rem;
-        text-align: justify;
-    }
-    .contenedor__imagenes{
-        margin-top: 2rem;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .imagenes__fila{
-        display: flex;
-        flex-flow: row;
-    }
-    .colecciones__contenedor2{
-        border-top: #D72323 solid 0.2rem;
-        display: flex;
-        flex-flow: column;
-        justify-content: stretch;
-        align-items: center;
-    }
-    .contenedor__h2Henry{
-        width: 100%;
-        background-image: url(../images/PruebaCategoríaNuevaColección1.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-flow: column wrap;
-        padding-bottom: 15rem;
-        color: #F5EDED;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    .colecciones__contenedor2 p{
-        margin: 2rem;
-        font-size: 1.25rem;
-        text-align: justify;
-    } */
-/*---- MOBILE/TIENDA/MAIN/CATEGORÍAS ----*/
-    /* .tienda__categorias{
-        grid-area: categ;
-        align-self: flex-start;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .categorias__articulo1{
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-    }
-    .h2Perros{
-        margin-top: 2.5rem;
-        width: 40%;
-        padding-bottom: 15rem;
-        background-image: url(../images/Perros.jpg);
-        background-size: cover;
-    }
-    .h2Perros h2{
-        display: none;
-    }
-    .galeria{
-        width: 90%;
-        border: #000000 solid 0.2rem;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .galeria img{
-        width: 25%;
-    }
-    .contenedor__imagenes2{
-        margin-top: 2rem;
-        display: flex;
-        flex-flow: row;
-    }
-    .categorias__articulo2{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .h2Gatos{
-        margin-top: 2.5rem;
-        width: 40%;
-        padding-bottom: 15rem;
-        background-image: url(../images/Gatos.jpg);
-        background-size: cover;
-    }
-    .h2Gatos h2{
-        display: none;
-    }
-    .h2Humanos{
-        margin-top: 2.5rem;
-        width: 40%;
-        padding-bottom: 15rem;
-        background-image: url(../images/Humanos.jpg);
-        background-size: cover;
-    }
-    .h2Humanos h2{
-        display: none;
-    }
-    .galeria2{
-        width: 60%;
-        border: #000000 solid 2px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: space-evenly;
-    }
-    .contenedor__imagenes3{
-        margin-top: 2rem;
-        display: flex;
-    } */
-
-/*---- MOBILE/VENTA MAYORISTA ----*/
-/*---- MOBILE/VENTA MAYORISTA/MAIN ----*/
-    /* .main__mayoristas{
-        background-color: #F5EDED;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 20rem 25rem 30rem 50rem;
-        grid-template-areas:
-        "div1"
-        "div2"
-        "div3"
-        "div4"
-        ;
-        justify-content: center;
-    } */
-/*---- MOBILE/VENTA MAYORISTA/MAIN/DIV1 ----*/
-    /* .mayoristas__div1{
-        grid-area: div1;
-        width: 100%;
-        background-color: #D72323;
-    }
-    .mayoristas__div1 h1{
-        color:#F5EDED;
-        margin-top: 5rem;
-        font-weight: bold;
-        font-size: 4rem;
-        text-align: center;
-    } */
-/*---- MOBILE/VENTA MAYORISTA/MAIN/DIV2 ----*/
-    /* .mayoristas__div2{
-        grid-area: div2;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .mayoristas__div2 h2{
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-        color:#000000;
-        font-weight: bold;
-        font-size: 2.5rem;
-        text-align: center;
-    }
-    .mayoristas__div2 p{
-        color:#000000;
-        font-size:1.5rem;
-        text-align: center;
-    }
-    .mayoristas__div2 p a{
-        color:#000000;
-        text-transform: lowercase;
-        font-style: italic;
-        font-weight: bold;
-        text-decoration: none;
-    } */
-/*---- MOBILE/VENTA MAYORISTA/MAIN/DIV3 ----*/
-    /* .mayoristas__div3{
-        grid-area: div3;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .mayoristas__div3 h2{
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-        color:#000000;
-        font-weight: bold;
-        font-size: 2.5rem;
-        text-align: center;
-    }
-    .mayoristas__div3 p{
-        color:#000000;
-        font-size:1.5rem;
-        text-align: center;
-    } */
-/*---- MOBILE/VENTA MAYORISTA/MAIN/DIV4 ----*/
-    /* .mayoristas__div4{
-        grid-area: div4;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .mayoristas__div4 img{
-        width: 100%;
-    }
-    .mayoristas__div4 h3{
-        margin-top: 2.5rem;
-        color:#000000;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 2rem;
-        text-align: center;
-    }
-    .mayoristas__div4 a{
-        margin-top: 2rem;
-        background-color:#000000;
-        color:#F5EDED;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 1.5rem;
-        width: 50%;
-        padding: 2rem;
-    } */
-/*---- MOBILE/NOSOTROS ----*/
-    /* .container__mayoristas{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 80% 10%;
-        grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    } */
-/*---- MOBILE/NOSOTROS/MAIN ----*/
-    /* .main__nosotros{
-        background-color: #F5EDED;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 20rem 160rem 115rem 25rem;
-        grid-template-areas: 
-        "titulo"
-        "seccion1"
-        "seccion2"
-        "newsletter";
-    }
-    .nosotros__titulo{
-        grid-area: titulo;
-    }
-    .main__nosotros div h1{
-        margin-top: 5rem;
-        color:#000000;
-        font-weight: bold;
-        font-size: 4rem;
-        text-align: center;
-    } */
-/*---- MOBILE/NOSOTROS/SECCION 1----*/
-    /* .nosotros__seccion1{
-        grid-area: seccion1;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .nosotros__seccion1 img{
-        width: 100%;
-    }
-    .nosotros__seccion1 div{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .nosotros__seccion1 div h2{
-        margin-top: 2.5rem;
-        color:#000000;
-        font-weight: bold;
-        font-size: 3rem;
-    }
-    .nosotros__seccion1 div p{
-        width: 80%;
-        margin-top: 2.5rem;
-        color:#000000;
-        font-size: 1.5rem;
-        text-align: justify;
-    }
-    .nosotros__seccion1 div img{
-        margin-top: 5rem;
-        width: 20%;
-    }
-    .nosotros__seccion1 div a{
-        color:#F5EDED;
-        background-color: #000000;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        margin-top: 5rem;
-        padding: 2rem 5rem 2rem 5rem;
-    } */
-/*---- MOBILE/NOSOTROS/SECCION 2----*/
-    /* .nosotros__seccion2{
-        grid-area: seccion2;
-        display: flex;
-        flex-flow: column-reverse wrap;
-    }
-    .nosotros__seccion2 img{
-        width: 100%;
-    }
-    .nosotros__seccion2 div{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .nosotros__seccion2 div h2{
-        margin-top: 2.5rem;
-        color:#000000;
-        font-weight: bold;
-        font-size: 3rem;
-    }
-    .nosotros__seccion2 div p{
-        width: 80%;
-        margin-top: 2.5rem;
-        color:#000000;
-        font-size: 1.5rem;
-        text-align: justify;
-    }
-    .nosotros__seccion2 div a{
-        color:#F5EDED;
-        background-color: #000000;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-        padding: 2rem 5rem 2rem 5rem;
-    } */
-/*---- MOBILE/NOSOTROS/NEWSLETTER----*/
-    /* .nosotros__newsletter{
-        grid-area: newsletter;
-        border-top: solid 0.2rem #000000;
-        padding-top: 2.5rem;
-        color:#000000;
-        background-color:#F5EDED;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .nosotros__newsletter h3{
-        margin-bottom: 2.5rem;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        font-style: italic;
-        text-align: center;
-    }
-    .nosotros__newsletter form{
-        font-size: 1.5rem;
-        font-weight: bold;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-    } */
-
-/*---- MOBILE/CONTACTO ----*/
-    /* .container__contacto{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 70% 20%;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-    } */
-/*---- MOBILE/CONTACTO/MAIN ----*/
-    /* .main__contacto{
-        grid-area: main;
-        width: 100%;
-        background-color: #F5EDED;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 10rem 60rem 90rem 90rem 90rem 25rem;
-        grid-template-areas:
-        "div1"
-        "formulario"
-        "faq"
-        "faq"
-        "faq"
-        "newsletter";
-    }
-    .contacto__div1{
-        grid-area: div1;
-    }
-    .main__contacto div h1{
-        color:#000000;
-        margin-top: 2.5rem;
-        font-weight: bold;
-        font-size: 4rem;
-        text-align: center;
-    } */
-/*---- MOBILE/CONTACTO/MAIN/FORMULARIO ----*/
-    /* .contacto__formulario{
-        grid-area: formulario;
-        width: 100%;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .contacto__formulario img{
-        width: 40%;
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-    }
-    .contacto__formulario form{
-        width: 100%;
-    }
-    .contacto__formulario form fieldset{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        border: #000000 solid 0.2rem;
-        text-transform: uppercase;
-        font-size: 1.25rem;
-        line-height: 3rem;
-        margin-bottom: 2.5rem;
-    }
-    .contacto__formulario form fieldset div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-    }
-    .formulario__botones{
-        background-color:#000000;
-        color:#F5EDED;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 1rem;
-        font-weight: bold;
-        width: 25%;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        padding: 1.5rem;
-    } */
-/*---- MOBILE/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
-    /* .contacto__preguntasFrecuentes{
-        grid-area: faq;
-        width: 100%;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .contacto__preguntasFrecuentes div{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .contacto__preguntasFrecuentes h2{
-        color:#000000;
-        font-weight: bold;
-        font-size: 3rem;
-        text-align: center;
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-    }
-    .faq__imagenes img{
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-        width: 100%;
-    }
-    .preguntasFrecuentes__nuestrosProductos{
-        display: flex;
-        flex-direction: column;
-    }
-    .preguntasFrecuentes__nuestrosProductos h3{
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
-    }
-    .preguntasFrecuentes__nuestrosProductos h4{
-        margin-top: 2.5rem;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    .preguntasFrecuentes__nuestrosProductos p{
-        margin-top: 2rem;
-        font-size: 1.25rem;
-        text-align: justify;
-        margin-right: 2.5rem;
-        margin-left: 2.5rem;
-    }
-    .contacto__cambiosDevoluciones{
-        display: flex;
-        flex-direction: row-reverse;
-    } */
-/*---- MOBILE/CONTACTO/MAIN/NEWSLETTER ----*/
-    /* .newsletter{
-        grid-area: newsletter;
-        color:#000000;
-        background-color:#F5EDED;
-        width: 90%;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .newsletter h3{
-        margin-bottom: 2.5rem;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        font-style: italic;
-        text-align: center;
-    }
-    .newsletter form{
-        font-size: 1.5rem;
-        font-weight: bold;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-    } */
-
-
-/*---- VISTA DESKTOP ----*/
 /*---- DESKTOP/HEADER/BARRA DE NAVEGACIÓN ----*/
 .header{
     display: flex;
@@ -1515,15 +494,6 @@ ul li:hover ul{
 }
 
 /*---- DESKTOP/VENTA MAYORISTA ----*/
-.container__mayoristas{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 70% 20%;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-}
 /*---- DESKTOP/VENTA MAYORISTA/MAIN ----*/
 .main__mayoristas{
     background-color: #F5EDED;
@@ -1536,8 +506,7 @@ ul li:hover ul{
     color:#F5EDED;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    font-weight: bold;
-    font-size: 8rem;
+    font-weight: bolder;
     text-align: center;
 }
 /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV2 ----*/
@@ -1551,14 +520,12 @@ ul li:hover ul{
     margin-top: 5rem;
     margin-bottom: 5rem;
     color:#000000;
-    font-weight: bold;
-    font-size: 5rem;
+    font-weight: bolder;
     text-align: center;
 }
 .mayoristas__div2 p{
     margin-bottom: 5rem;
     color:#000000;
-    font-size: 2rem;
     text-align: justify;
 }
 .mayoristas__div2 p a{
@@ -1580,12 +547,10 @@ ul li:hover ul{
     margin-bottom: 5rem;
     color:#000000;
     font-weight: bold;
-    font-size: 5rem;
     text-align: center;
 }
 .mayoristas__div3 p{
     color:#000000;
-    font-size:2rem;
     text-align: justify;
 }
 .mayoristas__div3 p a{
@@ -1609,7 +574,6 @@ ul li:hover ul{
     color:#000000;
     font-style: italic;
     font-weight: bold;
-    font-size: 3rem;
     text-align: center;
 }
 .mayoristas__boton{
@@ -1619,7 +583,6 @@ ul li:hover ul{
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.5rem;
     margin-top: 3rem;
     margin-bottom: 5rem;
     padding: 2rem;
@@ -1642,8 +605,7 @@ ul li:hover ul{
     color:#000000;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    font-weight: bold;
-    font-size: 8rem;
+    font-weight: bolder;
     text-align: center;
 }
 /*---- DESKTOP/NOSOTROS/SECCION 1----*/
@@ -1661,12 +623,10 @@ ul li:hover ul{
 .nosotros__seccion1 div h2{
     color:#000000;
     font-weight: bold;
-    font-size: 4rem;
 }
 .nosotros__seccion1 div p{
     color:#000000;
     margin-top: 2rem;
-    font-size: 1.75rem;
     text-align: justify;
 }
 .nosotros__seccion1 div img{
@@ -1702,12 +662,10 @@ ul li:hover ul{
 .nosotros__seccion2 div h2{
     color:#000000;
     font-weight: bold;
-    font-size: 4rem;
 }
 .nosotros__seccion2 div p{
     color:#000000;
     margin-top: 2rem;
-    font-size: 1.75rem;
     text-align: justify;
 }
 .nosotros__seccion2 div a{
@@ -1754,7 +712,7 @@ ul li:hover ul{
     margin-top: 5rem;
     padding: 10rem;
     align-self: center;
-    width: 60%;
+    width: 80%;
     text-align: center;
     font-family: helvetica;
     text-transform: uppercase;
@@ -1785,8 +743,8 @@ ul li:hover ul{
     resize: none;
 }
 .formulario__botones{
-    padding: 2rem 5rem 2rem 5rem;
     margin-top: 2rem;
+    padding: 1rem;
     border-radius: 0;
     text-transform: uppercase;
     background-color:#000000;
@@ -1803,10 +761,6 @@ ul li:hover ul{
     flex-direction: column;
     justify-content: center;
 }
-.contacto__preguntasFrecuentes div{
-    display: flex;
-    width: 100%;
-}
 .contacto__preguntasFrecuentes h2{
     margin-top: 5rem;
     color:#000000;
@@ -1814,11 +768,8 @@ ul li:hover ul{
     text-align: center;
     margin-bottom: 5rem;
 }
-.faq__imagenes{
-    width: 50%;
-}
-.faq__imagenes img{
-    width: 100%;
+.contacto__preguntasFrecuentes > div{
+    border-top: solid #000000 0.2rem;
 }
 .slide-in-right {
     animation: slide-in-right 2s ease-in;
@@ -1847,9 +798,8 @@ ul li:hover ul{
     }
 }  
 .preguntasFrecuentes__nuestrosProductos{
-    border-top:#000000 solid 0.2rem;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     margin-bottom: 5rem;
 }
 .preguntasFrecuentes__nuestrosProductos h3{
@@ -1859,15 +809,12 @@ ul li:hover ul{
 }
 .preguntasFrecuentes__nuestrosProductos h4{
     margin-top: 2rem;
-    margin-left: 5rem;
     font-weight: bold;
     text-align: left;
 }
 .preguntasFrecuentes__nuestrosProductos p{
     margin-top: 2rem;
     text-align: justify;
-    margin-right: 5rem;
-    margin-left: 5rem;
 }
 .preguntasFrecuentes__nuestrosProductos a{
     color: #000000;
