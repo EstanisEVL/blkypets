@@ -333,15 +333,13 @@ ul li:hover ul{
     color:#F5EDED;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    font-weight: bold;
-    font-size: 7rem;
+    font-weight: bolder;
     text-align: center;
 }
 /*---- DESKTOP/TIENDA/MAIN/NOVEDADES Y GUÍA DE TALLES ----*/
 .tienda__seccion1 > div h2{
     color:#000000;
-    font-weight: bold;
-    font-size: 3rem;
+    font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
     margin-top: 5rem;
@@ -354,7 +352,7 @@ ul li:hover ul{
 }
 .seccion1__div2{
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
 }
 .seccion1__div2 img{
     border:#000000 solid 0.1rem;
@@ -362,31 +360,27 @@ ul li:hover ul{
 }
 /*---- DESKTOP/TIENDA/MAIN/COLECCIONES ----*/
 .tienda__colecciones{
-    width: 100%;
-    border-top: #000000 solid 2px;
+    border-top: #000000 solid 0.2rem;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom:#000000 solid 2px;
+    /* justify-content: center;
+    align-items: center; */
+    border-bottom:#000000 solid 0.2rem;
 }
-.colecciones__contenedor{
+/* .colecciones__contenedor{
     display: flex;
-    justify-content: stretch;
-    align-items: flex-start;
-}
+} */
 .contenedor__h2Felipe{
-    height: 60%;
+    /* height: 60%; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/FelipeWeb.jpg);
     background-size: cover;
     color: #F5EDED;
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding-top: 2rem;
-    padding-left: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+        /* padding-top: 2rem;
+    padding-right: 2rem;*/
 }
 .colecciones__contenedor p{
-    font-size: 1.25rem;
     text-align: justify;
 }
 .contenedor__imagenes{
@@ -395,96 +389,89 @@ ul li:hover ul{
 }
 .imagenes__fila{
     display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
 }
 .colecciones__contenedor2{
-    border-top: #D72323 solid 2px;
+    border-top: #D72323 solid 0.2rem;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: stretch;
-    align-items: flex-end;
 }
 .contenedor__h2Henry{
-    height: 60%;
+    /* height: 60%; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/HenriWeb.jpg);
     background-size: cover;
     color: #F5EDED;
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: bolder;
+    text-transform: uppercase;
     text-align: end;
-    padding-top: 2rem;
-    padding-right: 2rem;
+    /* padding-top: 2rem;
+    padding-right: 2rem; */
 }
 .colecciones__contenedor2 p{
-    font-size: 1.25rem;
     text-align: justify;
 }
 /*---- DESKTOP/TIENDA/MAIN/CATEGORÍAS ----*/
 .tienda__categorias{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
-.categorias__articulo1{
+/* .categorias__articulo1{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-}
+} */
 .h2Perros{
     margin-top: 2rem;
-    height: 40%;
+    /* height: 40%; */
     color:#000000;
-    font-size: 2rem;
     font-weight: bold;
-    text-align: start;
     background-image: url(../images/Perros.jpg);
     background-size: cover;
+    text-align: center;
 }
-.galeria{
+/* .galeria{
     display: flex;
+} */
+.contenedor__imagenes2{
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
 }
-.contenedor__imagenes2{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-}
 .categorias__articulo2{
+    margin-top: 5rem;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 .h2Gatos{
-    margin-top: 2rem;
-    height: 40%;
+    /* height: 40%; */
     color: #000000;
-    font-size: 2rem;
     font-weight: bold;
     text-align: end;
     background-image: url(../images/Gatos.jpg);
     background-size: cover;
+    text-align: center;
 }
 .categorias__articulo3{
     display: flex;
     flex-wrap: row wrap;
     justify-content: center;
-    align-items: flex-start;
 }
 .h2Humanos{
     margin-top: 10rem;
-    height: 80%;
+    /* height: 80%; */
     color:#000000;
-    font-size: 2rem;
     font-weight: bold;
-    text-align: center;
     background-image: url(../images/Humanos.jpg);
     background-size: cover;
+    text-align: center;
 }
 .galeria2{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: space-evenly;
 }
 .contenedor__imagenes3{
