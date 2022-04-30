@@ -27,20 +27,20 @@ body{
 }
 .navbar ul{
     width: 100%;
-    display: flex;
+    /* display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: center; */
     font-size: 0;
     font-weight: bolder;
 }
 .navbar ul li{
     width: 12.5%;
-    position: relative;
+    /* position: relative; */
     list-style: none;
     text-align: center;
 }
 .navbar ul ul{
-    position: absolute;
+    /* position: absolute; */
     display: none;
     background-color: #000000;
 }
