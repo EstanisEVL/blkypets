@@ -11,3 +11,4 @@ Para probar mi sitio ingresa al siguiente [link](https://estanisevl.github.io/bl
 * 21/04/22: - Agregadas animaciones, transformaciones y transiciones.
 * 27/04/22: - Añadido Bootstrap para el maquetado del sitio y la implementación de sus componentes.
 * 30/04/22: - Corregido submenú para evitar conflictos entre su position y bootstrap.
+* 04/05/22: - Agregado preprocesador SASS con sus partials, main.scss y styleSass.css
