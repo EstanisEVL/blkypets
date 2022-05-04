@@ -1,0 +1,209 @@
+/*---- DESKTOP/INDEX/MAIN ----*/
+.fondo{
+    background-color: $color-cuaternario;
+}
+/*---- DESKTOP/INDEX/MAIN/HERO ----*/
+.slider{
+    height: 70vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    animation: slide 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 15s;
+    @keyframes slide{
+        0%{
+            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)), url(../images/Banner1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        35%{
+            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)), url(../images/Banner2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        70%{
+            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)), url(../images/Banner3.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        100%{
+            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)), url(../images/Banner1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    h1{
+        color: $color-cuaternario;
+    }
+    p{
+        color: $color-cuaternario;
+    }
+    a{
+        background-color: $color-primario;
+        color: $color-cuaternario;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 2rem;
+        transition: background-color 0.5s;
+        &:hover{
+            background-color: $color-secundario;
+        }
+    }
+}
+/*---- DESKTOP/INDEX/MAIN/COLECCIONES ----*/
+.colecciones{
+    margin: 0;
+    padding: 0;
+    h2{
+        margin-top: 5rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .colecciones__felipe{
+        margin-top: 5rem;
+        height: 40rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),url(../images/FelipeWeb.jpg);
+        padding-top: 2.5rem;
+        padding-left: 5rem;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .colecciones__henry{
+        margin-top: 5rem;
+        height: 40rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/HenriWeb.jpg);
+        padding-top: 2.5rem;
+        padding-left: 5rem;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    h3{
+        color: $color-cuaternario;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    a{
+        width: 20%;
+        background-color: $color-cuaternario;
+        padding: 1rem;
+        color: $color-primario;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        transition: all 0.5s;
+        &:hover{
+            color: $color-cuaternario;
+            background-color: $color-secundario;
+        }
+    }
+}
+/*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
+.categorias{
+    margin: 0;
+    padding: 0;
+    border-top: solid 0.2rem #000000;
+    h2{
+        margin-top: 2.5rem;
+        font-weight: bolder;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .categorias__perros{
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),  url(../images/Perros.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        line-height: 5rem;
+    }
+    .categorias__gatos{
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),  url(../images/Gatos.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        line-height: 5rem;
+    }
+    .categorias__humanos{
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),  url(../images/Humanos.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        line-height: 5rem;
+    }
+    h3{
+        margin-top: 30rem;
+        margin-left: 8rem;
+        color: $color-cuaternario;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+    a{
+        margin-left: 8rem;
+        padding: 1.5rem;
+        background-color: $color-cuaternario;
+        color: $color-primario;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.5s;
+        &:hover{
+            color: $color-cuaternario;
+            background-color: $color-secundario;
+        }
+    }
+}
+/*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
+.destacados{
+    margin: 0;
+    padding: 0;
+    border-top: solid 0.2rem $color-primario;
+    h2{
+        margin-top: 2.5rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+    div{
+        padding-top: 5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    p{
+        margin-top: 5rem;
+        text-align: center;
+    }
+    a{
+        width: 15%;
+        background-color: $color-primario;
+        color: $color-cuaternario;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 2.5rem;
+        transition: background-color 0.5s;
+        &:hover{
+            background-color: $color-secundario;
+        }
+    }
+}
+/*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
+.clientes{
+    margin: 0;
+    padding: 0;
+    border-top: solid 0.2rem $color-primario;
+    a{
+        margin-top: 2.5rem;
+        color: $color-primario;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+}

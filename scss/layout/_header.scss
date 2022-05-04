@@ -1,0 +1,97 @@
+/*---- HEADER/NAV----*/
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primario;
+    padding-top: 2vw;
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 10000;
+    nav{
+        button{
+            .iconoToggler{
+                border-color: $color-cuaternario;
+            }
+        }
+    }
+    .navbar{
+        width: 100%;
+        ul{
+            width: 100%;
+            font-size: 0;
+            font-weight: bolder;
+            .carrito{
+                &:hover{
+                    animation: bounce-top 2s infinite both;
+                }
+                @keyframes bounce-top {
+                    0% {
+                    transform: translateY(-4.5px);
+                    animation-timing-function: ease-in;
+                    opacity: 1;
+                    }
+                    24% {
+                    opacity: 1;
+                    }
+                    40% {
+                    transform: translateY(-2.4px);
+                    animation-timing-function: ease-in;
+                    }
+                    65% {
+                    transform: translateY(-1.2px);
+                    animation-timing-function: ease-in;
+                    }
+                    82% {
+                    transform: translateY(-0.6px);
+                    animation-timing-function: ease-in;
+                    }
+                    93% {
+                    transform: translateY(-0.4px);
+                    animation-timing-function: ease-in;
+                    }
+                    25%,
+                    55%,
+                    75%,
+                    87% {
+                    transform: translateY(0px);
+                    animation-timing-function: ease-out;
+                    }
+                    100% {
+                    transform: translateY(0px);
+                    animation-timing-function: ease-out;
+                    opacity: 1;
+                    }
+                }
+            }
+            li{
+                width: 12.5%;
+                list-style: none;
+                text-align: center;
+                &:hover ul{
+                    display: block;
+                }
+                a{
+                    text-decoration: none;
+                    color: $color-cuaternario;
+                    text-transform: uppercase;
+                    transition: color 0.5s;
+                    &:hover{
+                        color: $color-secundario;
+                    }
+                }
+                ul{
+                    display: none;
+                    background-color: $color-primario;
+                    li{
+                        width: 100%;
+                        padding-top: 1.5vw;
+                        padding-bottom: 1.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
