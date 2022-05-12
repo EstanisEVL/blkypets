@@ -45,22 +45,22 @@
     p{
         color: $color-cuaternario;
     }
-    a{
-        background-color: $color-primario;
-        color: $color-cuaternario;
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 2rem;
-        transition: background-color 0.5s;
-        &:hover{
-            background-color: $color-secundario;
-        }
-    }
+    // a{
+    //     background-color: $color-primario;
+    //     color: $color-cuaternario;
+    //     text-decoration: none;
+    //     text-transform: uppercase;
+    //     padding: 2rem;
+    //     transition: background-color 0.5s;
+    //     &:hover{
+    //         background-color: $color-secundario;
+    //     }
+    // }
 }
 /*---- DESKTOP/INDEX/MAIN/COLECCIONES ----*/
 .colecciones{
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
     h2{
         margin-top: 5rem;
         font-weight: bolder;
@@ -89,26 +89,24 @@
         text-transform: uppercase;
         font-weight: bold;
     }
-    a{
-        width: 20%;
-        background-color: $color-cuaternario;
-        padding: 1rem;
-        color: $color-primario;
-        text-decoration: none;
-        font-weight: bold;
-        text-align: center;
-        transition: all 0.5s;
-        &:hover{
-            color: $color-cuaternario;
-            background-color: $color-secundario;
-        }
-    }
+    // a{
+    //     width: 20%;
+    //     background-color: $color-cuaternario;
+    //     color: $color-primario;
+    //     padding: 1rem;
+    //     font-weight: bold;
+    //     text-align: center;
+    //     text-decoration: none;
+    //     transition: all 0.5s;
+    //     &:hover{
+    //         color: $color-cuaternario;
+    //     }
 }
 /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
 .categorias{
-    margin: 0;
-    padding: 0;
-    border-top: solid 0.2rem #000000;
+    // margin: 0;
+    // padding: 0;
+    border-top: $borde;
     h2{
         margin-top: 2.5rem;
         font-weight: bolder;
@@ -146,23 +144,13 @@
     a{
         margin-left: 8rem;
         padding: 1.5rem;
-        background-color: $color-cuaternario;
-        color: $color-primario;
-        font-weight: bold;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: all 0.5s;
-        &:hover{
-            color: $color-cuaternario;
-            background-color: $color-secundario;
-        }
     }
 }
 /*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
 .destacados{
-    margin: 0;
-    padding: 0;
-    border-top: solid 0.2rem $color-primario;
+    // margin: 0;
+    // padding: 0;
+    border-top: $borde;
     h2{
         margin-top: 2.5rem;
         font-weight: bolder;
@@ -178,32 +166,537 @@
         margin-top: 5rem;
         text-align: center;
     }
-    a{
-        width: 15%;
-        background-color: $color-primario;
-        color: $color-cuaternario;
-        font-weight: bold;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 1rem;
-        margin-bottom: 2.5rem;
-        transition: background-color 0.5s;
-        &:hover{
-            background-color: $color-secundario;
-        }
-    }
+    // a{
+    //     @extend .boton;
+    //     width: 15%;
+    //     background-color: $color-primario;
+    //     color: $color-cuaternario;
+    //     font-weight: bold;
+    //     text-decoration: none;
+    //     text-transform: uppercase;
+    //     text-align: center;
+    //     padding: 1rem;
+    //     margin-bottom: 2.5rem;
+    //     transition: background-color 0.5s;
+    //     &:hover{
+    //         background-color: $color-secundario;
+    //     }
+    // }
 }
 /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
 .clientes{
-    margin: 0;
-    padding: 0;
-    border-top: solid 0.2rem $color-primario;
+    // margin: 0;
+    // padding: 0;
+    border-top: $borde;
     a{
         margin-top: 2.5rem;
         color: $color-primario;
         text-decoration: none;
         text-align: center;
         margin-bottom: 2.5rem;
+    }
+}
+
+/*---- DESKTOP/TIENDA ----*/
+/*---- DESKTOP/TIENDA/MAIN ----*/
+.tienda__fondo{
+    background: $color-terciario;
+    color: $color-cuaternario;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+/*---- DESKTOP/TIENDA/MAIN/NOVEDADES Y GUÍA DE TALLES ----*/
+.tienda__seccion1 > div h2{
+    color: $color-primario;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.seccion1__novedades{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.seccion1__div2{
+    display: flex;
+    flex-flow: column nowrap;
+    img{
+        border: $color-primario solid 0.1rem;
+        margin-bottom: 5rem;
+    }
+}
+/*---- DESKTOP/TIENDA/MAIN/COLECCIONES ----*/
+.tienda__colecciones{
+    border-top: $borde;
+    display:flex;
+    flex-direction: column;
+    border-bottom: $borde;
+}
+.contenedor__h2Felipe{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/FelipeWeb.jpg);
+    background-size: cover;
+    color: $color-cuaternario;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.colecciones__contenedor p{
+    text-align: justify;
+}
+.contenedor__imagenes{
+    display: flex;
+    flex-direction: column;
+}
+.imagenes__fila{
+    display: flex;
+}
+.colecciones__contenedor2{
+    border-top: $color-terciario solid 0.2rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.contenedor__h2Henry{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/HenriWeb.jpg);
+    background-size: cover;
+    color: $color-cuaternario;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: end;
+}
+.colecciones__contenedor2 p{
+    text-align: justify;
+}
+/*---- DESKTOP/TIENDA/MAIN/CATEGORÍAS ----*/
+.tienda__categorias{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+.h2Perros{
+    margin-top: 2rem;
+    color:$color-primario;
+    font-weight: bold;
+    background-image: url(../images/Perros.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.contenedor__imagenes2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.categorias__articulo2{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.h2Gatos{
+    color: $color-primario;
+    font-weight: bold;
+    text-align: end;
+    background-image: url(../images/Gatos.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.categorias__articulo3{
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+}
+.h2Humanos{
+    margin-top: 10rem;
+    color: $color-primario;
+    font-weight: bold;
+    background-image: url(../images/Humanos.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.galeria2{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: space-evenly;
+}
+.contenedor__imagenes3{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*---- DESKTOP/VENTA MAYORISTA ----*/
+/*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV1 ----*/
+.mayoristas__div1{
+    background-color: $color-terciario;
+    h1{
+        color: $color-cuaternario;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+}
+/*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV2 ----*/
+.mayoristas__div2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    h2{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        color: $color-primario;
+        font-weight: bolder;
+        text-align: center;
+    }
+    p{
+        margin-bottom: 5rem;
+        color:$color-primario;
+        text-align: justify;
+        a{
+            color: $color-primario;
+            text-transform: lowercase;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}
+/*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV3 ----*/
+.mayoristas__div3{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    h2{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        color: $color-primario;
+        font-weight: bold;
+        text-align: center;
+    }
+    p{
+        color: $color-primario;
+        text-align: justify;
+        a{
+            color: $color-primario;
+            text-transform: lowercase;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}
+/*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV4 ----*/
+.mayoristas__div4{
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    h3{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        color: $color-primario;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+// .mayoristas__boton{
+//     border: none;
+//     background-color: $color-primario;
+//     color: $color-cuaternario;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     text-align: center;
+//     margin-top: 3rem;
+//     margin-bottom: 5rem;
+//     padding: 2rem;
+//     transition: background-color 0.5s;
+//     &:hover{
+//         background-color: $color-secundario;
+//     }
+// }
+
+/*---- DESKTOP/NOSOTROS ----*/
+/*---- DESKTOP/NOSOTROS/MAIN ----*/
+.main__nosotros{
+    background-color: $color-cuaternario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div h1{
+        color: $color-primario;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+}
+/*---- DESKTOP/NOSOTROS/SECCION 1----*/
+.nosotros__seccion1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        h2{
+            color: $color-primario;
+            font-weight: bold;
+        }
+        p{
+            color: $color-primario;
+            margin-top: 2rem;
+            text-align: justify;
+        }
+        img{
+            margin-top: 5rem;
+        }
+        // a{
+        //     color: $color-cuaternario;
+        //     background-color: $color-primario;
+        //     text-transform: uppercase;
+        //     font-weight: bold;
+        //     text-decoration: none;
+        //     text-align: center;
+        //     margin-top: 5rem;
+        //     padding: 2rem 5rem 2rem 5rem;
+        //     transition: background-color 0.5s;
+        //     &:hover{
+        //         background-color: $color-secundario;
+        //     }
+        // }
+    }
+}
+/*---- DESKTOP/NOSOTROS/SECCION 2----*/
+.nosotros__seccion2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    div{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-end;
+        h2{
+            color: $color-primario;
+            font-weight: bold;
+        }
+        p{
+            color: $color-primario;
+            margin-top: 2rem;
+            text-align: justify;
+        }
+        // a{
+        //     color: $color-cuaternario;
+        //     background-color: $color-primario;
+        //     text-transform: uppercase;
+        //     font-weight: bold;
+        //     text-decoration: none;
+        //     text-align: center;
+        //     margin-top: 5rem;
+        //     padding: 2rem 5rem 2rem 5rem;
+        //     transition: background-color 0.5s;
+        //     &:hover{
+        //         background-color: $color-secundario;
+        //     }
+        // }
+    }
+}
+/*---- DESKTOP/CONTACTO ----*/
+/*---- DESKTOP/CONTACTO/MAIN ----*/
+.main__contacto h1{
+    color: $color-primario;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+/*---- DESKTOP/CONTACTO/MAIN/FORMULARIO ----*/
+.container__contacto{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color: $color-primario;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    form{
+        border: $borde;
+        margin-top: 5rem;
+        padding: 10rem;
+        align-self: center;
+        width: 80%;
+        text-align: center;
+        font-family: helvetica;
+        text-transform: uppercase;
+        font-weight: bold;
+        img{
+            margin-bottom: 10rem;
+            width: 10%;
+        }
+        div select{
+            font-family: helvetica;
+            text-transform: uppercase;
+        }
+    }
+}
+.contenedor__checkbox{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__botones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.formulario__textarea{
+    resize: none;
+}
+// .formulario__botones{
+//     margin-top: 2rem;
+//     padding: 1rem;
+//     border-radius: 0;
+//     text-transform: uppercase;
+//     background-color: $color-primario;
+//     color: $color-cuaternario;
+//     &:hover{
+//         background-color: $color-secundario;
+//         color: $color-cuaternario;
+//     }
+// }
+/*---- DESKTOP/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
+.contacto__preguntasFrecuentes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        margin-top: 5rem;
+        color: $color-primario;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    div{
+        &:first-child //REVISAR 
+        {
+            border-top: $borde;
+        }
+    }
+}
+.slide-in-right {
+    animation: slide-in-right 2s ease-in;
+}
+@keyframes slide-in-right {
+    0% {
+    transform: translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+.slide-in-left {
+    animation: slide-in-left 2s ease-in both;
+}
+@keyframes slide-in-left {
+    0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+.preguntasFrecuentes__nuestrosProductos{
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 5rem;
+    h3{
+        margin-top: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    h4{
+        margin-top: 2rem;
+        font-weight: bold;
+        text-align: left;
+    }
+    p{
+        margin-top: 2rem;
+        text-align: justify;
+    }
+    a{
+        color: $color-primario;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+    }
+}
+.contacto__cambiosDevoluciones{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/*---- DESKTOP/CONTACTO/MAIN/NEWSLETTER ----*/
+.newsletter{
+    border-top: $borde;
+    color: $color-primario;
+    h3{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        text-align: center;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    form{
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+    }
+}
+// .newsletter__boton{
+//     border: none;
+//     text-transform: uppercase;
+//     color: $color-cuaternario;
+//     background-color: $color-primario;
+// }
+
+/*---- DESKTOP/ERROR-404/MAIN ----*/
+.seccion__error{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    h2{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    p{
+        a{
+            color: $color-primario;
+            font-weight: bolder;
+            text-decoration: none;
+            &:hover{
+                color: $color-secundario;
+            }
+        }
+    }
+    img{
+        margin-top: 5rem;
     }
 }

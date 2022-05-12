@@ -1,0 +1,54 @@
+//Botones con extends:
+.boton{
+    background-color: $color-primario;
+    color: $color-cuaternario;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2rem;
+    transition: background-color 0.5s;
+    &:hover{
+        color: $color-cuaternario;
+        background-color: $color-secundario;
+    }
+}
+.boton--blanco{
+    @extend .boton;
+    width: 20%;
+    background-color: $color-cuaternario;
+    color: $color-primario;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.5s;
+    &:hover{
+        color: $color-cuaternario;
+        background-color: $color-secundario;
+    }
+}
+.boton--corto{
+    @extend .boton;
+    width: 15%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.boton--largo{
+    @extend .boton;
+    border: none;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.boton--nosotros{
+    @extend .boton;
+    margin-top: 5rem;
+    padding: 2rem 5rem 2rem 5rem;
+}
+.boton--formulario{
+    @extend .boton;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 0;
+}
+.boton--newsletter{
+    @extend .boton;
+    border: none;
+}

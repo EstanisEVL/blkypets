@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head lang="es">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="PETSHOP, TIENDA, MASCOTAS, ACCESORIOS, ONLINE, PERROS, GATOS, MINORISTA, MAYORISTA, ARGENTINA">
+        <meta name="description" content="Sitio web de BLKYPets, tienda de accesorios para mascotas, en donde encontrarás nuestro catálogo de productos, novedades y mucho más">
         <title>BLKYPets - ¡Tenemos de todo para tu mascota!</title>
         <link rel="shortcut icon" href="images/Favicon1.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -58,38 +60,38 @@
                 <section class="col-sm-12 col-md-12 col-lg-12 text-wrap slider">
                     <h1 class="h1 fs-1">BLKY PETS</h1>
                     <p class="fs-2">¡Tenemos de todo para tu mascota!</p>
-                    <a href="pages/tienda.html">Ver más</a>
+                    <a class="boton" href="pages/tienda.html">Ver más</a>
                 </section>
 
-                <section class="row justify-content-between colecciones">
+                <section class="row justify-content-between sinMargen colecciones">
                     <h2 class="h2 fs-1">NUESTRAS COLECCIONES</h2>
                     <article class="col-sm-12 col-md-5 col-lg-5 colecciones__felipe">
                         <h3 class="h3 fs-1">Felipe</h3>
-                        <a href="pages/tienda.html">VER COLECCIÓN</a>
+                        <a class="boton--blanco" href="pages/tienda.html">VER COLECCIÓN</a>
                     </article>
                     <article class="col-sm-12 col-md-5 offset-md-2 col-lg-5 colecciones__henry">
                         <h3 class="h3 fs-1">Henry</h3>
-                        <a href="pages/tienda.html">VER COLECCIÓN</a>
+                        <a class="boton--blanco" href="pages/tienda.html">VER COLECCIÓN</a>
                     </article>
                 </section>
 
-                <section class="row justify-content-around categorias">
+                <section class="row justify-content-around sinMargen categorias">
                     <h2 class="h2 fs-1 categorias__titulo">CATEGORÍAS</h2>
                     <article class="col-sm-12 col-md-4 col-lg-3 categorias__perros">
                         <h3 class="h3 fs-1">PERROS</h3>
-                        <a href="pages/tienda.html#perros">Ver productos</a>
+                        <a class="boton--blanco" href="pages/tienda.html#perros">Ver productos</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-3 categorias__gatos">
                         <h3 class="h3 fs-1">GATOS</h3>
-                        <a href="pages/tienda.html#gatos">Ver productos</a>
+                        <a class="boton--blanco" href="pages/tienda.html#gatos">Ver productos</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-3 categorias__humanos">
                         <h3 class="h3 fs-1">HUMANOS</h3>
-                        <a href="pages/tienda.html#humanos">Ver productos</a>
+                        <a class="boton--blanco" href="pages/tienda.html#humanos">Ver productos</a>
                     </article>
                 </section>
 
-                <section class="row justify-content-center destacados">
+                <section class="row justify-content-center sinMargen destacados">
                     <h2 class="h2 fs-1">DESTACADOS</h2>
                     <div class="row">
                         <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Arnés Felipe.jpg" alt="foto destacado 1">
@@ -99,10 +101,10 @@
                         <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Portabolsitas Felipe.jpg" alt="foto destacado 5">
                     </div>
                     <p class="fs-2 word-wrap">¡Conocé todas nuestras novedades y artículos más populares elegidos por nuestros clientes! </p>
-                    <a href="pages/tienda.html">Ver más</a>
+                    <a class="boton--corto" href="pages/tienda.html">Ver más</a>
                 </section>
 
-                <section class="row clientes">
+                <section class="row sinMargen clientes">
                     <a class="fs-1" href="https://www.instagram.com/blkypets/?hl=es">¡Seguinos en @blkypets!</a>
                     <div class="row">
                         <div class="col carousel slide" id="carouselExampleSlidesOnly"  data-bs-ride="carousel">
@@ -123,30 +125,46 @@
             </main>
 
             <footer class="row footer">
-                <div class="col-sm-12 col-md-3 col-lg-2 footer__contacto">
+                <div class="col-sm-12 col-md-12 col-lg-6 footer__contacto">
                     <div>
-                        <h4 class="h4">¡Contactanos!</h4>
-                        <a class="fs-4" href="mailto:info@blkypets.com.ar">info@blkypets.com.ar</a>
+                        <h4 class="h4">¿Necesitás ayuda?</h4>
+                        <ul>
+                            <li class="fs-4"><a href="pages/contacto.html#nuestros-productos">Nuestros productos</a></li>
+                            <li class="fs-4"><a href="pages/contacto.html#cambios-y-devoluciones">Cambios / Devoluciones</a></li>
+                            <li class="fs-4"><a href="pages/contacto.html#formas-de-envio">Formas de envío</a></li>
+                        </ul>
                     </div>
                     <div>
-                        <h4 class="h4">Ubicación</h4>
-                        <p class="fs-4">calle BLKYPets 123, C.A.B.A., Argentina.</p>
+                        <h4 class="h4">Tienda</h4>
+                        <ul>
+                            <li class="fs-4"><a href="pages/tienda.html#perros">Perros</a></li>
+                            <li class="fs-4"><a href="pages/tienda.html#gatos">Gatos</a></li>
+                            <li class="fs-4"><a href="pages/tienda.html#humanos">Humanos</a></li>
+                            <li class="fs-4"><a href="pages/venta-mayorista.html">Venta mayorista</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="h4">Sobre nosotros</h4>
+                            <ul>
+                                <li class="fs-4"><a href="pages/nosotros.html">Nuestra historia</a></li>
+                                <li class="fs-4"><a href="pages/contacto.html">Contacto</a></li>
+                                <li class="fs-4"><a class="enlaceRoto" href="pages/error-404.html">Enlace roto</a></li>
+                            </ul>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3 offset-md-1 col-lg-6 footer__redes">
-                    <a href="https://es-la.facebook.com/"><img class="img-fluid" src="images/facebook.png" alt="icono facebook"></a>
-                    <a href="https://www.instagram.com/blkypets/?hl=es"><img class="img-fluid" src="images/instagram.png" alt="icono instagram"></a>
-                    <a href="https://www.whatsapp.com/?lang=es"><img class="img-fluid" src="images/whatsapp.png" alt="icono whatsapp"></a>
-                </div>
-                <div class="col-sm-12 col-md-3 offset-md-1 col-lg-2 footer__ayuda">
-                    <h4 class="h4">¿Necesitás ayuda?</h4>
+                <div class="col-sm-12 col-md-12 col-lg-4 offset-lg-2 footer__redes">
+                    <h4 class="h4">¡Seguinos!</h4>
                     <ul>
-                        <li><a class="fs-3" href="pages/contacto.html#nuestros-productos">Nuestros productos.</a></li>
-                        <li><a class="fs-3" href="pages/contacto.html#cambios-y-devoluciones">Cambios / Devoluciones.</a></li>
-                        <li><a class="fs-3" href="pages/contacto.html#formas-de-envio">Formas de envío.</a></li>
-                        <li><a class="fs-3" href="pages/contacto.html">F.A.Q. / Contacto</a></li>
+                        <li class="btn--facebook facebook"><a href="https://es-la.facebook.com/"><img class="img-fluid" src="images/facebook.png" alt="icono facebook"></a></li>
+                        <li class="btn--instagram instagram"><a href="https://www.instagram.com/blkypets/?hl=es"><img class="img-fluid" src="images/instagram.png" alt="icono instagram"></a></li>
+                        <li class="btn--whatsapp whatsapp"><a href="https://www.whatsapp.com/?lang=es"><img class="img-fluid" src="images/whatsapp.png" alt="icono whatsapp"></a></li>
                     </ul>
+                    <div>
+                        <h4 class="h4">¡Contactate!</h4>
+                        <a class="btn--mail mail" href="mailto:info@blkypets.com.ar"><img class="img-fluid" src="images/mail.png" alt="icono mail"></a>
+                    </div>
                 </div>
+
                 <div class="col-sm-12 col-md-12 col-lg-12 footer__mediosDePago">
                     <img class="img-fluid mediosDePago__imagen" src="images/american express.png" alt="icono american express">
                     <img class="img-fluid mediosDePago__imagen" src="images/visa.png" alt="incono visa">
@@ -155,7 +173,7 @@
                     <img class="img-fluid mediosDePago__imagen" src="images/mepa@2x.png" alt="icono mercadopago">
                     <img class="img-fluid mediosDePago__imagen" src="images/banelco@2x.png" alt="icono banelco">
                 </div>
-                <div class="row footer__copyright">
+                <div class="col-lg-12 footer__copyright">
                     <a class="fs-5" href="">© BLKYPets 2022 | Todos los derechos reservados.</a>
                 </div>
             </footer>

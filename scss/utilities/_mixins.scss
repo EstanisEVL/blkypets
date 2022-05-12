@@ -1,0 +1,9 @@
+//Mixins
+@mixin sinMargen($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+.sinMargen{
+    @include sinMargen(0, 0);
+}

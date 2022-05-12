@@ -1,6 +1,20 @@
-@import "base/reset";
+//variables
 @import "utilities/variables";
+@import "utilities/mixins";
+
+//reset
+@import "base/reset";
+
+//typografía
 @import "base/typo";
+
+//layout
 @import "layout/header";
 @import "layout/main";
 @import "layout/footer";
+
+//componentes
+@import "components/buttons";
+
+//funciones
+@import "utilities/functions";
