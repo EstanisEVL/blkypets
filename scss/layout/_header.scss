@@ -1,11 +1,6 @@
 /*---- HEADER/NAV----*/
 .header{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $color-primario;
-    padding-top: 2vw;
+    padding-top: 1vw;
     position: sticky;
     top:0;
     left:0;
@@ -13,16 +8,14 @@
     nav{
         button{
             .iconoToggler{
-                border-color: $color-cuaternario;
+                background-color: $color-primario;
+                border-color: none;
             }
         }
     }
     .navbar{
-        width: 100%;
         ul{
-            width: 100%;
-            font-size: 0;
-            font-weight: bolder;
+            align-items: center;
             .carrito{
                 &:hover{
                     animation: bounce-top 2s infinite both;
@@ -67,7 +60,6 @@
                 }
             }
             li{
-                width: 12.5%;
                 list-style: none;
                 text-align: center;
                 &:hover ul{

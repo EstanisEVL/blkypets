@@ -1,7 +1,6 @@
 /*---- FOOTER ----*/
 .footer{
     background-color: $color-secundario;
-    // border-top: $borde;
     .footer__contacto{
         margin-top: 4rem;
         display: flex;
@@ -39,8 +38,9 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         h4{
+            margin-bottom: 2rem;
             color: $color-primario;
             font-weight: bolder;
         }
@@ -49,7 +49,6 @@
             padding: 0;
             li{
                 display: flex;
-                // flex-flow: row nowrap;
                 a{
                     padding: 2.5rem;
                 }
@@ -58,7 +57,9 @@
         div{
             display: flex;
             flex-flow: column nowrap;
+            align-items: center;
             h4{
+                margin-bottom: 2rem;
                 color: $color-primario;
             }
             a{
@@ -68,12 +69,16 @@
         }
     }
     .footer__mediosDePago{
-        margin-top: 5rem;
+        margin-top: 4rem;
         display:flex;
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: center;
+        h4{
+            color: $color-primario;
+            font-weight: bolder;
+        }
         img{
-            transform: scale(0.75);
+            transform: scale(0.5);
         }
     }
     .footer__copyright{

@@ -18,3 +18,7 @@ Para probar mi sitio ingresa al siguiente [link](https://estanisevl.github.io/bl
             - Agregué un mapa para estilizar redes sociales en el footer.
 * 11/05/22: - Rediseñé el footer para agregar el mapa del sitio.
             - Añadí el link "Enlace roto" en el mapa del sitio que redirige a la página de error-404.html.
+* 14/05/22: - Reorganicé el footer para ordenar las secciones redes y medios de pago.
+            - Corregí el toggler del menú para que se muestre correctamente en dispositivos móviles.
+            - Reemplacé el texto sin contenido (lorem) por texto relacionado con el contenido del sitio.
+* 15/05/22: - Agregué archivos .php para implementar el funcionamiento del formulario de contacto y el newsletter.
