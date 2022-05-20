@@ -92,7 +92,7 @@ body {
 /*---- DESKTOP/INDEX/MAIN/HERO ----*/
 .hero {
   height: 70vh;
-  background-image: url(../../images/Banner1menossaturado.jpg);
+  background-image: url(../images/Banner1menossaturado.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -125,22 +125,22 @@ body {
 
 @keyframes slide {
   0% {
-    background-image: url(../../images/Banner2.jpg);
+    background-image: url(../images/Banner2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
   35% {
-    background-image: url(../../images/Banner2b.jpg);
+    background-image: url(../images/Banner2b.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
   70% {
-    background-image: url(../../images/Banner2c.jpg);
+    background-image: url(../images/Banner2c.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
   100% {
-    background-image: url(../../images/Banner2.jpg);
+    background-image: url(../images/Banner2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; } }
@@ -168,7 +168,7 @@ body {
     text-transform: uppercase; }
   .colecciones article {
     height: 80%;
-    background-image: url(../../images/Banner3.jpg);
+    background-image: url(../images/Banner3.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
 
@@ -176,7 +176,7 @@ body {
 .categorias {
   margin-top: 20rem; }
   .categorias .categorias__perros {
-    background-image: url(../../images/Perros.jpg);
+    background-image: url(../images/Perros.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,7 +188,7 @@ body {
       font-weight: bolder;
       text-transform: uppercase; }
   .categorias .categorias__gatos {
-    background-image: url(../../images/Gatos.jpg);
+    background-image: url(../images/Gatos.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,7 +200,7 @@ body {
       font-weight: bolder;
       text-transform: uppercase; }
   .categorias .categorias__humanos {
-    background-image: url(../../images/Humanos.jpg);
+    background-image: url(../images/Humanos.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

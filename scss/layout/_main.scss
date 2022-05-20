@@ -5,7 +5,7 @@
 /*---- DESKTOP/INDEX/MAIN/HERO ----*/
 .hero{
     height: 70vh;
-    background-image: url(../../images/Banner1menossaturado.jpg);
+    background-image: url(../images/Banner1menossaturado.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,25 +43,25 @@
     animation-duration: 3s;
     @keyframes slide{
         0%{
-            background-image: url(../../images/Banner2.jpg);
+            background-image: url(../images/Banner2.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
         35%{
-            background-image: url(../../images/Banner2b.jpg);
+            background-image: url(../images/Banner2b.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
         70%{
-            background-image: url(../../images/Banner2c.jpg);
+            background-image: url(../images/Banner2c.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
         100%{
-            background-image: url(../../images/Banner2.jpg);
+            background-image: url(../images/Banner2.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -99,7 +99,7 @@
     }
     article{
         height: 80%;
-        background-image: url(../../images/Banner3.jpg);
+        background-image: url(../images/Banner3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -142,7 +142,7 @@
     //     margin-bottom: 5rem;
     // }
     .categorias__perros{
-        background-image: url(../../images/Perros.jpg);
+        background-image: url(../images/Perros.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -156,7 +156,7 @@
         }
     }
     .categorias__gatos{
-        background-image: url(../../images/Gatos.jpg);
+        background-image: url(../images/Gatos.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -170,7 +170,7 @@
         }
     }
     .categorias__humanos{
-        background-image: url(../../images/Humanos.jpg);
+        background-image: url(../images/Humanos.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
