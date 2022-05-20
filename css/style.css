@@ -9,24 +9,25 @@
   box-sizing: border-box; }
 
 @font-face {
-  font-family: helvetica;
-  src: url(../../fonts/HelveticaRoundedBold.ttf); }
+  font-family: now;
+  src: url(../../fonts/Now-Regular.otf); }
 
 html {
   font-size: 62.5%; }
 
 body {
-  font-family: helvetica; }
+  font-family: now; }
 
 /*---- HEADER/NAV----*/
 .header {
+  background-color: #131313;
   padding-top: 1vw;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 10000; }
   .header nav button .iconoToggler {
-    background-color: #000000;
+    background-color: #131313;
     border-color: none; }
   .header .navbar ul {
     align-items: center; }
@@ -69,132 +70,153 @@ body {
         display: block; }
       .header .navbar ul li a {
         text-decoration: none;
-        color: #F5EDED;
+        color: #fcfcfc;
         text-transform: uppercase;
         transition: color 0.5s; }
         .header .navbar ul li a:hover {
-          color: #3E3636; }
+          color: #ffdd33; }
       .header .navbar ul li ul {
         display: none;
-        background-color: #000000; }
+        background-color: #131313; }
         .header .navbar ul li ul li {
           width: 100%;
           padding-top: 1.5vw;
           padding-bottom: 1.5vw; }
+          .header .navbar ul li ul li a:hover {
+            background-color: #131313; }
 
 /*---- DESKTOP/INDEX/MAIN ----*/
 .fondo {
-  background-color: #F5EDED; }
+  background-color: #fcfcfc; }
 
 /*---- DESKTOP/INDEX/MAIN/HERO ----*/
-.slider {
+.hero {
   height: 70vh;
+  background-image: url(../../images/Banner1menossaturado.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.titulo {
+  height: 10vh;
   display: flex;
-  flex-flow: column;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  background-color: #131313;
+  color: #fcfcfc; }
+  .titulo h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .titulo p {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase; }
+
+.slider {
+  height: 20vh;
+  display: flex;
+  flex-flow: row wrap;
   animation: slide 20s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
-  animation-duration: 15s; }
+  animation-duration: 3s; }
 
 @keyframes slide {
   0% {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/Banner1.jpg);
+    background-image: url(../../images/Banner2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
   35% {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/Banner2.jpg);
+    background-image: url(../../images/Banner2b.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
   70% {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/Banner3.jpg);
+    background-image: url(../../images/Banner2c.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
   100% {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/Banner1.jpg);
+    background-image: url(../../images/Banner2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; } }
-  .slider h1 {
-    color: #F5EDED; }
-  .slider p {
-    color: #F5EDED; }
+  .slider div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center; }
+    .slider div a {
+      text-align: center; }
 
 /*---- DESKTOP/INDEX/MAIN/COLECCIONES ----*/
-.colecciones h2 {
-  margin-top: 5rem;
-  font-weight: bolder;
-  text-align: center; }
-
-.colecciones .colecciones__felipe {
-  margin-top: 5rem;
-  height: 40rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/FelipeWeb.jpg);
-  padding-top: 2.5rem;
-  padding-left: 5rem;
+.colecciones {
+  height: 40vh;
   display: flex;
-  flex-flow: column wrap; }
-
-.colecciones .colecciones__henry {
-  margin-top: 5rem;
-  height: 40rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/HenriWeb.jpg);
-  padding-top: 2.5rem;
-  padding-left: 5rem;
-  display: flex;
-  flex-flow: column wrap; }
-
-.colecciones h3 {
-  color: #F5EDED;
-  text-transform: uppercase;
-  font-weight: bold; }
+  flex-flow: column nowrap; }
+  .colecciones div {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .colecciones article {
+    height: 80%;
+    background-image: url(../../images/Banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
 .categorias {
-  border-top: solid 0.2rem #000000; }
-  .categorias h2 {
-    margin-top: 2.5rem;
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 5rem; }
+  margin-top: 20rem; }
   .categorias .categorias__perros {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/Perros.jpg);
+    background-image: url(../../images/Perros.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 5rem; }
+    .categorias .categorias__perros h3 {
+      margin-top: 30rem;
+      text-align: end;
+      color: #131313;
+      font-weight: bolder;
+      text-transform: uppercase; }
   .categorias .categorias__gatos {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/Gatos.jpg);
+    background-image: url(../../images/Gatos.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 5rem; }
+    .categorias .categorias__gatos h3 {
+      margin-top: 30rem;
+      text-align: end;
+      color: #131313;
+      font-weight: bolder;
+      text-transform: uppercase; }
   .categorias .categorias__humanos {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/Humanos.jpg);
+    background-image: url(../../images/Humanos.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 5rem; }
-  .categorias h3 {
-    margin-top: 30rem;
-    margin-left: 8rem;
-    color: #F5EDED;
-    font-weight: bolder;
-    text-transform: uppercase; }
-  .categorias a {
-    margin-left: 8rem;
-    padding: 1.5rem; }
+    .categorias .categorias__humanos h3 {
+      margin-top: 30rem;
+      text-align: end;
+      color: #131313;
+      font-weight: bolder;
+      text-transform: uppercase; }
 
 /*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
 .destacados {
-  border-top: solid 0.2rem #000000; }
+  margin-top: 5rem; }
   .destacados h2 {
-    margin-top: 2.5rem;
-    font-weight: bolder;
+    font-weight: bold;
     text-align: center; }
   .destacados div {
     padding-top: 5rem;
@@ -207,19 +229,41 @@ body {
 
 /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
 .clientes {
-  border-top: solid 0.2rem #000000; }
-  .clientes a {
-    margin-top: 2.5rem;
-    color: #000000;
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 2.5rem; }
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  .clientes .clientes__newsletter {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .clientes .clientes__newsletter h3 {
+      font-weight: bold; }
+    .clientes .clientes__newsletter .formulario {
+      margin-top: 5rem;
+      display: flex;
+      flex-flow: column nowrap; }
+      .clientes .clientes__newsletter .formulario .formulario__campos {
+        display: flex;
+        justify-content: space-evenly;
+        line-height: 3rem; }
+      .clientes .clientes__newsletter .formulario .formulario__boton {
+        text-align: center;
+        margin-top: 2.5rem; }
+  .clientes .clientes__instagram {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+    .clientes .clientes__instagram a {
+      font-weight: bold;
+      color: #131313;
+      text-decoration: none;
+      margin-bottom: 5rem; }
 
 /*---- DESKTOP/TIENDA ----*/
 /*---- DESKTOP/TIENDA/MAIN ----*/
 .tienda__fondo {
-  background: #D72323;
-  color: #F5EDED;
+  background: #ffdd33;
+  color: #e0005a;
   padding-top: 5rem;
   padding-bottom: 5rem;
   font-weight: bolder;
@@ -227,7 +271,7 @@ body {
 
 /*---- DESKTOP/TIENDA/MAIN/NOVEDADES Y GUÍA DE TALLES ----*/
 .tienda__seccion1 > div h2 {
-  color: #000000;
+  color: #131313;
   font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
@@ -247,15 +291,15 @@ body {
 
 /*---- DESKTOP/TIENDA/MAIN/COLECCIONES ----*/
 .tienda__colecciones {
-  border-top: solid 0.2rem #000000;
+  border-top: solid 0.2rem #131313;
   display: flex;
   flex-direction: column;
-  border-bottom: solid 0.2rem #000000; }
+  border-bottom: solid 0.2rem #131313; }
 
 .contenedor__h2Felipe {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/FelipeWeb.jpg);
   background-size: cover;
-  color: #F5EDED;
+  color: #e0005a;
   font-weight: bolder;
   text-transform: uppercase; }
 
@@ -270,14 +314,14 @@ body {
   display: flex; }
 
 .colecciones__contenedor2 {
-  border-top: #D72323 solid 0.2rem;
+  border-top: #ffdd33 solid 0.2rem;
   display: flex;
   flex-direction: row-reverse; }
 
 .contenedor__h2Henry {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/HenriWeb.jpg);
   background-size: cover;
-  color: #F5EDED;
+  color: #e0005a;
   font-weight: bolder;
   text-transform: uppercase;
   text-align: end; }
@@ -293,7 +337,7 @@ body {
 
 .h2Perros {
   margin-top: 2rem;
-  color: #000000;
+  color: #131313;
   font-weight: bold;
   background-image: url(../images/Perros.jpg);
   background-size: cover;
@@ -310,7 +354,7 @@ body {
   flex-direction: row-reverse; }
 
 .h2Gatos {
-  color: #000000;
+  color: #131313;
   font-weight: bold;
   text-align: end;
   background-image: url(../images/Gatos.jpg);
@@ -324,7 +368,7 @@ body {
 
 .h2Humanos {
   margin-top: 10rem;
-  color: #000000;
+  color: #131313;
   font-weight: bold;
   background-image: url(../images/Humanos.jpg);
   background-size: cover;
@@ -343,9 +387,9 @@ body {
 /*---- DESKTOP/VENTA MAYORISTA ----*/
 /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV1 ----*/
 .mayoristas__div1 {
-  background-color: #D72323; }
+  background-color: #ffdd33; }
   .mayoristas__div1 h1 {
-    color: #F5EDED;
+    color: #e0005a;
     margin-top: 5rem;
     margin-bottom: 5rem;
     font-weight: bolder;
@@ -360,15 +404,15 @@ body {
   .mayoristas__div2 h2 {
     margin-top: 5rem;
     margin-bottom: 5rem;
-    color: #000000;
+    color: #131313;
     font-weight: bolder;
     text-align: center; }
   .mayoristas__div2 p {
     margin-bottom: 5rem;
-    color: #000000;
+    color: #131313;
     text-align: justify; }
     .mayoristas__div2 p a {
-      color: #000000;
+      color: #131313;
       text-transform: lowercase;
       font-style: italic;
       font-weight: bold;
@@ -383,14 +427,14 @@ body {
   .mayoristas__div3 h2 {
     margin-top: 5rem;
     margin-bottom: 5rem;
-    color: #000000;
+    color: #131313;
     font-weight: bold;
     text-align: center; }
   .mayoristas__div3 p {
-    color: #000000;
+    color: #131313;
     text-align: justify; }
     .mayoristas__div3 p a {
-      color: #000000;
+      color: #131313;
       text-transform: lowercase;
       font-style: italic;
       font-weight: bold;
@@ -406,7 +450,7 @@ body {
   .mayoristas__div4 h3 {
     margin-top: 5rem;
     margin-bottom: 5rem;
-    color: #000000;
+    color: #131313;
     font-style: italic;
     font-weight: bold;
     text-align: center; }
@@ -414,13 +458,13 @@ body {
 /*---- DESKTOP/NOSOTROS ----*/
 /*---- DESKTOP/NOSOTROS/MAIN ----*/
 .main__nosotros {
-  background-color: #F5EDED;
+  background-color: #e0005a;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   .main__nosotros div h1 {
-    color: #000000;
+    color: #131313;
     margin-top: 5rem;
     margin-bottom: 5rem;
     font-weight: bolder;
@@ -437,10 +481,10 @@ body {
     justify-content: center;
     align-items: flex-start; }
     .nosotros__seccion1 div h2 {
-      color: #000000;
+      color: #131313;
       font-weight: bold; }
     .nosotros__seccion1 div p {
-      color: #000000;
+      color: #131313;
       margin-top: 2rem;
       text-align: justify; }
 
@@ -457,7 +501,7 @@ body {
     align-items: flex-end;
     margin-bottom: 5rem; }
     .nosotros__seccion2 div p {
-      color: #000000;
+      color: #131313;
       margin-top: 2rem;
       text-align: justify; }
     .nosotros__seccion2 div img {
@@ -466,7 +510,7 @@ body {
 /*---- DESKTOP/CONTACTO ----*/
 /*---- DESKTOP/CONTACTO/MAIN ----*/
 .main__contacto h1 {
-  color: #000000;
+  color: #131313;
   margin-top: 5rem;
   margin-bottom: 5rem;
   font-weight: bolder;
@@ -479,11 +523,11 @@ body {
   justify-content: center;
   align-items: center; }
   .container__contacto h2 {
-    color: #000000;
+    color: #131313;
     text-transform: uppercase;
     text-align: center; }
   .container__contacto form {
-    border: solid 0.2rem #000000;
+    border: solid 0.2rem #131313;
     margin-top: 5rem;
     padding: 10rem;
     align-self: center;
@@ -523,7 +567,7 @@ body {
   justify-content: center; }
   .contacto__preguntasFrecuentes h2 {
     margin-top: 5rem;
-    color: #000000;
+    color: #131313;
     font-weight: bold;
     text-align: center;
     margin-bottom: 5rem; }
@@ -566,7 +610,7 @@ body {
     margin-top: 2rem;
     text-align: justify; }
   .preguntasFrecuentes__nuestrosProductos a {
-    color: #000000;
+    color: #131313;
     font-weight: bold;
     font-style: italic;
     text-decoration: none; }
@@ -577,8 +621,8 @@ body {
 
 /*---- DESKTOP/CONTACTO/MAIN/NEWSLETTER ----*/
 .newsletter {
-  border-top: solid 0.2rem #000000;
-  color: #000000; }
+  border-top: solid 0.2rem #131313;
+  color: #131313; }
   .newsletter h3 {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -600,17 +644,17 @@ body {
     margin-top: 10rem;
     margin-bottom: 10rem; }
   .seccion__error p a {
-    color: #000000;
+    color: #131313;
     font-weight: bolder;
     text-decoration: none; }
     .seccion__error p a:hover {
-      color: #3E3636; }
+      color: #a91fff; }
   .seccion__error img {
     margin-top: 5rem; }
 
 /*---- FOOTER ----*/
 .footer {
-  background-color: #3E3636; }
+  background-color: #131313; }
   .footer .footer__contacto {
     margin-top: 4rem;
     display: flex;
@@ -623,7 +667,7 @@ body {
       justify-content: flex-start;
       align-items: flex-start; }
       .footer .footer__contacto div h4 {
-        color: #000000;
+        color: #fcfcfc;
         text-decoration: underline;
         font-weight: bolder; }
       .footer .footer__contacto div ul {
@@ -632,10 +676,10 @@ body {
         .footer .footer__contacto div ul li {
           list-style: none; }
           .footer .footer__contacto div ul li a {
-            color: #F5EDED;
+            color: #fcfcfc;
             text-decoration: none; }
           .footer .footer__contacto div ul li .enlaceRoto {
-            color: #D72323; }
+            color: #e0005a; }
   .footer .footer__redes {
     margin-top: 4rem;
     display: flex;
@@ -644,8 +688,8 @@ body {
     align-items: center; }
     .footer .footer__redes h4 {
       margin-bottom: 2rem;
-      color: #000000;
-      font-weight: bolder; }
+      color: #fcfcfc;
+      font-weight: bold; }
     .footer .footer__redes ul {
       display: flex;
       padding: 0; }
@@ -659,7 +703,7 @@ body {
       align-items: center; }
       .footer .footer__redes div h4 {
         margin-bottom: 2rem;
-        color: #000000; }
+        color: #fcfcfc; }
       .footer .footer__redes div a {
         padding: 1rem 2rem 1rem 2rem;
         text-align: center; }
@@ -669,8 +713,8 @@ body {
     flex-flow: row wrap;
     justify-content: center; }
     .footer .footer__mediosDePago h4 {
-      color: #000000;
-      font-weight: bolder; }
+      color: #fcfcfc;
+      font-weight: bold; }
     .footer .footer__mediosDePago img {
       transform: scale(0.5); }
   .footer .footer__copyright {
@@ -679,31 +723,31 @@ body {
     margin-bottom: 2.5rem;
     text-transform: uppercase; }
     .footer .footer__copyright a {
-      color: #F5EDED;
+      color: #fcfcfc;
       text-decoration: none; }
 
 /*---- BOTONES ----*/
 .boton, .boton--blanco, .boton--corto, .boton--largo, .boton--nosotros, .boton--formulario, .boton--newsletter {
-  background-color: #000000;
-  color: #F5EDED;
+  background-color: #131313;
+  color: #e0005a;
   text-decoration: none;
   text-transform: uppercase;
   padding: 2rem;
   transition: background-color 0.5s; }
   .boton:hover, .boton--blanco:hover, .boton--corto:hover, .boton--largo:hover, .boton--nosotros:hover, .boton--formulario:hover, .boton--newsletter:hover {
-    color: #F5EDED;
-    background-color: #3E3636; }
+    color: #e0005a;
+    background-color: #a91fff; }
 
 .boton--blanco {
   width: 20%;
-  background-color: #F5EDED;
-  color: #000000;
+  background-color: #e0005a;
+  color: #131313;
   padding: 1rem;
   text-align: center;
   transition: all 0.5s; }
   .boton--blanco:hover {
-    color: #F5EDED;
-    background-color: #3E3636; }
+    color: #e0005a;
+    background-color: #a91fff; }
 
 .boton--corto {
   width: 15%;
@@ -728,6 +772,123 @@ body {
 .boton--newsletter {
   border: none; }
 
+/*---- Boton index ----*/
+.boton__fancy, .boton__colecciones, .boton__categorias {
+  background-color: transparent;
+  border: 2px solid #131313;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fcfcfc;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px; }
+  .boton__fancy::before, .boton__colecciones::before, .boton__categorias::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: #131313;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear; }
+  .boton__fancy .text, .boton__colecciones .text, .boton__categorias .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #131313; }
+  .boton__fancy .top-key, .boton__colecciones .top-key, .boton__categorias .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #fcfcfc;
+    transition: width 0.5s ease-out, left 0.3s ease-out; }
+  .boton__fancy .bottom-key-1, .boton__colecciones .bottom-key-1, .boton__categorias .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #fcfcfc;
+    transition: width 0.5s ease-out, right 0.3s ease-out; }
+  .boton__fancy .bottom-key-2, .boton__colecciones .bottom-key-2, .boton__categorias .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #fcfcfc;
+    transition: width 0.5s ease-out, right 0.3s ease-out; }
+  .boton__fancy:hover, .boton__colecciones:hover, .boton__categorias:hover {
+    color: #fcfcfc;
+    background: #131313; }
+    .boton__fancy:hover::before, .boton__colecciones:hover::before, .boton__categorias:hover::before {
+      width: 0.9375rem;
+      background: #fcfcfc; }
+    .boton__fancy:hover .text, .boton__colecciones:hover .text, .boton__categorias:hover .text {
+      color: #fcfcfc;
+      padding-left: 1.5em; }
+    .boton__fancy:hover .top-key, .boton__colecciones:hover .top-key, .boton__categorias:hover .top-key {
+      left: -2px;
+      width: 0px; }
+    .boton__fancy:hover .bottom-key-1, .boton__colecciones:hover .bottom-key-1, .boton__categorias:hover .bottom-key-1 {
+      right: 0;
+      width: 0; }
+    .boton__fancy:hover .bottom-key-2, .boton__colecciones:hover .bottom-key-2, .boton__categorias:hover .bottom-key-2 {
+      right: 0;
+      width: 0; }
+
+.boton__colecciones, .boton__categorias {
+  background-color: #fcfcfc; }
+
+.boton__categorias {
+  color: #131313;
+  text-transform: uppercase; }
+
+/*---- Boton newsletter ----*/
+.boton__newsletter {
+  padding: 17px 40px;
+  border-radius: 50px;
+  border: 0;
+  background-color: #fcfcfc;
+  box-shadow: #131313;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all .5s ease; }
+  .boton__newsletter:hover {
+    letter-spacing: 3px;
+    background-color: #a91fff;
+    color: #fcfcfc;
+    box-shadow: #a91fff 0px 7px 29px 0px; }
+  .boton__newsletter:active {
+    letter-spacing: 3px;
+    background-color: #a91fff;
+    color: #fcfcfc;
+    box-shadow: #a91fff;
+    transform: translateY(10px);
+    transition: 100ms; }
+
 .btn--facebook {
   transition: all 0.5s; }
   .btn--facebook:hover {
@@ -746,7 +907,7 @@ body {
 .btn--mail {
   transition: all 0.5s; }
   .btn--mail:hover {
-    background-color: #F5EDED; }
+    background-color: #e0005a; }
 
 .facebook {
   border: solid 0.1rem #3b5998; }
@@ -758,4 +919,4 @@ body {
   border: solid 0.1rem #25d366; }
 
 .mail {
-  border: solid 0.1rem #F5EDED; }
+  border: solid 0.1rem #e0005a; }

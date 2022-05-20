@@ -12,7 +12,7 @@
     </head>
     <body>
         <div class="container-fluid">
-            <header class="row header bg-black">
+            <header class="row header">
                 <nav class="nav navbar navbar-expand-lg">
                     <div class="container-fluid justify-content-center">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contenido" aria-controls="contenido" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
                     <div class="collapse navbar-collapse align-content-center" id="contenido">
                         <ul class="navbar-nav container-fluid justify-content-evenly">
                             <li class="nav-item dropdown">
-                                <a class="nav-link fs-2" href="pages/tienda.html#perros" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perros</a>
+                                <a class="nav-link fs-2" href="pages/tienda.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item fs-4" href="pages/tienda.html#perros">Arneses</a></li>
                                     <li><a class="dropdown-item fs-4" href="pages/tienda.html#perros">Collares</a></li>
@@ -30,7 +30,7 @@
                                     <li><a class="dropdown-item fs-4" href="pages/tienda.html#perros">Pretales</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
+                            <!-- <li class="nav-item dropdown">
                                 <a class="nav-link fs-2" href="pages/tienda.html#gatos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gatos</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item fs-4" href="pages/tienda.html#gatos">Arneses</a></li>
@@ -49,9 +49,9 @@
                                     <li><a class="dropdown-item fs-4" href="pages/tienda.html#humanos">Llaveros</a></li>
                                     <li><a class="dropdown-item fs-4" href="pages/tienda.html#humanos">Remeras</a></li>
                                 </ul>
-                            </li>
-                            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images/logo0blanco.png" alt="logo BLKYPets" title="Ir a Inicio"></a>
+                            </li> -->
                             <li class="nav-item"><a class="nav-link fs-2" href="pages/venta-mayorista.html">Mayoristas</a></li>
+                            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images/logo0blanco.png" alt="logo BLKYPets" title="Ir a Inicio"></a>
                             <li class="nav-item"><a class="nav-link fs-2" href="pages/nosotros.html">Nosotros</a></li>
                             <li class="nav-item"><a class="nav-link fs-2" href="pages/contacto.html">Contacto</a></li>
                             <li class="nav-item carrito"><a class="nav-link" href="#"><img class="img-fluid" src="images/gato_carrito.png" alt="carrito" title="Ir al carrito"></a></li>
@@ -61,57 +61,95 @@
             </header>
 
             <main class="row fondo">
-                <section class="col-sm-12 col-md-12 col-lg-12 text-wrap slider">
+                <section class="col-sm-12 col-md-12 col-lg-12 hero">
+
+
+                </section>
+                <section class="col-sm-12 col-md-12 col-lg-12 sinMargen titulo">
                     <h1 class="h1 fs-1">BLKY PETS</h1>
-                    <p class="fs-2">¡Tenemos de todo para tu mascota!</p>
-                    <a class="boton" href="pages/tienda.html">Ver más</a>
+                    <p class="fs-1">Diseñamos accesorios únicos, como tu mascota</p>
+                </section>
+                <section class="row slider sinMargen">
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <a class="boton__fancy" href="pages/tienda.html">
+                            <span class="top-key"></span>
+                            <span class="text">ver más</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+                    </div>
                 </section>
 
                 <section class="row justify-content-between sinMargen colecciones">
-                    <h2 class="h2 fs-1">NUESTRAS COLECCIONES</h2>
-                    <article class="col-sm-12 col-md-5 col-lg-5 colecciones__felipe">
-                        <h3 class="h3 fs-1">Felipe</h3>
-                        <a class="boton--blanco" href="pages/tienda.html#Felipe">VER COLECCIÓN</a>
-                    </article>
-                    <article class="col-sm-12 col-md-5 offset-md-2 col-lg-5 colecciones__henry">
-                        <h3 class="h3 fs-1">Henry</h3>
-                        <a class="boton--blanco" href="pages/tienda.html#Henry">VER COLECCIÓN</a>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <p class="fs-1">Conocé nuestras nuevas</p>
+                        <h2 class="h2 fs-1">colecciones</h2>
+                    </div>
+
+                    <article class="row sinMargen">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <a class="boton__colecciones" href="pages/tienda.html">
+                                <span class="top-key"></span>
+                                <span class="text">ver colección</span>
+                                <span class="bottom-key-1"></span>
+                                <span class="bottom-key-2"></span>
+                            </a>
+                        </div>
+
                     </article>
                 </section>
 
-                <section class="row justify-content-around sinMargen categorias">
-                    <h2 class="h2 fs-1 categorias__titulo">CATEGORÍAS</h2>
+                <section class="row justify-content-around categorias">
+                    <!-- <h2 class="h2 fs-1 categorias__titulo">CATEGORÍAS</h2> -->
                     <article class="col-sm-12 col-md-4 col-lg-3 categorias__perros">
                         <h3 class="h3 fs-1">PERROS</h3>
-                        <a class="boton--blanco" href="pages/tienda.html#perros">Ver productos</a>
+                        <a class="boton__categorias" href="pages/tienda.html#perros">Ver productos</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-3 categorias__gatos">
                         <h3 class="h3 fs-1">GATOS</h3>
-                        <a class="boton--blanco" href="pages/tienda.html#gatos">Ver productos</a>
+                        <a class="boton__categorias" href="pages/tienda.html#gatos">Ver productos</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-3 categorias__humanos">
                         <h3 class="h3 fs-1">HUMANOS</h3>
-                        <a class="boton--blanco" href="pages/tienda.html#humanos">Ver productos</a>
+                        <a class="boton__categorias" href="pages/tienda.html#humanos">Ver productos</a>
                     </article>
                 </section>
 
                 <section class="row justify-content-center sinMargen destacados">
-                    <h2 class="h2 fs-1">DESTACADOS</h2>
+                    <h2 class="h2 fs-1">NUESTROS PRODUCTOS MÁS VENDIDOS</h2>
                     <div class="row">
                         <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Arnes Felipe.jpg" alt="foto destacado 1">
                         <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Collar Henry.jpg" alt="foto destacado 2">
                         <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Correa Rame.jpg" alt="foto destacado 3">
                         <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Monio Bahamas.jpg" alt="foto destacado 4">
-                        <img class="img-fluid col-sm-12 col-md-4 col-lg-2" src="images/Portabolsitas Felipe.jpg" alt="foto destacado 5">
                     </div>
-                    <p class="fs-2 word-wrap">¡Conocé todas nuestras novedades y artículos más populares elegidos por nuestros clientes! </p>
-                    <a class="boton--corto" href="pages/tienda.html">Ver más</a>
                 </section>
 
-                <section class="row sinMargen clientes">
-                    <a class="fs-1" href="https://www.instagram.com/blkypets/?hl=es">¡Seguinos en @blkypets!</a>
-                    <div class="row">
-                        <div class="col carousel slide" id="carouselExampleSlidesOnly"  data-bs-ride="carousel">
+                <section class="row sinMargen clientes">                    
+                    <div class="col-sm-12 col-md-12 col-lg-6 clientes__newsletter">
+                        <h3 class="h3 fs-1">¡Enterate de todas nuestras ofertas y novedades!</h3>
+                        <form class="formulario" action="../php/newsletter.php" method="post">
+                            <div class="formulario__campos">
+                                <div>
+                                    <label class="fs-4" for="email">Email:</label>
+                                    <input type="email" class="form-control" name="email" aria-label="Email" required>
+                                </div>
+                                <div>
+                                    <label class="fs-4" for="nombreMascota">Nombre de tu mascota:</label>
+                                    <input type="text" class="form-control" name="nombreMascota" aria-label="Nombre mascota" required>
+                                </div>
+                            </div>
+                            <div class="formulario__boton">
+                                <button type="submit" class="fs-5 boton__newsletter" name="suscribirme">Suscribirme</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 clientes__instagram">
+                        <a class="fs-1" href="https://www.instagram.com/blkypets/?hl=es">¡Seguinos en @blkypets!</a>
+                        <div class="carousel slide" id="carouselExampleSlidesOnly"  data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="images/ig1.jpg" class="img-fluid img-thumbnail mx-auto d-block w-25" alt="foto clientes 1">

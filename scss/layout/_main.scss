@@ -1,130 +1,194 @@
 /*---- DESKTOP/INDEX/MAIN ----*/
 .fondo{
-    background-color: $color-cuaternario;
+    background-color: $color-fondo;
 }
 /*---- DESKTOP/INDEX/MAIN/HERO ----*/
-.slider{
+.hero{
     height: 70vh;
+    background-image: url(../../images/Banner1menossaturado.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo{
+    height: 10vh;
     display: flex;
-    flex-flow: column;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    background-color: $color-primario;
+    color: $color-fondo;
+    h1{
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.slider{
+    height: 20vh;
+    display: flex;
+    flex-flow: row wrap;
+    // justify-content: center;
+    // align-items: center;
     animation: slide 20s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-    animation-duration: 15s;
+    animation-duration: 3s;
     @keyframes slide{
         0%{
-            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)), url(../images/Banner1.jpg);
+            background-image: url(../../images/Banner2.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
         35%{
-            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)), url(../images/Banner2.jpg);
+            background-image: url(../../images/Banner2b.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
         70%{
-            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)), url(../images/Banner3.jpg);
+            background-image: url(../../images/Banner2c.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
         100%{
-            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)), url(../images/Banner1.jpg);
+            background-image: url(../../images/Banner2.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         }
     }
-    h1{
-        color: $color-cuaternario;
+    div{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        a{
+            text-align: center;
+        }
     }
-    p{
-        color: $color-cuaternario;
-    }
+
 }
 /*---- DESKTOP/INDEX/MAIN/COLECCIONES ----*/
 .colecciones{
-    h2{
+    height: 40vh;
+    display: flex;
+    flex-flow: column nowrap;
+    div{
         margin-top: 5rem;
-        font-weight: bolder;
-        text-align: center;
-    }
-    .colecciones__felipe{
-        margin-top: 5rem;
-        height: 40rem;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),url(../images/FelipeWeb.jpg);
-        padding-top: 2.5rem;
-        padding-left: 5rem;
+        margin-bottom: 5rem;
         display: flex;
-        flex-flow: column wrap;
-    }
-    .colecciones__henry{
-        margin-top: 5rem;
-        height: 40rem;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/HenriWeb.jpg);
-        padding-top: 2.5rem;
-        padding-left: 5rem;
-        display: flex;
-        flex-flow: column wrap;
-    }
-    h3{
-        color: $color-cuaternario;
-        text-transform: uppercase;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
         font-weight: bold;
+        text-transform: uppercase;
+        // h2{
+        //     font-weight: bold;
+
+        // }
     }
+    article{
+        height: 80%;
+        background-image: url(../../images/Banner3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    // h2{
+    //     margin-top: 5rem;
+    //     font-weight: bolder;
+    //     text-align: center;
+    // }
+    // .colecciones__felipe{
+    //     margin-top: 5rem;
+    //     height: 40rem;
+    //     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),url(../images/FelipeWeb.jpg);
+    //     padding-top: 2.5rem;
+    //     padding-left: 5rem;
+    //     display: flex;
+    //     flex-flow: column wrap;
+    // }
+    // .colecciones__henry{
+    //     margin-top: 5rem;
+    //     height: 40rem;
+    //     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/HenriWeb.jpg);
+    //     padding-top: 2.5rem;
+    //     padding-left: 5rem;
+    //     display: flex;
+    //     flex-flow: column wrap;
+    // }
+    // h3{
+    //     color: $color-cuaternario;
+    //     text-transform: uppercase;
+    //     font-weight: bold;
+    // }
 }
 /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
 .categorias{
-    border-top: $borde;
-    h2{
-        margin-top: 2.5rem;
-        font-weight: bolder;
-        text-align: center;
-        margin-bottom: 5rem;
-    }
+    margin-top: 20rem;
+    // h2{
+    //     margin-top: 2.5rem;
+    //     font-weight: bolder;
+    //     text-align: center;
+    //     margin-bottom: 5rem;
+    // }
     .categorias__perros{
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),  url(../images/Perros.jpg);
+        background-image: url(../../images/Perros.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         line-height: 5rem;
+        h3{
+            margin-top: 30rem;
+            text-align: end;
+            color: $color-primario;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
     }
     .categorias__gatos{
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),  url(../images/Gatos.jpg);
+        background-image: url(../../images/Gatos.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         line-height: 5rem;
+        h3{
+            margin-top: 30rem;
+            text-align: end;
+            color: $color-primario;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
     }
     .categorias__humanos{
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),  url(../images/Humanos.jpg);
+        background-image: url(../../images/Humanos.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         line-height: 5rem;
-    }
-    h3{
-        margin-top: 30rem;
-        margin-left: 8rem;
-        color: $color-cuaternario;
-        font-weight: bolder;
-        text-transform: uppercase;
-    }
-    a{
-        margin-left: 8rem;
-        padding: 1.5rem;
+        h3{
+            margin-top: 30rem;
+            text-align: end;
+            color: $color-primario;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
     }
 }
 /*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
 .destacados{
-    border-top: $borde;
+    margin-top: 5rem;
     h2{
-        margin-top: 2.5rem;
-        font-weight: bolder;
+        font-weight: bold;
         text-align: center;
     }
     div{
@@ -140,13 +204,41 @@
 }
 /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
 .clientes{
-    border-top: $borde;
-    a{
-        margin-top: 2.5rem;
-        color: $color-primario;
-        text-decoration: none;
-        text-align: center;
-        margin-bottom: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    .clientes__newsletter{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        h3{
+            font-weight: bold;
+        }
+        .formulario{
+            margin-top: 5rem;
+            display: flex;
+            flex-flow: column nowrap;
+            .formulario__campos{
+                display: flex;
+                justify-content: space-evenly;
+                line-height: 3rem;
+            }
+            .formulario__boton{
+                text-align: center;
+                margin-top: 2.5rem;
+            }
+        }
+    }
+    .clientes__instagram{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        a{
+            font-weight: bold;
+            color: $color-primario;
+            text-decoration: none;
+            margin-bottom: 5rem;
+        }
     }
 }
 

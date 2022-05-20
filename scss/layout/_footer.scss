@@ -1,6 +1,6 @@
 /*---- FOOTER ----*/
 .footer{
-    background-color: $color-secundario;
+    background-color: $color-primario;
     .footer__contacto{
         margin-top: 4rem;
         display: flex;
@@ -13,7 +13,7 @@
             justify-content: flex-start;
             align-items: flex-start;
             h4{
-                color: $color-primario;
+                color: $color-fondo;
                 text-decoration: underline;
                 font-weight: bolder;
             }
@@ -23,11 +23,11 @@
                 li{
                     list-style: none;
                     a{
-                        color: $color-cuaternario;
+                        color: $color-fondo;
                         text-decoration: none;
                     }
                     .enlaceRoto{
-                        color: $color-terciario;
+                        color: $color-cuaternario;
                     }
                 }
             }
@@ -41,8 +41,8 @@
         align-items: center;
         h4{
             margin-bottom: 2rem;
-            color: $color-primario;
-            font-weight: bolder;
+            color: $color-fondo;
+            font-weight: bold;
         }
         ul{
             display: flex;
@@ -60,7 +60,7 @@
             align-items: center;
             h4{
                 margin-bottom: 2rem;
-                color: $color-primario;
+                color: $color-fondo;
             }
             a{
                 padding: 1rem 2rem 1rem 2rem;
@@ -74,8 +74,8 @@
         flex-flow: row wrap;
         justify-content: center;
         h4{
-            color: $color-primario;
-            font-weight: bolder;
+            color: $color-fondo;
+            font-weight: bold;
         }
         img{
             transform: scale(0.5);
@@ -87,7 +87,7 @@
         margin-bottom: 2.5rem;
         text-transform: uppercase;
         a{
-            color: $color-cuaternario;
+            color: $color-fondo;
             text-decoration: none;
         }
     }

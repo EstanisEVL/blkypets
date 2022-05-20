@@ -1,5 +1,6 @@
 /*---- HEADER/NAV----*/
 .header{
+    background-color: $color-primario;
     padding-top: 1vw;
     position: sticky;
     top:0;
@@ -67,11 +68,11 @@
                 }
                 a{
                     text-decoration: none;
-                    color: $color-cuaternario;
+                    color: $color-fondo;
                     text-transform: uppercase;
                     transition: color 0.5s;
                     &:hover{
-                        color: $color-secundario;
+                        color: $color-terciario;
                     }
                 }
                 ul{
@@ -81,6 +82,11 @@
                         width: 100%;
                         padding-top: 1.5vw;
                         padding-bottom: 1.5vw;
+                        a{
+                            &:hover{
+                                background-color: $color-primario;
+                            }
+                        }
                     }
                 }
             }
