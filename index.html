@@ -106,15 +106,30 @@
                     <!-- <h2 class="h2 fs-1 categorias__titulo">CATEGORÍAS</h2> -->
                     <article class="col-sm-12 col-md-4 col-lg-3 categorias__perros">
                         <h3 class="h3 fs-1">PERROS</h3>
-                        <a class="boton__categorias" href="pages/tienda.html#perros">Ver productos</a>
+                        <a class="boton__categorias" href="pages/tienda.html#perros">
+                            <span class="top-key"></span>
+                            <span class="text">ver productos</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-3 categorias__gatos">
                         <h3 class="h3 fs-1">GATOS</h3>
-                        <a class="boton__categorias" href="pages/tienda.html#gatos">Ver productos</a>
+                        <a class="boton__categorias" href="pages/tienda.html#gatos">
+                            <span class="top-key"></span>
+                            <span class="text">ver productos</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-3 categorias__humanos">
                         <h3 class="h3 fs-1">HUMANOS</h3>
-                        <a class="boton__categorias" href="pages/tienda.html#humanos">Ver productos</a>
+                        <a class="boton__categorias" href="pages/tienda.html#humanos">
+                            <span class="top-key"></span>
+                            <span class="text">ver productos</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
                     </article>
                 </section>
 
@@ -174,30 +189,44 @@
 
             <footer class="row footer">
                 <div class="col-sm-12 col-md-12 col-lg-4 footer__contacto">
-                    <div>
-                        <h4 class="h4">¿Necesitás ayuda?</h4>
-                        <ul>
-                            <li class="fs-4"><a href="pages/contacto.html#nuestros-productos">Nuestros productos</a></li>
-                            <li class="fs-4"><a href="pages/contacto.html#cambios-y-devoluciones">Cambios / Devoluciones</a></li>
-                            <li class="fs-4"><a href="pages/contacto.html#formas-de-envio">Formas de envío</a></li>
-                        </ul>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header h2" id="flush-headingOne">
+                                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">¿Necesitás ayuda?</button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <ul>
+                                    <li class="fs-4"><a href="pages/contacto.html#nuestros-productos">Nuestros productos</a></li>
+                                    <li class="fs-4"><a href="pages/contacto.html#cambios-y-devoluciones">Cambios / Devoluciones</a></li>
+                                    <li class="fs-4"><a href="pages/contacto.html#formas-de-envio">Formas de envío</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="h4">Tienda</h4>
-                        <ul>
-                            <li class="fs-4"><a href="pages/tienda.html#perros">Perros</a></li>
-                            <li class="fs-4"><a href="pages/tienda.html#gatos">Gatos</a></li>
-                            <li class="fs-4"><a href="pages/tienda.html#humanos">Humanos</a></li>
-                            <li class="fs-4"><a href="pages/venta-mayorista.html">Venta mayorista</a></li>
-                        </ul>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header h2" id="flush-headingTwo"><button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Tienda</button></h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <ul>
+                                    <li class="fs-4"><a href="pages/tienda.html#perros">Perros</a></li>
+                                    <li class="fs-4"><a href="pages/tienda.html#gatos">Gatos</a></li>
+                                    <li class="fs-4"><a href="pages/tienda.html#humanos">Humanos</a></li>
+                                    <li class="fs-4"><a href="pages/venta-mayorista.html">Venta mayorista</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="h4">Sobre nosotros</h4>
-                            <ul>
-                                <li class="fs-4"><a href="pages/nosotros.html">Nuestra historia</a></li>
-                                <li class="fs-4"><a href="pages/contacto.html">Contacto</a></li>
-                                <li class="fs-4"><a class="enlaceRoto" href="pages/error-404.html">Enlace roto</a></li>
-                            </ul>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header h2" id="flush-headingThree"><button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Sobre Nosotros</button></h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <ul>
+                                    <li class="fs-4"><a href="pages/nosotros.html">Nuestra historia</a></li>
+                                    <li class="fs-4"><a href="pages/contacto.html">Contacto</a></li>
+                                    <li class="fs-4"><a class="enlaceRoto" href="pages/error-404.html">Enlace roto</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 footer__redes">

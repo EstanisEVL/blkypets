@@ -183,10 +183,12 @@ body {
     line-height: 5rem; }
     .categorias .categorias__perros h3 {
       margin-top: 30rem;
-      text-align: end;
+      margin-left: 20rem;
       color: #131313;
       font-weight: bolder;
       text-transform: uppercase; }
+    .categorias .categorias__perros a {
+      margin-left: 20rem; }
   .categorias .categorias__gatos {
     background-image: url(../images/Gatos.jpg);
     background-position: center;
@@ -195,10 +197,12 @@ body {
     line-height: 5rem; }
     .categorias .categorias__gatos h3 {
       margin-top: 30rem;
-      text-align: end;
+      margin-left: 20rem;
       color: #131313;
       font-weight: bolder;
       text-transform: uppercase; }
+    .categorias .categorias__gatos a {
+      margin-left: 20rem; }
   .categorias .categorias__humanos {
     background-image: url(../images/Humanos.jpg);
     background-position: center;
@@ -207,10 +211,12 @@ body {
     line-height: 5rem; }
     .categorias .categorias__humanos h3 {
       margin-top: 30rem;
-      text-align: end;
+      margin-left: 20rem;
       color: #131313;
       font-weight: bolder;
       text-transform: uppercase; }
+    .categorias .categorias__humanos a {
+      margin-left: 20rem; }
 
 /*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
 .destacados {
@@ -659,27 +665,19 @@ body {
     margin-top: 4rem;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: flex-start; }
-    .footer .footer__contacto div {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-start;
-      align-items: flex-start; }
-      .footer .footer__contacto div h4 {
-        color: #fcfcfc;
-        text-decoration: underline;
-        font-weight: bolder; }
-      .footer .footer__contacto div ul {
-        padding: 0;
-        line-height: 4rem; }
-        .footer .footer__contacto div ul li {
-          list-style: none; }
-          .footer .footer__contacto div ul li a {
-            color: #fcfcfc;
-            text-decoration: none; }
-          .footer .footer__contacto div ul li .enlaceRoto {
-            color: #e0005a; }
+    justify-content: space-around; }
+    .footer .footer__contacto div div h2 button {
+      font-weight: bold;
+      color: #fcfcfc;
+      background-color: #131313; }
+    .footer .footer__contacto div div div ul {
+      background-color: #131313; }
+      .footer .footer__contacto div div div ul li {
+        list-style: none;
+        line-height: 5rem; }
+        .footer .footer__contacto div div div ul li a {
+          color: #fcfcfc;
+          text-decoration: none; }
   .footer .footer__redes {
     margin-top: 4rem;
     display: flex;

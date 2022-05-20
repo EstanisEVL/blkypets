@@ -103,44 +103,10 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    // h2{
-    //     margin-top: 5rem;
-    //     font-weight: bolder;
-    //     text-align: center;
-    // }
-    // .colecciones__felipe{
-    //     margin-top: 5rem;
-    //     height: 40rem;
-    //     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),url(../images/FelipeWeb.jpg);
-    //     padding-top: 2.5rem;
-    //     padding-left: 5rem;
-    //     display: flex;
-    //     flex-flow: column wrap;
-    // }
-    // .colecciones__henry{
-    //     margin-top: 5rem;
-    //     height: 40rem;
-    //     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/HenriWeb.jpg);
-    //     padding-top: 2.5rem;
-    //     padding-left: 5rem;
-    //     display: flex;
-    //     flex-flow: column wrap;
-    // }
-    // h3{
-    //     color: $color-cuaternario;
-    //     text-transform: uppercase;
-    //     font-weight: bold;
-    // }
 }
 /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
 .categorias{
     margin-top: 20rem;
-    // h2{
-    //     margin-top: 2.5rem;
-    //     font-weight: bolder;
-    //     text-align: center;
-    //     margin-bottom: 5rem;
-    // }
     .categorias__perros{
         background-image: url(../images/Perros.jpg);
         background-position: center;
@@ -149,10 +115,13 @@
         line-height: 5rem;
         h3{
             margin-top: 30rem;
-            text-align: end;
+            margin-left: 20rem;
             color: $color-primario;
             font-weight: bolder;
             text-transform: uppercase;
+        }
+        a{
+            margin-left: 20rem;
         }
     }
     .categorias__gatos{
@@ -163,10 +132,13 @@
         line-height: 5rem;
         h3{
             margin-top: 30rem;
-            text-align: end;
+            margin-left: 20rem;
             color: $color-primario;
             font-weight: bolder;
             text-transform: uppercase;
+        }
+        a{
+            margin-left: 20rem;
         }
     }
     .categorias__humanos{
@@ -177,10 +149,13 @@
         line-height: 5rem;
         h3{
             margin-top: 30rem;
-            text-align: end;
+            margin-left: 20rem;
             color: $color-primario;
             font-weight: bolder;
             text-transform: uppercase;
+        }
+        a{
+            margin-left: 20rem;
         }
     }
 }
