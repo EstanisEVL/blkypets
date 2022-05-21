@@ -106,56 +106,72 @@
 }
 /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
 .categorias{
+    height: 50vh;
     margin-top: 20rem;
     .categorias__perros{
-        background-image: url(../images/Perros.jpg);
+        background-image: url(../images/PerrosBN.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         line-height: 5rem;
         h3{
-            margin-top: 30rem;
-            margin-left: 20rem;
-            color: $color-primario;
+            margin-top: 33rem;
+            margin-left: 30rem;
+            color: transparent;
             font-weight: bolder;
             text-transform: uppercase;
         }
         a{
-            margin-left: 20rem;
+            color: $color-primario;
+            text-decoration: none;
+            margin-left: 26rem;
+            &:hover{
+                color: $color-fondo;
+            }
         }
     }
     .categorias__gatos{
-        background-image: url(../images/Gatos.jpg);
+        background-image: url(../images/GatosBN.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         line-height: 5rem;
         h3{
-            margin-top: 30rem;
-            margin-left: 20rem;
-            color: $color-primario;
+            margin-top: 33rem;
+            margin-left: 30rem;
+            color: transparent;
             font-weight: bolder;
             text-transform: uppercase;
         }
         a{
-            margin-left: 20rem;
+            color: $color-primario;
+            text-decoration: none;
+            margin-left: 27rem;
+            &:hover{
+                color: $color-fondo;
+            }
         }
     }
     .categorias__humanos{
-        background-image: url(../images/Humanos.jpg);
+        background-image: url(../images/HumanosBN.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         line-height: 5rem;
         h3{
-            margin-top: 30rem;
-            margin-left: 20rem;
-            color: $color-primario;
+            margin-top: 33rem;
+            margin-left: 30rem;
+            color: transparent;
             font-weight: bolder;
             text-transform: uppercase;
         }
         a{
-            margin-left: 20rem;
+            color: $color-primario;
+            text-decoration: none;
+            margin-left: 23rem;
+            &:hover{
+                color: $color-fondo;
+            }
         }
     }
 }
@@ -298,7 +314,7 @@
     margin-top: 2rem;
     color:$color-primario;
     font-weight: bold;
-    background-image: url(../images/Perros.jpg);
+    background-image: url(../../images/PerrosBN.jpg);
     background-size: cover;
     text-align: center;
 }
@@ -316,7 +332,7 @@
     color: $color-primario;
     font-weight: bold;
     text-align: end;
-    background-image: url(../images/Gatos.jpg);
+    background-image: url(../images/GatosBN.jpg);
     background-size: cover;
     text-align: center;
 }
@@ -329,7 +345,7 @@
     margin-top: 10rem;
     color: $color-primario;
     font-weight: bold;
-    background-image: url(../images/Humanos.jpg);
+    background-image: url(../images/HumanosBN.jpg);
     background-size: cover;
     text-align: center;
 }
@@ -345,10 +361,17 @@
 }
 /*---- DESKTOP/VENTA MAYORISTA ----*/
 /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV1 ----*/
+.main__mayoristas{
+    background-color: $color-primario;
+}
+
 .mayoristas__div1{
-    background-color: $color-terciario;
+    height: 30vh;
+    background-image: url(../../images/Banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     h1{
-        color: $color-cuaternario;
+        color: $color-fondo;
         margin-top: 5rem;
         margin-bottom: 5rem;
         font-weight: bolder;
@@ -362,24 +385,26 @@
     justify-content: flex-start;
     align-items: center;
     h2{
-        margin-top: 5rem;
+        font-size: 4rem;
+        margin-top: 10rem;
         margin-bottom: 5rem;
-        color: $color-primario;
-        font-weight: bolder;
+        color: $color-cuaternario;
+        text-transform: lowercase;
+        font-weight: bold;
         text-align: center;
     }
-    p{
-        margin-bottom: 5rem;
-        color:$color-primario;
-        text-align: justify;
-        a{
-            color: $color-primario;
-            text-transform: lowercase;
-            font-style: italic;
-            font-weight: bold;
-            text-decoration: none;
-        }
-    }
+    // p{
+    //     margin-bottom: 5rem;
+    //     color:$color-primario;
+    //     text-align: justify;
+    //     a{
+    //         color: $color-primario;
+    //         text-transform: lowercase;
+    //         font-style: italic;
+    //         font-weight: bold;
+    //         text-decoration: none;
+    //     }
+    // }
 }
 /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV3 ----*/
 .mayoristas__div3{
@@ -388,17 +413,26 @@
     justify-content: flex-start;
     align-items: center;
     h2{
+        font-size: 4rem;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        color: $color-cuaternario;
+        text-transform: lowercase;
+        font-weight: bold;
+        text-align: center;
+    }
+    h3{
         margin-top: 5rem;
         margin-bottom: 5rem;
-        color: $color-primario;
+        color: $color-fondo;
         font-weight: bold;
         text-align: center;
     }
     p{
-        color: $color-primario;
+        color: $color-fondo;
         text-align: justify;
         a{
-            color: $color-primario;
+            color: $color-fondo;
             text-transform: lowercase;
             font-style: italic;
             font-weight: bold;
@@ -408,47 +442,62 @@
 }
 /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV4 ----*/
 .mayoristas__div4{
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 10rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: center;
     h3{
-        margin-top: 5rem;
+        margin-top: 10rem;
         margin-bottom: 5rem;
-        color: $color-primario;
-        font-style: italic;
+        color: $color-fondo;
         font-weight: bold;
         text-align: center;
+    }
+    p{
+        color: $color-fondo;
+        text-align: justify;
+        a{
+            color: $color-fondo;
+            text-transform: lowercase;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: none;
+        }
     }
 }
 
 /*---- DESKTOP/NOSOTROS ----*/
 /*---- DESKTOP/NOSOTROS/MAIN ----*/
 .main__nosotros{
-    background-color: $color-cuaternario;
+    background-color: $color-fondo;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    div h1{
-        color: $color-primario;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        font-weight: bolder;
-        text-align: center;
+    div{
+        h1{
+            color: $color-cuaternario;
+            font-size: 4rem;
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+            text-transform: lowercase;
+            font-weight: bold;
+            text-align: center;
+        }
     }
 }
 /*---- DESKTOP/NOSOTROS/SECCION 1----*/
 .nosotros__seccion1{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    // display: flex;
+    // justify-content: center;
+    // align-items: flex-start;
     div{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        // display:flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: flex-start;
         h2{
             color: $color-primario;
             font-weight: bold;
@@ -462,15 +511,26 @@
 }
 /*---- DESKTOP/NOSOTROS/SECCION 2----*/
 .nosotros__seccion2{
+    margin-top: 10rem;
     display: flex;
-    flex-direction: row-reverse;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     div{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:flex-end;
+        h2{
+            font-size: 3rem;
+            color: $color-cuaternario;
+            text-transform: lowercase;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    div{
+        // display:flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items:flex-end;
         margin-bottom: 5rem;
         p{
             color: $color-primario;
