@@ -540,129 +540,100 @@ body {
 
 /*---- DESKTOP/CONTACTO ----*/
 /*---- DESKTOP/CONTACTO/MAIN ----*/
-.main__contacto h1 {
-  color: #131313;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  font-weight: bolder;
-  text-align: center; }
+.contacto__fondo {
+  background-color: #131313; }
 
-/*---- DESKTOP/CONTACTO/MAIN/FORMULARIO ----*/
-.container__contacto {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center; }
-  .container__contacto h2 {
-    color: #131313;
-    text-transform: uppercase;
+.main__contacto {
+  height: 30vh;
+  background-image: url(../../images/Banner3.jpg);
+  background-size: cover; }
+  .main__contacto h1 {
+    color: #fcfcfc;
+    font-weight: bolder;
     text-align: center; }
-  .container__contacto form {
-    border: solid 0.2rem #131313;
-    margin-top: 5rem;
-    padding: 10rem;
-    align-self: center;
-    width: 80%;
-    text-align: center;
-    font-family: helvetica;
-    text-transform: uppercase;
-    font-weight: bold; }
-    .container__contacto form img {
-      margin-bottom: 10rem;
-      width: 10%; }
-    .container__contacto form div select {
-      font-family: helvetica;
-      text-transform: uppercase; }
-
-.contenedor__checkbox {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center; }
-
-.contenedor__botones {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-
-.formulario__textarea {
-  resize: none; }
 
 /*---- DESKTOP/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
 .contacto__preguntasFrecuentes {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center; }
   .contacto__preguntasFrecuentes h2 {
     margin-top: 5rem;
-    color: #131313;
+    color: #00bbe0;
+    font-size: 4rem;
     font-weight: bold;
-    text-align: center;
+    text-transform: lowercase;
     margin-bottom: 5rem; }
-
-.slide-in-right {
-  animation: slide-in-right 2s ease-in; }
-
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
-
-.slide-in-left {
-  animation: slide-in-left 2s ease-in both; }
-
-@keyframes slide-in-left {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
+  .contacto__preguntasFrecuentes div div h3 button {
+    color: #fcfcfc;
+    background-color: #131313; }
 
 .preguntasFrecuentes__nuestrosProductos {
   display: flex;
   flex-flow: column wrap;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  color: #fcfcfc; }
   .preguntasFrecuentes__nuestrosProductos h3 {
     margin-top: 2rem;
-    font-weight: bold;
-    text-align: center; }
+    font-weight: bold; }
   .preguntasFrecuentes__nuestrosProductos h4 {
-    margin-top: 2rem;
-    font-weight: bold;
-    text-align: left; }
+    margin-top: 2rem; }
   .preguntasFrecuentes__nuestrosProductos p {
     margin-top: 2rem;
     text-align: justify; }
-  .preguntasFrecuentes__nuestrosProductos a {
-    color: #131313;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: none; }
+    .preguntasFrecuentes__nuestrosProductos p a {
+      color: #fcfcfc;
+      font-weight: bold;
+      font-style: italic;
+      text-decoration: none; }
 
-.contacto__cambiosDevoluciones {
+/*---- DESKTOP/CONTACTO/MAIN/FORMULARIO ----*/
+.container__contacto {
   display: flex;
-  flex-direction: row-reverse; }
+  flex-flow: column nowrap; }
+  .container__contacto h2 {
+    margin-top: 5rem;
+    color: #00bbe0;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-bottom: 5rem; }
+  .container__contacto form {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fcfcfc; }
+    .container__contacto form div select {
+      font-family: now;
+      text-transform: uppercase; }
+
+.contenedor__botones {
+  display: flex;
+  justify-content: space-between; }
+
+.formulario__textarea {
+  resize: none; }
 
 /*---- DESKTOP/CONTACTO/MAIN/NEWSLETTER ----*/
-.newsletter {
-  border-top: solid 0.2rem #131313;
-  color: #131313; }
-  .newsletter h3 {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+.contacto__newsletter h3 {
+  color: #00bbe0;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  font-weight: bold; }
+
+.contacto__newsletter .newsletter__formulario {
+  display: flex;
+  flex-flow: column nowrap;
+  color: #fcfcfc;
+  margin-bottom: 5rem;
+  text-transform: uppercase; }
+  .contacto__newsletter .newsletter__formulario .newsletter__campos {
+    display: flex;
+    flex-flow: row nowrap; }
+  .contacto__newsletter .newsletter__formulario .newsletter__boton {
     text-align: center;
-    font-weight: bolder;
-    font-style: italic; }
-  .newsletter form {
-    margin-bottom: 5rem;
-    text-transform: uppercase; }
+    margin-top: 2.5rem; }
 
 /*---- DESKTOP/ERROR-404/MAIN ----*/
 .seccion__error {
@@ -967,7 +938,7 @@ body {
       width: 0; }
 
 /*---- Boton newsletter ----*/
-.boton__newsletter, .boton__categorias {
+.boton__newsletter, .boton__categorias, .boton__formulario {
   color: #fcfcfc;
   padding: 17px 40px;
   border-radius: 50px;
@@ -977,12 +948,12 @@ body {
   text-transform: uppercase;
   font-size: 15px;
   transition: all .5s ease; }
-  .boton__newsletter:hover, .boton__categorias:hover {
+  .boton__newsletter:hover, .boton__categorias:hover, .boton__formulario:hover {
     letter-spacing: 3px;
     background-color: #a91fff;
     color: #fcfcfc;
     box-shadow: #a91fff 0px 7px 29px 0px; }
-  .boton__newsletter:active, .boton__categorias:active {
+  .boton__newsletter:active, .boton__categorias:active, .boton__formulario:active {
     letter-spacing: 3px;
     background-color: #a91fff;
     color: #fcfcfc;
@@ -991,6 +962,10 @@ body {
     transition: 100ms; }
 
 .boton__categorias {
+  color: #131313;
+  background-color: #fcfcfc; }
+
+.boton__formulario {
   color: #131313;
   background-color: #fcfcfc; }
 

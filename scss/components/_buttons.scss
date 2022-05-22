@@ -285,3 +285,8 @@
 	color: $color-primario;
 	background-color: $color-fondo;
 }
+.boton__formulario{
+	@extend .boton__newsletter;
+	color: $color-primario;
+	background-color: $color-fondo;
+}

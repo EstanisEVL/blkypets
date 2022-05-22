@@ -12,15 +12,15 @@
     </head>
     <body>
         <div class="container-fluid">
-            <header class="row header bg-black">
+            <header class="row header">
                 <nav class="nav navbar navbar-expand-lg">
                     <div class="container-fluid justify-content-center">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contenido" aria-controls="contenido" aria-expanded="false" aria-label="Toggle navigation">
-                        <img class="img-fluid navbar-toggler-icon" src="../images/BarrasMenuw.png" alt="expandir" title="expandir"> </button>
+                        <img class="img-fluid navbar-toggler-icon" src="../images/BarrasMenuw.png" alt="expandir" title="Expandir"> </button>
                     <div class="collapse navbar-collapse align-content-center" id="contenido">
                         <ul class="navbar-nav container-fluid justify-content-evenly">
                             <li class="nav-item dropdown">
-                                <a class="nav-link fs-2" href="tienda.html#perros" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perros</a>
+                                <a class="nav-link fs-2" href="tienda.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item fs-4" href="tienda.html#perros">Arneses</a></li>
                                     <li><a class="dropdown-item fs-4" href="tienda.html#perros">Collares</a></li>
@@ -30,28 +30,8 @@
                                     <li><a class="dropdown-item fs-4" href="tienda.html#perros">Pretales</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link fs-2" href="tienda.html#gatos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gatos</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item fs-4" href="tienda.html#gatos">Arneses</a></li>
-                                    <li><a class="dropdown-item fs-4" href="tienda.html#gatos">Collares</a></li>
-                                    <li><a class="dropdown-item fs-4" href="tienda.html#gatos">Correas</a></li>
-                                    <li><a class="dropdown-item fs-4" href="tienda.html#gatos">Moños</a></li>
-                                    <li><a class="dropdown-item fs-4" href="tienda.html#gatos">Portabolsitas</a></li>
-                                    <li><a class="dropdown-item fs-4" href="tienda.html#gatos">Pretales</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link fs-2" href="tienda.html#humanos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Humanos</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item fs-4" href="tienda.html#humanos">Giftcards</a></li>
-                                    <li><a class="dropdown-item fs-4" href="tienda.html#humanos">Gorros</a></li>
-                                    <li><a class="dropdown-item fs-4" href="tienda.html#humanos">Llaveros</a></li>
-                                    <li><a class="dropdown-item fs-4" href="tienda.html#humanos">Remeras</a></li>
-                                </ul>
-                            </li>
-                            <a class="navbar-brand" href="../index.html"><img class="img-fluid" src="../images/logo0blanco.png" alt="logo BLKYPets" title="Ir a Inicio"></a>
                             <li class="nav-item"><a class="nav-link fs-2" href="venta-mayorista.html">Mayoristas</a></li>
+                            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="../images/logo0blanco.png" alt="logo BLKYPets" title="Ir a Inicio"></a>
                             <li class="nav-item"><a class="nav-link fs-2" href="nosotros.html">Nosotros</a></li>
                             <li class="nav-item"><a class="nav-link fs-2" href="#">Contacto</a></li>
                             <li class="nav-item carrito"><a class="nav-link" href="#"><img class="img-fluid" src="../images/gato_carrito.png" alt="carrito" title="Ir al carrito"></a></li>
@@ -60,133 +40,222 @@
                 </nav>
             </header>
 
-            <main class="row main__contacto fondo">
-                <div class="col">
+            <main class="row contacto__fondo">
+                <div class="col-lg-12 main__contacto">
                     <h1 class="h1">CONTACTO</h1>
                 </div>
 
-                <div class="row container__contacto">
-                    <h2 class="h2 fs-2">Formulario de contacto</h2>
-                    <form class="col" action="../php/form.php" method="post">
-                        <img class="img-fluid" src="../images/logo0.png" alt="logo blkypets">
-                        <div class="form-group mb-3">
-                            <label class="fs-3" for="nombre">Nombre completo:</label>
-                            <input class="form-control form-control-lg" type="text" name="nombre" required>
+                <div class="row sinMargen">
+                    <div class="col-lg-5 offset-lg-1 contacto__preguntasFrecuentes">
+                        <h2 class="h2" id="faq">PREGUNTAS FRECUENTES</h2>
+                            <!-- CORREGIR QUE NO SE MUEVA EL H2 -->
+                        <div class="preguntasFrecuentes__nuestrosProductos">
+                            <h3 class="h3" id="nuestros-productos">PRODUCTOS</h3>
+                            <div class="accordion accordion-flush" id="accordionFlush">
+                                <div class="accordion-item-dark">
+                                    <h3 class="h3 accordion-header" id="flush-heading1">
+                                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">¿Cómo realizo el pago de mis productos?</button>
+                                    </h3>
+                                    <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlush">
+                                        <div class="accordion-body">
+                                            <p class="fs-5">Una vez que hayas colocado todos los productos que desees comprar en la canasta, simplemente hace clic en ‘Pagar’ y seguí las instrucciones para ingresar los detalles de facturación y envío. Aceptamos los siguientes métodos de pago: Mercadopago  (Tarjetas de crédito y débito, efectivo), Transferencia o depósito bancario.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-dark">
+                                    <h3 class="h3 accordion-header" id="flush-heading2">
+                                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">¿Qué talle necesito para mi mascota?</button>
+                                    </h3>
+                                    <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlush">
+                                        <div class="accordion-body">
+                                            <p class="fs-5">En BLKY manejamos una tabla de talles propia, por lo tanto, es muy importante que antes de comprar midas a tu mascota y te asegures de estar eligiendo el talle correcto. Para ésto, en cada página de producto colocamos una guía con distintas medidas para que busques las que correspondan a tu mascota.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-dark">
+                                    <h3 class="h3 accordion-header" id="flush-heading3">
+                                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">¿Qué tipo de garantía ofrecen?</button>
+                                    </h3>
+                                    <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlush">
+                                        <div class="accordion-body">
+                                            <p class="fs-5">Tenemos una garantía de 30 días por defectos. Esto no incluye daños por desgaste o problemas de masticación, solo defectos de fabricación. Para que podamos ayudarte, nos tenes que mandar un correo electrónico a <a href="mailto:info@blkypets.com">info@blkypets.com</a> con fotos del problema y tu comprobante de la compra.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group mb-3">
-                            <label class="fs-3" for="email">Email:</label>
-                            <input class="form-control form-control-lg" type="email" name="email" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label class="fs-3" for="mascota">Mascota:</label>
-                            <select class="form-select form-select-lg" aria-label=".form-select-lg example" name="mascota">
-                                <option selected>¿Qué mascota tenés?</option>
-                                <option value="1">Perro</option>
-                                <option value="2">Gato</option>
-                                <option value="3">Ambos</option>
-                                <option value="4">Otros</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="msg" class="form-label"></label>
-                            <textarea class="form-control form-control-lg formulario__textarea fs-3" id="exampleFormControlTextarea1" rows="15" placeholder="Dejanos acá tu pedido y/o comentario..." name="msg"></textarea>
-                        </div>
-                        <div class="contenedor__botones">
-                            <button type="sumbit" class="btn boton--formulario fs-5" name="enviar">Enviar</button>
-                            <button type="reset" class="btn boton--formulario fs-5">Limpiar</button>
-                        </div>
-                    </form>
-                </div>
 
-                <div class="row contacto__preguntasFrecuentes">
-                    <h2 class="h2" id="faq">PREGUNTAS FRECUENTES</h2>
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-6 preguntasFrecuentes__nuestrosProductos">
-                            <h3 class="h3" id="nuestros-productos">NUESTROS PRODUCTOS</h3>
-                            <h4 class="h4">¿Cómo realizo el pago de mis productos?</h4>
-                            <p class="fs-5">Una vez que hayas colocado todos los productos que desees comprar en la canasta, simplemente hace clic en ‘Pagar’ y seguí las instrucciones para ingresar los detalles de facturación y envío. Aceptamos los siguientes métodos de pago: Mercadopago  (Tarjetas de crédito y débito, efectivo), Transferencia o depósito bancario.</p>
-                            <h4 class="h4">¿Qué talle necesito para mi mascota?</h4>
-                            <p class="fs-5">En BLKY manejamos una tabla de talles propia, por lo tanto, es muy importante que antes de comprar midas a tu mascota y te asegures de estar eligiendo el talle correcto. Para ésto, en cada página de producto colocamos una guía con distintas medidas para que busques las que correspondan a tu mascota.</p>
-                            <h4 class="h4">¿Qué tipo de garantía ofrecen?</h4>
-                            <p class="fs-5">Tenemos una garantía de 30 días por defectos. Esto no incluye daños por desgaste o problemas de masticación, solo defectos de fabricación. Para que podamos ayudarte, nos tenes que mandar un correo electrónico a <a href="mailto:info@blkypets.com">info@blkypets.com</a> con fotos del problema y tu comprobante de la compra.</p>
-                        </div>
-                        <div class="col-sm-12 col-lg-6 slide-in-right">
-                            <img class="img-fluid" src="../images/foto muestra contacto 1.jpg" alt="foto nuestros productos">
-                        </div>
-                    </div>
-                    <div class="row contacto__cambiosDevoluciones">
-                        <div class="col-sm-12 col-lg-6 preguntasFrecuentes__nuestrosProductos">
+                        <div class="preguntasFrecuentes__nuestrosProductos">
                             <h3 class="h3" id="cambios-y-devoluciones">CAMBIOS Y DEVOLUCIONES</h3>
-                            <h4 class="h4">¿Cuál es su política de devoluciones?</h4>
-                            <p class="fs-5">En BLKY queremos asegurarnos de que vos y tu mascota estén contentos con nuestros productos. Pero si no estás satisfecho con tu compra, dentro de los 30 días de haberla recibido, podés devolverla para obtener un crédito o reembolso. El producto devuelto debe estar en perfectas condiciones, sin usar y con posibilidad de ser vendido nuevamente. Una vez recibido el artículo devuelto y habiendo chequeado que cumpla con lo anterior, te reembolsaremos el costo del artículo, sin incluir los costos de envío. Para procesar la devolución, lee “¿Cómo devuelvo/cambio un producto?”. Para ayudarnos a mejorar en el futuro, podés contarnos por qué estás devolviendo el producto. El cliente será responsable de los gastos de envío asociados con el envío de la devolución. El costo de envío original no es reembolsable.</p>
-                            <h4 class="h4">¿Cómo devuelvo/cambio un producto?</h4>
-                            <p class="fs-5">Lo primero que tenés que hacer es contactarnos, ya sea por nuestro correo electrónico (<a href="mailto:info@blkypets.com">info@blkypets.com</a>), redes sociales o el número de teléfono que te proporcionamos cuando realizaste la compra. Siguiendo las instrucciones que te daremos, deberás colocar los artículos en un paquete e indicar en una nota tu número de pedido, dirección de correo electrónico y el motivo de la devolución/cambio. Si preferís no pagar envio, podes pasar por nuestro taller coordinando previamente con nosotros para realizar la devolución/cambio. El costo del envío no está cubierto por BLKY, a menos de que se trate de una devolución/cambio por defectos, como establece nuestra garantía de 30 días. Una vez que recibamos los artículos, emitiremos el reembolso.</p>
-                            <h4 class="h4">¿Puedo cancelar una compra que ya confirmé?</h4>
-                            <p class="fs-5">Ponete en contacto con nosotros tan pronto como sea posible si deseas cancelar tu pedido. Haremos todo lo posible para cancelarlo. En caso de que tu pedido ya haya sido despachado es posible que necesitemos procesar una devolución una vez que se haya entregado.</p>
+                            <div class="accordion accordion-flush" id="accordionFlush">
+                                <div class="accordion-item-dark">
+                                    <h3 class="h3 accordion-header" id="flush-heading4">
+                                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">¿Cuál es su política de devoluciones?</button>
+                                    </h3>
+                                    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlush">
+                                        <div class="accordion-body">
+                                            <p class="fs-5">En BLKY queremos asegurarnos de que vos y tu mascota estén contentos con nuestros productos. Pero si no estás satisfecho con tu compra, dentro de los 30 días de haberla recibido, podés devolverla para obtener un crédito o reembolso. El producto devuelto debe estar en perfectas condiciones, sin usar y con posibilidad de ser vendido nuevamente. Una vez recibido el artículo devuelto y habiendo chequeado que cumpla con lo anterior, te reembolsaremos el costo del artículo, sin incluir los costos de envío. Para procesar la devolución, lee “¿Cómo devuelvo/cambio un producto?”. Para ayudarnos a mejorar en el futuro, podés contarnos por qué estás devolviendo el producto. El cliente será responsable de los gastos de envío asociados con el envío de la devolución. El costo de envío original no es reembolsable.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-dark">
+                                    <h3 class="h3 accordion-header" id="flush-heading5">
+                                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">¿Cómo devuelvo/cambio un producto?</button>
+                                    </h3>
+                                    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlush">
+                                        <div class="accordion-body">
+                                            <p class="fs-5">Lo primero que tenés que hacer es contactarnos, ya sea por nuestro correo electrónico (<a href="mailto:info@blkypets.com">info@blkypets.com</a>), redes sociales o el número de teléfono que te proporcionamos cuando realizaste la compra. Siguiendo las instrucciones que te daremos, deberás colocar los artículos en un paquete e indicar en una nota tu número de pedido, dirección de correo electrónico y el motivo de la devolución/cambio. Si preferís no pagar envio, podes pasar por nuestro taller coordinando previamente con nosotros para realizar la devolución/cambio. El costo del envío no está cubierto por BLKY, a menos de que se trate de una devolución/cambio por defectos, como establece nuestra garantía de 30 días. Una vez que recibamos los artículos, emitiremos el reembolso.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-dark">
+                                    <h3 class="h3 accordion-header" id="flush-heading6">
+                                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">¿Puedo cancelar una compra que ya confirmé?</button>
+                                    </h3>
+                                    <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlush">
+                                        <div class="accordion-body">
+                                            <p class="fs-5">Ponete en contacto con nosotros tan pronto como sea posible si deseas cancelar tu pedido. Haremos todo lo posible para cancelarlo. En caso de que tu pedido ya haya sido despachado es posible que necesitemos procesar una devolución una vez que se haya entregado.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
-                        <div class="col-sm-12 col-lg-6 slide-in-left">
-                            <img class="img-fluid" src="../images/foto muestra contacto 2.jpg" alt="foto cambios y devoluciones">
+
+                        <div class="preguntasFrecuentes__nuestrosProductos">
+                            <h3 class="h3" id="formas-de-envio">FORMAS DE ENVÍO</h3>
+                            <div class="accordion accordion-flush" id="accordionFlush">
+                                <div class="accordion-item-dark">
+                                    <h3 class="h3 accordion-header" id="flush-heading7">
+                                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">¿Qué opciones de envío tienen?</button>
+                                    </h3>
+                                    <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlush">
+                                        <div class="accordion-body">
+                                            <p class="fs-5">A todo el país: Envío a domicilio por Mercadoenvíos / Zippin. Dentro de CABA: Motomensajería. Envío digital: Válido solo para giftcards. Entregas gratis en nuestro taller ubicado en el barrio de Saavedra, Ciudad Autónoma de Buenos Aires.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-dark">
+                                    <h3 class="h3 accordion-header" id="flush-heading8">
+                                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">¿Cómo puedo seguir el estado de mi envío?</button>
+                                    </h3>
+                                    <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8" data-bs-parent="#accordionFlush">
+                                        <div class="accordion-body">
+                                            <p class="fs-5">Una vez que hayamos despachado tu paquete con el método de envío que hayas elegido, te enviaremos el código de seguimiento (sólo aplica a envíos por correo) para que puedas seguir el estado del envío. En caso de que necesites coordinar con nosotros el envío, nos vamos a estar poniendo en contacto con vos una vez que realices la compra.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item-dark">
+                                    <h3 class="h3 accordion-header" id="flush-heading9">
+                                    <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">¿Realizan envíos a todo el mundo?</button>
+                                    </h3>
+                                    <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9" data-bs-parent="#accordionFlush">
+                                        <div class="accordion-body">
+                                            <p class="fs-5">Por el momento solo realizamos envíos internacionales para compras mayoristas y coordinando previamente todos los detalles, podés mandarnos un mail a <a href="mailto:info@blkypets.com">info@blkypets.com</a> para saber más.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-6 preguntasFrecuentes__nuestrosProductos">
-                            <h3 class="h3" id="formas-de-envio">FORMAS DE ENVÍO</h3>
-                            <h4 class="h4">¿Qué opciones de envío tienen?</h4>
-                            <p class="fs-5">A todo el país: Envío a domicilio por Mercadoenvíos / Zippin. Dentro de CABA: Motomensajería. Envío digital: Válido solo para giftcards. Entregas gratis en nuestro taller ubicado en el barrio de Saavedra, Ciudad Autónoma de Buenos Aires.</p>
-                            <h4 class="h4">¿Cómo puedo seguir el estado de mi envío?</h4>
-                            <p class="fs-5">Una vez que hayamos despachado tu paquete con el método de envío que hayas elegido, te enviaremos el código de seguimiento (sólo aplica a envíos por correo) para que puedas seguir el estado del envío. En caso de que necesites coordinar con nosotros el envío, nos vamos a estar poniendo en contacto con vos una vez que realices la compra.</p>
-                            <h4 class="h4">¿Realizan envíos a todo el mundo?</h4>
-                            <p class="fs-5">Por el momento solo realizamos envíos internacionales para compras mayoristas y coordinando previamente todos los detalles, podés mandarnos un mail a <a href="mailto:info@blkypets.com">info@blkypets.com</a> para saber más.</p>
+    
+                    <div class="col-lg-4 offset-lg-1">
+                        <div class="row container__contacto">
+                            <h2 class="h2">contacto</h2>
+                            <form class="form" action="../php/form.php" method="post">
+                                <div class="form-group">
+                                    <label class="fs-3" for="nombre">Nombre completo:</label>
+                                    <input class="form-control form-control-lg" type="text" name="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="fs-3" for="email">Email:</label>
+                                    <input class="form-control form-control-lg" type="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="fs-3" for="mascota">Mascota:</label>
+                                    <select class="form-select form-select-lg" aria-label=".form-select-lg example" name="mascota">
+                                        <option selected>¿Qué mascota tenés?</option>
+                                        <option value="1">Perro</option>
+                                        <option value="2">Gato</option>
+                                        <option value="3">Ambos</option>
+                                        <option value="4">Otros</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="msg" class="form-label"></label>
+                                    <textarea class="form-control form-control-lg formulario__textarea fs-3" id="exampleFormControlTextarea1" rows="15" placeholder="Dejanos acá tu pedido y/o comentario..." name="msg"></textarea>
+                                </div>
+                                <div class="contenedor__botones">
+                                    <button type="sumbit" class="boton__formulario fs-5" name="enviar">Enviar</button>
+                                    <button type="reset" class="boton__formulario fs-5">Limpiar</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="col-sm-12 col-lg-6 slide-in-right">
-                            <img class="img-fluid" src="../images/foto muestra contacto 3.jpg" alt="foto formas de envio">
+                        <div class="contacto__newsletter">
+                            <h3 class="h3">Suscribite al newsletter</h3>
+                            <form class="newsletter__formulario" action="../php/newsletter.php" method="post">
+                                <div class="newsletter__campos">
+                                    <div class="form-group">
+                                        <label class="fs-3" for="email"></label>
+                                        <input type="email" class="form-control form-control-lg" name="email" aria-label="Email" placeholder="Email" required>
+                                    </div>
+                                    <div>
+                                        <label class="fs-3" for="nombreMascota"></label>
+                                        <input type="text" class="form-control form-control-lg" name="nombreMascota" aria-label="Nombre mascota" placeholder="Nombre de tu mascota:" required>
+                                    </div>
+                                </div>
+                                <div class="newsletter__boton">
+                                    <button type="submit" class="fs-5 boton__formulario" name="suscribirme">Suscribirme</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
 
-                <div class="col newsletter">
-                    <h3 class="h3">¡Enterate de todas nuestras ofertas y novedades!</h3>
-                    <form action="../php/newsletter.php" method="post">
-                        <div class="row g-3">
-                            <div class="col-lg-2 offset-lg-3">
-                                <label class="fs-4" for="email">Email:</label>
-                                <input type="email" class="form-control" name="email" aria-label="Email" required>
-                            </div>
-                            <div class="col-lg-2">
-                                <label class="fs-4" for="nombreMascota">Nombre de tu mascota:</label>
-                                <input type="text" class="form-control" name="nombreMascota" aria-label="Nombre mascota" required>
-                            </div>
-                            <button type="submit" class="col-lg-2 fs-5 boton--newsletter" name="suscribirme">Suscribirme</button>
-                        </div>
-                    </form>
-                </div>
+
+
             </main>
 
             <footer class="row footer">
                 <div class="col-sm-12 col-md-12 col-lg-4 footer__contacto">
-                    <div>
-                        <h4 class="h4">¿Necesitás ayuda?</h4>
-                        <ul>
-                            <li class="fs-4"><a href="#nuestros-productos">Nuestros productos</a></li>
-                            <li class="fs-4"><a href="#cambios-y-devoluciones">Cambios / Devoluciones</a></li>
-                            <li class="fs-4"><a href="#formas-de-envio">Formas de envío</a></li>
-                        </ul>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item-dark">
+                            <h2 class="accordion-header h2" id="flush-headingOne">
+                                <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">¿Necesitás ayuda?</button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <ul>
+                                    <li class="fs-4"><a href="contacto.html#nuestros-productos">Nuestros productos</a></li>
+                                    <li class="fs-4"><a href="contacto.html#cambios-y-devoluciones">Cambios / Devoluciones</a></li>
+                                    <li class="fs-4"><a href="contacto.html#formas-de-envio">Formas de envío</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="h4">Tienda</h4>
-                        <ul>
-                            <li class="fs-4"><a href="tienda.html#perros">Perros</a></li>
-                            <li class="fs-4"><a href="tienda.html#gatos">Gatos</a></li>
-                            <li class="fs-4"><a href="tienda.html#humanos">Humanos</a></li>
-                            <li class="fs-4"><a href="venta-mayorista.html">Venta mayorista</a></li>
-                        </ul>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item-dark">
+                            <h2 class="accordion-header h2" id="flush-headingTwo"><button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Tienda</button></h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <ul>
+                                    <li class="fs-4"><a href="tienda.html#perros">Perros</a></li>
+                                    <li class="fs-4"><a href="tienda.html#gatos">Gatos</a></li>
+                                    <li class="fs-4"><a href="tienda.html#humanos">Humanos</a></li>
+                                    <li class="fs-4"><a href="#">Venta mayorista</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="h4">Sobre nosotros</h4>
-                            <ul>
-                                <li class="fs-4"><a href="nosotros.html">Nuestra historia</a></li>
-                                <li class="fs-4"><a href="#">Contacto</a></li>
-                            </ul>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item-dark">
+                            <h2 class="accordion-header h2" id="flush-headingThree"><button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Sobre Nosotros</button></h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <ul>
+                                    <li class="fs-4"><a href="nosotros.html">Nuestra historia</a></li>
+                                    <li class="fs-4"><a href="contacto.html">Contacto</a></li>
+                                    <li class="fs-4"><a class="enlaceRoto" href="error-404.html">Enlace roto</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4 footer__redes">
@@ -194,6 +263,7 @@
                     <ul>
                         <li class="btn--facebook facebook"><a href="https://es-la.facebook.com/"><img class="img-fluid" src="../images/facebook.png" alt="icono facebook" title="facebook"></a></li>
                         <li class="btn--instagram instagram"><a href="https://www.instagram.com/blkypets/?hl=es"><img class="img-fluid" src="../images/instagram.png" alt="icono instagram" title="instagram"></a></li>
+                        
                     </ul>
                     <div>
                         <h4 class="h4">¡Contactate!</h4>

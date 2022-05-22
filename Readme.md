@@ -23,3 +23,4 @@ Para probar mi sitio ingresa al siguiente [link](https://estanisevl.github.io/bl
             - Reemplacé el texto sin contenido (lorem) por texto relacionado con el contenido del sitio.
 * 15/05/22: - Agregué archivos .php para implementar el funcionamiento del formulario de contacto y el newsletter.
 * 20/05/22: - Rediseñé el index.html en desktop.
+* 22/05/22: - Modifiqué el diseño de las secciones venta-mayorista, nosotros y contacto.

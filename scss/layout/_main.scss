@@ -545,143 +545,158 @@
 
 /*---- DESKTOP/CONTACTO ----*/
 /*---- DESKTOP/CONTACTO/MAIN ----*/
-.main__contacto h1{
-    color: $color-primario;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    font-weight: bolder;
-    text-align: center;
+.contacto__fondo{
+    background-color: $color-primario;
 }
-/*---- DESKTOP/CONTACTO/MAIN/FORMULARIO ----*/
-.container__contacto{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    h2{
-        color: $color-primario;
-        text-transform: uppercase;
+.main__contacto{
+    height: 30vh;
+    background-image: url(../../images/Banner3.jpg);
+    background-size: cover;
+    h1{
+        color: $color-fondo;
+        font-weight: bolder;
         text-align: center;
     }
-    form{
-        border: $borde;
-        margin-top: 5rem;
-        padding: 10rem;
-        align-self: center;
-        width: 80%;
-        text-align: center;
-        font-family: helvetica;
-        text-transform: uppercase;
-        font-weight: bold;
-        img{
-            margin-bottom: 10rem;
-            width: 10%;
-        }
-        div select{
-            font-family: helvetica;
-            text-transform: uppercase;
-        }
-    }
-}
-.contenedor__checkbox{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-.contenedor__botones{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.formulario__textarea{
-    resize: none;
-}
+} 
+
 /*---- DESKTOP/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
 .contacto__preguntasFrecuentes{
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     h2{
         margin-top: 5rem;
-        color: $color-primario;
+        color: $color-quinario;
+        font-size: 4rem;
         font-weight: bold;
-        text-align: center;
+        text-transform: lowercase;
         margin-bottom: 5rem;
     }
-}
-.slide-in-right {
-    animation: slide-in-right 2s ease-in;
-}
-@keyframes slide-in-right {
-    0% {
-    transform: translateX(1000px);
-    opacity: 0;
-    }
-    100% {
-    transform: translateX(0);
-    opacity: 1;
+    div{
+        div{
+            h3{
+                button{
+                    color: $color-fondo;
+                    background-color: $color-primario;
+                }
+            }
+            // MODIFICAR COLOR DE FONDO DEL BOTON CUANDO ESTÁ APRETADO
+        }
     }
 }
-.slide-in-left {
-    animation: slide-in-left 2s ease-in both;
-}
-@keyframes slide-in-left {
-    0% {
-    transform: translateX(-1000px);
-    opacity: 0;
-    }
-    100% {
-    transform: translateX(0);
-    opacity: 1;
-    }
-}
+// .slide-in-right {
+//     animation: slide-in-right 2s ease-in;
+// }
+// @keyframes slide-in-right {
+//     0% {
+//     transform: translateX(1000px);
+//     opacity: 0;
+//     }
+//     100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//     }
+// }
+// .slide-in-left {
+//     animation: slide-in-left 2s ease-in both;
+// }
+// @keyframes slide-in-left {
+//     0% {
+//     transform: translateX(-1000px);
+//     opacity: 0;
+//     }
+//     100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//     }
+// }
 .preguntasFrecuentes__nuestrosProductos{
     display: flex;
     flex-flow: column wrap;
     margin-bottom: 5rem;
+    color: $color-fondo;
     h3{
         margin-top: 2rem;
         font-weight: bold;
-        text-align: center;
     }
     h4{
         margin-top: 2rem;
-        font-weight: bold;
-        text-align: left;
     }
     p{
         margin-top: 2rem;
         text-align: justify;
-    }
-    a{
-        color: $color-primario;
-        font-weight: bold;
-        font-style: italic;
-        text-decoration: none;
+        a{
+            color: $color-fondo;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none;
+        }
     }
 }
-.contacto__cambiosDevoluciones{
+/*---- DESKTOP/CONTACTO/MAIN/FORMULARIO ----*/
+.container__contacto{
     display: flex;
-    flex-direction: row-reverse;
-}
-/*---- DESKTOP/CONTACTO/MAIN/NEWSLETTER ----*/
-.newsletter{
-    border-top: $borde;
-    color: $color-primario;
-    h3{
+    flex-flow: column nowrap;
+    h2{
         margin-top: 5rem;
+        color: $color-quinario;
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: lowercase;
         margin-bottom: 5rem;
-        text-align: center;
-        font-weight: bolder;
-        font-style: italic;
     }
     form{
+        margin-top: 2rem;
+        // font-family: helvetica;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $color-fondo;
+        div{
+            select{
+                font-family: now;
+                text-transform: uppercase;
+            }
+        } 
+    }
+}
+// .contenedor__checkbox{
+//     margin-top: 5rem;
+//     margin-bottom: 5rem;
+//     display: flex;
+//     flex-flow: column wrap;
+//     justify-content: center;
+//     align-items: center;
+// }
+.contenedor__botones{
+    display: flex;
+    justify-content: space-between;
+}
+.formulario__textarea{
+    resize: none;
+}
+/*---- DESKTOP/CONTACTO/MAIN/NEWSLETTER ----*/
+.contacto__newsletter{
+    h3{
+        color: $color-quinario;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    .newsletter__formulario{
+        display: flex;
+        flex-flow: column nowrap;
+        color: $color-fondo;
         margin-bottom: 5rem;
         text-transform: uppercase;
+        .newsletter__campos{
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .newsletter__boton{
+            text-align: center;
+            margin-top: 2.5rem;
+        }
     }
 }
 
