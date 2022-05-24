@@ -32,7 +32,7 @@
 }
 
 .slider{
-    height: 20vh;
+    height: 30vh;
     display: flex;
     flex-flow: row wrap;
     // justify-content: center;
@@ -236,129 +236,192 @@
 /*---- DESKTOP/TIENDA ----*/
 /*---- DESKTOP/TIENDA/MAIN ----*/
 .tienda__fondo{
-    background: $color-terciario;
-    color: $color-cuaternario;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    font-weight: bolder;
-    text-align: center;
+    background: $color-fondo;
+    .tienda__titulo{
+        h1{
+            font-size: 4rem;
+            margin-bottom: 5rem;
+        }
+    }
 }
 /*---- DESKTOP/TIENDA/MAIN/NOVEDADES Y GUÍA DE TALLES ----*/
-.tienda__seccion1 > div h2{
-    color: $color-primario;
-    font-weight: bolder;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-.seccion1__novedades{
+.novedades{
+    margin-top: 2.5rem;
     display: flex;
-    justify-content: space-between;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
     align-items: center;
+    h2{
+        font-size: 2.5rem;
+        color: $color-primario;
+        font-weight: bold;
+        text-transform: lowercase;
+    }
 }
+// .seccion1__novedades{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
 .seccion1__div2{
     display: flex;
     flex-flow: column nowrap;
     img{
+        margin-top: 5rem;
         margin-bottom: 5rem;
     }
 }
 /*---- DESKTOP/TIENDA/MAIN/COLECCIONES ----*/
 .tienda__colecciones{
-    border-top: $borde;
-    display:flex;
-    flex-direction: column;
-    border-bottom: $borde;
+    
 }
-.contenedor__h2Felipe{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/FelipeWeb.jpg);
-    background-size: cover;
-    color: $color-cuaternario;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-.colecciones__contenedor p{
-    text-align: justify;
-}
-.contenedor__imagenes{
-    display: flex;
-    flex-direction: column;
-}
-.imagenes__fila{
-    display: flex;
-}
-.colecciones__contenedor2{
-    border-top: $color-terciario solid 0.2rem;
-    display: flex;
-    flex-direction: row-reverse;
-}
-.contenedor__h2Henry{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/HenriWeb.jpg);
-    background-size: cover;
-    color: $color-cuaternario;
-    font-weight: bolder;
-    text-transform: uppercase;
-    text-align: end;
-}
-.colecciones__contenedor2 p{
-    text-align: justify;
-}
+
+// .tienda__colecciones{
+//     display:flex;
+//     flex-direction: column;
+//     border-bottom: $borde;
+// }
+// .contenedor__h2Felipe{
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/FelipeWeb.jpg);
+//     background-size: cover;
+//     color: $color-cuaternario;
+//     font-weight: bolder;
+//     text-transform: uppercase;
+// }
+// .colecciones__contenedor p{
+//     text-align: justify;
+// }
+// .contenedor__imagenes{
+//     display: flex;
+//     flex-direction: column;
+// }
+// .imagenes__fila{
+//     display: flex;
+// }
+// .colecciones__contenedor2{
+//     border-top: $color-terciario solid 0.2rem;
+//     display: flex;
+//     flex-direction: row-reverse;
+// }
+// .contenedor__h2Henry{
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/HenriWeb.jpg);
+//     background-size: cover;
+//     color: $color-cuaternario;
+//     font-weight: bolder;
+//     text-transform: uppercase;
+//     text-align: end;
+// }
+// .colecciones__contenedor2 p{
+//     text-align: justify;
+// }
 /*---- DESKTOP/TIENDA/MAIN/CATEGORÍAS ----*/
 .tienda__categorias{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5rem;
+    .categorias__divGrande{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-decoration: none;
+        color: $color-primario;
+        transition: all 0.5s;
+        &:hover{
+            background-color: $color-primario;
+            color: $color-fondo;
+        }
+    }
+    .categorias__divChico{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $color-primario;
+        transition: all 0.5s;
+        &:hover{
+            background-color: $color-primario;
+            color: $color-fondo;
+        }
+    }
+
 }
-.h2Perros{
-    margin-top: 2rem;
-    color:$color-primario;
-    font-weight: bold;
-    background-image: url(../../images/PerrosBN.jpg);
-    background-size: cover;
-    text-align: center;
-}
-.contenedor__imagenes2{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-}
-.categorias__articulo2{
+// .tienda__categorias{
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 5rem;
+// }
+// .h2Perros{
+//     margin-top: 2rem;
+//     color:$color-primario;
+//     font-weight: bold;
+//     background-image: url(../../images/PerrosBN.jpg);
+//     background-size: cover;
+//     text-align: center;
+// }
+// .contenedor__imagenes2{
+//     display: flex;
+//     flex-flow: row nowrap;
+//     justify-content: space-evenly;
+// }
+// .categorias__articulo2{
+//     margin-top: 5rem;
+//     display: flex;
+//     flex-direction: row-reverse;
+// }
+// .h2Gatos{
+//     color: $color-primario;
+//     font-weight: bold;
+//     text-align: end;
+//     background-image: url(../images/GatosBN.jpg);
+//     background-size: cover;
+//     text-align: center;
+// }
+// .categorias__articulo3{
+//     display: flex;
+//     flex-wrap: row wrap;
+//     justify-content: center;
+// }
+// .h2Humanos{
+//     margin-top: 10rem;
+//     color: $color-primario;
+//     font-weight: bold;
+//     background-image: url(../images/HumanosBN.jpg);
+//     background-size: cover;
+//     text-align: center;
+// }
+// .galeria2{
+//     display: flex;
+//     flex-flow: column nowrap;
+//     align-items: space-evenly;
+// }
+// .contenedor__imagenes3{
+//     margin-top: 10rem;
+//     display: flex;
+//     justify-content: space-evenly;
+// }
+/*---- DESKTOP/TIENDA/MAIN/NEWSLETTER ----*/
+.tienda__newsletter{
     margin-top: 5rem;
     display: flex;
-    flex-direction: row-reverse;
-}
-.h2Gatos{
-    color: $color-primario;
-    font-weight: bold;
-    text-align: end;
-    background-image: url(../images/GatosBN.jpg);
-    background-size: cover;
-    text-align: center;
-}
-.categorias__articulo3{
-    display: flex;
-    flex-wrap: row wrap;
-    justify-content: center;
-}
-.h2Humanos{
-    margin-top: 10rem;
-    color: $color-primario;
-    font-weight: bold;
-    background-image: url(../images/HumanosBN.jpg);
-    background-size: cover;
-    text-align: center;
-}
-.galeria2{
-    display: flex;
     flex-flow: column nowrap;
-    align-items: space-evenly;
+    margin-bottom: 10rem;
+    h3{
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    form{
+        line-height: 5rem;
+        .tienda__campos{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+        .tienda__boton{
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+    }
 }
-.contenedor__imagenes3{
-    margin-top: 10rem;
-    display: flex;
-    justify-content: space-evenly;
-}
+
 /*---- DESKTOP/VENTA MAYORISTA ----*/
 /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV1 ----*/
 .main__mayoristas{
@@ -546,14 +609,14 @@
 /*---- DESKTOP/CONTACTO ----*/
 /*---- DESKTOP/CONTACTO/MAIN ----*/
 .contacto__fondo{
-    background-color: $color-primario;
+    background-color: $color-fondo;
 }
 .main__contacto{
     height: 30vh;
     background-image: url(../../images/Banner3.jpg);
     background-size: cover;
     h1{
-        color: $color-fondo;
+        color: $color-primario;
         font-weight: bolder;
         text-align: center;
     }
@@ -566,7 +629,7 @@
     justify-content: center;
     h2{
         margin-top: 5rem;
-        color: $color-quinario;
+        color: $color-cuaternario;
         font-size: 4rem;
         font-weight: bold;
         text-transform: lowercase;
@@ -576,8 +639,8 @@
         div{
             h3{
                 button{
-                    color: $color-fondo;
-                    background-color: $color-primario;
+                    color: $color-primario;
+                    background-color: $color-fondo;
                 }
             }
             // MODIFICAR COLOR DE FONDO DEL BOTON CUANDO ESTÁ APRETADO
@@ -614,7 +677,7 @@
     display: flex;
     flex-flow: column wrap;
     margin-bottom: 5rem;
-    color: $color-fondo;
+    color: $color-primario;
     h3{
         margin-top: 2rem;
         font-weight: bold;
@@ -639,7 +702,7 @@
     flex-flow: column nowrap;
     h2{
         margin-top: 5rem;
-        color: $color-quinario;
+        color: $color-cuaternario;
         font-size: 4rem;
         font-weight: bold;
         text-transform: lowercase;
@@ -650,7 +713,7 @@
         // font-family: helvetica;
         text-transform: uppercase;
         font-weight: bold;
-        color: $color-fondo;
+        color: $color-primario;
         div{
             select{
                 font-family: now;
@@ -677,7 +740,7 @@
 /*---- DESKTOP/CONTACTO/MAIN/NEWSLETTER ----*/
 .contacto__newsletter{
     h3{
-        color: $color-quinario;
+        color: $color-cuaternario;
         margin-top: 10rem;
         margin-bottom: 5rem;
         font-size: 4rem;
@@ -686,7 +749,7 @@
     .newsletter__formulario{
         display: flex;
         flex-flow: column nowrap;
-        color: $color-fondo;
+        color: $color-primario;
         margin-bottom: 5rem;
         text-transform: uppercase;
         .newsletter__campos{

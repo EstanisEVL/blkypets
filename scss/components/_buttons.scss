@@ -269,7 +269,6 @@
 		letter-spacing: 3px;
 		background-color: $color-secundario;
 		color: $color-fondo;
-		box-shadow: $color-secundario 0px 7px 29px 0px;
 		}
 	&:active {
 		letter-spacing: 3px;
@@ -289,4 +288,12 @@
 	@extend .boton__newsletter;
 	color: $color-primario;
 	background-color: $color-fondo;
+	&:hover{
+		background-color: $color-quinario;
+	}
+}
+.boton__tienda{
+	@extend .boton__newsletter;
+	padding: 0.5rem 2rem;
+	font-size: 1rem;
 }
