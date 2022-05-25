@@ -233,8 +233,11 @@ body {
 
 /*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
 .destacados {
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  background-color: #fcfcfc; }
   .destacados h2 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     font-weight: bold;
     text-align: center; }
   .destacados div {
@@ -282,9 +285,17 @@ body {
 /*---- DESKTOP/TIENDA/MAIN ----*/
 .tienda__fondo {
   background: #fcfcfc; }
-  .tienda__fondo .tienda__titulo h1 {
-    font-size: 4rem;
-    margin-bottom: 5rem; }
+  .tienda__fondo .tienda__titulo {
+    height: 70vh;
+    background-image: url(../../images/BannerProductos1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center; }
+    .tienda__fondo .tienda__titulo h1 {
+      font-weight: bold;
+      margin-top: 20rem;
+      font-size: 4rem;
+      margin-bottom: 5rem; }
 
 /*---- DESKTOP/TIENDA/MAIN/NOVEDADES Y GUÍA DE TALLES ----*/
 .novedades {
@@ -308,7 +319,8 @@ body {
 
 /*---- DESKTOP/TIENDA/MAIN/COLECCIONES ----*/
 /*---- DESKTOP/TIENDA/MAIN/CATEGORÍAS ----*/
-.tienda__categorias .categorias__divGrande {
+.tienda__categorias .categorias__divGrande, .tienda__categorias .categorias__divGrande2 {
+  background-color: #f5f5f5;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -316,11 +328,12 @@ body {
   text-decoration: none;
   color: #131313;
   transition: all 0.5s; }
-  .tienda__categorias .categorias__divGrande:hover {
+  .tienda__categorias .categorias__divGrande:hover, .tienda__categorias .categorias__divGrande2:hover {
     background-color: #131313;
     color: #fcfcfc; }
 
 .tienda__categorias .categorias__divChico {
+  background-color: #f5f5f5;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -331,6 +344,9 @@ body {
   .tienda__categorias .categorias__divChico:hover {
     background-color: #131313;
     color: #fcfcfc; }
+
+.tienda__categorias .categorias__divGrande2 {
+  margin-top: 2.3rem; }
 
 /*---- DESKTOP/TIENDA/MAIN/NEWSLETTER ----*/
 .tienda__newsletter {
@@ -604,19 +620,22 @@ body {
 
 /*---- FOOTER ----*/
 .footer {
+  padding-top: 5rem;
   background-color: #131313; }
   .footer .footer__contacto {
     margin-top: 4rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around; }
-    .footer .footer__contacto div div h2 button {
-      font-weight: bold;
+    .footer .footer__contacto div div h2 {
+      text-align: left;
       color: #fcfcfc;
-      background-color: #131313; }
+      font-weight: bold;
+      margin-bottom: 2rem; }
     .footer .footer__contacto div div div ul {
       background-color: #131313; }
       .footer .footer__contacto div div div ul li {
+        text-align: left;
         list-style: none;
         line-height: 5rem; }
         .footer .footer__contacto div div div ul li a {
@@ -657,7 +676,7 @@ body {
     .footer .footer__mediosDePago h4 {
       color: #fcfcfc;
       font-weight: bold; }
-    .footer .footer__mediosDePago img {
+    .footer .footer__mediosDePago .mediosDePago__galeria img {
       transform: scale(0.5); }
   .footer .footer__copyright {
     text-align: center;

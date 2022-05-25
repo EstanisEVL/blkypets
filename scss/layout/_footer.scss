@@ -1,5 +1,6 @@
 /*---- FOOTER ----*/
 .footer{
+    padding-top: 5rem;
     background-color: $color-primario;
     .footer__contacto{
         margin-top: 4rem;
@@ -9,16 +10,16 @@
         div{
             div{
                 h2{
-                    button{
-                        font-weight: bold;
-                        color: $color-fondo;
-                        background-color: $color-primario;
-                    }
+                    text-align: left;
+                    color: $color-fondo;
+                    font-weight: bold;
+                    margin-bottom: 2rem;
                 }
                 div{
                     ul{
                         background-color: $color-primario;
                         li{
+                            text-align: left;
                             list-style: none;
                             line-height: 5rem;
                             a{
@@ -75,8 +76,10 @@
             color: $color-fondo;
             font-weight: bold;
         }
-        img{
-            transform: scale(0.5);
+        .mediosDePago__galeria{
+            img{
+                transform: scale(0.5);
+            }
         }
     }
     .footer__copyright{
