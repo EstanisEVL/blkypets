@@ -225,9 +225,8 @@
     .clientes__instagram{
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
         align-items: center;
-        a{
+        .clientes__titulo{
             font-weight: bold;
             color: $color-primario;
             text-decoration: none;
@@ -241,7 +240,7 @@
 .tienda__fondo{
     background: $color-fondo;
     .tienda__titulo{
-        height: 70vh;
+        height: 60vh;
         background-image: url(../../images/BannerProductos1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -254,25 +253,6 @@
         }
     }
 }
-/*---- DESKTOP/TIENDA/MAIN/NOVEDADES Y GUÍA DE TALLES ----*/
-.novedades{
-    margin-top: 2.5rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    h2{
-        font-size: 2.5rem;
-        color: $color-primario;
-        font-weight: bold;
-        text-transform: lowercase;
-    }
-}
-// .seccion1__novedades{
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
 .seccion1__div2{
     display: flex;
     flex-flow: column nowrap;
@@ -639,9 +619,6 @@
 
 /*---- DESKTOP/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
 .contacto__preguntasFrecuentes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     h2{
         margin-top: 5rem;
         color: $color-cuaternario;
@@ -656,38 +633,18 @@
                 button{
                     color: $color-primario;
                     background-color: $color-fondo;
+                    &:focus{
+                        color: $color-cuaternario;
+                        background-color: $color-fondo;
+                        box-shadow: none;
+                    }
                 }
             }
-            // MODIFICAR COLOR DE FONDO DEL BOTON CUANDO ESTÁ APRETADO
+            // MODIFICAR COLOR DE FONDO DEL BOTON CUANDO NO ESTÁ APRETADO
         }
     }
 }
-// .slide-in-right {
-//     animation: slide-in-right 2s ease-in;
-// }
-// @keyframes slide-in-right {
-//     0% {
-//     transform: translateX(1000px);
-//     opacity: 0;
-//     }
-//     100% {
-//     transform: translateX(0);
-//     opacity: 1;
-//     }
-// }
-// .slide-in-left {
-//     animation: slide-in-left 2s ease-in both;
-// }
-// @keyframes slide-in-left {
-//     0% {
-//     transform: translateX(-1000px);
-//     opacity: 0;
-//     }
-//     100% {
-//     transform: translateX(0);
-//     opacity: 1;
-//     }
-// }
+
 .preguntasFrecuentes__nuestrosProductos{
     display: flex;
     flex-flow: column wrap;
@@ -772,7 +729,7 @@
             flex-flow: row nowrap;
         }
         .newsletter__boton{
-            text-align: center;
+            text-align: left;
             margin-top: 2.5rem;
         }
     }

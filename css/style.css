@@ -273,9 +273,8 @@ body {
   .clientes .clientes__instagram {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
     align-items: center; }
-    .clientes .clientes__instagram a {
+    .clientes .clientes__instagram .clientes__titulo {
       font-weight: bold;
       color: #131313;
       text-decoration: none;
@@ -286,7 +285,7 @@ body {
 .tienda__fondo {
   background: #fcfcfc; }
   .tienda__fondo .tienda__titulo {
-    height: 70vh;
+    height: 60vh;
     background-image: url(../../images/BannerProductos1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -296,19 +295,6 @@ body {
       margin-top: 20rem;
       font-size: 4rem;
       margin-bottom: 5rem; }
-
-/*---- DESKTOP/TIENDA/MAIN/NOVEDADES Y GUÍA DE TALLES ----*/
-.novedades {
-  margin-top: 2.5rem;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center; }
-  .novedades h2 {
-    font-size: 2.5rem;
-    color: #131313;
-    font-weight: bold;
-    text-transform: lowercase; }
 
 .seccion1__div2 {
   display: flex;
@@ -517,20 +503,21 @@ body {
     text-align: center; }
 
 /*---- DESKTOP/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
-.contacto__preguntasFrecuentes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .contacto__preguntasFrecuentes h2 {
-    margin-top: 5rem;
+.contacto__preguntasFrecuentes h2 {
+  margin-top: 5rem;
+  color: #e0005a;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: lowercase;
+  margin-bottom: 5rem; }
+
+.contacto__preguntasFrecuentes div div h3 button {
+  color: #131313;
+  background-color: #fcfcfc; }
+  .contacto__preguntasFrecuentes div div h3 button:focus {
     color: #e0005a;
-    font-size: 4rem;
-    font-weight: bold;
-    text-transform: lowercase;
-    margin-bottom: 5rem; }
-  .contacto__preguntasFrecuentes div div h3 button {
-    color: #131313;
-    background-color: #fcfcfc; }
+    background-color: #fcfcfc;
+    box-shadow: none; }
 
 .preguntasFrecuentes__nuestrosProductos {
   display: flex;
@@ -596,7 +583,7 @@ body {
     display: flex;
     flex-flow: row nowrap; }
   .contacto__newsletter .newsletter__formulario .newsletter__boton {
-    text-align: center;
+    text-align: left;
     margin-top: 2.5rem; }
 
 /*---- DESKTOP/ERROR-404/MAIN ----*/
@@ -620,10 +607,9 @@ body {
 
 /*---- FOOTER ----*/
 .footer {
-  padding-top: 5rem;
+  padding-top: 8rem;
   background-color: #131313; }
   .footer .footer__contacto {
-    margin-top: 4rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around; }
@@ -631,22 +617,22 @@ body {
       text-align: left;
       color: #fcfcfc;
       font-weight: bold;
-      margin-bottom: 2rem; }
+      margin-bottom: 1rem; }
     .footer .footer__contacto div div div ul {
-      background-color: #131313; }
+      padding: 0; }
       .footer .footer__contacto div div div ul li {
         text-align: left;
         list-style: none;
         line-height: 5rem; }
         .footer .footer__contacto div div div ul li a {
           color: #fcfcfc;
-          text-decoration: none; }
+          text-decoration: none;
+          transition: all 0.5s; }
+          .footer .footer__contacto div div div ul li a:hover {
+            color: #a91fff; }
   .footer .footer__redes {
-    margin-top: 4rem;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center; }
+    flex-flow: column nowrap; }
     .footer .footer__redes h4 {
       margin-bottom: 2rem;
       color: #fcfcfc;
@@ -657,29 +643,25 @@ body {
       .footer .footer__redes ul li {
         display: flex; }
         .footer .footer__redes ul li a {
-          padding: 2.5rem; }
+          transform: scale(0.75); }
     .footer .footer__redes div {
+      margin-top: 2rem;
       display: flex;
-      flex-flow: column nowrap;
-      align-items: center; }
+      flex-flow: column nowrap; }
       .footer .footer__redes div h4 {
         margin-bottom: 2rem;
         color: #fcfcfc; }
-      .footer .footer__redes div a {
-        padding: 1rem 2rem 1rem 2rem;
-        text-align: center; }
   .footer .footer__mediosDePago {
-    margin-top: 4rem;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center; }
+    flex-flow: column wrap; }
     .footer .footer__mediosDePago h4 {
       color: #fcfcfc;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: 2rem; }
     .footer .footer__mediosDePago .mediosDePago__galeria img {
-      transform: scale(0.5); }
+      transform: scale(0.8); }
   .footer .footer__copyright {
-    text-align: center;
+    text-align: right;
     margin-top: 5rem;
     margin-bottom: 2.5rem;
     text-transform: uppercase; }

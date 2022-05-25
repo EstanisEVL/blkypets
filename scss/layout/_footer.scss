@@ -1,9 +1,8 @@
 /*---- FOOTER ----*/
 .footer{
-    padding-top: 5rem;
+    padding-top: 8rem;
     background-color: $color-primario;
     .footer__contacto{
-        margin-top: 4rem;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
@@ -13,11 +12,11 @@
                     text-align: left;
                     color: $color-fondo;
                     font-weight: bold;
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
                 }
                 div{
                     ul{
-                        background-color: $color-primario;
+                        padding: 0;
                         li{
                             text-align: left;
                             list-style: none;
@@ -25,6 +24,10 @@
                             a{
                                 color: $color-fondo;
                                 text-decoration: none;
+                                transition: all 0.5s;
+                                &:hover{
+                                    color: $color-secundario;
+                                }
                             }
                         }
                     }
@@ -33,11 +36,8 @@
         }
     }
     .footer__redes{
-        margin-top: 4rem;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
         h4{
             margin-bottom: 2rem;
             color: $color-fondo;
@@ -49,41 +49,36 @@
             li{
                 display: flex;
                 a{
-                    padding: 2.5rem;
+                    transform: scale(0.75);
                 }
             }
         }
         div{
+            margin-top: 2rem;
             display: flex;
             flex-flow: column nowrap;
-            align-items: center;
             h4{
                 margin-bottom: 2rem;
                 color: $color-fondo;
             }
-            a{
-                padding: 1rem 2rem 1rem 2rem;
-                text-align: center;
-            }
         }
     }
     .footer__mediosDePago{
-        margin-top: 4rem;
         display:flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        flex-flow: column wrap;
         h4{
             color: $color-fondo;
             font-weight: bold;
+            margin-bottom: 2rem;
         }
         .mediosDePago__galeria{
             img{
-                transform: scale(0.5);
+                transform: scale(0.8);
             }
         }
     }
     .footer__copyright{
-        text-align: center;
+        text-align: right;
         margin-top: 5rem;
         margin-bottom: 2.5rem;
         text-transform: uppercase;
