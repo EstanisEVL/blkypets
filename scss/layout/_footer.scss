@@ -1,32 +1,39 @@
+/*---- MOBILE ----*/
 /*---- FOOTER ----*/
-.footer{
-    padding-top: 8rem;
-    background-color: $color-primario;
-    .footer__contacto{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        div{
+@media only screen and (max-width: 576px){
+    .footer{
+        padding-top: 5rem;
+        background-color: $color-primario;
+        .footer__contacto{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            margin-bottom: 5rem;
             div{
-                h2{
-                    text-align: left;
-                    color: $color-fondo;
-                    font-weight: bold;
-                    margin-bottom: 1rem;
-                }
                 div{
-                    ul{
-                        padding: 0;
-                        li{
-                            text-align: left;
-                            list-style: none;
-                            line-height: 5rem;
-                            a{
-                                color: $color-fondo;
-                                text-decoration: none;
-                                transition: all 0.5s;
-                                &:hover{
-                                    color: $color-secundario;
+                    h2{
+                        text-align: center;
+                        color: $color-fondo;
+                        text-decoration: underline;
+                        font-weight: bold;
+                        margin-bottom: 1rem;
+                    }
+                    div{
+                        ul{
+                            padding: 0;
+                            margin-bottom: 3rem;
+                            li{
+                                text-align: center;
+                                list-style: none;
+                                line-height: 4rem;
+                                
+                                a{
+                                    color: $color-fondo;
+                                    text-decoration: none;
+                                    transition: all 0.5s;
+                                    &:hover{
+                                        color: $color-secundario;
+                                    }
                                 }
                             }
                         }
@@ -34,57 +41,173 @@
                 }
             }
         }
-    }
-    .footer__redes{
-        display: flex;
-        flex-flow: column nowrap;
-        h4{
-            margin-bottom: 2rem;
-            color: $color-fondo;
-            font-weight: bold;
-        }
-        ul{
+        .footer__redes{
             display: flex;
-            padding: 0;
-            li{
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5rem;
+            h4{
+                margin-bottom: 2rem;
+                color: $color-fondo;
+                font-weight: bold;
+            }
+            ul{
                 display: flex;
-                a{
-                    transform: scale(0.75);
+                padding: 0;
+                li{
+                    display: flex;
+                    a{
+                        transform: scale(0.75);
+                        transition: all 0.3s;
+                    &:hover{
+                        transform: scale(1.1, 1.1);
+                        }
+                    }
+                }
+            }
+            div{
+                margin-top: 2rem;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                h4{
+                    margin-bottom: 2rem;
+                    color: $color-fondo;
                 }
             }
         }
-        div{
-            margin-top: 2rem;
+        .footer__mediosDePago{
+            display:flex;
+            flex-flow: column wrap;
+            align-items: center;
+            h4{
+                color: $color-fondo;
+                font-weight: bold;
+                margin-bottom: 2rem;
+            }
+            .mediosDePago__galeria{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                row-gap: 2rem;
+                // img{
+                //     // transform: scale(0.8);
+                // }
+            }
+        }
+        .footer__copyright{
+            text-align: center;
+            margin-top: 5rem;
+            margin-bottom: 2.5rem;
+            text-transform: uppercase;
+            a{
+                color: $color-fondo;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+/*---- DESKTOP ----*/
+/*---- FOOTER ----*/
+@media only screen and (min-width: 576px){
+    .footer{
+        padding-top: 8rem;
+        background-color: $color-primario;
+        .footer__contacto{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            div{
+                div{
+                    h2{
+                        text-align: left;
+                        color: $color-fondo;
+                        font-weight: bold;
+                        margin-bottom: 1rem;
+                    }
+                    div{
+                        ul{
+                            padding: 0;
+                            li{
+                                text-align: left;
+                                list-style: none;
+                                line-height: 5rem;
+                                a{
+                                    color: $color-fondo;
+                                    text-decoration: none;
+                                    transition: all 0.5s;
+                                    &:hover{
+                                        color: $color-secundario;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer__redes{
             display: flex;
             flex-flow: column nowrap;
             h4{
                 margin-bottom: 2rem;
                 color: $color-fondo;
+                font-weight: bold;
+            }
+            ul{
+                display: flex;
+                padding: 0;
+                li{
+                    display: flex;
+                    a{
+                        transform: scale(0.75);
+                        transition: all 0.3s;
+                    &:hover{
+                        transform: scale(1.1, 1.1);
+                        }
+                    }
+                }
+            }
+            div{
+                margin-top: 2rem;
+                display: flex;
+                flex-flow: column nowrap;
+                h4{
+                    margin-bottom: 2rem;
+                    color: $color-fondo;
+                }
             }
         }
-    }
-    .footer__mediosDePago{
-        display:flex;
-        flex-flow: column wrap;
-        h4{
-            color: $color-fondo;
-            font-weight: bold;
-            margin-bottom: 2rem;
-        }
-        .mediosDePago__galeria{
-            img{
-                transform: scale(0.8);
+        .footer__mediosDePago{
+            display:flex;
+            flex-flow: column wrap;
+            h4{
+                color: $color-fondo;
+                font-weight: bold;
+                margin-bottom: 2rem;
+            }
+            .mediosDePago__galeria{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                row-gap: 2rem;
+                // img{
+                //     // transform: scale(0.8);
+                // }
             }
         }
-    }
-    .footer__copyright{
-        text-align: right;
-        margin-top: 5rem;
-        margin-bottom: 2.5rem;
-        text-transform: uppercase;
-        a{
-            color: $color-fondo;
-            text-decoration: none;
+        .footer__copyright{
+            text-align: right;
+            margin-top: 5rem;
+            margin-bottom: 2.5rem;
+            text-transform: uppercase;
+            a{
+                color: $color-fondo;
+                text-decoration: none;
+            }
         }
     }
 }

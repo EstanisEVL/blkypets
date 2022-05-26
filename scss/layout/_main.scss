@@ -1,762 +1,763 @@
-/*---- DESKTOP/INDEX/MAIN ----*/
-.fondo{
-    background-color: $color-fondo;
-}
-/*---- DESKTOP/INDEX/MAIN/HERO ----*/
-.hero{
-    height: 70vh;
-    background-image: url(../images/Banner1menossaturado.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.titulo{
-    height: 10vh;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-primario;
-    color: $color-fondo;
-    h1{
-        text-align: center;
-        font-weight: bold;
-        text-transform: uppercase;
+/*---- MOBILE ----*/
+/*---- MOBILE/VENTA MAYORISTA/MAIN/DIV1 ----*/
+@media only screen and (max-width: 576px){
+    .main__mayoristas{
+        background-color: $color-fondo;
     }
-    p{
-        text-align: center;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-}
-
-.slider{
-    height: 30vh;
-    display: flex;
-    flex-flow: row wrap;
-    // justify-content: center;
-    // align-items: center;
-    animation: slide 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 3s;
-    @keyframes slide{
-        0%{
-            background-image: url(../images/Banner2.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-        35%{
-            background-image: url(../images/Banner2b.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-        70%{
-            background-image: url(../images/Banner2c.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-        100%{
-            background-image: url(../images/Banner2.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-    }
-    div{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        a{
+    
+    .mayoristas__div1{
+        height: 30vh;
+        background-image: url(../../images/Banner3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        h1{
+            color: $color-fondo;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            font-weight: bolder;
             text-align: center;
         }
     }
-
+    /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV2 ----*/
+    .mayoristas__div2{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            color: $color-cuaternario;
+            text-transform: lowercase;
+            font-weight: bold;
+            text-align: center;
+        }
+        // div{
+        //     iframe{
+        //         display: none;
+        //     }
+        // }
+    }
+    /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV3 ----*/
+    .mayoristas__div3{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            color: $color-cuaternario;
+            text-transform: lowercase;
+            font-weight: bold;
+            text-align: center;
+        }
+        h3{
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            color: $color-primario;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            color: $color-primario;
+            text-align: justify;
+            a{
+                color: $color-primario;
+                text-transform: lowercase;
+                font-style: italic;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+    /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV4 ----*/
+    .mayoristas__div4{
+        margin-top: 2.5rem;
+        margin-bottom: 10rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        h3{
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            color: $color-primario;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            color: $color-primario;
+            text-align: justify;
+            a{
+                color: $color-primario;
+                text-transform: lowercase;
+                font-style: italic;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
 }
-/*---- DESKTOP/INDEX/MAIN/COLECCIONES ----*/
-.colecciones{
-    height: 40vh;
-    display: flex;
-    flex-flow: column nowrap;
-    div{
-        margin-top: 5rem;
-        margin-bottom: 5rem;
+
+
+@media only screen and (min-width: 576px){
+    /*---- DESKTOP/INDEX/MAIN ----*/
+    .fondo{
+        background-color: $color-fondo;
+    }
+    /*---- DESKTOP/INDEX/MAIN/HERO ----*/
+    .hero{
+        height: 70vh;
+        background-image: url(../images/Banner1menossaturado.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .titulo{
+        height: 10vh;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        font-weight: bold;
-        text-transform: uppercase;
-        // h2{
-        //     font-weight: bold;
+        background-color: $color-primario;
+        color: $color-fondo;
+        h1{
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        p{
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
 
-        // }
-    }
-    article{
-        height: 80%;
-        background-image: url(../images/Banner3.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-/*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
-.categorias{
-    height: 50vh;
-    margin-top: 20rem;
-    .categorias__perros{
-        background-image: url(../images/PerrosBN.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        line-height: 5rem;
-        h3{
-            margin-top: 33rem;
-            margin-left: 30rem;
-            color: transparent;
-            font-weight: bolder;
-            text-transform: uppercase;
-        }
-        a{
-            color: $color-primario;
-            text-decoration: none;
-            margin-left: 26rem;
-            &:hover{
-                color: $color-fondo;
-            }
-        }
-    }
-    .categorias__gatos{
-        background-image: url(../images/GatosBN.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        line-height: 5rem;
-        h3{
-            margin-top: 33rem;
-            margin-left: 30rem;
-            color: transparent;
-            font-weight: bolder;
-            text-transform: uppercase;
-        }
-        a{
-            color: $color-primario;
-            text-decoration: none;
-            margin-left: 27rem;
-            &:hover{
-                color: $color-fondo;
-            }
-        }
-    }
-    .categorias__humanos{
-        background-image: url(../images/HumanosBN.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        line-height: 5rem;
-        h3{
-            margin-top: 33rem;
-            margin-left: 30rem;
-            color: transparent;
-            font-weight: bolder;
-            text-transform: uppercase;
-        }
-        a{
-            color: $color-primario;
-            text-decoration: none;
-            margin-left: 23rem;
-            &:hover{
-                color: $color-fondo;
-            }
-        }
-    }
-}
-/*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
-.destacados{
-    margin-top: 5rem;
-    background-color: $color-fondo;
-    h2{
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        font-weight: bold;
-        text-align: center;
-    }
-    div{
-        padding-top: 5rem;
+    .slider{
+        height: 30vh;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
+        // justify-content: center;
+        // align-items: center;
+        animation: slide 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 3s;
+        @keyframes slide{
+            0%{
+                background-image: url(../images/Banner2.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            35%{
+                background-image: url(../images/Banner2b.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            70%{
+                background-image: url(../images/Banner2c.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            100%{
+                background-image: url(../images/Banner2.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+        div{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            a{
+                text-align: center;
+            }
+        }
+
     }
-    p{
-        margin-top: 5rem;
-        text-align: center;
-    }
-}
-/*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
-.clientes{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    .clientes__newsletter{
+    /*---- DESKTOP/INDEX/MAIN/COLECCIONES ----*/
+    .colecciones{
+        height: 40vh;
         display: flex;
         flex-flow: column nowrap;
-        align-items: center;
-        h3{
-            font-weight: bold;
-        }
-        .formulario{
+        div{
             margin-top: 5rem;
+            margin-bottom: 5rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            // h2{
+            //     font-weight: bold;
+
+            // }
+        }
+        article{
+            height: 80%;
+            background-image: url(../images/Banner3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
+    .categorias{
+        height: 50vh;
+        margin-top: 20rem;
+        .categorias__perros{
+            background-image: url(../images/PerrosBN.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            line-height: 5rem;
+            h3{
+                margin-top: 33rem;
+                margin-left: 30rem;
+                color: transparent;
+                font-weight: bolder;
+                text-transform: uppercase;
+            }
+            a{
+                color: $color-primario;
+                text-decoration: none;
+                margin-left: 26rem;
+                &:hover{
+                    color: $color-fondo;
+                }
+            }
+        }
+        .categorias__gatos{
+            background-image: url(../images/GatosBN.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            line-height: 5rem;
+            h3{
+                margin-top: 33rem;
+                margin-left: 30rem;
+                color: transparent;
+                font-weight: bolder;
+                text-transform: uppercase;
+            }
+            a{
+                color: $color-primario;
+                text-decoration: none;
+                margin-left: 27rem;
+                &:hover{
+                    color: $color-fondo;
+                }
+            }
+        }
+        .categorias__humanos{
+            background-image: url(../images/HumanosBN.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            line-height: 5rem;
+            h3{
+                margin-top: 33rem;
+                margin-left: 30rem;
+                color: transparent;
+                font-weight: bolder;
+                text-transform: uppercase;
+            }
+            a{
+                color: $color-primario;
+                text-decoration: none;
+                margin-left: 23rem;
+                &:hover{
+                    color: $color-fondo;
+                }
+            }
+        }
+    }
+    /*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
+    .destacados{
+        margin-top: 5rem;
+        background-color: $color-fondo;
+        h2{
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        div{
+            padding-top: 5rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        p{
+            margin-top: 5rem;
+            text-align: center;
+        }
+    }
+    /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
+    .clientes{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        .clientes__newsletter{
             display: flex;
             flex-flow: column nowrap;
-            .formulario__campos{
-                display: flex;
-                justify-content: space-evenly;
-                line-height: 3rem;
+            align-items: center;
+            h3{
+                font-weight: bold;
             }
-            .formulario__boton{
+            .formulario{
+                margin-top: 5rem;
+                display: flex;
+                flex-flow: column nowrap;
+                .formulario__campos{
+                    display: flex;
+                    justify-content: space-evenly;
+                    line-height: 3rem;
+                }
+                .formulario__boton{
+                    text-align: center;
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+        .clientes__instagram{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            .clientes__titulo{
+                font-weight: bold;
+                color: $color-primario;
+                text-decoration: none;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+
+    /*---- DESKTOP/TIENDA ----*/
+    /*---- DESKTOP/TIENDA/MAIN ----*/
+    .tienda__fondo{
+        background: $color-fondo;
+        .tienda__titulo{
+            height: 60vh;
+            background-image: url(../../images/BannerProductos1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            h1{
+                font-weight: bold;
+                margin-top: 20rem;
+                font-size: 4rem;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+    .seccion1__div2{
+        display: flex;
+        flex-flow: column nowrap;
+        img{
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+    }
+    /*---- DESKTOP/TIENDA/MAIN/COLECCIONES ----*/
+    .tienda__colecciones{
+        
+    }
+
+    /*---- DESKTOP/TIENDA/MAIN/CATEGORÍAS ----*/
+    .tienda__categorias{
+        .categorias__divGrande{
+            background-color: $color-segundofondo;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            text-decoration: none;
+            color: $color-primario;
+            transition: all 0.5s;
+            &:hover{
+                background-color: $color-primario;
+                color: $color-fondo;
+            }
+        }
+        .categorias__divChico{
+            background-color: $color-segundofondo;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $color-primario;
+            transition: all 0.5s;
+            &:hover{
+                background-color: $color-primario;
+                color: $color-fondo;
+            }
+        }
+        .categorias__divGrande2{
+            @extend .categorias__divGrande;
+            margin-top: 2.3rem;
+        }
+    }
+    /*---- DESKTOP/TIENDA/MAIN/NEWSLETTER ----*/
+    .tienda__newsletter{
+        margin-top: 5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 10rem;
+        h3{
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        form{
+            line-height: 5rem;
+            .tienda__campos{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+            }
+            .tienda__boton{
                 text-align: center;
                 margin-top: 2.5rem;
             }
         }
     }
-    .clientes__instagram{
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        .clientes__titulo{
-            font-weight: bold;
-            color: $color-primario;
-            text-decoration: none;
-            margin-bottom: 5rem;
-        }
-    }
-}
 
-/*---- DESKTOP/TIENDA ----*/
-/*---- DESKTOP/TIENDA/MAIN ----*/
-.tienda__fondo{
-    background: $color-fondo;
-    .tienda__titulo{
-        height: 60vh;
-        background-image: url(../../images/BannerProductos1.jpg);
+    /*---- DESKTOP/VENTA MAYORISTA ----*/
+    /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV1 ----*/
+    .main__mayoristas{
+        background-color: $color-fondo;
+    }
+
+    .mayoristas__div1{
+        height: 30vh;
+        background-image: url(../../images/Banner3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        text-align: center;
         h1{
-            font-weight: bold;
-            margin-top: 20rem;
-            font-size: 4rem;
-            margin-bottom: 5rem;
-        }
-    }
-}
-.seccion1__div2{
-    display: flex;
-    flex-flow: column nowrap;
-    img{
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-    }
-}
-/*---- DESKTOP/TIENDA/MAIN/COLECCIONES ----*/
-.tienda__colecciones{
-    
-}
-
-// .tienda__colecciones{
-//     display:flex;
-//     flex-direction: column;
-//     border-bottom: $borde;
-// }
-// .contenedor__h2Felipe{
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/FelipeWeb.jpg);
-//     background-size: cover;
-//     color: $color-cuaternario;
-//     font-weight: bolder;
-//     text-transform: uppercase;
-// }
-// .colecciones__contenedor p{
-//     text-align: justify;
-// }
-// .contenedor__imagenes{
-//     display: flex;
-//     flex-direction: column;
-// }
-// .imagenes__fila{
-//     display: flex;
-// }
-// .colecciones__contenedor2{
-//     border-top: $color-terciario solid 0.2rem;
-//     display: flex;
-//     flex-direction: row-reverse;
-// }
-// .contenedor__h2Henry{
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(../images/HenriWeb.jpg);
-//     background-size: cover;
-//     color: $color-cuaternario;
-//     font-weight: bolder;
-//     text-transform: uppercase;
-//     text-align: end;
-// }
-// .colecciones__contenedor2 p{
-//     text-align: justify;
-// }
-/*---- DESKTOP/TIENDA/MAIN/CATEGORÍAS ----*/
-.tienda__categorias{
-    .categorias__divGrande{
-        background-color: $color-segundofondo;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        text-decoration: none;
-        color: $color-primario;
-        transition: all 0.5s;
-        &:hover{
-            background-color: $color-primario;
             color: $color-fondo;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            font-weight: bolder;
+            text-align: center;
         }
     }
-    .categorias__divChico{
-        background-color: $color-segundofondo;
+    /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV2 ----*/
+    .mayoristas__div2{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            font-size: 4rem;
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            color: $color-cuaternario;
+            text-transform: lowercase;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV3 ----*/
+    .mayoristas__div3{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        h2{
+            font-size: 4rem;
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            color: $color-cuaternario;
+            text-transform: lowercase;
+            font-weight: bold;
+            text-align: center;
+        }
+        h3{
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            color: $color-primario;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            color: $color-primario;
+            text-align: justify;
+            a{
+                color: $color-primario;
+                text-transform: lowercase;
+                font-style: italic;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+    /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV4 ----*/
+    .mayoristas__div4{
+        margin-top: 2.5rem;
+        margin-bottom: 10rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        h3{
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            color: $color-primario;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            color: $color-primario;
+            text-align: justify;
+            a{
+                color: $color-primario;
+                text-transform: lowercase;
+                font-style: italic;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+
+    /*---- DESKTOP/NOSOTROS ----*/
+    /*---- DESKTOP/NOSOTROS/MAIN ----*/
+    .main__nosotros{
+        background-color: $color-fondo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            h1{
+                color: $color-cuaternario;
+                font-size: 4rem;
+                margin-top: 10rem;
+                margin-bottom: 10rem;
+                text-transform: lowercase;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+    /*---- DESKTOP/NOSOTROS/SECCION 1----*/
+    .nosotros__seccion1{
+        // display: flex;
+        // justify-content: center;
+        // align-items: flex-start;
+        div{
+            // display:flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: flex-start;
+            h2{
+                color: $color-primario;
+                font-weight: bold;
+            }
+            p{
+                color: $color-primario;
+                margin-top: 2rem;
+                text-align: justify;
+            }
+        }
+    }
+    /*---- DESKTOP/NOSOTROS/SECCION 2----*/
+    .nosotros__seccion2{
+        margin-top: 10rem;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        text-decoration: none;
-        color: $color-primario;
-        transition: all 0.5s;
-        &:hover{
-            background-color: $color-primario;
-            color: $color-fondo;
+        div{
+            h2{
+                font-size: 3rem;
+                color: $color-cuaternario;
+                text-transform: lowercase;
+                text-align: center;
+                font-weight: bold;
+            }
         }
-    }
-    .categorias__divGrande2{
-        @extend .categorias__divGrande;
-        margin-top: 2.3rem;
-    }
-}
-// .tienda__categorias{
-//     display: flex;
-//     flex-direction: column;
-//     margin-bottom: 5rem;
-// }
-// .h2Perros{
-//     margin-top: 2rem;
-//     color:$color-primario;
-//     font-weight: bold;
-//     background-image: url(../../images/PerrosBN.jpg);
-//     background-size: cover;
-//     text-align: center;
-// }
-// .contenedor__imagenes2{
-//     display: flex;
-//     flex-flow: row nowrap;
-//     justify-content: space-evenly;
-// }
-// .categorias__articulo2{
-//     margin-top: 5rem;
-//     display: flex;
-//     flex-direction: row-reverse;
-// }
-// .h2Gatos{
-//     color: $color-primario;
-//     font-weight: bold;
-//     text-align: end;
-//     background-image: url(../images/GatosBN.jpg);
-//     background-size: cover;
-//     text-align: center;
-// }
-// .categorias__articulo3{
-//     display: flex;
-//     flex-wrap: row wrap;
-//     justify-content: center;
-// }
-// .h2Humanos{
-//     margin-top: 10rem;
-//     color: $color-primario;
-//     font-weight: bold;
-//     background-image: url(../images/HumanosBN.jpg);
-//     background-size: cover;
-//     text-align: center;
-// }
-// .galeria2{
-//     display: flex;
-//     flex-flow: column nowrap;
-//     align-items: space-evenly;
-// }
-// .contenedor__imagenes3{
-//     margin-top: 10rem;
-//     display: flex;
-//     justify-content: space-evenly;
-// }
-/*---- DESKTOP/TIENDA/MAIN/NEWSLETTER ----*/
-.tienda__newsletter{
-    margin-top: 5rem;
-    display: flex;
-    flex-flow: column nowrap;
-    margin-bottom: 10rem;
-    h3{
-        text-align: center;
-        margin-bottom: 2.5rem;
-    }
-    form{
-        line-height: 5rem;
-        .tienda__campos{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-        }
-        .tienda__boton{
-            text-align: center;
-            margin-top: 2.5rem;
-        }
-    }
-}
 
-/*---- DESKTOP/VENTA MAYORISTA ----*/
-/*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV1 ----*/
-.main__mayoristas{
-    background-color: $color-primario;
-}
-
-.mayoristas__div1{
-    height: 30vh;
-    background-image: url(../../images/Banner3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    h1{
-        color: $color-fondo;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        font-weight: bolder;
-        text-align: center;
-    }
-}
-/*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV2 ----*/
-.mayoristas__div2{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
-    h2{
-        font-size: 4rem;
-        margin-top: 10rem;
-        margin-bottom: 5rem;
-        color: $color-cuaternario;
-        text-transform: lowercase;
-        font-weight: bold;
-        text-align: center;
-    }
-    // p{
-    //     margin-bottom: 5rem;
-    //     color:$color-primario;
-    //     text-align: justify;
-    //     a{
-    //         color: $color-primario;
-    //         text-transform: lowercase;
-    //         font-style: italic;
-    //         font-weight: bold;
-    //         text-decoration: none;
-    //     }
-    // }
-}
-/*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV3 ----*/
-.mayoristas__div3{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
-    h2{
-        font-size: 4rem;
-        margin-top: 10rem;
-        margin-bottom: 5rem;
-        color: $color-cuaternario;
-        text-transform: lowercase;
-        font-weight: bold;
-        text-align: center;
-    }
-    h3{
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        color: $color-fondo;
-        font-weight: bold;
-        text-align: center;
-    }
-    p{
-        color: $color-fondo;
-        text-align: justify;
-        a{
-            color: $color-fondo;
-            text-transform: lowercase;
-            font-style: italic;
-            font-weight: bold;
-            text-decoration: none;
+        div{
+            // display:flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items:flex-end;
+            margin-bottom: 5rem;
+            p{
+                color: $color-primario;
+                margin-top: 2rem;
+                text-align: justify;
+            }
+            img{
+                margin-top: 5rem;
+            }
         }
     }
-}
-/*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV4 ----*/
-.mayoristas__div4{
-    margin-top: 2.5rem;
-    margin-bottom: 10rem;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
-    h3{
-        margin-top: 10rem;
-        margin-bottom: 5rem;
-        color: $color-fondo;
-        font-weight: bold;
-        text-align: center;
-    }
-    p{
-        color: $color-fondo;
-        text-align: justify;
-        a{
-            color: $color-fondo;
-            text-transform: lowercase;
-            font-style: italic;
-            font-weight: bold;
-            text-decoration: none;
-        }
-    }
-}
 
-/*---- DESKTOP/NOSOTROS ----*/
-/*---- DESKTOP/NOSOTROS/MAIN ----*/
-.main__nosotros{
-    background-color: $color-fondo;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    div{
+    /*---- DESKTOP/CONTACTO ----*/
+    /*---- DESKTOP/CONTACTO/MAIN ----*/
+    .contacto__fondo{
+        background-color: $color-fondo;
+    }
+    .main__contacto{
+        height: 30vh;
+        background-image: url(../../images/Banner3.jpg);
+        background-size: cover;
         h1{
+            color: $color-primario;
+            font-weight: bolder;
+            text-align: center;
+        }
+    } 
+
+    /*---- DESKTOP/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
+    .contacto__preguntasFrecuentes{
+        h2{
+            margin-top: 5rem;
             color: $color-cuaternario;
             font-size: 4rem;
-            margin-top: 10rem;
-            margin-bottom: 10rem;
+            font-weight: bold;
             text-transform: lowercase;
-            font-weight: bold;
-            text-align: center;
+            margin-bottom: 5rem;
         }
-    }
-}
-/*---- DESKTOP/NOSOTROS/SECCION 1----*/
-.nosotros__seccion1{
-    // display: flex;
-    // justify-content: center;
-    // align-items: flex-start;
-    div{
-        // display:flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: flex-start;
-        h2{
-            color: $color-primario;
-            font-weight: bold;
-        }
-        p{
-            color: $color-primario;
-            margin-top: 2rem;
-            text-align: justify;
-        }
-    }
-}
-/*---- DESKTOP/NOSOTROS/SECCION 2----*/
-.nosotros__seccion2{
-    margin-top: 10rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    div{
-        h2{
-            font-size: 3rem;
-            color: $color-cuaternario;
-            text-transform: lowercase;
-            text-align: center;
-            font-weight: bold;
+        div{
+            div{
+                h3{
+                    button{
+                        color: $color-primario;
+                        background-color: $color-fondo;
+                        &:focus{
+                            color: $color-cuaternario;
+                            background-color: $color-fondo;
+                            box-shadow: none;
+                        }
+                    }
+                }
+                // MODIFICAR COLOR DE FONDO DEL BOTON CUANDO NO ESTÁ APRETADO
+            }
         }
     }
 
-    div{
-        // display:flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items:flex-end;
+    .preguntasFrecuentes__nuestrosProductos{
+        display: flex;
+        flex-flow: column wrap;
         margin-bottom: 5rem;
+        color: $color-primario;
+        h3{
+            margin-top: 2rem;
+            font-weight: bold;
+        }
+        h4{
+            margin-top: 2rem;
+        }
         p{
-            color: $color-primario;
             margin-top: 2rem;
             text-align: justify;
+            a{
+                color: $color-fondo;
+                font-weight: bold;
+                font-style: italic;
+                text-decoration: none;
+            }
+        }
+    }
+    /*---- DESKTOP/CONTACTO/MAIN/FORMULARIO ----*/
+    .container__contacto{
+        display: flex;
+        flex-flow: column nowrap;
+        h2{
+            margin-top: 5rem;
+            color: $color-cuaternario;
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: lowercase;
+            margin-bottom: 5rem;
+        }
+        form{
+            margin-top: 2rem;
+            // font-family: helvetica;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $color-primario;
+            div{
+                select{
+                    font-family: now;
+                    text-transform: uppercase;
+                }
+            } 
+        }
+    }
+    // .contenedor__checkbox{
+    //     margin-top: 5rem;
+    //     margin-bottom: 5rem;
+    //     display: flex;
+    //     flex-flow: column wrap;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+    .contenedor__botones{
+        display: flex;
+        justify-content: space-between;
+    }
+    .formulario__textarea{
+        resize: none;
+    }
+    /*---- DESKTOP/CONTACTO/MAIN/NEWSLETTER ----*/
+    .contacto__newsletter{
+        h3{
+            color: $color-cuaternario;
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .newsletter__formulario{
+            display: flex;
+            flex-flow: column nowrap;
+            color: $color-primario;
+            margin-bottom: 5rem;
+            text-transform: uppercase;
+            .newsletter__campos{
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            .newsletter__boton{
+                text-align: left;
+                margin-top: 2.5rem;
+            }
+        }
+    }
+
+    /*---- DESKTOP/ERROR-404/MAIN ----*/
+    .seccion__error{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10rem;
+        h2{
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+        }
+        p{
+            a{
+                color: $color-primario;
+                font-weight: bolder;
+                text-decoration: none;
+                &:hover{
+                    color: $color-secundario;
+                }
+            }
         }
         img{
             margin-top: 5rem;
         }
-    }
-}
-
-/*---- DESKTOP/CONTACTO ----*/
-/*---- DESKTOP/CONTACTO/MAIN ----*/
-.contacto__fondo{
-    background-color: $color-fondo;
-}
-.main__contacto{
-    height: 30vh;
-    background-image: url(../../images/Banner3.jpg);
-    background-size: cover;
-    h1{
-        color: $color-primario;
-        font-weight: bolder;
-        text-align: center;
-    }
-} 
-
-/*---- DESKTOP/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
-.contacto__preguntasFrecuentes{
-    h2{
-        margin-top: 5rem;
-        color: $color-cuaternario;
-        font-size: 4rem;
-        font-weight: bold;
-        text-transform: lowercase;
-        margin-bottom: 5rem;
-    }
-    div{
-        div{
-            h3{
-                button{
-                    color: $color-primario;
-                    background-color: $color-fondo;
-                    &:focus{
-                        color: $color-cuaternario;
-                        background-color: $color-fondo;
-                        box-shadow: none;
-                    }
-                }
-            }
-            // MODIFICAR COLOR DE FONDO DEL BOTON CUANDO NO ESTÁ APRETADO
-        }
-    }
-}
-
-.preguntasFrecuentes__nuestrosProductos{
-    display: flex;
-    flex-flow: column wrap;
-    margin-bottom: 5rem;
-    color: $color-primario;
-    h3{
-        margin-top: 2rem;
-        font-weight: bold;
-    }
-    h4{
-        margin-top: 2rem;
-    }
-    p{
-        margin-top: 2rem;
-        text-align: justify;
-        a{
-            color: $color-fondo;
-            font-weight: bold;
-            font-style: italic;
-            text-decoration: none;
-        }
-    }
-}
-/*---- DESKTOP/CONTACTO/MAIN/FORMULARIO ----*/
-.container__contacto{
-    display: flex;
-    flex-flow: column nowrap;
-    h2{
-        margin-top: 5rem;
-        color: $color-cuaternario;
-        font-size: 4rem;
-        font-weight: bold;
-        text-transform: lowercase;
-        margin-bottom: 5rem;
-    }
-    form{
-        margin-top: 2rem;
-        // font-family: helvetica;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: $color-primario;
-        div{
-            select{
-                font-family: now;
-                text-transform: uppercase;
-            }
-        } 
-    }
-}
-// .contenedor__checkbox{
-//     margin-top: 5rem;
-//     margin-bottom: 5rem;
-//     display: flex;
-//     flex-flow: column wrap;
-//     justify-content: center;
-//     align-items: center;
-// }
-.contenedor__botones{
-    display: flex;
-    justify-content: space-between;
-}
-.formulario__textarea{
-    resize: none;
-}
-/*---- DESKTOP/CONTACTO/MAIN/NEWSLETTER ----*/
-.contacto__newsletter{
-    h3{
-        color: $color-cuaternario;
-        margin-top: 10rem;
-        margin-bottom: 5rem;
-        font-size: 4rem;
-        font-weight: bold;
-    }
-    .newsletter__formulario{
-        display: flex;
-        flex-flow: column nowrap;
-        color: $color-primario;
-        margin-bottom: 5rem;
-        text-transform: uppercase;
-        .newsletter__campos{
-            display: flex;
-            flex-flow: row nowrap;
-        }
-        .newsletter__boton{
-            text-align: left;
-            margin-top: 2.5rem;
-        }
-    }
-}
-
-/*---- DESKTOP/ERROR-404/MAIN ----*/
-.seccion__error{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10rem;
-    h2{
-        margin-top: 10rem;
-        margin-bottom: 10rem;
-    }
-    p{
-        a{
-            color: $color-primario;
-            font-weight: bolder;
-            text-decoration: none;
-            &:hover{
-                color: $color-secundario;
-            }
-        }
-    }
-    img{
-        margin-top: 5rem;
     }
 }
