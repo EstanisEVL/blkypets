@@ -92,15 +92,9 @@ body {
     background-color: #fcfcfc; }
   .mayoristas__div1 {
     height: 30vh;
-    background-image: url(../../images/Banner3.jpg);
+    background-image: url(../../images/Banner-Mayoristas-Color.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
-    .mayoristas__div1 h1 {
-      color: #fcfcfc;
-      margin-top: 5rem;
-      margin-bottom: 5rem;
-      font-weight: bolder;
-      text-align: center; }
   /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV2 ----*/
   .mayoristas__div2 {
     display: flex;
@@ -108,7 +102,7 @@ body {
     justify-content: flex-start;
     align-items: center; }
     .mayoristas__div2 h2 {
-      margin-top: 10rem;
+      margin-top: 5rem;
       margin-bottom: 5rem;
       color: #e0005a;
       text-transform: lowercase;
@@ -120,16 +114,16 @@ body {
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: center; }
-    .mayoristas__div3 h2 {
-      margin-top: 10rem;
-      margin-bottom: 5rem;
+    .mayoristas__div3 h1 {
+      margin-top: 5rem;
+      margin-bottom: 2.5rem;
       color: #e0005a;
       text-transform: lowercase;
       font-weight: bold;
       text-align: center; }
     .mayoristas__div3 h3 {
-      margin-top: 5rem;
-      margin-bottom: 5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
       color: #131313;
       font-weight: bold;
       text-align: center; }
@@ -151,8 +145,8 @@ body {
     justify-content: flex-start;
     align-items: center; }
     .mayoristas__div4 h3 {
-      margin-top: 10rem;
-      margin-bottom: 5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
       color: #131313;
       font-weight: bold;
       text-align: center; }
@@ -186,13 +180,10 @@ body {
     background-color: #131313;
     color: #fcfcfc; }
     .titulo h1 {
+      font-size: 4rem;
       text-align: center;
       font-weight: bold;
-      text-transform: uppercase; }
-    .titulo p {
-      text-align: center;
-      font-weight: bold;
-      text-transform: uppercase; }
+      text-transform: lowercase; }
   .slider {
     height: 30vh;
     display: flex;
@@ -241,8 +232,15 @@ body {
       flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
-      font-weight: bold;
       text-transform: uppercase; }
+      .colecciones div h2 {
+        font-size: 4rem;
+        text-transform: lowercase; }
+        .colecciones div h2 span {
+          font-weight: bold;
+          color: transparent;
+          background: linear-gradient(to left, #a91fff, #e0005a);
+          background-clip: text; }
     .colecciones article {
       height: 80%;
       background-image: url(../images/Banner3.jpg);
@@ -311,22 +309,23 @@ body {
     margin-top: 5rem;
     background-color: #fcfcfc; }
     .destacados h2 {
+      font-size: 4rem;
       margin-top: 5rem;
       margin-bottom: 5rem;
-      font-weight: bold;
-      text-align: center; }
-    .destacados div {
-      padding-top: 5rem;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around; }
+      text-align: center;
+      text-transform: lowercase; }
+      .destacados h2 span {
+        font-weight: bold;
+        color: transparent;
+        background: linear-gradient(to left, #a91fff, #e0005a);
+        background-clip: text; }
     .destacados p {
       margin-top: 5rem;
       text-align: center; }
   /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
   .clientes {
     margin-top: 5rem;
-    margin-bottom: 5rem; }
+    margin-bottom: 10rem; }
     .clientes .clientes__newsletter {
       display: flex;
       flex-flow: column nowrap;
@@ -426,15 +425,9 @@ body {
     background-color: #fcfcfc; }
   .mayoristas__div1 {
     height: 30vh;
-    background-image: url(../../images/Banner3.jpg);
+    background-image: url(../../images/Banner-Mayoristas-Color.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
-    .mayoristas__div1 h1 {
-      color: #fcfcfc;
-      margin-top: 5rem;
-      margin-bottom: 5rem;
-      font-weight: bolder;
-      text-align: center; }
   /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV2 ----*/
   .mayoristas__div2 {
     display: flex;
@@ -455,7 +448,7 @@ body {
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: center; }
-    .mayoristas__div3 h2 {
+    .mayoristas__div3 h1 {
       font-size: 4rem;
       margin-top: 10rem;
       margin-bottom: 5rem;

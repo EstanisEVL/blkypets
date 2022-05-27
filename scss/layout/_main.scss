@@ -4,19 +4,11 @@
     .main__mayoristas{
         background-color: $color-fondo;
     }
-    
     .mayoristas__div1{
         height: 30vh;
-        background-image: url(../../images/Banner3.jpg);
+        background-image: url(../../images/Banner-Mayoristas-Color.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        h1{
-            color: $color-fondo;
-            margin-top: 5rem;
-            margin-bottom: 5rem;
-            font-weight: bolder;
-            text-align: center;
-        }
     }
     /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV2 ----*/
     .mayoristas__div2{
@@ -25,18 +17,13 @@
         justify-content: flex-start;
         align-items: center;
         h2{
-            margin-top: 10rem;
+            margin-top: 5rem;
             margin-bottom: 5rem;
             color: $color-cuaternario;
             text-transform: lowercase;
             font-weight: bold;
             text-align: center;
         }
-        // div{
-        //     iframe{
-        //         display: none;
-        //     }
-        // }
     }
     /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV3 ----*/
     .mayoristas__div3{
@@ -44,17 +31,17 @@
         flex-flow: column wrap;
         justify-content: flex-start;
         align-items: center;
-        h2{
-            margin-top: 10rem;
-            margin-bottom: 5rem;
+        h1{
+            margin-top: 5rem;
+            margin-bottom: 2.5rem;
             color: $color-cuaternario;
             text-transform: lowercase;
             font-weight: bold;
             text-align: center;
         }
         h3{
-            margin-top: 5rem;
-            margin-bottom: 5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
             color: $color-primario;
             font-weight: bold;
             text-align: center;
@@ -80,8 +67,8 @@
         justify-content: flex-start;
         align-items: center;
         h3{
-            margin-top: 10rem;
-            margin-bottom: 5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
             color: $color-primario;
             font-weight: bold;
             text-align: center;
@@ -124,14 +111,10 @@
         background-color: $color-primario;
         color: $color-fondo;
         h1{
+            font-size: 4rem;
             text-align: center;
             font-weight: bold;
-            text-transform: uppercase;
-        }
-        p{
-            text-align: center;
-            font-weight: bold;
-            text-transform: uppercase;
+            text-transform: lowercase;
         }
     }
 
@@ -194,12 +177,17 @@
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            font-weight: bold;
             text-transform: uppercase;
-            // h2{
-            //     font-weight: bold;
-
-            // }
+            h2{
+                font-size: 4rem;
+                text-transform: lowercase;
+                span{
+                    font-weight: bold;
+                    color: transparent;
+                    background: linear-gradient(to left, $color-secundario, $color-cuaternario);
+                    background-clip: text;
+                }
+            }
         }
         article{
             height: 80%;
@@ -284,16 +272,20 @@
         margin-top: 5rem;
         background-color: $color-fondo;
         h2{
+            font-size: 4rem;
             margin-top: 5rem;
             margin-bottom: 5rem;
-            font-weight: bold;
             text-align: center;
+            text-transform: lowercase;
+            span{
+                font-weight: bold;
+                color: transparent;
+                background: linear-gradient(to left, $color-secundario, $color-cuaternario);
+                background-clip: text;
+            }
         }
         div{
-            padding-top: 5rem;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
+            // padding-top: 5rem;
         }
         p{
             margin-top: 5rem;
@@ -303,7 +295,7 @@
     /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
     .clientes{
         margin-top: 5rem;
-        margin-bottom: 5rem;
+        margin-bottom: 10rem;
         .clientes__newsletter{
             display: flex;
             flex-flow: column nowrap;
@@ -437,16 +429,9 @@
 
     .mayoristas__div1{
         height: 30vh;
-        background-image: url(../../images/Banner3.jpg);
+        background-image: url(../../images/Banner-Mayoristas-Color.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        h1{
-            color: $color-fondo;
-            margin-top: 5rem;
-            margin-bottom: 5rem;
-            font-weight: bolder;
-            text-align: center;
-        }
     }
     /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV2 ----*/
     .mayoristas__div2{
@@ -470,7 +455,7 @@
         flex-flow: column wrap;
         justify-content: flex-start;
         align-items: center;
-        h2{
+        h1{
             font-size: 4rem;
             margin-top: 10rem;
             margin-bottom: 5rem;
