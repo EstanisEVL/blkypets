@@ -1,7 +1,247 @@
 /*---- MOBILE ----*/
 
-@media only screen and (max-width: 576px){
-    
+@media only screen and (max-width: 991px){
+    /*---- MOBILE/INDEX/MAIN ----*/
+    .fondo{
+        background-color: $color-fondo;
+    }
+    /*---- MOBILE/INDEX/MAIN/HERO ----*/
+    .titulo{
+        height: 15vh;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-primario;
+        color: $color-fondo;
+        h1{
+            text-align: center;
+            text-transform: lowercase;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+
+    .slider{
+        height: 20vh;
+        display: flex;
+        flex-flow: row wrap;
+        animation: slide 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 5s;
+        @keyframes slide{
+            0%{
+                background-color: $color-quinario;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            35%{
+                background-color: $color-secundario;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            70%{
+                background-color: $color-cuaternario;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            100%{
+                background-color: $color-quinario;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        div{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            .verMas{
+                display:none;
+            }
+            .monocromo{
+                a{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    /*---- MOBILE/INDEX/MAIN/COLECCIONES ----*/
+    .colecciones{
+        height: 25vh;
+        display: flex;
+        flex-flow: column nowrap;
+        div{
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            h2{
+                text-align: center;
+                font-size: 2rem;
+                text-transform: lowercase;
+                span{
+                    font-weight: bold;
+                    color: transparent;
+                    background: -webkit-linear-gradient(to right, $color-secundario, $color-cuaternario);
+                    background: linear-gradient(to right, $color-secundario, $color-cuaternario);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }
+        }
+        article{
+            height: 80%;
+            background-image: url(../images/Banner3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            div{
+                .verMasColecciones{
+                    display:none;
+                }
+                .bouquet{
+                    a{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    /*---- MOBILE/INDEX/MAIN/CATEGORIAS ----*/
+    .categorias{
+        margin-top: 10rem;
+        .categorias__perros{
+            height: 50vh;
+            background-image: url(../images/PerrosBN.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 2.5rem;
+            h3{
+                display: none;
+                font-weight: bolder;
+                text-transform: uppercase;
+            }
+            a{
+                transform: scale(0.75);
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+        .categorias__gatos{
+            height: 50vh;
+            background-image: url(../images/GatosBN.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 2.5rem;
+            h3{
+                display: none;
+                font-weight: bolder;
+                text-transform: uppercase;
+            }
+            a{
+                transform: scale(0.75);
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+        .categorias__humanos{
+            height: 50vh;
+            background-image: url(../images/HumanosBN.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 2.5rem;
+            h3{
+                display: none;
+                font-weight: bolder;
+                text-transform: uppercase;
+            }
+            a{
+                transform: scale(0.75);
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+    }
+    /*---- MOBILE/INDEX/MAIN/DESTACADOS ----*/
+    .destacados{
+        margin-top: 2.5rem;
+        background-color: $color-fondo;
+        h2{
+            font-size: 2rem;
+            margin-bottom: 5rem;
+            text-align: center;
+            text-transform: lowercase;
+            span{
+                font-weight: bold;
+                color: transparent;
+                background: -webkit-linear-gradient(to right, $color-secundario, $color-cuaternario);
+                background: linear-gradient(to right, $color-secundario, $color-cuaternario);
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+        }
+    }
+    /*---- MOBILE/INDEX/MAIN/CLIENTES ----*/
+    .clientes{
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+        .clientes__newsletter{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            h3{
+                text-align: center;
+                font-weight: bold;
+            }
+            .formulario{
+                margin-top: 5rem;
+                display: flex;
+                flex-flow: column nowrap;
+                .formulario__campos{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-evenly;
+                    line-height: 3rem;
+                }
+                .formulario__boton{
+                    text-align: center;
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+        .clientes__instagram{
+            margin-top: 2.5rem;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            .clientes__titulo{
+                font-weight: bold;
+                color: $color-primario;
+                text-decoration: none;
+                margin-bottom: 5rem;
+            }
+        }
+    }
     
     /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV1 ----*/
     .main__mayoristas{
@@ -9,7 +249,7 @@
     }
     .mayoristas__div1{
         height: 30vh;
-        background-image: url(../../images/Banner-Mayoristas-Color.jpg);
+        background-image: url(../images/Banner-Mayoristas-Color.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -109,12 +349,14 @@
         h2{
             margin-top: 5rem;
             color: $color-cuaternario;
-            font-size: 4rem;
+            font-size: 2rem;
             font-weight: bold;
             text-transform: lowercase;
             margin-bottom: 5rem;
+            text-align: center;
         }
         div{
+            text-align: center;
             div{
                 h3{
                     button{
@@ -131,7 +373,6 @@
             }
         }
     }
-
     .preguntasFrecuentes__nuestrosProductos{
         display: flex;
         flex-flow: column wrap;
@@ -162,28 +403,31 @@
         h2{
             margin-top: 5rem;
             color: $color-cuaternario;
-            font-size: 4rem;
+            font-size: 2rem;
             font-weight: bold;
             text-transform: lowercase;
             margin-bottom: 5rem;
+            text-align: center;
         }
         form{
             margin-top: 2rem;
-            // font-family: helvetica;
             text-transform: uppercase;
-            font-weight: bold;
             color: $color-primario;
+            line-height: 5rem;
             div{
                 select{
-                    font-family: now;
+                    // font-family: now;
                     text-transform: uppercase;
                 }
             } 
         }
     }
     .formulario__botones{
+        // font-size: 2rem;
         display: flex;
+        flex-flow: column wrap;
         justify-content: space-between;
+        gap: 2rem;
     }
     .formulario__textarea{
         resize: none;
@@ -194,8 +438,9 @@
             color: $color-cuaternario;
             margin-top: 10rem;
             margin-bottom: 5rem;
-            font-size: 4rem;
+            font-size: 2rem;
             font-weight: bold;
+            text-align: center;
         }
         .newsletter__formulario{
             display: flex;
@@ -208,16 +453,15 @@
                 flex-flow: row nowrap;
             }
             .newsletter__boton{
-                text-align: left;
+                text-align: center;
                 margin-top: 2.5rem;
             }
         }
     }
-
 }
 
 
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 992px){
     /*---- DESKTOP/INDEX/MAIN ----*/
     .fondo{
         background-color: $color-fondo;
@@ -225,14 +469,17 @@
     /*---- DESKTOP/INDEX/MAIN/HERO ----*/
     .hero{
         height: 70vh;
-        background-image: url(../images/Banner1menossaturado.jpg);
+        background-image: url(../images/BannerPrincipal.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        img{
+            display: none;
+        }
     }
 
     .titulo{
-        height: 10vh;
+        height: 15vh;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -242,8 +489,10 @@
         h1{
             font-size: 4rem;
             text-align: center;
-            font-weight: bold;
             text-transform: lowercase;
+            span{
+                font-weight: bold;
+            }
         }
     }
 
@@ -251,8 +500,6 @@
         height: 30vh;
         display: flex;
         flex-flow: row wrap;
-        // justify-content: center;
-        // align-items: center;
         animation: slide 20s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in;
@@ -288,8 +535,11 @@
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            a{
-                text-align: center;
+            .monocromo{
+                display: none;
+                a{
+                    text-align: center;
+                }
             }
         }
 
@@ -313,7 +563,9 @@
                 span{
                     font-weight: bold;
                     color: transparent;
-                    background: linear-gradient(to left, $color-secundario, $color-cuaternario);
+                    background: -webkit-linear-gradient(to right, $color-secundario, $color-cuaternario);
+                    background: linear-gradient(to right, $color-secundario, $color-cuaternario);
+                    -webkit-background-clip: text;
                     background-clip: text;
                 }
             }
@@ -323,29 +575,36 @@
             background-image: url(../images/Banner3.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            div{
+                .bouquet{
+                        display: none;
+                }
+            }
         }
     }
     /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
     .categorias{
-        height: 50vh;
+        height: 70vh;
         margin-top: 20rem;
         .categorias__perros{
             background-image: url(../images/PerrosBN.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            line-height: 5rem;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-end;
+            align-items: flex-end;
             h3{
-                margin-top: 33rem;
-                margin-left: 30rem;
                 color: transparent;
                 font-weight: bolder;
                 text-transform: uppercase;
             }
             a{
+                margin-bottom: 2rem;
+                margin-right: 2rem;
                 color: $color-primario;
                 text-decoration: none;
-                margin-left: 26rem;
                 &:hover{
                     color: $color-fondo;
                 }
@@ -356,18 +615,20 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            line-height: 5rem;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-end;
+            align-items: flex-end;
             h3{
-                margin-top: 33rem;
-                margin-left: 30rem;
                 color: transparent;
                 font-weight: bolder;
                 text-transform: uppercase;
             }
             a{
+                margin-bottom: 2rem;
+                margin-right: 2rem;
                 color: $color-primario;
                 text-decoration: none;
-                margin-left: 27rem;
                 &:hover{
                     color: $color-fondo;
                 }
@@ -378,18 +639,20 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            line-height: 5rem;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-end;
+            align-items: flex-end;
             h3{
-                margin-top: 33rem;
-                margin-left: 30rem;
                 color: transparent;
                 font-weight: bolder;
                 text-transform: uppercase;
             }
             a{
+                margin-bottom: 2rem;
+                margin-right: 2rem;
                 color: $color-primario;
                 text-decoration: none;
-                margin-left: 23rem;
                 &:hover{
                     color: $color-fondo;
                 }
@@ -409,16 +672,11 @@
             span{
                 font-weight: bold;
                 color: transparent;
-                background: linear-gradient(to left, $color-secundario, $color-cuaternario);
+                background: -webkit-linear-gradient(to right, $color-secundario, $color-cuaternario);
+                background: linear-gradient(to right, $color-secundario, $color-cuaternario);
+                -webkit-background-clip: text;
                 background-clip: text;
             }
-        }
-        div{
-            // padding-top: 5rem;
-        }
-        p{
-            margin-top: 5rem;
-            text-align: center;
         }
     }
     /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
@@ -487,9 +745,9 @@
         }
     }
     /*---- DESKTOP/TIENDA/MAIN/COLECCIONES ----*/
-    .tienda__colecciones{
+    // .tienda__colecciones{
         
-    }
+    // }
 
     /*---- DESKTOP/TIENDA/MAIN/CATEGORÍAS ----*/
     .tienda__categorias{
@@ -621,7 +879,7 @@
         justify-content: flex-start;
         align-items: center;
         h3{
-            margin-top: 10rem;
+            margin-top: 2.5rem;
             margin-bottom: 5rem;
             color: $color-primario;
             font-weight: bold;

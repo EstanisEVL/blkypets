@@ -86,13 +86,206 @@ body {
             background-color: #131313; }
 
 /*---- MOBILE ----*/
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 991px) {
+  /*---- MOBILE/INDEX/MAIN ----*/
+  .fondo {
+    background-color: #fcfcfc; }
+  /*---- MOBILE/INDEX/MAIN/HERO ----*/
+  .titulo {
+    height: 15vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+    color: #fcfcfc; }
+    .titulo h1 {
+      text-align: center;
+      text-transform: lowercase; }
+      .titulo h1 span {
+        font-weight: bold; }
+  .slider {
+    height: 20vh;
+    display: flex;
+    flex-flow: row wrap;
+    animation: slide 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s; }
+  @keyframes slide {
+    0% {
+      background-color: #00bbe0;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    35% {
+      background-color: #a91fff;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    70% {
+      background-color: #e0005a;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    100% {
+      background-color: #00bbe0;
+      background-repeat: no-repeat;
+      background-size: contain; } }
+    .slider div {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center; }
+      .slider div .verMas {
+        display: none; }
+      .slider div .monocromo a {
+        text-align: center; }
+  /*---- MOBILE/INDEX/MAIN/COLECCIONES ----*/
+  .colecciones {
+    height: 25vh;
+    display: flex;
+    flex-flow: column nowrap; }
+    .colecciones div {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase; }
+      .colecciones div h2 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: lowercase; }
+        .colecciones div h2 span {
+          font-weight: bold;
+          color: transparent;
+          background: -webkit-linear-gradient(to right, #a91fff, #e0005a);
+          background: linear-gradient(to right, #a91fff, #e0005a);
+          -webkit-background-clip: text;
+          background-clip: text; }
+    .colecciones article {
+      height: 80%;
+      background-image: url(../images/Banner3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .colecciones article div .verMasColecciones {
+        display: none; }
+      .colecciones article div .bouquet a {
+        text-align: center; }
+  /*---- MOBILE/INDEX/MAIN/CATEGORIAS ----*/
+  .categorias {
+    margin-top: 10rem; }
+    .categorias .categorias__perros {
+      height: 50vh;
+      background-image: url(../images/PerrosBN.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 2.5rem; }
+      .categorias .categorias__perros h3 {
+        display: none;
+        font-weight: bolder;
+        text-transform: uppercase; }
+      .categorias .categorias__perros a {
+        transform: scale(0.75);
+        text-decoration: none;
+        text-align: center; }
+    .categorias .categorias__gatos {
+      height: 50vh;
+      background-image: url(../images/GatosBN.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 2.5rem; }
+      .categorias .categorias__gatos h3 {
+        display: none;
+        font-weight: bolder;
+        text-transform: uppercase; }
+      .categorias .categorias__gatos a {
+        transform: scale(0.75);
+        text-decoration: none;
+        text-align: center; }
+    .categorias .categorias__humanos {
+      height: 50vh;
+      background-image: url(../images/HumanosBN.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 2.5rem; }
+      .categorias .categorias__humanos h3 {
+        display: none;
+        font-weight: bolder;
+        text-transform: uppercase; }
+      .categorias .categorias__humanos a {
+        transform: scale(0.75);
+        text-decoration: none;
+        text-align: center; }
+  /*---- MOBILE/INDEX/MAIN/DESTACADOS ----*/
+  .destacados {
+    margin-top: 2.5rem;
+    background-color: #fcfcfc; }
+    .destacados h2 {
+      font-size: 2rem;
+      margin-bottom: 5rem;
+      text-align: center;
+      text-transform: lowercase; }
+      .destacados h2 span {
+        font-weight: bold;
+        color: transparent;
+        background: -webkit-linear-gradient(to right, #a91fff, #e0005a);
+        background: linear-gradient(to right, #a91fff, #e0005a);
+        -webkit-background-clip: text;
+        background-clip: text; }
+  /*---- MOBILE/INDEX/MAIN/CLIENTES ----*/
+  .clientes {
+    margin-top: 5rem;
+    margin-bottom: 10rem; }
+    .clientes .clientes__newsletter {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center; }
+      .clientes .clientes__newsletter h3 {
+        text-align: center;
+        font-weight: bold; }
+      .clientes .clientes__newsletter .formulario {
+        margin-top: 5rem;
+        display: flex;
+        flex-flow: column nowrap; }
+        .clientes .clientes__newsletter .formulario .formulario__campos {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-evenly;
+          line-height: 3rem; }
+        .clientes .clientes__newsletter .formulario .formulario__boton {
+          text-align: center;
+          margin-top: 2.5rem; }
+    .clientes .clientes__instagram {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center; }
+      .clientes .clientes__instagram .clientes__titulo {
+        font-weight: bold;
+        color: #131313;
+        text-decoration: none;
+        margin-bottom: 5rem; }
   /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV1 ----*/
   .main__mayoristas {
     background-color: #fcfcfc; }
   .mayoristas__div1 {
     height: 30vh;
-    background-image: url(../../images/Banner-Mayoristas-Color.jpg);
+    background-image: url(../images/Banner-Mayoristas-Color.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
   /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV2 ----*/
@@ -175,17 +368,20 @@ body {
   .contacto__preguntasFrecuentes h2 {
     margin-top: 5rem;
     color: #e0005a;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: lowercase;
-    margin-bottom: 5rem; }
-  .contacto__preguntasFrecuentes div div h3 button {
-    color: #131313;
-    background-color: #fcfcfc; }
-    .contacto__preguntasFrecuentes div div h3 button:focus {
-      color: #e0005a;
-      background-color: #fcfcfc;
-      box-shadow: none; }
+    margin-bottom: 5rem;
+    text-align: center; }
+  .contacto__preguntasFrecuentes div {
+    text-align: center; }
+    .contacto__preguntasFrecuentes div div h3 button {
+      color: #131313;
+      background-color: #fcfcfc; }
+      .contacto__preguntasFrecuentes div div h3 button:focus {
+        color: #e0005a;
+        background-color: #fcfcfc;
+        box-shadow: none; }
   .preguntasFrecuentes__nuestrosProductos {
     display: flex;
     flex-flow: column wrap;
@@ -211,21 +407,23 @@ body {
     .container__contacto h2 {
       margin-top: 5rem;
       color: #e0005a;
-      font-size: 4rem;
+      font-size: 2rem;
       font-weight: bold;
       text-transform: lowercase;
-      margin-bottom: 5rem; }
+      margin-bottom: 5rem;
+      text-align: center; }
     .container__contacto form {
       margin-top: 2rem;
       text-transform: uppercase;
-      font-weight: bold;
-      color: #131313; }
+      color: #131313;
+      line-height: 5rem; }
       .container__contacto form div select {
-        font-family: now;
         text-transform: uppercase; }
   .formulario__botones {
     display: flex;
-    justify-content: space-between; }
+    flex-flow: column wrap;
+    justify-content: space-between;
+    gap: 2rem; }
   .formulario__textarea {
     resize: none; }
   /*---- MOBILE/CONTACTO/MAIN/NEWSLETTER ----*/
@@ -233,8 +431,9 @@ body {
     color: #e0005a;
     margin-top: 10rem;
     margin-bottom: 5rem;
-    font-size: 4rem;
-    font-weight: bold; }
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center; }
   .contacto__newsletter .newsletter__formulario {
     display: flex;
     flex-flow: column nowrap;
@@ -245,22 +444,24 @@ body {
       display: flex;
       flex-flow: row nowrap; }
     .contacto__newsletter .newsletter__formulario .newsletter__boton {
-      text-align: left;
+      text-align: center;
       margin-top: 2.5rem; } }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
   /*---- DESKTOP/INDEX/MAIN ----*/
   .fondo {
     background-color: #fcfcfc; }
   /*---- DESKTOP/INDEX/MAIN/HERO ----*/
   .hero {
     height: 70vh;
-    background-image: url(../images/Banner1menossaturado.jpg);
+    background-image: url(../images/BannerPrincipal.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
+    .hero img {
+      display: none; }
   .titulo {
-    height: 10vh;
+    height: 15vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -270,8 +471,9 @@ body {
     .titulo h1 {
       font-size: 4rem;
       text-align: center;
-      font-weight: bold;
       text-transform: lowercase; }
+      .titulo h1 span {
+        font-weight: bold; }
   .slider {
     height: 30vh;
     display: flex;
@@ -306,8 +508,10 @@ body {
       flex-flow: row nowrap;
       justify-content: center;
       align-items: center; }
-      .slider div a {
-        text-align: center; }
+      .slider div .monocromo {
+        display: none; }
+        .slider div .monocromo a {
+          text-align: center; }
   /*---- DESKTOP/INDEX/MAIN/COLECCIONES ----*/
   .colecciones {
     height: 40vh;
@@ -327,33 +531,39 @@ body {
         .colecciones div h2 span {
           font-weight: bold;
           color: transparent;
-          background: linear-gradient(to left, #a91fff, #e0005a);
+          background: -webkit-linear-gradient(to right, #a91fff, #e0005a);
+          background: linear-gradient(to right, #a91fff, #e0005a);
+          -webkit-background-clip: text;
           background-clip: text; }
     .colecciones article {
       height: 80%;
       background-image: url(../images/Banner3.jpg);
       background-repeat: no-repeat;
       background-size: cover; }
+      .colecciones article div .bouquet {
+        display: none; }
   /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
   .categorias {
-    height: 50vh;
+    height: 70vh;
     margin-top: 20rem; }
     .categorias .categorias__perros {
       background-image: url(../images/PerrosBN.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      line-height: 5rem; }
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      align-items: flex-end; }
       .categorias .categorias__perros h3 {
-        margin-top: 33rem;
-        margin-left: 30rem;
         color: transparent;
         font-weight: bolder;
         text-transform: uppercase; }
       .categorias .categorias__perros a {
+        margin-bottom: 2rem;
+        margin-right: 2rem;
         color: #131313;
-        text-decoration: none;
-        margin-left: 26rem; }
+        text-decoration: none; }
         .categorias .categorias__perros a:hover {
           color: #fcfcfc; }
     .categorias .categorias__gatos {
@@ -361,17 +571,19 @@ body {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      line-height: 5rem; }
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      align-items: flex-end; }
       .categorias .categorias__gatos h3 {
-        margin-top: 33rem;
-        margin-left: 30rem;
         color: transparent;
         font-weight: bolder;
         text-transform: uppercase; }
       .categorias .categorias__gatos a {
+        margin-bottom: 2rem;
+        margin-right: 2rem;
         color: #131313;
-        text-decoration: none;
-        margin-left: 27rem; }
+        text-decoration: none; }
         .categorias .categorias__gatos a:hover {
           color: #fcfcfc; }
     .categorias .categorias__humanos {
@@ -379,17 +591,19 @@ body {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      line-height: 5rem; }
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      align-items: flex-end; }
       .categorias .categorias__humanos h3 {
-        margin-top: 33rem;
-        margin-left: 30rem;
         color: transparent;
         font-weight: bolder;
         text-transform: uppercase; }
       .categorias .categorias__humanos a {
+        margin-bottom: 2rem;
+        margin-right: 2rem;
         color: #131313;
-        text-decoration: none;
-        margin-left: 23rem; }
+        text-decoration: none; }
         .categorias .categorias__humanos a:hover {
           color: #fcfcfc; }
   /*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
@@ -405,11 +619,10 @@ body {
       .destacados h2 span {
         font-weight: bold;
         color: transparent;
-        background: linear-gradient(to left, #a91fff, #e0005a);
+        background: -webkit-linear-gradient(to right, #a91fff, #e0005a);
+        background: linear-gradient(to right, #a91fff, #e0005a);
+        -webkit-background-clip: text;
         background-clip: text; }
-    .destacados p {
-      margin-top: 5rem;
-      text-align: center; }
   /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
   .clientes {
     margin-top: 5rem;
@@ -568,7 +781,7 @@ body {
     justify-content: flex-start;
     align-items: center; }
     .mayoristas__div4 h3 {
-      margin-top: 10rem;
+      margin-top: 2.5rem;
       margin-bottom: 5rem;
       color: #131313;
       font-weight: bold;
