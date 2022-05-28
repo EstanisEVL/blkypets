@@ -1,6 +1,9 @@
 /*---- MOBILE ----*/
-/*---- MOBILE/VENTA MAYORISTA/MAIN/DIV1 ----*/
+
 @media only screen and (max-width: 576px){
+    
+    
+    /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV1 ----*/
     .main__mayoristas{
         background-color: $color-fondo;
     }
@@ -85,6 +88,132 @@
             }
         }
     }
+    /*---- MOBILE/CONTACTO ----*/
+    /*---- MOBILE/CONTACTO/MAIN ----*/
+    .contacto__fondo{
+        background-color: $color-fondo;
+    }
+    .main__contacto{
+        height: 30vh;
+        background-image: url(../images/Banner3.jpg);
+        background-size: cover;
+        h1{
+            color: $color-primario;
+            font-weight: bolder;
+            text-align: center;
+        }
+    } 
+
+    /*---- MOBILE/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
+    .contacto__preguntasFrecuentes{
+        h2{
+            margin-top: 5rem;
+            color: $color-cuaternario;
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: lowercase;
+            margin-bottom: 5rem;
+        }
+        div{
+            div{
+                h3{
+                    button{
+                        color: $color-primario;
+                        background-color: $color-fondo;
+                        &:focus{
+                            color: $color-cuaternario;
+                            background-color: $color-fondo;
+                            box-shadow: none;
+                        }
+                    }
+                }
+                // MODIFICAR COLOR DE FONDO DEL BOTON CUANDO NO ESTÁ APRETADO
+            }
+        }
+    }
+
+    .preguntasFrecuentes__nuestrosProductos{
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 5rem;
+        color: $color-primario;
+        h3{
+            margin-top: 2rem;
+            font-weight: bold;
+        }
+        h4{
+            margin-top: 2rem;
+        }
+        p{
+            margin-top: 2rem;
+            text-align: justify;
+            a{
+                color: $color-fondo;
+                font-weight: bold;
+                font-style: italic;
+                text-decoration: none;
+            }
+        }
+    }
+    /*---- MOBILE/CONTACTO/MAIN/FORMULARIO ----*/
+    .container__contacto{
+        display: flex;
+        flex-flow: column nowrap;
+        h2{
+            margin-top: 5rem;
+            color: $color-cuaternario;
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: lowercase;
+            margin-bottom: 5rem;
+        }
+        form{
+            margin-top: 2rem;
+            // font-family: helvetica;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $color-primario;
+            div{
+                select{
+                    font-family: now;
+                    text-transform: uppercase;
+                }
+            } 
+        }
+    }
+    .formulario__botones{
+        display: flex;
+        justify-content: space-between;
+    }
+    .formulario__textarea{
+        resize: none;
+    }
+    /*---- MOBILE/CONTACTO/MAIN/NEWSLETTER ----*/
+    .contacto__newsletter{
+        h3{
+            color: $color-cuaternario;
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .newsletter__formulario{
+            display: flex;
+            flex-flow: column nowrap;
+            color: $color-primario;
+            margin-bottom: 5rem;
+            text-transform: uppercase;
+            .newsletter__campos{
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            .newsletter__boton{
+                text-align: left;
+                margin-top: 2.5rem;
+            }
+        }
+    }
+
 }
 
 
@@ -337,7 +466,7 @@
         background: $color-fondo;
         .tienda__titulo{
             height: 60vh;
-            background-image: url(../../images/BannerProductos1.jpg);
+            background-image: url(../images/BannerProductos1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
@@ -429,7 +558,7 @@
 
     .mayoristas__div1{
         height: 30vh;
-        background-image: url(../../images/Banner-Mayoristas-Color.jpg);
+        background-image: url(../images/Banner-Mayoristas-Color.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -593,7 +722,7 @@
     }
     .main__contacto{
         height: 30vh;
-        background-image: url(../../images/Banner3.jpg);
+        background-image: url(../images/Banner3.jpg);
         background-size: cover;
         h1{
             color: $color-primario;
@@ -679,15 +808,7 @@
             } 
         }
     }
-    // .contenedor__checkbox{
-    //     margin-top: 5rem;
-    //     margin-bottom: 5rem;
-    //     display: flex;
-    //     flex-flow: column wrap;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
-    .contenedor__botones{
+    .formulario__botones{
         display: flex;
         justify-content: space-between;
     }

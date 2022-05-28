@@ -86,8 +86,8 @@ body {
             background-color: #131313; }
 
 /*---- MOBILE ----*/
-/*---- MOBILE/VENTA MAYORISTA/MAIN/DIV1 ----*/
 @media only screen and (max-width: 576px) {
+  /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV1 ----*/
   .main__mayoristas {
     background-color: #fcfcfc; }
   .mayoristas__div1 {
@@ -158,7 +158,95 @@ body {
         text-transform: lowercase;
         font-style: italic;
         font-weight: bold;
-        text-decoration: none; } }
+        text-decoration: none; }
+  /*---- MOBILE/CONTACTO ----*/
+  /*---- MOBILE/CONTACTO/MAIN ----*/
+  .contacto__fondo {
+    background-color: #fcfcfc; }
+  .main__contacto {
+    height: 30vh;
+    background-image: url(../images/Banner3.jpg);
+    background-size: cover; }
+    .main__contacto h1 {
+      color: #131313;
+      font-weight: bolder;
+      text-align: center; }
+  /*---- MOBILE/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
+  .contacto__preguntasFrecuentes h2 {
+    margin-top: 5rem;
+    color: #e0005a;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-bottom: 5rem; }
+  .contacto__preguntasFrecuentes div div h3 button {
+    color: #131313;
+    background-color: #fcfcfc; }
+    .contacto__preguntasFrecuentes div div h3 button:focus {
+      color: #e0005a;
+      background-color: #fcfcfc;
+      box-shadow: none; }
+  .preguntasFrecuentes__nuestrosProductos {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 5rem;
+    color: #131313; }
+    .preguntasFrecuentes__nuestrosProductos h3 {
+      margin-top: 2rem;
+      font-weight: bold; }
+    .preguntasFrecuentes__nuestrosProductos h4 {
+      margin-top: 2rem; }
+    .preguntasFrecuentes__nuestrosProductos p {
+      margin-top: 2rem;
+      text-align: justify; }
+      .preguntasFrecuentes__nuestrosProductos p a {
+        color: #fcfcfc;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none; }
+  /*---- MOBILE/CONTACTO/MAIN/FORMULARIO ----*/
+  .container__contacto {
+    display: flex;
+    flex-flow: column nowrap; }
+    .container__contacto h2 {
+      margin-top: 5rem;
+      color: #e0005a;
+      font-size: 4rem;
+      font-weight: bold;
+      text-transform: lowercase;
+      margin-bottom: 5rem; }
+    .container__contacto form {
+      margin-top: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #131313; }
+      .container__contacto form div select {
+        font-family: now;
+        text-transform: uppercase; }
+  .formulario__botones {
+    display: flex;
+    justify-content: space-between; }
+  .formulario__textarea {
+    resize: none; }
+  /*---- MOBILE/CONTACTO/MAIN/NEWSLETTER ----*/
+  .contacto__newsletter h3 {
+    color: #e0005a;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    font-weight: bold; }
+  .contacto__newsletter .newsletter__formulario {
+    display: flex;
+    flex-flow: column nowrap;
+    color: #131313;
+    margin-bottom: 5rem;
+    text-transform: uppercase; }
+    .contacto__newsletter .newsletter__formulario .newsletter__campos {
+      display: flex;
+      flex-flow: row nowrap; }
+    .contacto__newsletter .newsletter__formulario .newsletter__boton {
+      text-align: left;
+      margin-top: 2.5rem; } }
 
 @media only screen and (min-width: 576px) {
   /*---- DESKTOP/INDEX/MAIN ----*/
@@ -358,7 +446,7 @@ body {
     background: #fcfcfc; }
     .tienda__fondo .tienda__titulo {
       height: 60vh;
-      background-image: url(../../images/BannerProductos1.jpg);
+      background-image: url(../images/BannerProductos1.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       text-align: center; }
@@ -425,7 +513,7 @@ body {
     background-color: #fcfcfc; }
   .mayoristas__div1 {
     height: 30vh;
-    background-image: url(../../images/Banner-Mayoristas-Color.jpg);
+    background-image: url(../images/Banner-Mayoristas-Color.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
   /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV2 ----*/
@@ -545,7 +633,7 @@ body {
     background-color: #fcfcfc; }
   .main__contacto {
     height: 30vh;
-    background-image: url(../../images/Banner3.jpg);
+    background-image: url(../images/Banner3.jpg);
     background-size: cover; }
     .main__contacto h1 {
       color: #131313;
@@ -603,7 +691,7 @@ body {
       .container__contacto form div select {
         font-family: now;
         text-transform: uppercase; }
-  .contenedor__botones {
+  .formulario__botones {
     display: flex;
     justify-content: space-between; }
   .formulario__textarea {
