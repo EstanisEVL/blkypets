@@ -352,18 +352,58 @@ body {
         font-style: italic;
         font-weight: bold;
         text-decoration: none; }
+  /*---- MOBILE/NOSOTROS ----*/
+  /*---- MOBILE/NOSOTROS/MAIN ----*/
+  .main__nosotros {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main__nosotros div h1 {
+      color: #e0005a;
+      font-size: 2rem;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      text-transform: lowercase;
+      text-align: center; }
+      .main__nosotros div h1 span {
+        font-weight: bold; }
+  /*---- DESKTOP/NOSOTROS/SECCION 1----*/
+  .nosotros__seccion1 div h2 {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    color: #131313;
+    font-weight: bold;
+    text-align: center; }
+  .nosotros__seccion1 div p {
+    color: #131313;
+    margin-top: 2rem;
+    text-align: justify; }
+  /*---- DESKTOP/NOSOTROS/SECCION 2----*/
+  .nosotros__seccion2 {
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+    .nosotros__seccion2 div h2 {
+      font-size: 2rem;
+      color: #e0005a;
+      text-transform: lowercase;
+      text-align: center;
+      margin-bottom: 5rem; }
+      .nosotros__seccion2 div h2 span {
+        font-weight: bold; }
+    .nosotros__seccion2 div p {
+      color: #131313;
+      margin-top: 2rem;
+      text-align: justify;
+      margin-bottom: 10rem; }
   /*---- MOBILE/CONTACTO ----*/
   /*---- MOBILE/CONTACTO/MAIN ----*/
   .contacto__fondo {
     background-color: #fcfcfc; }
-  .main__contacto {
-    height: 30vh;
-    background-image: url(../images/Banner3.jpg);
-    background-size: cover; }
-    .main__contacto h1 {
-      color: #131313;
-      font-weight: bolder;
-      text-align: center; }
   /*---- MOBILE/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
   .contacto__preguntasFrecuentes h2 {
     margin-top: 5rem;
@@ -401,23 +441,23 @@ body {
         font-style: italic;
         text-decoration: none; }
   /*---- MOBILE/CONTACTO/MAIN/FORMULARIO ----*/
-  .container__contacto {
+  .contenedor__contacto {
     display: flex;
     flex-flow: column nowrap; }
-    .container__contacto h2 {
-      margin-top: 5rem;
+    .contenedor__contacto .contacto__titulo {
+      margin-top: 2.5rem;
       color: #e0005a;
       font-size: 2rem;
       font-weight: bold;
       text-transform: lowercase;
       margin-bottom: 5rem;
       text-align: center; }
-    .container__contacto form {
+    .contenedor__contacto form {
       margin-top: 2rem;
       text-transform: uppercase;
       color: #131313;
       line-height: 5rem; }
-      .container__contacto form div select {
+      .contenedor__contacto form div select {
         text-transform: uppercase; }
   .formulario__botones {
     display: flex;
@@ -830,10 +870,11 @@ body {
       font-size: 3rem;
       color: #e0005a;
       text-transform: lowercase;
-      text-align: center;
-      font-weight: bold; }
+      text-align: center; }
+      .nosotros__seccion2 div h2 span {
+        font-weight: bold; }
     .nosotros__seccion2 div {
-      margin-bottom: 5rem; }
+      margin-bottom: 10rem; }
       .nosotros__seccion2 div p {
         color: #131313;
         margin-top: 2rem;
@@ -854,7 +895,7 @@ body {
       text-align: center; }
   /*---- DESKTOP/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
   .contacto__preguntasFrecuentes h2 {
-    margin-top: 5rem;
+    margin-top: 10rem;
     color: #e0005a;
     font-size: 4rem;
     font-weight: bold;
@@ -886,22 +927,22 @@ body {
         font-style: italic;
         text-decoration: none; }
   /*---- DESKTOP/CONTACTO/MAIN/FORMULARIO ----*/
-  .container__contacto {
+  .contenedor__contacto {
     display: flex;
     flex-flow: column nowrap; }
-    .container__contacto h2 {
-      margin-top: 5rem;
+    .contenedor__contacto .contacto__titulo {
+      margin-top: 10rem;
       color: #e0005a;
       font-size: 4rem;
       font-weight: bold;
       text-transform: lowercase;
       margin-bottom: 5rem; }
-    .container__contacto form {
+    .contenedor__contacto form {
       margin-top: 2rem;
       text-transform: uppercase;
       font-weight: bold;
       color: #131313; }
-      .container__contacto form div select {
+      .contenedor__contacto form div select {
         font-family: now;
         text-transform: uppercase; }
   .formulario__botones {
@@ -913,8 +954,8 @@ body {
   .contacto__newsletter h3 {
     color: #e0005a;
     margin-top: 10rem;
-    margin-bottom: 5rem;
-    font-size: 4rem;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
     font-weight: bold; }
   .contacto__newsletter .newsletter__formulario {
     display: flex;
@@ -926,7 +967,6 @@ body {
       display: flex;
       flex-flow: row nowrap; }
     .contacto__newsletter .newsletter__formulario .newsletter__boton {
-      text-align: left;
       margin-top: 2.5rem; }
   /*---- DESKTOP/ERROR-404/MAIN ----*/
   .seccion__error {
