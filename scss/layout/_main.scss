@@ -22,7 +22,6 @@
             }
         }
     }
-
     .slider{
         height: 20vh;
         display: flex;
@@ -116,75 +115,60 @@
     .categorias{
         margin-top: 10rem;
         .categorias__perros{
-            height: 50vh;
-            background-image: url(../images/PerrosBN.jpg);
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: flex-start;
-            margin-bottom: 2.5rem;
-            h3{
-                display: none;
-                font-weight: bolder;
-                text-transform: uppercase;
-            }
-            a{
-                transform: scale(0.75);
-                text-decoration: none;
-                text-align: center;
+            div{
+                border: none;
+                .categorias__card{
+                    background-color: $color-fondo;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: flex-end;
+                    h3{
+                        display: none;
+                        color: transparent;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
         .categorias__gatos{
-            height: 50vh;
-            background-image: url(../images/GatosBN.jpg);
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: flex-end;
-            margin-bottom: 2.5rem;
-            h3{
-                display: none;
-                font-weight: bolder;
-                text-transform: uppercase;
-            }
-            a{
-                transform: scale(0.75);
-                text-decoration: none;
-                text-align: center;
+            div{
+                border: none;
+                .categorias__card{
+                    background-color: $color-fondo;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: flex-end;
+                    h3{
+                        display: none;
+                        color: transparent;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
         .categorias__humanos{
-            height: 50vh;
-            background-image: url(../images/HumanosBN.jpg);
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: flex-start;
-            margin-bottom: 2.5rem;
-            h3{
-                display: none;
-                font-weight: bolder;
-                text-transform: uppercase;
-            }
-            a{
-                transform: scale(0.75);
-                text-decoration: none;
-                text-align: center;
+            div{
+                border: none;
+                .categorias__card{
+                    background-color: $color-fondo;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: flex-end;
+                    h3{
+                        display: none;
+                        color: transparent;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
     }
     /*---- MOBILE/INDEX/MAIN/DESTACADOS ----*/
     .destacados{
-        margin-top: 2.5rem;
+        margin-top: 5rem;
         background-color: $color-fondo;
         h2{
             font-size: 2rem;
@@ -351,7 +335,7 @@
             }
         }
     }
-    /*---- DESKTOP/NOSOTROS/SECCION 1----*/
+    /*---- MOBILE/NOSOTROS/SECCION 1----*/
     .nosotros__seccion1{
         div{
             h2{
@@ -368,7 +352,7 @@
             }
         }
     }
-    /*---- DESKTOP/NOSOTROS/SECCION 2----*/
+    /*---- MOBILE/NOSOTROS/SECCION 2----*/
     .nosotros__seccion2{
         margin-top: 5rem;
         display: flex;
@@ -427,7 +411,6 @@
                         }
                     }
                 }
-                // MODIFICAR COLOR DE FONDO DEL BOTON CUANDO NO ESTÁ APRETADO
             }
         }
     }
@@ -535,7 +518,6 @@
             display: none;
         }
     }
-
     .titulo{
         height: 15vh;
         display: flex;
@@ -553,7 +535,6 @@
             }
         }
     }
-
     .slider{
         height: 30vh;
         display: flex;
@@ -600,7 +581,6 @@
                 }
             }
         }
-
     }
     /*---- DESKTOP/INDEX/MAIN/COLECCIONES ----*/
     .colecciones{
@@ -643,83 +623,61 @@
     /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
     .categorias{
         height: 70vh;
-        margin-top: 20rem;
+        margin-top: 15rem;
         .categorias__perros{
-            background-image: url(../images/PerrosBN.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: flex-end;
-            align-items: flex-end;
-            h3{
-                color: transparent;
-                font-weight: bolder;
-                text-transform: uppercase;
-            }
-            a{
-                margin-bottom: 2rem;
-                margin-right: 2rem;
-                color: $color-primario;
-                text-decoration: none;
-                &:hover{
-                    color: $color-fondo;
+            div{
+                border: none;
+                .categorias__card{
+                    background-color: $color-fondo;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: flex-end;
+                    h3{
+                        display: none;
+                        color: transparent;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                    }
                 }
             }
         }
         .categorias__gatos{
-            background-image: url(../images/GatosBN.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: flex-end;
-            align-items: flex-end;
-            h3{
-                color: transparent;
-                font-weight: bolder;
-                text-transform: uppercase;
-            }
-            a{
-                margin-bottom: 2rem;
-                margin-right: 2rem;
-                color: $color-primario;
-                text-decoration: none;
-                &:hover{
-                    color: $color-fondo;
+            div{
+                border: none;
+                .categorias__card{
+                    background-color: $color-fondo;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: flex-end;
+                    h3{
+                        display: none;
+                        color: transparent;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                    }
                 }
             }
         }
         .categorias__humanos{
-            background-image: url(../images/HumanosBN.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: flex-end;
-            align-items: flex-end;
-            h3{
-                color: transparent;
-                font-weight: bolder;
-                text-transform: uppercase;
-            }
-            a{
-                margin-bottom: 2rem;
-                margin-right: 2rem;
-                color: $color-primario;
-                text-decoration: none;
-                &:hover{
-                    color: $color-fondo;
+            div{
+                border: none;
+                .categorias__card{
+                    background-color: $color-fondo;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: flex-end;
+                    h3{
+                        display: none;
+                        color: transparent;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                    }
                 }
             }
         }
     }
     /*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
     .destacados{
-        margin-top: 5rem;
         background-color: $color-fondo;
         h2{
             font-size: 4rem;
@@ -739,13 +697,13 @@
     }
     /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
     .clientes{
-        margin-top: 5rem;
+        margin-top: 10rem;
         margin-bottom: 10rem;
         .clientes__newsletter{
             display: flex;
             flex-flow: column nowrap;
-            align-items: center;
             h3{
+                text-align: center;
                 font-weight: bold;
             }
             .formulario{
@@ -754,8 +712,13 @@
                 flex-flow: column nowrap;
                 .formulario__campos{
                     display: flex;
-                    justify-content: space-evenly;
-                    line-height: 3rem;
+                    justify-content: center;
+                    gap: 2rem;
+                    div{
+                        input{
+                            width: 30rem;
+                        }
+                    }
                 }
                 .formulario__boton{
                     text-align: center;

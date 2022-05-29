@@ -174,66 +174,45 @@ body {
   /*---- MOBILE/INDEX/MAIN/CATEGORIAS ----*/
   .categorias {
     margin-top: 10rem; }
-    .categorias .categorias__perros {
-      height: 50vh;
-      background-image: url(../images/PerrosBN.jpg);
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: flex-start;
-      margin-bottom: 2.5rem; }
-      .categorias .categorias__perros h3 {
-        display: none;
-        font-weight: bolder;
-        text-transform: uppercase; }
-      .categorias .categorias__perros a {
-        transform: scale(0.75);
-        text-decoration: none;
-        text-align: center; }
-    .categorias .categorias__gatos {
-      height: 50vh;
-      background-image: url(../images/GatosBN.jpg);
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: flex-end;
-      margin-bottom: 2.5rem; }
-      .categorias .categorias__gatos h3 {
-        display: none;
-        font-weight: bolder;
-        text-transform: uppercase; }
-      .categorias .categorias__gatos a {
-        transform: scale(0.75);
-        text-decoration: none;
-        text-align: center; }
-    .categorias .categorias__humanos {
-      height: 50vh;
-      background-image: url(../images/HumanosBN.jpg);
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: flex-start;
-      margin-bottom: 2.5rem; }
-      .categorias .categorias__humanos h3 {
-        display: none;
-        font-weight: bolder;
-        text-transform: uppercase; }
-      .categorias .categorias__humanos a {
-        transform: scale(0.75);
-        text-decoration: none;
-        text-align: center; }
+    .categorias .categorias__perros div {
+      border: none; }
+      .categorias .categorias__perros div .categorias__card {
+        background-color: #fcfcfc;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end; }
+        .categorias .categorias__perros div .categorias__card h3 {
+          display: none;
+          color: transparent;
+          font-weight: bolder;
+          text-transform: uppercase; }
+    .categorias .categorias__gatos div {
+      border: none; }
+      .categorias .categorias__gatos div .categorias__card {
+        background-color: #fcfcfc;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end; }
+        .categorias .categorias__gatos div .categorias__card h3 {
+          display: none;
+          color: transparent;
+          font-weight: bolder;
+          text-transform: uppercase; }
+    .categorias .categorias__humanos div {
+      border: none; }
+      .categorias .categorias__humanos div .categorias__card {
+        background-color: #fcfcfc;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end; }
+        .categorias .categorias__humanos div .categorias__card h3 {
+          display: none;
+          color: transparent;
+          font-weight: bolder;
+          text-transform: uppercase; }
   /*---- MOBILE/INDEX/MAIN/DESTACADOS ----*/
   .destacados {
-    margin-top: 2.5rem;
+    margin-top: 5rem;
     background-color: #fcfcfc; }
     .destacados h2 {
       font-size: 2rem;
@@ -369,7 +348,7 @@ body {
       text-align: center; }
       .main__nosotros div h1 span {
         font-weight: bold; }
-  /*---- DESKTOP/NOSOTROS/SECCION 1----*/
+  /*---- MOBILE/NOSOTROS/SECCION 1----*/
   .nosotros__seccion1 div h2 {
     margin-top: 2.5rem;
     font-size: 2rem;
@@ -380,7 +359,7 @@ body {
     color: #131313;
     margin-top: 2rem;
     text-align: justify; }
-  /*---- DESKTOP/NOSOTROS/SECCION 2----*/
+  /*---- MOBILE/NOSOTROS/SECCION 2----*/
   .nosotros__seccion2 {
     margin-top: 5rem;
     display: flex;
@@ -585,70 +564,45 @@ body {
   /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
   .categorias {
     height: 70vh;
-    margin-top: 20rem; }
-    .categorias .categorias__perros {
-      background-image: url(../images/PerrosBN.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-end;
-      align-items: flex-end; }
-      .categorias .categorias__perros h3 {
-        color: transparent;
-        font-weight: bolder;
-        text-transform: uppercase; }
-      .categorias .categorias__perros a {
-        margin-bottom: 2rem;
-        margin-right: 2rem;
-        color: #131313;
-        text-decoration: none; }
-        .categorias .categorias__perros a:hover {
-          color: #fcfcfc; }
-    .categorias .categorias__gatos {
-      background-image: url(../images/GatosBN.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-end;
-      align-items: flex-end; }
-      .categorias .categorias__gatos h3 {
-        color: transparent;
-        font-weight: bolder;
-        text-transform: uppercase; }
-      .categorias .categorias__gatos a {
-        margin-bottom: 2rem;
-        margin-right: 2rem;
-        color: #131313;
-        text-decoration: none; }
-        .categorias .categorias__gatos a:hover {
-          color: #fcfcfc; }
-    .categorias .categorias__humanos {
-      background-image: url(../images/HumanosBN.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-end;
-      align-items: flex-end; }
-      .categorias .categorias__humanos h3 {
-        color: transparent;
-        font-weight: bolder;
-        text-transform: uppercase; }
-      .categorias .categorias__humanos a {
-        margin-bottom: 2rem;
-        margin-right: 2rem;
-        color: #131313;
-        text-decoration: none; }
-        .categorias .categorias__humanos a:hover {
-          color: #fcfcfc; }
+    margin-top: 15rem; }
+    .categorias .categorias__perros div {
+      border: none; }
+      .categorias .categorias__perros div .categorias__card {
+        background-color: #fcfcfc;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end; }
+        .categorias .categorias__perros div .categorias__card h3 {
+          display: none;
+          color: transparent;
+          font-weight: bolder;
+          text-transform: uppercase; }
+    .categorias .categorias__gatos div {
+      border: none; }
+      .categorias .categorias__gatos div .categorias__card {
+        background-color: #fcfcfc;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end; }
+        .categorias .categorias__gatos div .categorias__card h3 {
+          display: none;
+          color: transparent;
+          font-weight: bolder;
+          text-transform: uppercase; }
+    .categorias .categorias__humanos div {
+      border: none; }
+      .categorias .categorias__humanos div .categorias__card {
+        background-color: #fcfcfc;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end; }
+        .categorias .categorias__humanos div .categorias__card h3 {
+          display: none;
+          color: transparent;
+          font-weight: bolder;
+          text-transform: uppercase; }
   /*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
   .destacados {
-    margin-top: 5rem;
     background-color: #fcfcfc; }
     .destacados h2 {
       font-size: 4rem;
@@ -665,13 +619,13 @@ body {
         background-clip: text; }
   /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
   .clientes {
-    margin-top: 5rem;
+    margin-top: 10rem;
     margin-bottom: 10rem; }
     .clientes .clientes__newsletter {
       display: flex;
-      flex-flow: column nowrap;
-      align-items: center; }
+      flex-flow: column nowrap; }
       .clientes .clientes__newsletter h3 {
+        text-align: center;
         font-weight: bold; }
       .clientes .clientes__newsletter .formulario {
         margin-top: 5rem;
@@ -679,8 +633,10 @@ body {
         flex-flow: column nowrap; }
         .clientes .clientes__newsletter .formulario .formulario__campos {
           display: flex;
-          justify-content: space-evenly;
-          line-height: 3rem; }
+          justify-content: center;
+          gap: 2rem; }
+          .clientes .clientes__newsletter .formulario .formulario__campos div input {
+            width: 30rem; }
         .clientes .clientes__newsletter .formulario .formulario__boton {
           text-align: center;
           margin-top: 2.5rem; }
