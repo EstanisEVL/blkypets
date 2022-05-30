@@ -28,3 +28,4 @@ Para probar mi sitio ingresa al siguiente [link](https://estanisevl.github.io/bl
 * 25/05/22: - Cambié los iconos del footer y sus tamaños. Modifiqué el      carrusel de clientes del index. Corregí la sección contacto.
 * 26/05/22: - Añadí un mapa responsivo con bootstrap en venta-mayorista.html, apliqué responsive con media queries a nosotros, venta-mayorista y al footer.
 * 27/05/22: - Corregí sección mayoristas para mobile, agregué carrusel de imágenes para destacados en el index.html y modifiqué los h1 y h2.
+* 30/05/22: - Arreglé el diseño de la sección productos para ambas versiones. Retoqué los carruseles del index para que se ajusten correctamente en la versión mobile. Corregí menú de la sección error404 y footers de todas las secciones.

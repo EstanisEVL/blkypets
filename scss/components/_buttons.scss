@@ -276,8 +276,8 @@
 }
 .boton__categorias{
 	@extend .boton__newsletter;
-	color: $color-primario;
-	background-color: $color-fondo;
+	color: $color-fondo;
+	background-color: $color-primario;
 }
 .boton__formulario{
 	@extend .boton__newsletter;

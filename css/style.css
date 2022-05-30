@@ -173,43 +173,50 @@ body {
         text-align: center; }
   /*---- MOBILE/INDEX/MAIN/CATEGORIAS ----*/
   .categorias {
-    margin-top: 10rem; }
-    .categorias .categorias__perros div {
-      border: none; }
-      .categorias .categorias__perros div .categorias__card {
-        background-color: #fcfcfc;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: flex-end; }
-        .categorias .categorias__perros div .categorias__card h3 {
-          display: none;
-          color: transparent;
-          font-weight: bolder;
-          text-transform: uppercase; }
-    .categorias .categorias__gatos div {
-      border: none; }
-      .categorias .categorias__gatos div .categorias__card {
-        background-color: #fcfcfc;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: flex-end; }
-        .categorias .categorias__gatos div .categorias__card h3 {
-          display: none;
-          color: transparent;
-          font-weight: bolder;
-          text-transform: uppercase; }
-    .categorias .categorias__humanos div {
-      border: none; }
-      .categorias .categorias__humanos div .categorias__card {
-        background-color: #fcfcfc;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: flex-end; }
-        .categorias .categorias__humanos div .categorias__card h3 {
-          display: none;
-          color: transparent;
-          font-weight: bolder;
-          text-transform: uppercase; }
+    margin-top: 10rem;
+    gap: 2.5rem; }
+    .categorias .categorias__perros {
+      max-width: 50rem; }
+      .categorias .categorias__perros div {
+        border: none; }
+        .categorias .categorias__perros div .categorias__card {
+          background-color: #fcfcfc;
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: flex-end; }
+          .categorias .categorias__perros div .categorias__card h3 {
+            display: none;
+            color: transparent;
+            font-weight: bolder;
+            text-transform: uppercase; }
+    .categorias .categorias__gatos {
+      max-width: 50rem; }
+      .categorias .categorias__gatos div {
+        border: none; }
+        .categorias .categorias__gatos div .categorias__card {
+          background-color: #fcfcfc;
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: flex-end; }
+          .categorias .categorias__gatos div .categorias__card h3 {
+            display: none;
+            color: transparent;
+            font-weight: bolder;
+            text-transform: uppercase; }
+    .categorias .categorias__humanos {
+      max-width: 50rem; }
+      .categorias .categorias__humanos div {
+        border: none; }
+        .categorias .categorias__humanos div .categorias__card {
+          background-color: #fcfcfc;
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: flex-end; }
+          .categorias .categorias__humanos div .categorias__card h3 {
+            display: none;
+            color: transparent;
+            font-weight: bolder;
+            text-transform: uppercase; }
   /*---- MOBILE/INDEX/MAIN/DESTACADOS ----*/
   .destacados {
     margin-top: 5rem;
@@ -238,7 +245,9 @@ body {
         text-align: center;
         font-weight: bold; }
       .clientes .clientes__newsletter .formulario {
+        min-width: 20rem;
         margin-top: 5rem;
+        margin-bottom: 5rem;
         display: flex;
         flex-flow: column nowrap; }
         .clientes .clientes__newsletter .formulario .formulario__campos {
@@ -259,6 +268,72 @@ body {
         color: #131313;
         text-decoration: none;
         margin-bottom: 5rem; }
+  /*---- MOBILE/TIENDA ----*/
+  /*---- MOBILE/TIENDA/MAIN ----*/
+  .tienda__fondo {
+    background: #fcfcfc; }
+    .tienda__fondo .tienda__titulo {
+      height: 20vh;
+      background-image: url(../images/BannerProductosMobile.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .tienda__fondo .tienda__titulo h1 {
+        background-color: #131313;
+        padding: 1rem;
+        color: #fcfcfc;
+        font-weight: bold;
+        font-size: 2rem; }
+  /*---- MOBILE/TIENDA/MAIN/CATEGORÍAS ----*/
+  .tienda__categorias .categorias__divGrandeM {
+    margin-top: 1rem;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: #131313;
+    transition: all 0.5s; }
+    .tienda__categorias .categorias__divGrandeM:hover {
+      background-color: #131313;
+      color: #fcfcfc; }
+  .tienda__categorias .categorias__divChicoM {
+    margin-top: 1rem;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #131313;
+    transition: all 0.5s; }
+    .tienda__categorias .categorias__divChicoM:hover {
+      background-color: #131313;
+      color: #fcfcfc; }
+    .tienda__categorias .categorias__divChicoM h2 {
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+  /*---- MOBILE/TIENDA/MAIN/NEWSLETTER ----*/
+  .tienda__newsletter {
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 10rem; }
+    .tienda__newsletter h3 {
+      text-align: center;
+      margin-bottom: 2.5rem; }
+    .tienda__newsletter form {
+      line-height: 2.5rem; }
+      .tienda__newsletter form .tienda__campos {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center; }
+      .tienda__newsletter form .tienda__boton {
+        text-align: center;
+        margin-top: 2.5rem; }
   /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV1 ----*/
   .main__mayoristas {
     background-color: #fcfcfc; }
@@ -464,7 +539,30 @@ body {
       flex-flow: row nowrap; }
     .contacto__newsletter .newsletter__formulario .newsletter__boton {
       text-align: center;
-      margin-top: 2.5rem; } }
+      margin-top: 2.5rem; }
+  /*---- MOBILE/ERROR-404/MAIN ----*/
+  .seccion__error {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem; }
+    .seccion__error h2 {
+      text-align: center;
+      margin-top: 5rem;
+      margin-bottom: 5rem; }
+      .seccion__error h2 span {
+        font-weight: bold; }
+    .seccion__error p {
+      text-align: justify; }
+      .seccion__error p a {
+        color: #131313;
+        font-weight: bolder;
+        text-decoration: none; }
+        .seccion__error p a:hover {
+          color: #a91fff; }
+    .seccion__error img {
+      margin-top: 5rem; } }
 
 @media only screen and (min-width: 992px) {
   /*---- DESKTOP/INDEX/MAIN ----*/
@@ -537,14 +635,14 @@ body {
     display: flex;
     flex-flow: column nowrap; }
     .colecciones div {
-      margin-top: 5rem;
-      margin-bottom: 5rem;
       display: flex;
       flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
       text-transform: uppercase; }
       .colecciones div h2 {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
         font-size: 4rem;
         text-transform: lowercase; }
         .colecciones div h2 span {
@@ -563,8 +661,7 @@ body {
         display: none; }
   /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
   .categorias {
-    height: 70vh;
-    margin-top: 15rem; }
+    margin-top: 20rem; }
     .categorias .categorias__perros div {
       border: none; }
       .categorias .categorias__perros div .categorias__card {
@@ -670,34 +767,38 @@ body {
     .seccion1__div2 img {
       margin-top: 5rem;
       margin-bottom: 5rem; }
-  /*---- DESKTOP/TIENDA/MAIN/COLECCIONES ----*/
   /*---- DESKTOP/TIENDA/MAIN/CATEGORÍAS ----*/
-  .tienda__categorias .categorias__divGrande, .tienda__categorias .categorias__divGrande2 {
-    background-color: #f5f5f5;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: #131313;
-    transition: all 0.5s; }
-    .tienda__categorias .categorias__divGrande:hover, .tienda__categorias .categorias__divGrande2:hover {
-      background-color: #131313;
-      color: #fcfcfc; }
-  .tienda__categorias .categorias__divChico {
-    background-color: #f5f5f5;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #131313;
-    transition: all 0.5s; }
-    .tienda__categorias .categorias__divChico:hover {
-      background-color: #131313;
-      color: #fcfcfc; }
-  .tienda__categorias .categorias__divGrande2 {
-    margin-top: 2.3rem; }
+  .tienda__categorias {
+    margin-top: 5rem;
+    background-color: #f5f5f5; }
+    .tienda__categorias .categorias__divGrande, .tienda__categorias .categorias__divGrande2 {
+      background-color: #f5f5f5;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      text-decoration: none;
+      color: #131313;
+      transition: all 0.5s; }
+      .tienda__categorias .categorias__divGrande:hover, .tienda__categorias .categorias__divGrande2:hover {
+        background-color: #131313;
+        color: #fcfcfc; }
+    .tienda__categorias .categorias__divChico {
+      background-color: #f5f5f5;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #131313;
+      transition: all 0.5s; }
+      .tienda__categorias .categorias__divChico:hover {
+        background-color: #131313;
+        color: #fcfcfc; }
+      .tienda__categorias .categorias__divChico h2 {
+        padding: 2rem 0 2rem 0; }
+    .tienda__categorias .categorias__divGrande2 {
+      margin-top: 6rem; }
   /*---- DESKTOP/TIENDA/MAIN/NEWSLETTER ----*/
   .tienda__newsletter {
     margin-top: 5rem;
@@ -712,7 +813,10 @@ body {
       .tienda__newsletter form .tienda__campos {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center; }
+        justify-content: center;
+        gap: 2rem; }
+        .tienda__newsletter form .tienda__campos div input {
+          width: 30rem; }
       .tienda__newsletter form .tienda__boton {
         text-align: center;
         margin-top: 2.5rem; }
@@ -934,6 +1038,8 @@ body {
     .seccion__error h2 {
       margin-top: 10rem;
       margin-bottom: 10rem; }
+      .seccion__error h2 span {
+        font-weight: bold; }
     .seccion__error p a {
       color: #131313;
       font-weight: bolder;
@@ -1336,8 +1442,8 @@ body {
     transition: 100ms; }
 
 .boton__categorias {
-  color: #131313;
-  background-color: #fcfcfc; }
+  color: #fcfcfc;
+  background-color: #131313; }
 
 .boton__formulario {
   color: #131313;
