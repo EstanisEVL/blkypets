@@ -1,6 +1,6 @@
 /*---- MOBILE ----*/
 /*---- FOOTER ----*/
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 991px){
     .footer{
         padding-top: 5rem;
         background-color: $color-primario;
@@ -112,7 +112,7 @@
 
 /*---- DESKTOP ----*/
 /*---- FOOTER ----*/
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 992px){
     .footer{
         padding-top: 8rem;
         background-color: $color-primario;

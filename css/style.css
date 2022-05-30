@@ -91,6 +91,11 @@ body {
   .fondo {
     background-color: #fcfcfc; }
   /*---- MOBILE/INDEX/MAIN/HERO ----*/
+  .hero {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: #fc2066; }
   .titulo {
     height: 15vh;
     display: flex;
@@ -103,6 +108,7 @@ body {
       text-align: center;
       text-transform: lowercase; }
       .titulo h1 span {
+        letter-spacing: 0.2rem;
         font-weight: bold; }
   .slider {
     height: 20vh;
@@ -273,7 +279,7 @@ body {
   .tienda__fondo {
     background: #fcfcfc; }
     .tienda__fondo .tienda__titulo {
-      height: 20vh;
+      height: 30vh;
       background-image: url(../images/BannerProductosMobile.jpg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -422,18 +428,26 @@ body {
       text-transform: lowercase;
       text-align: center; }
       .main__nosotros div h1 span {
+        letter-spacing: 0.2rem;
         font-weight: bold; }
   /*---- MOBILE/NOSOTROS/SECCION 1----*/
-  .nosotros__seccion1 div h2 {
-    margin-top: 2.5rem;
-    font-size: 2rem;
-    color: #131313;
-    font-weight: bold;
-    text-align: center; }
-  .nosotros__seccion1 div p {
-    color: #131313;
-    margin-top: 2rem;
-    text-align: justify; }
+  .nosotros__seccion1 div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+    .nosotros__seccion1 div img {
+      max-height: 40rem; }
+    .nosotros__seccion1 div h2 {
+      margin-top: 2.5rem;
+      font-size: 2rem;
+      color: #131313;
+      font-weight: bold;
+      text-align: center; }
+    .nosotros__seccion1 div p {
+      color: #131313;
+      margin-top: 2rem;
+      text-align: justify; }
   /*---- MOBILE/NOSOTROS/SECCION 2----*/
   .nosotros__seccion2 {
     margin-top: 5rem;
@@ -448,6 +462,7 @@ body {
       text-align: center;
       margin-bottom: 5rem; }
       .nosotros__seccion2 div h2 span {
+        letter-spacing: 0.2rem;
         font-weight: bold; }
     .nosotros__seccion2 div p {
       color: #131313;
@@ -536,7 +551,7 @@ body {
     text-transform: uppercase; }
     .contacto__newsletter .newsletter__formulario .newsletter__campos {
       display: flex;
-      flex-flow: row nowrap; }
+      flex-flow: column nowrap; }
     .contacto__newsletter .newsletter__formulario .newsletter__boton {
       text-align: center;
       margin-top: 2.5rem; }
@@ -590,6 +605,7 @@ body {
       text-align: center;
       text-transform: lowercase; }
       .titulo h1 span {
+        letter-spacing: 0.2rem;
         font-weight: bold; }
   .slider {
     height: 30vh;
@@ -909,8 +925,10 @@ body {
       margin-top: 10rem;
       margin-bottom: 10rem;
       text-transform: lowercase;
-      font-weight: bold;
       text-align: center; }
+      .main__nosotros div h1 span {
+        letter-spacing: 0.2rem;
+        font-weight: bold; }
   /*---- DESKTOP/NOSOTROS/SECCION 1----*/
   .nosotros__seccion1 div h2 {
     color: #131313;
@@ -921,7 +939,8 @@ body {
     text-align: justify; }
   /*---- DESKTOP/NOSOTROS/SECCION 2----*/
   .nosotros__seccion2 {
-    margin-top: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -932,15 +951,12 @@ body {
       text-transform: lowercase;
       text-align: center; }
       .nosotros__seccion2 div h2 span {
+        letter-spacing: 0.2rem;
         font-weight: bold; }
-    .nosotros__seccion2 div {
-      margin-bottom: 10rem; }
-      .nosotros__seccion2 div p {
-        color: #131313;
-        margin-top: 2rem;
-        text-align: justify; }
-      .nosotros__seccion2 div img {
-        margin-top: 5rem; }
+    .nosotros__seccion2 div p {
+      color: #131313;
+      margin-top: 5rem;
+      text-align: justify; }
   /*---- DESKTOP/CONTACTO ----*/
   /*---- DESKTOP/CONTACTO/MAIN ----*/
   .contacto__fondo {
@@ -1025,7 +1041,8 @@ body {
     text-transform: uppercase; }
     .contacto__newsletter .newsletter__formulario .newsletter__campos {
       display: flex;
-      flex-flow: row nowrap; }
+      flex-flow: row nowrap;
+      gap: 2rem; }
     .contacto__newsletter .newsletter__formulario .newsletter__boton {
       margin-top: 2.5rem; }
   /*---- DESKTOP/ERROR-404/MAIN ----*/
@@ -1051,7 +1068,7 @@ body {
 
 /*---- MOBILE ----*/
 /*---- FOOTER ----*/
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 991px) {
   .footer {
     padding-top: 5rem;
     background-color: #131313; }
@@ -1131,7 +1148,7 @@ body {
 
 /*---- DESKTOP ----*/
 /*---- FOOTER ----*/
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
   .footer {
     padding-top: 8rem;
     background-color: #131313; }

@@ -5,6 +5,12 @@
         background-color: $color-fondo;
     }
     /*---- MOBILE/INDEX/MAIN/HERO ----*/
+    .hero{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        background-color: $color-tercerfondo;
+    }
     .titulo{
         height: 15vh;
         display: flex;
@@ -17,6 +23,7 @@
             text-align: center;
             text-transform: lowercase;
             span{
+                letter-spacing: 0.2rem;
                 font-weight: bold;
             }
         }
@@ -236,7 +243,7 @@
     .tienda__fondo{
         background: $color-fondo;
         .tienda__titulo{
-            height: 20vh;
+            height: 30vh;
             background-image: url(../images/BannerProductosMobile.jpg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -414,6 +421,7 @@
                 text-transform: lowercase;
                 text-align: center;
                 span{
+                    letter-spacing: 0.2rem;
                     font-weight: bold;
                 }
             }
@@ -422,6 +430,13 @@
     /*---- MOBILE/NOSOTROS/SECCION 1----*/
     .nosotros__seccion1{
         div{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-height: 40rem;
+            }
             h2{
                 margin-top: 2.5rem;
                 font-size: 2rem;
@@ -451,6 +466,7 @@
                 text-align: center;
                 margin-bottom: 5rem;
                 span{
+                    letter-spacing: 0.2rem;
                     font-weight: bold;
                 }
             }
@@ -575,7 +591,7 @@
             text-transform: uppercase;
             .newsletter__campos{
                 display: flex;
-                flex-flow: row nowrap;
+                flex-flow: column nowrap;
             }
             .newsletter__boton{
                 text-align: center;
@@ -645,6 +661,7 @@
             text-align: center;
             text-transform: lowercase;
             span{
+                letter-spacing: 0.2rem;
                 font-weight: bold;
             }
         }
@@ -1050,8 +1067,11 @@
                 margin-top: 10rem;
                 margin-bottom: 10rem;
                 text-transform: lowercase;
-                font-weight: bold;
                 text-align: center;
+                span{
+                    letter-spacing: 0.2rem;
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -1071,7 +1091,8 @@
     }
     /*---- DESKTOP/NOSOTROS/SECCION 2----*/
     .nosotros__seccion2{
-        margin-top: 10rem;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -1083,19 +1104,16 @@
                 text-transform: lowercase;
                 text-align: center;
                 span{
+                    letter-spacing: 0.2rem;
                     font-weight: bold;
                 }
             }
         }
         div{
-            margin-bottom: 10rem;
             p{
                 color: $color-primario;
-                margin-top: 2rem;
-                text-align: justify;
-            }
-            img{
                 margin-top: 5rem;
+                text-align: justify;
             }
         }
     }
@@ -1138,7 +1156,6 @@
                         }
                     }
                 }
-                // MODIFICAR COLOR DE FONDO DEL BOTON CUANDO NO ESTÁ APRETADO
             }
         }
     }
@@ -1215,6 +1232,7 @@
             .newsletter__campos{
                 display: flex;
                 flex-flow: row nowrap;
+                gap: 2rem;
             }
             .newsletter__boton{
                 margin-top: 2.5rem;
