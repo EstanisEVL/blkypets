@@ -578,6 +578,7 @@ body {
     .seccion__error img {
       margin-top: 5rem; } }
 
+/*---- DESKTOP ----*/
 @media only screen and (min-width: 992px) {
   /*---- DESKTOP/INDEX/MAIN ----*/
   .fondo {

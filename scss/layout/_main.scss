@@ -479,7 +479,6 @@
             }
         }
     }
-
     /*---- MOBILE/CONTACTO ----*/
     /*---- MOBILE/CONTACTO/MAIN ----*/
     .contacto__fondo{
@@ -628,7 +627,7 @@
     }
 }
 
-
+/*---- DESKTOP ----*/
 @media only screen and (min-width: 992px){
     /*---- DESKTOP/INDEX/MAIN ----*/
     .fondo{
@@ -743,7 +742,7 @@
             background-size: cover;
             div{
                 .bouquet{
-                        display: none;
+                    display: none;
                 }
             }
         }
@@ -1048,7 +1047,6 @@
             }
         }
     }
-
     /*---- DESKTOP/NOSOTROS ----*/
     /*---- DESKTOP/NOSOTROS/MAIN ----*/
     .main__nosotros{
