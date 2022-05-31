@@ -1,12 +1,16 @@
-//paleta de colores
+//paleta de colores:
 $color-primario: #131313;
 $color-secundario: #a91fff;
 $color-terciario: #ffdd33;
 $color-cuaternario: #e0005a;
 $color-quinario: #00bbe0;
+
+//colores de fondo:
 $color-fondo: #fcfcfc;
 $color-segundofondo: #f5f5f5;
 $color-tercerfondo: #fc2066;
 
-//bordes
-$borde: solid 0.2rem $color-primario;
+//tamaños de letras:
+$mobile: 2rem;
+$desktop: 4rem;
+$desktop-sm: 3rem;

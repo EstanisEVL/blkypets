@@ -88,7 +88,7 @@
             text-transform: uppercase;
             h2{
                 text-align: center;
-                font-size: 2rem;
+                font-size: $mobile;
                 text-transform: lowercase;
                 span{
                     font-weight: bold;
@@ -181,7 +181,7 @@
         margin-top: 5rem;
         background-color: $color-fondo;
         h2{
-            font-size: 2rem;
+            font-size: $mobile;
             margin-bottom: 5rem;
             text-align: center;
             text-transform: lowercase;
@@ -251,11 +251,10 @@
             justify-content: center;
             align-items: center;
             h1{
-                background-color: $color-primario;
-                padding: 1rem;
-                color: $color-fondo;
+                margin-left: 60%;
+                color: $color-primario;
                 font-weight: bold;
-                font-size: 2rem;
+                font-size: $mobile;
             }
         }
     }
@@ -415,7 +414,7 @@
         div{
             h1{
                 color: $color-cuaternario;
-                font-size: 2rem;
+                font-size: $mobile;
                 margin-top: 5rem;
                 margin-bottom: 5rem;
                 text-transform: lowercase;
@@ -439,7 +438,7 @@
             }
             h2{
                 margin-top: 2.5rem;
-                font-size: 2rem;
+                font-size: $mobile;
                 color: $color-primario;
                 font-weight: bold;
                 text-align: center;
@@ -460,7 +459,7 @@
         align-items: center;
         div{
             h2{
-                font-size: 2rem;
+                font-size: $mobile;
                 color: $color-cuaternario;
                 text-transform: lowercase;
                 text-align: center;
@@ -491,7 +490,7 @@
         h2{
             margin-top: 5rem;
             color: $color-cuaternario;
-            font-size: 2rem;
+            font-size: $mobile;
             font-weight: bold;
             text-transform: lowercase;
             margin-bottom: 5rem;
@@ -544,7 +543,7 @@
         .contacto__titulo{
             margin-top: 2.5rem;
             color: $color-cuaternario;
-            font-size: 2rem;
+            font-size: $mobile;
             font-weight: bold;
             text-transform: lowercase;
             margin-bottom: 5rem;
@@ -557,14 +556,12 @@
             line-height: 5rem;
             div{
                 select{
-                    // font-family: now;
                     text-transform: uppercase;
                 }
             } 
         }
     }
     .formulario__botones{
-        // font-size: 2rem;
         display: flex;
         flex-flow: column wrap;
         justify-content: space-between;
@@ -579,7 +576,7 @@
             color: $color-cuaternario;
             margin-top: 10rem;
             margin-bottom: 5rem;
-            font-size: 2rem;
+            font-size: $mobile;
             font-weight: bold;
             text-align: center;
         }
@@ -657,7 +654,7 @@
         background-color: $color-primario;
         color: $color-fondo;
         h1{
-            font-size: 4rem;
+            font-size: $desktop;
             text-align: center;
             text-transform: lowercase;
             span{
@@ -727,7 +724,7 @@
             h2{
                 margin-top: 5rem;
                 margin-bottom: 5rem;
-                font-size: 4rem;
+                font-size: $desktop;
                 text-transform: lowercase;
                 span{
                     font-weight: bold;
@@ -810,7 +807,7 @@
     .destacados{
         background-color: $color-fondo;
         h2{
-            font-size: 4rem;
+            font-size: $desktop;
             margin-top: 5rem;
             margin-bottom: 5rem;
             text-align: center;
@@ -881,7 +878,7 @@
             h1{
                 font-weight: bold;
                 margin-top: 20rem;
-                font-size: 4rem;
+                font-size: $desktop;
                 margin-bottom: 5rem;
             }
         }
@@ -981,7 +978,7 @@
         justify-content: flex-start;
         align-items: center;
         h2{
-            font-size: 4rem;
+            font-size: $desktop;
             margin-top: 10rem;
             margin-bottom: 5rem;
             color: $color-cuaternario;
@@ -997,7 +994,7 @@
         justify-content: flex-start;
         align-items: center;
         h1{
-            font-size: 4rem;
+            font-size: $desktop;
             margin-top: 10rem;
             margin-bottom: 5rem;
             color: $color-cuaternario;
@@ -1063,7 +1060,7 @@
         div{
             h1{
                 color: $color-cuaternario;
-                font-size: 4rem;
+                font-size: $desktop;
                 margin-top: 10rem;
                 margin-bottom: 10rem;
                 text-transform: lowercase;
@@ -1099,7 +1096,7 @@
         align-items: center;
         div{
             h2{
-                font-size: 3rem;
+                font-size: $desktop-sm;
                 color: $color-cuaternario;
                 text-transform: lowercase;
                 text-align: center;
@@ -1138,7 +1135,7 @@
         h2{
             margin-top: 10rem;
             color: $color-cuaternario;
-            font-size: 4rem;
+            font-size: $desktop;
             font-weight: bold;
             text-transform: lowercase;
             margin-bottom: 5rem;
@@ -1189,7 +1186,7 @@
         .contacto__titulo{
             margin-top: 10rem;
             color: $color-cuaternario;
-            font-size: 4rem;
+            font-size: $desktop;
             font-weight: bold;
             text-transform: lowercase;
             margin-bottom: 5rem;
@@ -1220,7 +1217,7 @@
             color: $color-cuaternario;
             margin-top: 10rem;
             margin-bottom: 2.5rem;
-            font-size: 3rem;
+            font-size: $desktop-sm;
             font-weight: bold;
         }
         .newsletter__formulario{

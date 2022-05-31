@@ -287,9 +287,8 @@ body {
       justify-content: center;
       align-items: center; }
       .tienda__fondo .tienda__titulo h1 {
-        background-color: #131313;
-        padding: 1rem;
-        color: #fcfcfc;
+        margin-left: 60%;
+        color: #131313;
         font-weight: bold;
         font-size: 2rem; }
   /*---- MOBILE/TIENDA/MAIN/CATEGORÍAS ----*/
