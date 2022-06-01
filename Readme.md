@@ -1,4 +1,4 @@
-<img src="images/logo0.png">
+<img src="images/LogoBLKYpng.png">
 
 # BLKY Pets - Proyecto para el curso de desarrollo web CoderHouse
 **Versión 1.0**
