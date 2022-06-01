@@ -87,14 +87,15 @@ body {
 
 /*---- MOBILE ----*/
 @media only screen and (max-width: 991px) {
-  /*---- MOBILE/INDEX/MAIN ----*/
+  /*---- MOBILE/INDEX ----*/
   .fondo {
     background-color: #fcfcfc; }
-  /*---- MOBILE/INDEX/MAIN/HERO ----*/
+  /*---- MOBILE/INDEX/HERO ----*/
   .hero {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
     background-color: #fc2066; }
   .titulo {
     height: 15vh;
@@ -144,7 +145,7 @@ body {
         display: none; }
       .slider div .monocromo a {
         text-align: center; }
-  /*---- MOBILE/INDEX/MAIN/COLECCIONES ----*/
+  /*---- MOBILE/INDEX/COLECCIONES ----*/
   .colecciones {
     height: 25vh;
     display: flex;
@@ -177,7 +178,7 @@ body {
         display: none; }
       .colecciones article div .bouquet a {
         text-align: center; }
-  /*---- MOBILE/INDEX/MAIN/CATEGORIAS ----*/
+  /*---- MOBILE/INDEX/CATEGORIAS ----*/
   .categorias {
     margin-top: 10rem;
     gap: 2.5rem; }
@@ -189,6 +190,7 @@ body {
           background-color: #fcfcfc;
           display: flex;
           flex-flow: column nowrap;
+          justify-content: flex-start;
           align-items: flex-end; }
           .categorias .categorias__perros div .categorias__card h3 {
             display: none;
@@ -203,6 +205,7 @@ body {
           background-color: #fcfcfc;
           display: flex;
           flex-flow: column nowrap;
+          justify-content: flex-start;
           align-items: flex-end; }
           .categorias .categorias__gatos div .categorias__card h3 {
             display: none;
@@ -217,13 +220,14 @@ body {
           background-color: #fcfcfc;
           display: flex;
           flex-flow: column nowrap;
+          justify-content: flex-start;
           align-items: flex-end; }
           .categorias .categorias__humanos div .categorias__card h3 {
             display: none;
             color: transparent;
             font-weight: bolder;
             text-transform: uppercase; }
-  /*---- MOBILE/INDEX/MAIN/DESTACADOS ----*/
+  /*---- MOBILE/INDEX/DESTACADOS ----*/
   .destacados {
     margin-top: 5rem;
     background-color: #fcfcfc; }
@@ -239,13 +243,14 @@ body {
         background: linear-gradient(to right, #a91fff, #e0005a);
         -webkit-background-clip: text;
         background-clip: text; }
-  /*---- MOBILE/INDEX/MAIN/CLIENTES ----*/
+  /*---- MOBILE/INDEX/CLIENTES ----*/
   .clientes {
     margin-top: 5rem;
     margin-bottom: 10rem; }
     .clientes .clientes__newsletter {
       display: flex;
       flex-flow: column nowrap;
+      justify-content: flex-start;
       align-items: center; }
       .clientes .clientes__newsletter h3 {
         text-align: center;
@@ -255,11 +260,14 @@ body {
         margin-top: 5rem;
         margin-bottom: 5rem;
         display: flex;
-        flex-flow: column nowrap; }
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: stretch; }
         .clientes .clientes__newsletter .formulario .formulario__campos {
           display: flex;
           flex-flow: column nowrap;
           justify-content: space-evenly;
+          align-items: stretch;
           line-height: 3rem; }
         .clientes .clientes__newsletter .formulario .formulario__boton {
           text-align: center;
@@ -268,6 +276,7 @@ body {
       margin-top: 2.5rem;
       display: flex;
       flex-flow: column nowrap;
+      justify-content: flex-start;
       align-items: center; }
       .clientes .clientes__instagram .clientes__titulo {
         font-weight: bold;
@@ -275,7 +284,7 @@ body {
         text-decoration: none;
         margin-bottom: 5rem; }
   /*---- MOBILE/TIENDA ----*/
-  /*---- MOBILE/TIENDA/MAIN ----*/
+  /*---- MOBILE/TIENDA/TÍTULO ----*/
   .tienda__fondo {
     background: #fcfcfc; }
     .tienda__fondo .tienda__titulo {
@@ -284,6 +293,7 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
+      flex-flow: row nowrap;
       justify-content: center;
       align-items: center; }
       .tienda__fondo .tienda__titulo h1 {
@@ -291,7 +301,7 @@ body {
         color: #131313;
         font-weight: bold;
         font-size: 2rem; }
-  /*---- MOBILE/TIENDA/MAIN/CATEGORÍAS ----*/
+  /*---- MOBILE/TIENDA/CATEGORÍAS ----*/
   .tienda__categorias .categorias__divGrandeM {
     margin-top: 1rem;
     background-color: #f5f5f5;
@@ -321,11 +331,13 @@ body {
     .tienda__categorias .categorias__divChicoM h2 {
       padding-top: 2rem;
       padding-bottom: 2rem; }
-  /*---- MOBILE/TIENDA/MAIN/NEWSLETTER ----*/
+  /*---- MOBILE/TIENDA/NEWSLETTER ----*/
   .tienda__newsletter {
     margin-top: 5rem;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     margin-bottom: 10rem; }
     .tienda__newsletter h3 {
       text-align: center;
@@ -335,11 +347,13 @@ body {
       .tienda__newsletter form .tienda__campos {
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center; }
+        justify-content: center;
+        align-items: stretch; }
       .tienda__newsletter form .tienda__boton {
         text-align: center;
         margin-top: 2.5rem; }
-  /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV1 ----*/
+  /*---- MOBILE/REVENDEDORES ----*/
+  /*---- MOBILE/REVENDEDORES/DIV1 ----*/
   .main__mayoristas {
     background-color: #fcfcfc; }
   .mayoristas__div1 {
@@ -347,10 +361,10 @@ body {
     background-image: url(../images/Banner-Mayoristas-Color.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
-  /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV2 ----*/
+  /*---- MOBILE/REVENDEDORES/DIV2 ----*/
   .mayoristas__div2 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center; }
     .mayoristas__div2 h2 {
@@ -360,10 +374,10 @@ body {
       text-transform: lowercase;
       font-weight: bold;
       text-align: center; }
-  /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV3 ----*/
+  /*---- MOBILE/REVENDEDORES/DIV3 ----*/
   .mayoristas__div3 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center; }
     .mayoristas__div3 h1 {
@@ -388,12 +402,12 @@ body {
         font-style: italic;
         font-weight: bold;
         text-decoration: none; }
-  /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV4 ----*/
+  /*---- MOBILE/REVENDEDORES/DIV4 ----*/
   .mayoristas__div4 {
     margin-top: 2.5rem;
     margin-bottom: 10rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center; }
     .mayoristas__div4 h3 {
@@ -412,11 +426,11 @@ body {
         font-weight: bold;
         text-decoration: none; }
   /*---- MOBILE/NOSOTROS ----*/
-  /*---- MOBILE/NOSOTROS/MAIN ----*/
+  /*---- MOBILE/NOSOTROS/TÍTULO ----*/
   .main__nosotros {
     background-color: #fcfcfc;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center; }
     .main__nosotros div h1 {
@@ -469,10 +483,9 @@ body {
       text-align: justify;
       margin-bottom: 10rem; }
   /*---- MOBILE/CONTACTO ----*/
-  /*---- MOBILE/CONTACTO/MAIN ----*/
   .contacto__fondo {
     background-color: #fcfcfc; }
-  /*---- MOBILE/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
+  /*---- MOBILE/CONTACTO/PREGUNTAS FRECUENTES ----*/
   .contacto__preguntasFrecuentes h2 {
     margin-top: 5rem;
     color: #e0005a;
@@ -492,7 +505,9 @@ body {
         box-shadow: none; }
   .preguntasFrecuentes__nuestrosProductos {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     margin-bottom: 5rem;
     color: #131313; }
     .preguntasFrecuentes__nuestrosProductos h3 {
@@ -508,10 +523,12 @@ body {
         font-weight: bold;
         font-style: italic;
         text-decoration: none; }
-  /*---- MOBILE/CONTACTO/MAIN/FORMULARIO ----*/
+  /*---- MOBILE/CONTACTO/FORMULARIO ----*/
   .contenedor__contacto {
     display: flex;
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch; }
     .contenedor__contacto .contacto__titulo {
       margin-top: 2.5rem;
       color: #e0005a;
@@ -529,12 +546,13 @@ body {
         text-transform: uppercase; }
   .formulario__botones {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: stretch;
     gap: 2rem; }
   .formulario__textarea {
     resize: none; }
-  /*---- MOBILE/CONTACTO/MAIN/NEWSLETTER ----*/
+  /*---- MOBILE/CONTACTO/NEWSLETTER ----*/
   .contacto__newsletter h3 {
     color: #e0005a;
     margin-top: 10rem;
@@ -545,16 +563,20 @@ body {
   .contacto__newsletter .newsletter__formulario {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     color: #131313;
     margin-bottom: 5rem;
     text-transform: uppercase; }
     .contacto__newsletter .newsletter__formulario .newsletter__campos {
       display: flex;
-      flex-flow: column nowrap; }
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: stretch; }
     .contacto__newsletter .newsletter__formulario .newsletter__boton {
       text-align: center;
       margin-top: 2.5rem; }
-  /*---- MOBILE/ERROR-404/MAIN ----*/
+  /*---- MOBILE/ERROR-404 ----*/
   .seccion__error {
     display: flex;
     flex-flow: column nowrap;
@@ -580,10 +602,10 @@ body {
 
 /*---- DESKTOP ----*/
 @media only screen and (min-width: 992px) {
-  /*---- DESKTOP/INDEX/MAIN ----*/
+  /*---- DESKTOP/INDEX ----*/
   .fondo {
     background-color: #fcfcfc; }
-  /*---- DESKTOP/INDEX/MAIN/HERO ----*/
+  /*---- DESKTOP/INDEX/HERO ----*/
   .hero {
     height: 70vh;
     background-image: url(../images/BannerPrincipal.jpg);
@@ -610,7 +632,9 @@ body {
   .slider {
     height: 30vh;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     animation: slide 20s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
@@ -645,11 +669,13 @@ body {
         display: none; }
         .slider div .monocromo a {
           text-align: center; }
-  /*---- DESKTOP/INDEX/MAIN/COLECCIONES ----*/
+  /*---- DESKTOP/INDEX/COLECCIONES ----*/
   .colecciones {
     height: 40vh;
     display: flex;
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch; }
     .colecciones div {
       display: flex;
       flex-flow: row nowrap;
@@ -675,7 +701,7 @@ body {
       background-size: cover; }
       .colecciones article div .bouquet {
         display: none; }
-  /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
+  /*---- DESKTOP/INDEX/CATEGORIAS ----*/
   .categorias {
     margin-top: 20rem; }
     .categorias .categorias__perros div {
@@ -684,6 +710,7 @@ body {
         background-color: #fcfcfc;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: flex-start;
         align-items: flex-end; }
         .categorias .categorias__perros div .categorias__card h3 {
           display: none;
@@ -696,6 +723,7 @@ body {
         background-color: #fcfcfc;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: flex-start;
         align-items: flex-end; }
         .categorias .categorias__gatos div .categorias__card h3 {
           display: none;
@@ -708,13 +736,14 @@ body {
         background-color: #fcfcfc;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: flex-start;
         align-items: flex-end; }
         .categorias .categorias__humanos div .categorias__card h3 {
           display: none;
           color: transparent;
           font-weight: bolder;
           text-transform: uppercase; }
-  /*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
+  /*---- DESKTOP/INDEX/DESTACADOS ----*/
   .destacados {
     background-color: #fcfcfc; }
     .destacados h2 {
@@ -730,23 +759,29 @@ body {
         background: linear-gradient(to right, #a91fff, #e0005a);
         -webkit-background-clip: text;
         background-clip: text; }
-  /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
+  /*---- DESKTOP/INDEX/CLIENTES ----*/
   .clientes {
     margin-top: 10rem;
     margin-bottom: 10rem; }
     .clientes .clientes__newsletter {
       display: flex;
-      flex-flow: column nowrap; }
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: stretch; }
       .clientes .clientes__newsletter h3 {
         text-align: center;
         font-weight: bold; }
       .clientes .clientes__newsletter .formulario {
         margin-top: 5rem;
         display: flex;
-        flex-flow: column nowrap; }
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: stretch; }
         .clientes .clientes__newsletter .formulario .formulario__campos {
           display: flex;
+          flex-flow: row nowrap;
           justify-content: center;
+          align-items: stretch;
           gap: 2rem; }
           .clientes .clientes__newsletter .formulario .formulario__campos div input {
             width: 30rem; }
@@ -756,6 +791,7 @@ body {
     .clientes .clientes__instagram {
       display: flex;
       flex-flow: column nowrap;
+      justify-content: flex-start;
       align-items: center; }
       .clientes .clientes__instagram .clientes__titulo {
         font-weight: bold;
@@ -763,7 +799,7 @@ body {
         text-decoration: none;
         margin-bottom: 5rem; }
   /*---- DESKTOP/TIENDA ----*/
-  /*---- DESKTOP/TIENDA/MAIN ----*/
+  /*---- DESKTOP/TIENDA/TÍTULO ----*/
   .tienda__fondo {
     background: #fcfcfc; }
     .tienda__fondo .tienda__titulo {
@@ -779,11 +815,13 @@ body {
         margin-bottom: 5rem; }
   .seccion1__div2 {
     display: flex;
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch; }
     .seccion1__div2 img {
       margin-top: 5rem;
       margin-bottom: 5rem; }
-  /*---- DESKTOP/TIENDA/MAIN/CATEGORÍAS ----*/
+  /*---- DESKTOP/TIENDA/CATEGORÍAS ----*/
   .tienda__categorias {
     margin-top: 5rem;
     background-color: #f5f5f5; }
@@ -815,11 +853,13 @@ body {
         padding: 2rem 0 2rem 0; }
     .tienda__categorias .categorias__divGrande2 {
       margin-top: 6rem; }
-  /*---- DESKTOP/TIENDA/MAIN/NEWSLETTER ----*/
+  /*---- DESKTOP/TIENDA/NEWSLETTER ----*/
   .tienda__newsletter {
     margin-top: 5rem;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     margin-bottom: 10rem; }
     .tienda__newsletter h3 {
       text-align: center;
@@ -830,14 +870,15 @@ body {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
+        align-items: stretch;
         gap: 2rem; }
         .tienda__newsletter form .tienda__campos div input {
           width: 30rem; }
       .tienda__newsletter form .tienda__boton {
         text-align: center;
         margin-top: 2.5rem; }
-  /*---- DESKTOP/VENTA MAYORISTA ----*/
-  /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV1 ----*/
+  /*---- DESKTOP/REVENDEDORES ----*/
+  /*---- DESKTOP/REVENDEDORES/DIV1 ----*/
   .main__mayoristas {
     background-color: #fcfcfc; }
   .mayoristas__div1 {
@@ -845,10 +886,10 @@ body {
     background-image: url(../images/Banner-Mayoristas-Color.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
-  /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV2 ----*/
+  /*---- DESKTOP/REVENDEDORES/DIV2 ----*/
   .mayoristas__div2 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center; }
     .mayoristas__div2 h2 {
@@ -859,10 +900,10 @@ body {
       text-transform: lowercase;
       font-weight: bold;
       text-align: center; }
-  /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV3 ----*/
+  /*---- DESKTOP/REVENDEDORES/DIV3 ----*/
   .mayoristas__div3 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center; }
     .mayoristas__div3 h1 {
@@ -888,12 +929,12 @@ body {
         font-style: italic;
         font-weight: bold;
         text-decoration: none; }
-  /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV4 ----*/
+  /*---- DESKTOP/REVENDEDORES/DIV4 ----*/
   .mayoristas__div4 {
     margin-top: 2.5rem;
     margin-bottom: 10rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center; }
     .mayoristas__div4 h3 {
@@ -912,11 +953,11 @@ body {
         font-weight: bold;
         text-decoration: none; }
   /*---- DESKTOP/NOSOTROS ----*/
-  /*---- DESKTOP/NOSOTROS/MAIN ----*/
+  /*---- DESKTOP/NOSOTROS/TÍTULO ----*/
   .main__nosotros {
     background-color: #fcfcfc;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center; }
     .main__nosotros div h1 {
@@ -958,18 +999,10 @@ body {
       margin-top: 5rem;
       text-align: justify; }
   /*---- DESKTOP/CONTACTO ----*/
-  /*---- DESKTOP/CONTACTO/MAIN ----*/
+  /*---- DESKTOP/CONTACTO/FONDO ----*/
   .contacto__fondo {
     background-color: #fcfcfc; }
-  .main__contacto {
-    height: 30vh;
-    background-image: url(../images/Banner3.jpg);
-    background-size: cover; }
-    .main__contacto h1 {
-      color: #131313;
-      font-weight: bolder;
-      text-align: center; }
-  /*---- DESKTOP/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
+  /*---- DESKTOP/CONTACTO/PREGUNTAS FRECUENTES ----*/
   .contacto__preguntasFrecuentes h2 {
     margin-top: 10rem;
     color: #e0005a;
@@ -986,7 +1019,9 @@ body {
       box-shadow: none; }
   .preguntasFrecuentes__nuestrosProductos {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     margin-bottom: 5rem;
     color: #131313; }
     .preguntasFrecuentes__nuestrosProductos h3 {
@@ -1002,10 +1037,12 @@ body {
         font-weight: bold;
         font-style: italic;
         text-decoration: none; }
-  /*---- DESKTOP/CONTACTO/MAIN/FORMULARIO ----*/
+  /*---- DESKTOP/CONTACTO/FORMULARIO ----*/
   .contenedor__contacto {
     display: flex;
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch; }
     .contenedor__contacto .contacto__titulo {
       margin-top: 10rem;
       color: #e0005a;
@@ -1023,10 +1060,12 @@ body {
         text-transform: uppercase; }
   .formulario__botones {
     display: flex;
-    justify-content: space-between; }
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch; }
   .formulario__textarea {
     resize: none; }
-  /*---- DESKTOP/CONTACTO/MAIN/NEWSLETTER ----*/
+  /*---- DESKTOP/CONTACTO/NEWSLETTER ----*/
   .contacto__newsletter h3 {
     color: #e0005a;
     margin-top: 10rem;
@@ -1036,16 +1075,20 @@ body {
   .contacto__newsletter .newsletter__formulario {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     color: #131313;
     margin-bottom: 5rem;
     text-transform: uppercase; }
     .contacto__newsletter .newsletter__formulario .newsletter__campos {
       display: flex;
       flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
       gap: 2rem; }
     .contacto__newsletter .newsletter__formulario .newsletter__boton {
       margin-top: 2.5rem; }
-  /*---- DESKTOP/ERROR-404/MAIN ----*/
+  /*---- DESKTOP/ERROR-404 ----*/
   .seccion__error {
     display: flex;
     flex-flow: column nowrap;
@@ -1074,8 +1117,9 @@ body {
     background-color: #131313; }
     .footer .footer__contacto {
       display: flex;
-      flex-flow: column wrap;
+      flex-flow: column nowrap;
       justify-content: space-around;
+      align-items: stretch;
       margin-bottom: 5rem; }
       .footer .footer__contacto div div h2 {
         text-align: center;
@@ -1120,13 +1164,15 @@ body {
         margin-top: 2rem;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: flex-start;
         align-items: center; }
         .footer .footer__redes div h4 {
           margin-bottom: 2rem;
           color: #fcfcfc; }
     .footer .footer__mediosDePago {
       display: flex;
-      flex-flow: column wrap;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
       align-items: center; }
       .footer .footer__mediosDePago h4 {
         color: #fcfcfc;
@@ -1155,7 +1201,8 @@ body {
     .footer .footer__contacto {
       display: flex;
       flex-flow: row nowrap;
-      justify-content: space-around; }
+      justify-content: space-around;
+      align-items: stretch; }
       .footer .footer__contacto div div h2 {
         text-align: left;
         color: #fcfcfc;
@@ -1175,7 +1222,9 @@ body {
               color: #a91fff; }
     .footer .footer__redes {
       display: flex;
-      flex-flow: column nowrap; }
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: stretch; }
       .footer .footer__redes h4 {
         margin-bottom: 2rem;
         color: #fcfcfc;
@@ -1193,13 +1242,17 @@ body {
       .footer .footer__redes div {
         margin-top: 2rem;
         display: flex;
-        flex-flow: column nowrap; }
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: stretch; }
         .footer .footer__redes div h4 {
           margin-bottom: 2rem;
           color: #fcfcfc; }
     .footer .footer__mediosDePago {
       display: flex;
-      flex-flow: column wrap; }
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: stretch; }
       .footer .footer__mediosDePago h4 {
         color: #fcfcfc;
         font-weight: bold;
@@ -1219,53 +1272,7 @@ body {
         text-decoration: none; } }
 
 /*---- BOTONES ----*/
-.boton, .boton--blanco, .boton--corto, .boton--largo, .boton--nosotros, .boton--formulario, .boton--newsletter {
-  background-color: #131313;
-  color: #e0005a;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 2rem;
-  transition: background-color 0.5s; }
-  .boton:hover, .boton--blanco:hover, .boton--corto:hover, .boton--largo:hover, .boton--nosotros:hover, .boton--formulario:hover, .boton--newsletter:hover {
-    color: #e0005a;
-    background-color: #a91fff; }
-
-.boton--blanco {
-  width: 20%;
-  background-color: #e0005a;
-  color: #131313;
-  padding: 1rem;
-  text-align: center;
-  transition: all 0.5s; }
-  .boton--blanco:hover {
-    color: #e0005a;
-    background-color: #a91fff; }
-
-.boton--corto {
-  width: 15%;
-  text-align: center;
-  margin-bottom: 2.5rem; }
-
-.boton--largo {
-  border: none;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 5rem; }
-
-.boton--nosotros {
-  margin-top: 5rem;
-  padding: 2rem 5rem 2rem 5rem; }
-
-.boton--formulario {
-  margin-top: 2rem;
-  padding: 1rem;
-  border-radius: 0; }
-
-.boton--newsletter {
-  border: none; }
-
-/*---- Boton index ----*/
-.boton__fancy, .boton__colecciones {
+.boton, .boton__colecciones {
   background-color: transparent;
   border: 2px solid #131313;
   border-radius: 0;
@@ -1286,7 +1293,7 @@ body {
   transition: all 0.3s ease-in-out;
   user-select: none;
   font-size: 13px; }
-  .boton__fancy::before, .boton__colecciones::before {
+  .boton::before, .boton__colecciones::before {
     content: " ";
     width: 1.5625rem;
     height: 2px;
@@ -1297,7 +1304,7 @@ body {
     transform: translateY(-50%);
     transform-origin: center;
     transition: background 0.3s linear, width 0.3s linear; }
-  .boton__fancy .text, .boton__colecciones .text {
+  .boton .text, .boton__colecciones .text {
     font-size: 1.125em;
     line-height: 1.33333em;
     padding-left: 2em;
@@ -1307,7 +1314,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #131313; }
-  .boton__fancy .top-key, .boton__colecciones .top-key {
+  .boton .top-key, .boton__colecciones .top-key {
     height: 2px;
     width: 1.5625rem;
     top: -2px;
@@ -1315,7 +1322,7 @@ body {
     position: absolute;
     background: #fcfcfc;
     transition: width 0.5s ease-out, left 0.3s ease-out; }
-  .boton__fancy .bottom-key-1, .boton__colecciones .bottom-key-1 {
+  .boton .bottom-key-1, .boton__colecciones .bottom-key-1 {
     height: 2px;
     width: 1.5625rem;
     right: 1.875rem;
@@ -1323,7 +1330,7 @@ body {
     position: absolute;
     background: #fcfcfc;
     transition: width 0.5s ease-out, right 0.3s ease-out; }
-  .boton__fancy .bottom-key-2, .boton__colecciones .bottom-key-2 {
+  .boton .bottom-key-2, .boton__colecciones .bottom-key-2 {
     height: 2px;
     width: 0.625rem;
     right: 0.625rem;
@@ -1331,112 +1338,42 @@ body {
     position: absolute;
     background: #fcfcfc;
     transition: width 0.5s ease-out, right 0.3s ease-out; }
-  .boton__fancy:hover, .boton__colecciones:hover {
+  .boton:hover, .boton__colecciones:hover {
     color: #fcfcfc;
     background: #131313; }
-    .boton__fancy:hover::before, .boton__colecciones:hover::before {
+    .boton:hover::before, .boton__colecciones:hover::before {
       width: 0.9375rem;
       background: #fcfcfc; }
-    .boton__fancy:hover .text, .boton__colecciones:hover .text {
+    .boton:hover .text, .boton__colecciones:hover .text {
       color: #fcfcfc;
       padding-left: 1.5em; }
-    .boton__fancy:hover .top-key, .boton__colecciones:hover .top-key {
+    .boton:hover .top-key, .boton__colecciones:hover .top-key {
       left: -2px;
       width: 0px; }
-    .boton__fancy:hover .bottom-key-1, .boton__colecciones:hover .bottom-key-1 {
+    .boton:hover .bottom-key-1, .boton__colecciones:hover .bottom-key-1 {
       right: 0;
       width: 0; }
-    .boton__fancy:hover .bottom-key-2, .boton__colecciones:hover .bottom-key-2 {
+    .boton:hover .bottom-key-2, .boton__colecciones:hover .bottom-key-2 {
       right: 0;
       width: 0; }
 
+/*---- BOTÓN COLECCIONES ----*/
 .boton__colecciones {
-  background-color: #131313;
-  border: 2px solid #131313;
-  border-radius: 0;
-  box-sizing: border-box;
-  color: #fcfcfc;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  margin: 0;
-  outline: none;
-  overflow: visible;
-  padding: 1.25em 2em;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  transition: all 0.3s ease-in-out;
-  user-select: none;
-  font-size: 13px; }
+  background-color: #131313; }
   .boton__colecciones::before {
-    content: " ";
-    width: 1.5625rem;
-    height: 2px;
-    background: #fcfcfc;
-    top: 50%;
-    left: 1.5em;
-    position: absolute;
-    transform: translateY(-50%);
-    transform-origin: center;
-    transition: background 0.3s linear, width 0.3s linear; }
+    background: #fcfcfc; }
   .boton__colecciones .text {
-    font-size: 1.125em;
-    line-height: 1.33333em;
-    padding-left: 2em;
-    display: block;
-    text-align: left;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    text-decoration: none;
     color: #fcfcfc; }
-  .boton__colecciones .top-key {
-    height: 2px;
-    width: 1.5625rem;
-    top: -2px;
-    left: 0.625rem;
-    position: absolute;
-    background: #fcfcfc;
-    transition: width 0.5s ease-out, left 0.3s ease-out; }
-  .boton__colecciones .bottom-key-1 {
-    height: 2px;
-    width: 1.5625rem;
-    right: 1.875rem;
-    bottom: -2px;
-    position: absolute;
-    background: #fcfcfc;
-    transition: width 0.5s ease-out, right 0.3s ease-out; }
-  .boton__colecciones .bottom-key-2 {
-    height: 2px;
-    width: 0.625rem;
-    right: 0.625rem;
-    bottom: -2px;
-    position: absolute;
-    background: #fcfcfc;
-    transition: width 0.5s ease-out, right 0.3s ease-out; }
   .boton__colecciones:hover {
     color: #131313;
     background: #fcfcfc; }
     .boton__colecciones:hover::before {
-      width: 0.9375rem;
       background: #131313; }
     .boton__colecciones:hover .text {
-      color: #131313;
-      padding-left: 1.5em; }
-    .boton__colecciones:hover .top-key {
-      left: -2px;
-      width: 0px; }
-    .boton__colecciones:hover .bottom-key-1 {
-      right: 0;
-      width: 0; }
-    .boton__colecciones:hover .bottom-key-2 {
-      right: 0;
-      width: 0; }
+      color: #131313; }
 
-/*---- Boton newsletter ----*/
-.boton__newsletter, .boton__categorias, .boton__formulario, .boton__tienda {
+/*---- BOTÓN 2 ----*/
+.boton2, .boton__categorias, .boton__formulario, .boton__tienda {
   color: #fcfcfc;
   padding: 17px 40px;
   border-radius: 50px;
@@ -1446,11 +1383,11 @@ body {
   text-transform: uppercase;
   font-size: 15px;
   transition: all .5s ease; }
-  .boton__newsletter:hover, .boton__categorias:hover, .boton__formulario:hover, .boton__tienda:hover {
+  .boton2:hover, .boton__categorias:hover, .boton__formulario:hover, .boton__tienda:hover {
     letter-spacing: 3px;
     background-color: #a91fff;
     color: #fcfcfc; }
-  .boton__newsletter:active, .boton__categorias:active, .boton__formulario:active, .boton__tienda:active {
+  .boton2:active, .boton__categorias:active, .boton__formulario:active, .boton__tienda:active {
     letter-spacing: 3px;
     background-color: #a91fff;
     color: #fcfcfc;
@@ -1458,16 +1395,15 @@ body {
     transform: translateY(10px);
     transition: 100ms; }
 
-.boton__categorias {
-  color: #fcfcfc;
-  background-color: #131313; }
-
+/*---- BOTÓN CATEGORÍAS ----*/
+/*---- BOTÓN FORMULARIO ----*/
 .boton__formulario {
   color: #131313;
   background-color: #fcfcfc; }
   .boton__formulario:hover {
     background-color: #00bbe0; }
 
+/*---- BOTÓN TIENDA ----*/
 .boton__tienda {
   padding: 0.5rem 2rem;
   font-size: 1rem; }

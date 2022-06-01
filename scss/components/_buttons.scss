@@ -1,59 +1,5 @@
 /*---- BOTONES ----*/
 .boton{
-    background-color: $color-primario;
-    color: $color-cuaternario;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 2rem;
-    transition: background-color 0.5s;
-    &:hover{
-        color: $color-cuaternario;
-        background-color: $color-secundario;
-    }
-}
-.boton--blanco{
-    @extend .boton;
-    width: 20%;
-    background-color: $color-cuaternario;
-    color: $color-primario;
-    padding: 1rem;
-    text-align: center;
-    transition: all 0.5s;
-    &:hover{
-        color: $color-cuaternario;
-        background-color: $color-secundario;
-    }
-}
-.boton--corto{
-    @extend .boton;
-    width: 15%;
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
-.boton--largo{
-    @extend .boton;
-    border: none;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-}
-.boton--nosotros{
-    @extend .boton;
-    margin-top: 5rem;
-    padding: 2rem 5rem 2rem 5rem;
-}
-.boton--formulario{
-    @extend .boton;
-    margin-top: 2rem;
-    padding: 1rem;
-    border-radius: 0;
-}
-.boton--newsletter{
-    @extend .boton;
-    border: none;
-}
-/*---- Boton index ----*/
-.boton__fancy{
 	background-color: transparent;
 	border: 2px solid $color-primario;
 	border-radius: 0;
@@ -61,7 +7,6 @@
 	color: $color-fondo;
 	cursor: pointer;
 	display: inline-block;
-	// float: right;
 	font-weight: 700;
 	letter-spacing: 0.05em;
 	margin: 0;
@@ -150,107 +95,29 @@
 		}
 	}
 }
-// REDUCIR CÓDIGO DEL BOTÓN COLECCIONES
+/*---- BOTÓN COLECCIONES ----*/
 .boton__colecciones{
-	@extend .boton__fancy;
-		background-color: #131313;
-		border: 2px solid #131313;
-		border-radius: 0;
-		box-sizing: border-box;
-		color: #fcfcfc;
-		cursor: pointer;
-		display: inline-block;
-		font-weight: 700;
-		letter-spacing: 0.05em;
-		margin: 0;
-		outline: none;
-		overflow: visible;
-		padding: 1.25em 2em;
-		position: relative;
-		text-align: center;
-		text-decoration: none;
-		text-transform: none;
-		transition: all 0.3s ease-in-out;
-		user-select: none;
-		font-size: 13px;
+	@extend .boton;
+	background-color: $color-primario;
+	&::before {
+		background: $color-fondo;
+	}
+	.text {
+		color: $color-fondo;
+	}
+	&:hover {
+		color: $color-primario;
+		background: $color-fondo;
 		&::before {
-			content: " ";
-			width: 1.5625rem;
-			height: 2px;
-			background: #fcfcfc;
-			top: 50%;
-			left: 1.5em;
-			position: absolute;
-			transform: translateY(-50%);
-			transform-origin: center;
-			transition: background 0.3s linear, width 0.3s linear;
+			background: $color-primario;
 		}
 		.text {
-			font-size: 1.125em;
-			line-height: 1.33333em;
-			padding-left: 2em;
-			display: block;
-			text-align: left;
-			transition: all 0.3s ease-in-out;
-			text-transform: uppercase;
-			text-decoration: none;
-			color: #fcfcfc;
-		}
-		.top-key {
-			height: 2px;
-			width: 1.5625rem;
-			top: -2px;
-			left: 0.625rem;
-			position: absolute;
-			background: #fcfcfc;
-			transition: width 0.5s ease-out, left 0.3s ease-out;
-		}
-		.bottom-key-1 {
-			height: 2px;
-			width: 1.5625rem;
-			right: 1.875rem;
-			bottom: -2px;
-			position: absolute;
-			background: #fcfcfc;
-			transition: width 0.5s ease-out, right 0.3s ease-out;
-		}
-		.bottom-key-2 {
-			height: 2px;
-			width: 0.625rem;
-			right: 0.625rem;
-			bottom: -2px;
-			position: absolute;
-			background: #fcfcfc;
-			transition: width 0.5s ease-out, right 0.3s ease-out;
-		}
-		&:hover {
-			color: #131313;
-			background: #fcfcfc;
-			&::before {
-				width: 0.9375rem;
-				background: #131313;
-			}
-			.text {
-				color: #131313;
-				padding-left: 1.5em;
-			}
-			.top-key {
-				left: -2px;
-				width: 0px;
-			}
-			.bottom-key-1 {
-				right: 0;
-				width: 0;
-			}
-			.bottom-key-2 {
-				right: 0;
-				width: 0;
-			}
+			color: $color-primario;
 		}
 	}
-
-/*---- Boton newsletter ----*/
-.boton__newsletter{
+}
+/*---- BOTÓN 2 ----*/
+.boton2{
 	color: $color-fondo;
 	padding: 17px 40px;
 	border-radius: 50px;
@@ -274,21 +141,22 @@
 		transition: 100ms;
 	}
 }
+/*---- BOTÓN CATEGORÍAS ----*/
 .boton__categorias{
-	@extend .boton__newsletter;
-	color: $color-fondo;
-	background-color: $color-primario;
+	@extend .boton2;
 }
+/*---- BOTÓN FORMULARIO ----*/
 .boton__formulario{
-	@extend .boton__newsletter;
+	@extend .boton2;
 	color: $color-primario;
 	background-color: $color-fondo;
 	&:hover{
 		background-color: $color-quinario;
 	}
 }
+/*---- BOTÓN TIENDA ----*/
 .boton__tienda{
-	@extend .boton__newsletter;
+	@extend .boton2;
 	padding: 0.5rem 2rem;
 	font-size: 1rem;
 }

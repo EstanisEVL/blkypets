@@ -1,22 +1,17 @@
 /*---- MOBILE ----*/
 @media only screen and (max-width: 991px){
-    /*---- MOBILE/INDEX/MAIN ----*/
+    /*---- MOBILE/INDEX ----*/
     .fondo{
         background-color: $color-fondo;
     }
-    /*---- MOBILE/INDEX/MAIN/HERO ----*/
+    /*---- MOBILE/INDEX/HERO ----*/
     .hero{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
+        @include flexbox(flex, row, nowrap, center, center);
         background-color: $color-tercerfondo;
     }
     .titulo{
         height: 15vh;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(flex, row, nowrap, center, center);
         background-color: $color-primario;
         color: $color-fondo;
         h1{
@@ -59,10 +54,7 @@
             }
         }
         div{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(flex, row, nowrap, center, center);
             .verMas{
                 display:none;
             }
@@ -73,7 +65,7 @@
             }
         }
     }
-    /*---- MOBILE/INDEX/MAIN/COLECCIONES ----*/
+    /*---- MOBILE/INDEX/COLECCIONES ----*/
     .colecciones{
         height: 25vh;
         display: flex;
@@ -81,10 +73,7 @@
         div{
             margin-top: 2.5rem;
             margin-bottom: 2.5rem;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(flex, row, nowrap, center, center);
             text-transform: uppercase;
             h2{
                 text-align: center;
@@ -117,7 +106,7 @@
             }
         }
     }
-    /*---- MOBILE/INDEX/MAIN/CATEGORIAS ----*/
+    /*---- MOBILE/INDEX/CATEGORIAS ----*/
     .categorias{
         margin-top: 10rem;
         gap: 2.5rem;
@@ -127,9 +116,7 @@
                 border: none;
                 .categorias__card{
                     background-color: $color-fondo;
-                    display: flex;
-                    flex-flow: column nowrap;
-                    align-items: flex-end;
+                    @include flexbox(flex, column, nowrap, flex-start, flex-end);
                     h3{
                         display: none;
                         color: transparent;
@@ -145,9 +132,7 @@
                 border: none;
                 .categorias__card{
                     background-color: $color-fondo;
-                    display: flex;
-                    flex-flow: column nowrap;
-                    align-items: flex-end;
+                    @include flexbox(flex, column, nowrap, flex-start, flex-end);
                     h3{
                         display: none;
                         color: transparent;
@@ -163,9 +148,7 @@
                 border: none;
                 .categorias__card{
                     background-color: $color-fondo;
-                    display: flex;
-                    flex-flow: column nowrap;
-                    align-items: flex-end;
+                    @include flexbox(flex, column, nowrap, flex-start, flex-end);
                     h3{
                         display: none;
                         color: transparent;
@@ -176,7 +159,7 @@
             }
         }
     }
-    /*---- MOBILE/INDEX/MAIN/DESTACADOS ----*/
+    /*---- MOBILE/INDEX/DESTACADOS ----*/
     .destacados{
         margin-top: 5rem;
         background-color: $color-fondo;
@@ -195,14 +178,12 @@
             }
         }
     }
-    /*---- MOBILE/INDEX/MAIN/CLIENTES ----*/
+    /*---- MOBILE/INDEX/CLIENTES ----*/
     .clientes{
         margin-top: 5rem;
         margin-bottom: 10rem;
         .clientes__newsletter{
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
+            @include flexbox(flex, column, nowrap, flex-start, center);
             h3{
                 text-align: center;
                 font-weight: bold;
@@ -211,12 +192,9 @@
                 min-width: 20rem;
                 margin-top: 5rem;
                 margin-bottom: 5rem;
-                display: flex;
-                flex-flow: column nowrap;
+                @include flexbox(flex, column, nowrap, flex-start, stretch);
                 .formulario__campos{
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: space-evenly;
+                    @include flexbox(flex, column, nowrap, space-evenly, stretch);
                     line-height: 3rem;
                 }
                 .formulario__boton{
@@ -227,9 +205,7 @@
         }
         .clientes__instagram{
             margin-top: 2.5rem;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
+            @include flexbox(flex, column, nowrap, flex-start, center);
             .clientes__titulo{
                 font-weight: bold;
                 color: $color-primario;
@@ -239,7 +215,7 @@
         }
     }
     /*---- MOBILE/TIENDA ----*/
-    /*---- MOBILE/TIENDA/MAIN ----*/
+    /*---- MOBILE/TIENDA/TÍTULO ----*/
     .tienda__fondo{
         background: $color-fondo;
         .tienda__titulo{
@@ -247,9 +223,7 @@
             background-image: url(../images/BannerProductosMobile.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(flex, row, nowrap, center, center);
             h1{
                 margin-left: 60%;
                 color: $color-primario;
@@ -258,15 +232,12 @@
             }
         }
     }
-    /*---- MOBILE/TIENDA/MAIN/CATEGORÍAS ----*/
+    /*---- MOBILE/TIENDA/CATEGORÍAS ----*/
     .tienda__categorias{
         .categorias__divGrandeM{
             margin-top: 1rem;
             background-color: $color-segundofondo;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flexbox(flex, row, nowrap, space-evenly, center);
             text-decoration: none;
             color: $color-primario;
             transition: all 0.5s;
@@ -278,10 +249,7 @@
         .categorias__divChicoM{
             margin-top: 1rem;
             background-color: $color-segundofondo;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(flex, column, nowrap, center, center);
             text-decoration: none;
             color: $color-primario;
             transition: all 0.5s;
@@ -295,11 +263,10 @@
             }
         }
     }
-    /*---- MOBILE/TIENDA/MAIN/NEWSLETTER ----*/
+    /*---- MOBILE/TIENDA/NEWSLETTER ----*/
     .tienda__newsletter{
         margin-top: 5rem;
-        display: flex;
-        flex-flow: column nowrap;
+        @include flexbox(flex, column, nowrap, flex-start, stretch);
         margin-bottom: 10rem;
         h3{
             text-align: center;
@@ -308,9 +275,7 @@
         form{
             line-height: 2.5rem;
             .tienda__campos{
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: center;
+                @include flexbox(flex, column, nowrap, center, stretch);
             }
             .tienda__boton{
                 text-align: center;
@@ -318,7 +283,8 @@
             }
         }
     }
-    /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV1 ----*/
+        /*---- MOBILE/REVENDEDORES ----*/
+    /*---- MOBILE/REVENDEDORES/DIV1 ----*/
     .main__mayoristas{
         background-color: $color-fondo;
     }
@@ -328,12 +294,9 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV2 ----*/
+    /*---- MOBILE/REVENDEDORES/DIV2 ----*/
     .mayoristas__div2{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, flex-start, center);
         h2{
             margin-top: 5rem;
             margin-bottom: 5rem;
@@ -343,12 +306,9 @@
             text-align: center;
         }
     }
-    /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV3 ----*/
+    /*---- MOBILE/REVENDEDORES/DIV3 ----*/
     .mayoristas__div3{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, flex-start, center);
         h1{
             margin-top: 5rem;
             margin-bottom: 2.5rem;
@@ -376,14 +336,11 @@
             }
         }
     }
-    /*---- MOBILE/VENTA MAYORISTA/MAIN/DIV4 ----*/
+    /*---- MOBILE/REVENDEDORES/DIV4 ----*/
     .mayoristas__div4{
         margin-top: 2.5rem;
         margin-bottom: 10rem;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, flex-start, center);
         h3{
             margin-top: 2.5rem;
             margin-bottom: 2.5rem;
@@ -404,13 +361,10 @@
         }
     }
     /*---- MOBILE/NOSOTROS ----*/
-    /*---- MOBILE/NOSOTROS/MAIN ----*/
+    /*---- MOBILE/NOSOTROS/TÍTULO ----*/
     .main__nosotros{
         background-color: $color-fondo;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, center, center);
         div{
             h1{
                 color: $color-cuaternario;
@@ -429,10 +383,7 @@
     /*---- MOBILE/NOSOTROS/SECCION 1----*/
     .nosotros__seccion1{
         div{
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(flex, column, nowrap, center, center);
             img{
                 max-height: 40rem;
             }
@@ -453,10 +404,7 @@
     /*---- MOBILE/NOSOTROS/SECCION 2----*/
     .nosotros__seccion2{
         margin-top: 5rem;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, center, center);
         div{
             h2{
                 font-size: $mobile;
@@ -480,11 +428,10 @@
         }
     }
     /*---- MOBILE/CONTACTO ----*/
-    /*---- MOBILE/CONTACTO/MAIN ----*/
     .contacto__fondo{
         background-color: $color-fondo;
     }
-    /*---- MOBILE/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
+    /*---- MOBILE/CONTACTO/PREGUNTAS FRECUENTES ----*/
     .contacto__preguntasFrecuentes{
         h2{
             margin-top: 5rem;
@@ -513,8 +460,7 @@
         }
     }
     .preguntasFrecuentes__nuestrosProductos{
-        display: flex;
-        flex-flow: column wrap;
+        @include flexbox(flex, column, nowrap, flex-start, stretch);
         margin-bottom: 5rem;
         color: $color-primario;
         h3{
@@ -535,10 +481,9 @@
             }
         }
     }
-    /*---- MOBILE/CONTACTO/MAIN/FORMULARIO ----*/
+    /*---- MOBILE/CONTACTO/FORMULARIO ----*/
     .contenedor__contacto{
-        display: flex;
-        flex-flow: column nowrap;
+        @include flexbox(flex, column, nowrap, flex-start, stretch);
         .contacto__titulo{
             margin-top: 2.5rem;
             color: $color-cuaternario;
@@ -561,15 +506,13 @@
         }
     }
     .formulario__botones{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
+        @include flexbox(flex, column, nowrap, space-between, stretch);
         gap: 2rem;
     }
     .formulario__textarea{
         resize: none;
     }
-    /*---- MOBILE/CONTACTO/MAIN/NEWSLETTER ----*/
+    /*---- MOBILE/CONTACTO/NEWSLETTER ----*/
     .contacto__newsletter{
         h3{
             color: $color-cuaternario;
@@ -580,14 +523,12 @@
             text-align: center;
         }
         .newsletter__formulario{
-            display: flex;
-            flex-flow: column nowrap;
+            @include flexbox(flex, column, nowrap, flex-start, stretch);
             color: $color-primario;
             margin-bottom: 5rem;
             text-transform: uppercase;
             .newsletter__campos{
-                display: flex;
-                flex-flow: column nowrap;
+                @include flexbox(flex, column, nowrap, flex-start, stretch);
             }
             .newsletter__boton{
                 text-align: center;
@@ -595,12 +536,9 @@
             }
         }
     }
-    /*---- MOBILE/ERROR-404/MAIN ----*/
+    /*---- MOBILE/ERROR-404 ----*/
     .seccion__error{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, center, center);
         margin-bottom: 10rem;
         h2{
             text-align: center;
@@ -629,11 +567,11 @@
 
 /*---- DESKTOP ----*/
 @media only screen and (min-width: 992px){
-    /*---- DESKTOP/INDEX/MAIN ----*/
+    /*---- DESKTOP/INDEX ----*/
     .fondo{
         background-color: $color-fondo;
     }
-    /*---- DESKTOP/INDEX/MAIN/HERO ----*/
+    /*---- DESKTOP/INDEX/HERO ----*/
     .hero{
         height: 70vh;
         background-image: url(../images/BannerPrincipal.jpg);
@@ -646,10 +584,7 @@
     }
     .titulo{
         height: 15vh;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(flex, row, nowrap, center, center);
         background-color: $color-primario;
         color: $color-fondo;
         h1{
@@ -664,8 +599,7 @@
     }
     .slider{
         height: 30vh;
-        display: flex;
-        flex-flow: row wrap;
+        @include flexbox(flex, row, nowrap, flex-start, stretch);
         animation: slide 20s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in;
@@ -697,10 +631,7 @@
             }
         }
         div{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(flex, row, nowrap, center, center);
             .monocromo{
                 display: none;
                 a{
@@ -709,16 +640,12 @@
             }
         }
     }
-    /*---- DESKTOP/INDEX/MAIN/COLECCIONES ----*/
+    /*---- DESKTOP/INDEX/COLECCIONES ----*/
     .colecciones{
         height: 40vh;
-        display: flex;
-        flex-flow: column nowrap;
+        @include flexbox(flex, column, nowrap, flex-start, stretch);
         div{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(flex, row, nowrap, center, center);
             text-transform: uppercase;
             h2{
                 margin-top: 5rem;
@@ -747,7 +674,7 @@
             }
         }
     }
-    /*---- DESKTOP/INDEX/MAIN/CATEGORIAS ----*/
+    /*---- DESKTOP/INDEX/CATEGORIAS ----*/
     .categorias{
         margin-top: 20rem;
         .categorias__perros{
@@ -755,9 +682,7 @@
                 border: none;
                 .categorias__card{
                     background-color: $color-fondo;
-                    display: flex;
-                    flex-flow: column nowrap;
-                    align-items: flex-end;
+                    @include flexbox(flex, column, nowrap, flex-start, flex-end);
                     h3{
                         display: none;
                         color: transparent;
@@ -772,9 +697,7 @@
                 border: none;
                 .categorias__card{
                     background-color: $color-fondo;
-                    display: flex;
-                    flex-flow: column nowrap;
-                    align-items: flex-end;
+                    @include flexbox(flex, column, nowrap, flex-start, flex-end);
                     h3{
                         display: none;
                         color: transparent;
@@ -789,9 +712,7 @@
                 border: none;
                 .categorias__card{
                     background-color: $color-fondo;
-                    display: flex;
-                    flex-flow: column nowrap;
-                    align-items: flex-end;
+                    @include flexbox(flex, column, nowrap, flex-start, flex-end);
                     h3{
                         display: none;
                         color: transparent;
@@ -802,7 +723,7 @@
             }
         }
     }
-    /*---- DESKTOP/INDEX/MAIN/DESTACADOS ----*/
+    /*---- DESKTOP/INDEX/DESTACADOS ----*/
     .destacados{
         background-color: $color-fondo;
         h2{
@@ -821,24 +742,21 @@
             }
         }
     }
-    /*---- DESKTOP/INDEX/MAIN/CLIENTES ----*/
+    /*---- DESKTOP/INDEX/CLIENTES ----*/
     .clientes{
         margin-top: 10rem;
         margin-bottom: 10rem;
         .clientes__newsletter{
-            display: flex;
-            flex-flow: column nowrap;
+            @include flexbox(flex, column, nowrap, flex-start, stretch);
             h3{
                 text-align: center;
                 font-weight: bold;
             }
             .formulario{
                 margin-top: 5rem;
-                display: flex;
-                flex-flow: column nowrap;
+                @include flexbox(flex, column, nowrap, flex-start, stretch);
                 .formulario__campos{
-                    display: flex;
-                    justify-content: center;
+                    @include flexbox(flex, row, nowrap, center, stretch);
                     gap: 2rem;
                     div{
                         input{
@@ -853,9 +771,7 @@
             }
         }
         .clientes__instagram{
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
+            @include flexbox(flex, column, nowrap, flex-start, center);
             .clientes__titulo{
                 font-weight: bold;
                 color: $color-primario;
@@ -865,7 +781,7 @@
         }
     }
     /*---- DESKTOP/TIENDA ----*/
-    /*---- DESKTOP/TIENDA/MAIN ----*/
+    /*---- DESKTOP/TIENDA/TÍTULO ----*/
     .tienda__fondo{
         background: $color-fondo;
         .tienda__titulo{
@@ -883,23 +799,19 @@
         }
     }
     .seccion1__div2{
-        display: flex;
-        flex-flow: column nowrap;
+        @include flexbox(flex, column, nowrap, flex-start, stretch);
         img{
             margin-top: 5rem;
             margin-bottom: 5rem;
         }
     }
-    /*---- DESKTOP/TIENDA/MAIN/CATEGORÍAS ----*/
+    /*---- DESKTOP/TIENDA/CATEGORÍAS ----*/
     .tienda__categorias{
         margin-top: 5rem;
         background-color: $color-segundofondo;
         .categorias__divGrande{
             background-color: $color-segundofondo;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flexbox(flex, row, nowrap, space-evenly, center);
             text-decoration: none;
             color: $color-primario;
             transition: all 0.5s;
@@ -910,10 +822,7 @@
         }
         .categorias__divChico{
             background-color: $color-segundofondo;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(flex, column, nowrap, center, center);
             text-decoration: none;
             color: $color-primario;
             transition: all 0.5s;
@@ -930,11 +839,10 @@
             margin-top: 6rem;
         }
     }
-    /*---- DESKTOP/TIENDA/MAIN/NEWSLETTER ----*/
+    /*---- DESKTOP/TIENDA/NEWSLETTER ----*/
     .tienda__newsletter{
         margin-top: 5rem;
-        display: flex;
-        flex-flow: column nowrap;
+        @include flexbox(flex, column, nowrap, flex-start, stretch);
         margin-bottom: 10rem;
         h3{
             text-align: center;
@@ -943,9 +851,7 @@
         form{
             line-height: 5rem;
             .tienda__campos{
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
+                @include flexbox(flex, row, nowrap, center, stretch);
                 gap: 2rem;
                 div{
                     input{
@@ -959,8 +865,8 @@
             }
         }
     }
-    /*---- DESKTOP/VENTA MAYORISTA ----*/
-    /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV1 ----*/
+    /*---- DESKTOP/REVENDEDORES ----*/
+    /*---- DESKTOP/REVENDEDORES/DIV1 ----*/
     .main__mayoristas{
         background-color: $color-fondo;
     }
@@ -970,12 +876,9 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV2 ----*/
+    /*---- DESKTOP/REVENDEDORES/DIV2 ----*/
     .mayoristas__div2{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, flex-start, center);
         h2{
             font-size: $desktop;
             margin-top: 10rem;
@@ -986,12 +889,9 @@
             text-align: center;
         }
     }
-    /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV3 ----*/
+    /*---- DESKTOP/REVENDEDORES/DIV3 ----*/
     .mayoristas__div3{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, flex-start, center);
         h1{
             font-size: $desktop;
             margin-top: 10rem;
@@ -1020,14 +920,11 @@
             }
         }
     }
-    /*---- DESKTOP/VENTA MAYORISTA/MAIN/DIV4 ----*/
+    /*---- DESKTOP/REVENDEDORES/DIV4 ----*/
     .mayoristas__div4{
         margin-top: 2.5rem;
         margin-bottom: 10rem;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, flex-start, center);        
         h3{
             margin-top: 2.5rem;
             margin-bottom: 5rem;
@@ -1048,13 +945,10 @@
         }
     }
     /*---- DESKTOP/NOSOTROS ----*/
-    /*---- DESKTOP/NOSOTROS/MAIN ----*/
+    /*---- DESKTOP/NOSOTROS/TÍTULO ----*/
     .main__nosotros{
         background-color: $color-fondo;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, center, center);
         div{
             h1{
                 color: $color-cuaternario;
@@ -1088,10 +982,7 @@
     .nosotros__seccion2{
         margin-top: 5rem;
         margin-bottom: 10rem;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, center, center);
         div{
             h2{
                 font-size: $desktop-sm;
@@ -1112,23 +1003,12 @@
             }
         }
     }
-
     /*---- DESKTOP/CONTACTO ----*/
-    /*---- DESKTOP/CONTACTO/MAIN ----*/
+    /*---- DESKTOP/CONTACTO/FONDO ----*/
     .contacto__fondo{
         background-color: $color-fondo;
     }
-    .main__contacto{
-        height: 30vh;
-        background-image: url(../images/Banner3.jpg);
-        background-size: cover;
-        h1{
-            color: $color-primario;
-            font-weight: bolder;
-            text-align: center;
-        }
-    }
-    /*---- DESKTOP/CONTACTO/MAIN/PREGUNTAS FRECUENTES ----*/
+    /*---- DESKTOP/CONTACTO/PREGUNTAS FRECUENTES ----*/
     .contacto__preguntasFrecuentes{
         h2{
             margin-top: 10rem;
@@ -1155,8 +1035,7 @@
         }
     }
     .preguntasFrecuentes__nuestrosProductos{
-        display: flex;
-        flex-flow: column wrap;
+        @include flexbox(flex, column, nowrap, flex-start, stretch);
         margin-bottom: 5rem;
         color: $color-primario;
         h3{
@@ -1177,10 +1056,9 @@
             }
         }
     }
-    /*---- DESKTOP/CONTACTO/MAIN/FORMULARIO ----*/
+    /*---- DESKTOP/CONTACTO/FORMULARIO ----*/
     .contenedor__contacto{
-        display: flex;
-        flex-flow: column nowrap;
+        @include flexbox(flex, column, nowrap, flex-start, stretch);
         .contacto__titulo{
             margin-top: 10rem;
             color: $color-cuaternario;
@@ -1203,13 +1081,12 @@
         }
     }
     .formulario__botones{
-        display: flex;
-        justify-content: space-between;
+        @include flexbox(flex, row, nowrap, space-between, stretch);
     }
     .formulario__textarea{
         resize: none;
     }
-    /*---- DESKTOP/CONTACTO/MAIN/NEWSLETTER ----*/
+    /*---- DESKTOP/CONTACTO/NEWSLETTER ----*/
     .contacto__newsletter{
         h3{
             color: $color-cuaternario;
@@ -1219,14 +1096,12 @@
             font-weight: bold;
         }
         .newsletter__formulario{
-            display: flex;
-            flex-flow: column nowrap;
+            @include flexbox(flex, column, nowrap, flex-start, stretch);
             color: $color-primario;
             margin-bottom: 5rem;
             text-transform: uppercase;
             .newsletter__campos{
-                display: flex;
-                flex-flow: row nowrap;
+                @include flexbox(flex, row, nowrap, flex-start, stretch);
                 gap: 2rem;
             }
             .newsletter__boton{
@@ -1234,12 +1109,9 @@
             }
         }
     }
-    /*---- DESKTOP/ERROR-404/MAIN ----*/
+    /*---- DESKTOP/ERROR-404 ----*/
     .seccion__error{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(flex, column, nowrap, center, center);
         margin-bottom: 10rem;
         h2{
             margin-top: 10rem;

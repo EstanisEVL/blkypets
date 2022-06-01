@@ -1,12 +1,30 @@
 <img src="images/logo0.png">
 
-# BLKY Pets - Proyecto desarrollo web CoderHouse
+# BLKY Pets - Proyecto para el curso de desarrollo web CoderHouse
+**version 1.0**
 
-BLKY Pets es un proyecto en el cual se desarrolla un sitio web diseñado para la venta de accesorios para mascotas en formato e-commerce.
+Mi primer proyecto, BLKY Pets, es un sitio web diseñado para la venta de accesorios para mascotas en formato e-commerce.
 
-## Demo
+## Alumno
+
+Estanislao Elías Varela Lucius
+
+### Demo
 
 Para probar mi sitio ingresa al siguiente [link](https://estanisevl.github.io/blkypets/).
+
+#### Plataformas y herramientas utilizadas
+
+Utilicé las siguientes plataformas y herramientas para el desarrollo del proyecto:
+* <img src="images/html.png"> - HTML5
+* <img src="images/css.png"> - CSS3
+* <img src="images/vscode.png"> - VISUAL STUDIO CODE
+* <img src="images/git.png"> - GIT
+* <img src="images/bootstrap.png"> - BOOTSTRAP
+* <img src="images/sass.png"> - SASS
+* <img src="images/filezilla.png"> - FILEZILLA
+
+##### Historial de desarrollo
 
 * 21/04/22: - Agregué animaciones, transformaciones y transiciones.
 * 27/04/22: - Añadí Bootstrap para el maquetado del sitio y la implementación de sus componentes.
@@ -30,3 +48,6 @@ Para probar mi sitio ingresa al siguiente [link](https://estanisevl.github.io/bl
 * 27/05/22: - Corregí sección mayoristas para mobile, agregué carrusel de imágenes para destacados en el index.html y modifiqué los h1 y h2.
 * 30/05/22: - Arreglé el diseño de la sección productos para ambas versiones. Retoqué los carruseles del index para que se ajusten correctamente en la versión mobile. Corregí menú de la sección error404 y footers de todas las secciones.
 * 31/05/22: - Agregué más variables. Corregí el título de la sección productos en mobile.
+
+###### CoderHouse
+Proyecto desarrollado en base a los conocimientos adquiridos en [CoderHouse](https://www.coderhouse.com/).

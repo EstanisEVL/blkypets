@@ -7,3 +7,10 @@
 .sinMargen{
     @include sinMargen(0, 0);
 }
+
+@mixin flexbox($display, $direction, $corte, $justify, $align){
+    display: $display;
+    flex-flow: $direction $corte;
+    justify-content: $justify;
+    align-items: $align;
+}

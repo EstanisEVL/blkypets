@@ -5,9 +5,7 @@
         padding-top: 5rem;
         background-color: $color-primario;
         .footer__contacto{
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: space-around;
+            @include flexbox(flex, column, nowrap, space-around, stretch);
             margin-bottom: 5rem;
             div{
                 div{
@@ -41,10 +39,7 @@
             }
         }
         .footer__redes{
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
+            @include flexbox(flex, column, nowrap, center, center);
             margin-bottom: 5rem;
             h4{
                 margin-bottom: 2rem;
@@ -67,9 +62,7 @@
             }
             div{
                 margin-top: 2rem;
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
+                @include flexbox(flex, column, nowrap, flex-start, center);
                 h4{
                     margin-bottom: 2rem;
                     color: $color-fondo;
@@ -77,9 +70,7 @@
             }
         }
         .footer__mediosDePago{
-            display:flex;
-            flex-flow: column wrap;
-            align-items: center;
+            @include flexbox(flex, column, nowrap, flex-start, center);
             h4{
                 color: $color-fondo;
                 font-weight: bold;
@@ -112,9 +103,7 @@
         padding-top: 8rem;
         background-color: $color-primario;
         .footer__contacto{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
+            @include flexbox(flex, row, nowrap, space-around, stretch);
             div{
                 div{
                     h2{
@@ -145,8 +134,7 @@
             }
         }
         .footer__redes{
-            display: flex;
-            flex-flow: column nowrap;
+            @include flexbox(flex, column, nowrap, flex-start, stretch);
             h4{
                 margin-bottom: 2rem;
                 color: $color-fondo;
@@ -168,8 +156,7 @@
             }
             div{
                 margin-top: 2rem;
-                display: flex;
-                flex-flow: column nowrap;
+                @include flexbox(flex, column, nowrap, flex-start, stretch);
                 h4{
                     margin-bottom: 2rem;
                     color: $color-fondo;
@@ -177,8 +164,7 @@
             }
         }
         .footer__mediosDePago{
-            display:flex;
-            flex-flow: column wrap;
+            @include flexbox(flex, column, nowrap, flex-start, stretch);
             h4{
                 color: $color-fondo;
                 font-weight: bold;
