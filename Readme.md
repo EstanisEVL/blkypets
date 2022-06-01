@@ -9,11 +9,11 @@ Mi primer proyecto, BLKY Pets, es un sitio web diseñado para la venta de acceso
 
 Estanislao Elías Varela Lucius
 
-### Demo
+## Demo
 
 Para probar mi sitio ingresa al siguiente [link](https://estanisevl.github.io/blkypets/).
 
-#### Plataformas y herramientas utilizadas
+## Plataformas y herramientas utilizadas
 
 Utilicé las siguientes plataformas y herramientas para el desarrollo del proyecto:
 * <img src="images/html.png"> - HTML5
@@ -24,7 +24,7 @@ Utilicé las siguientes plataformas y herramientas para el desarrollo del proyec
 * <img src="images/sass.png"> - SASS
 * <img src="images/filezilla.png"> - FILEZILLA
 
-##### Historial de desarrollo
+## Historial de desarrollo
 
 * 21/04/22: - Agregué animaciones, transformaciones y transiciones.
 * 27/04/22: - Añadí Bootstrap para el maquetado del sitio y la implementación de sus componentes.
@@ -49,5 +49,5 @@ Utilicé las siguientes plataformas y herramientas para el desarrollo del proyec
 * 30/05/22: - Arreglé el diseño de la sección productos para ambas versiones. Retoqué los carruseles del index para que se ajusten correctamente en la versión mobile. Corregí menú de la sección error404 y footers de todas las secciones.
 * 31/05/22: - Agregué más variables. Corregí el título de la sección productos en mobile.
 
-###### CoderHouse
+## CoderHouse
 Proyecto desarrollado en base a los conocimientos adquiridos en [CoderHouse](https://www.coderhouse.com/).
