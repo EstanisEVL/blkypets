@@ -30,7 +30,6 @@ Utilicé las siguientes plataformas y herramientas para el desarrollo del proyec
 
 ## Historial de desarrollo
 
-
 * Fases previas a la subida del proyecto a Github: - Boceté las cinco secciones que componen el sitio web en Balsamiq. Armé la estructura del sitio en html5. Estilicé el sitio con css3. Utilicé GIT para subir el proyecto a mi repositorio en github.
 * 21/04/22: - Agregué animaciones, transformaciones y transiciones.
 * 27/04/22: - Añadí Bootstrap para el maquetado del sitio y la implementación de sus componentes.
