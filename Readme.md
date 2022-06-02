@@ -16,7 +16,8 @@ Para probar mi sitio ingresá al siguiente [link](https://estanisevl.github.io/b
 ## Plataformas y herramientas utilizadas
 
 Utilicé las siguientes plataformas y herramientas para el desarrollo del proyecto:
-<img src="images/balsamiq.png"> | <img src="images/html.png"> | <img src="images/css.png"> | <img src="images/vscode.png"> | <img src="images/git.png"> | <img src="images/github.png"> | <img src="images/bootstrap.png"> | <img src="images/sass.png"> | <img src="images/nodejs.png"> | <img src="images/npm.png"> | <img src="images/filezilla.png">
+
+<img src="images/balsamiq.png"> <img src="images/html.png"> <img src="images/css.png"> <img src="images/vscode.png"> <img src="images/git.png"> <img src="images/github.png"> <img src="images/bootstrap.png"> <img src="images/sass.png"> <img src="images/nodejs.png"> <img src="images/npm.png"> <img src="images/filezilla.png">
 
 ## Historial de desarrollo
 
