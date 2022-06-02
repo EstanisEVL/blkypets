@@ -192,11 +192,6 @@ body {
           flex-flow: column nowrap;
           justify-content: flex-start;
           align-items: flex-end; }
-          .categorias .categorias__perros div .categorias__card h3 {
-            display: none;
-            color: transparent;
-            font-weight: bolder;
-            text-transform: uppercase; }
     .categorias .categorias__gatos {
       max-width: 50rem; }
       .categorias .categorias__gatos div {
@@ -207,11 +202,6 @@ body {
           flex-flow: column nowrap;
           justify-content: flex-start;
           align-items: flex-end; }
-          .categorias .categorias__gatos div .categorias__card h3 {
-            display: none;
-            color: transparent;
-            font-weight: bolder;
-            text-transform: uppercase; }
     .categorias .categorias__humanos {
       max-width: 50rem; }
       .categorias .categorias__humanos div {
@@ -222,11 +212,6 @@ body {
           flex-flow: column nowrap;
           justify-content: flex-start;
           align-items: flex-end; }
-          .categorias .categorias__humanos div .categorias__card h3 {
-            display: none;
-            color: transparent;
-            font-weight: bolder;
-            text-transform: uppercase; }
   /*---- MOBILE/INDEX/DESTACADOS ----*/
   .destacados {
     margin-top: 5rem;
@@ -712,11 +697,6 @@ body {
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: flex-end; }
-        .categorias .categorias__perros div .categorias__card h3 {
-          display: none;
-          color: transparent;
-          font-weight: bolder;
-          text-transform: uppercase; }
     .categorias .categorias__gatos div {
       border: none; }
       .categorias .categorias__gatos div .categorias__card {
@@ -725,11 +705,6 @@ body {
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: flex-end; }
-        .categorias .categorias__gatos div .categorias__card h3 {
-          display: none;
-          color: transparent;
-          font-weight: bolder;
-          text-transform: uppercase; }
     .categorias .categorias__humanos div {
       border: none; }
       .categorias .categorias__humanos div .categorias__card {
@@ -738,11 +713,6 @@ body {
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: flex-end; }
-        .categorias .categorias__humanos div .categorias__card h3 {
-          display: none;
-          color: transparent;
-          font-weight: bolder;
-          text-transform: uppercase; }
   /*---- DESKTOP/INDEX/DESTACADOS ----*/
   .destacados {
     background-color: #fcfcfc; }

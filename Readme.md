@@ -16,17 +16,7 @@ Para probar mi sitio ingresá al siguiente [link](https://estanisevl.github.io/b
 ## Plataformas y herramientas utilizadas
 
 Utilicé las siguientes plataformas y herramientas para el desarrollo del proyecto:
-* <img src="images/balsamiq.png"> - BALSAMIQ
-* <img src="images/html.png"> - HTML5
-* <img src="images/css.png"> - CSS3
-* <img src="images/vscode.png"> - VISUAL STUDIO CODE
-* <img src="images/git.png"> - GIT
-* <img src="images/github.png"> - GITHUB
-* <img src="images/bootstrap.png"> - BOOTSTRAP
-* <img src="images/sass.png"> - SASS
-* <img src="images/nodejs.png"> - NODE.JS
-* <img src="images/npm.png"> - NPM
-* <img src="images/filezilla.png"> - FILEZILLA
+<img src="images/balsamiq.png"> | <img src="images/html.png"> | <img src="images/css.png"> | <img src="images/vscode.png"> | <img src="images/git.png"> | <img src="images/github.png"> | <img src="images/bootstrap.png"> | <img src="images/sass.png"> | <img src="images/nodejs.png"> | <img src="images/npm.png"> | <img src="images/filezilla.png">
 
 ## Historial de desarrollo
 
@@ -50,6 +40,7 @@ Utilicé las siguientes plataformas y herramientas para el desarrollo del proyec
 * 30/05/22: - Arreglé el diseño de la sección productos para ambas versiones. Retoqué los carruseles del index para que se ajusten correctamente en la versión mobile. Corregí menú de la sección error404 y footers de todas las secciones.
 * 31/05/22: - Agregué más variables. Corregí el título de la sección productos en mobile.
 * 01/06/22: - Reduje el código usando mixin de flexbox y extends de botones. Modifiqué el copyright del footer. Amplié y estilicé el readme.md. Cambié el título de la sección index.
+* 02/06/22: - Comenté el código html y corregí el menú.
 
 ## CoderHouse
 Proyecto desarrollado en base a los conocimientos adquiridos en [CoderHouse](https://www.coderhouse.com/).
