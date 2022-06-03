@@ -42,6 +42,7 @@ Utilicé las siguientes plataformas y herramientas para el desarrollo del proyec
 * 31/05/22: - Agregué más variables. Corregí el título de la sección productos en mobile.
 * 01/06/22: - Reduje el código usando mixin de flexbox y extends de botones. Modifiqué el copyright del footer. Amplié y estilicé el readme.md. Cambié el título de la sección index.
 * 02/06/22: - Comenté el código html y corregí el menú.
+* 03/06/22: - Correcciones finales y subida al servidor.
 
 ## CoderHouse
 Proyecto desarrollado en base a los conocimientos adquiridos en [CoderHouse](https://www.coderhouse.com/).
