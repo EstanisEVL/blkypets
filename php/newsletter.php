@@ -6,8 +6,8 @@
             $email=$_POST['email'];
             $mascota=$_POST['nombreMascota'];
             $asunto="¡Suscribirme!"; //puedo poner un input asunto o crearlo yo directamente  
-            $msg="Email: ".$email."\n"
-            $mascota="Mascota: ".$mascota."\n".
+            $msg="Email: ".$email."\n".$_POST['msg'];
+            // $mascota="Mascota: ".$mascota."\n".
             $header="From: ".$email."\r\n";//la persona que escribió me dejo su email, entonces el remitente es ese email
             $header.="Reply-To: noreply@blkypets.com"."\r\n";//Le mando un no responder o noreply
             $header.="X-Mailer: PHP/".phpversion();
