@@ -16,19 +16,19 @@
             if($mail){// si el email se mando respondo éxito con javascript
                 echo "<script>
                         alert('¡Gracias por suscribirte y ser parte de nuestra comunidad!');
-                        window.location='index.html'
+                        window.location='../index.html'
                         </script>";
             }else{//si no se pudo enviar el email lo notifico
                 echo "<script>
                         alert('¡Oops! Ocurrió un error, por favor intentá de nuevo.');
-                        window.location='index.html'
+                        window.location='../index.html'
                         </script>";
             }
         }
         else{//si los parámetros están vacios, aunque podemos controlar esto con required
             echo "<script>
             alert('Por favor completá todos los campos obligatorios.');
-                    window.location='index.html'
+                    window.location='../index.html'
                     </script>"; 
         }
     }
