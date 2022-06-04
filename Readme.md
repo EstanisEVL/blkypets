@@ -35,14 +35,14 @@ Utilicé las siguientes plataformas y herramientas para el desarrollo del proyec
 * 20/05/22: - Rediseñé el index.html en desktop.
 * 22/05/22: - Modifiqué el diseño de las secciones venta-mayorista, nosotros y contacto.
 * 24/05/22: - Rediseñé la sección tienda.html y corregí botones.
-* 25/05/22: - Cambié los iconos del footer y sus tamaños. Modifiqué el      carrusel de clientes del index. Corregí la sección contacto.
+* 25/05/22: - Cambié los iconos del footer y sus tamaños. Modifiqué el carrusel de clientes del index. Corregí la sección contacto.
 * 26/05/22: - Añadí un mapa responsivo con bootstrap en venta-mayorista.html, apliqué responsive con media queries a nosotros, venta-mayorista y al footer.
-* 27/05/22: - Corregí sección mayoristas para mobile, agregué carrusel de imágenes para destacados en el index.html y modifiqué los h1 y h2.
-* 30/05/22: - Arreglé el diseño de la sección productos para ambas versiones. Retoqué los carruseles del index para que se ajusten correctamente en la versión mobile. Corregí menú de la sección error404 y footers de todas las secciones.
+* 27/05/22: - Corregí la sección mayoristas para mobile, agregué un carrusel de imágenes para destacados en el index.html y modifiqué los h1 y h2.
+* 30/05/22: - Arreglé el diseño de la sección productos para ambas versiones. Retoqué los carruseles del index para que se ajusten correctamente en la versión mobile. Corregí el menú de la sección error404 y footers de todas las secciones.
 * 31/05/22: - Agregué más variables. Corregí el título de la sección productos en mobile.
 * 01/06/22: - Reduje el código usando mixin de flexbox y extends de botones. Modifiqué el copyright del footer. Amplié y estilicé el readme.md. Cambié el título de la sección index.
 * 02/06/22: - Comenté el código html y corregí el menú.
-* 04/06/22: - Implementé los formularios y newsletters para que funcionen correctamente. Correcciones finales y subida al servidor.
+* 04/06/22: - Implementé los formularios y newsletters para que funcionen correctamente. Hice las correcciones finales y subida al servidor.
 
 ## CoderHouse
 Proyecto desarrollado en base a los conocimientos adquiridos en [CoderHouse](https://www.coderhouse.com/).
