@@ -16,7 +16,7 @@ const saludo = usuario => {
 }
 // 2) Le muestra al usuario el catálogo de productos y le permite elegir entre buscar productos por nombre y por precio, o filtrar por valor máximo:
 const catalogo = () => {
-    let operador = parseInt(prompt(`\n Elija una operación (Escriba 1, 2, 3 o 4): \n 1. Buscar precio del producto por nombre. \n 2. Buscar nombre del producto por precio. \n 3. Filtrar por valor máximo. \n 4. ESC.
+    let operador = parseInt(prompt(`\n Elija una operación (Escriba 1, 2 o 3): \n 1. Buscar precio del producto por nombre. \n 2. Buscar nombre del producto por precio. \n 3. ESC.
     \n Catálogo: \n ${productos[0].nombre} - $${productos[0].precio}\n ${productos[1].nombre} - $${productos[1].precio}\n ${productos[2].nombre} - $${productos[2].precio}\n ${productos[3].nombre} - $${productos[3].precio}\n ${productos[4].nombre} - $${productos[4].precio}`));
     // Buscar por nombre:
     if(operador === 1){
@@ -32,14 +32,8 @@ const catalogo = () => {
             let productoBuscadoPrecio = productos.find(producto => producto.precio === precio);
             alert(`Precio ingresado: $${productoBuscadoPrecio.precio} - Producto a ese precio: ${productoBuscadoPrecio.nombre}`);
         }
-    // Filtrar por valor máximo:
-    }else if(operador === 3){
-        let valor = parseInt(prompt("Ingresá un valor máximo:"));
-        const productoFiltrado = productos.filter(producto => producto.precio < valor);
-        // Para corregir: que se vea el grupo de productos filtrados por alert:
-        alert(`${productoFiltrado}`);
     // Salir:
-    }else if(operador === 4){
+    }else if(operador === 3){
         alert("¡Gracias por tu visita!");
     // Error:
     }else{
@@ -49,7 +43,7 @@ const catalogo = () => {
 // 3) Solicita que el usuario elija dos productos, los agrega al carrito y los devuelve por alert:
 const compra = (eleccion) => {
     for(i=0; i<2; i++){
-        let eleccion = parseInt(prompt(`Elija un producto para agregar al carrito: 
+        let eleccion = parseInt(prompt(`Elija un producto para agregar al carrito (1, 2, 3, 4 o 5): 
         \n 1- ${productos[0].nombre} $${productos[0].precio}\n 2- ${productos[1].nombre} $${productos[1].precio}\n 3- ${productos[2].nombre} $${productos[2].precio}\n 4- ${productos[3].nombre} $${productos[3].precio}\n 5- ${productos[4].nombre} $${productos[4].precio}`));
         if(eleccion === 1){
             carrito.push(new Producto(1, "Collar", 2500));
