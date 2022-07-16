@@ -1,5 +1,8 @@
 /*---- MOBILE ----*/
 @media only screen and (max-width: 991px){
+    .clase8{
+        display: none;
+    }
     /*---- MOBILE/INDEX ----*/
     .fondo{
         background-color: $color-fondo;
@@ -549,6 +552,50 @@
 
 /*---- DESKTOP ----*/
 @media only screen and (min-width: 992px){
+    .saludo{
+        padding-top: 2rem;
+        @include flexbox(flex, row, nowrap, center, stretch);
+        background-color: $color-primario;
+        h2{
+            font-size: 5rem;
+            color: $color-fondo;
+        }
+    }
+    .clase8{
+        @include flexbox(flex, column, nowrap, center, stretch);
+        .catalogo{
+            background-color: $color-quinario;
+            h2{
+                margin-top: 2rem;
+                margin-bottom: 5rem;
+                font-size: 3rem;
+                text-align: center;
+            }
+            ul{
+                @include flexbox(flex, row, nowrap, center, stretch);
+                font-size: 1.5rem;
+                list-style: none;
+            }
+        }
+        .carrito{
+            background-color: $color-terciario;
+            h2{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                font-size: 3rem;
+                text-align: center;
+            }
+            ul{
+                @include flexbox(flex, row, nowrap, space-evenly, stretch);
+                font-size: 1.5rem;
+                list-style: none;
+            }
+            .total{
+                margin-top: 8rem;
+                background-color: $color-tercerfondo;
+            }
+        }
+    }
     /*---- DESKTOP/INDEX ----*/
     .fondo{
         background-color: $color-fondo;

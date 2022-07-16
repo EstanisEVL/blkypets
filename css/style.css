@@ -87,6 +87,8 @@ body {
 
 /*---- MOBILE ----*/
 @media only screen and (max-width: 991px) {
+  .clase8 {
+    display: none; }
   /*---- MOBILE/INDEX ----*/
   .fondo {
     background-color: #fcfcfc; }
@@ -587,6 +589,52 @@ body {
 
 /*---- DESKTOP ----*/
 @media only screen and (min-width: 992px) {
+  .saludo {
+    padding-top: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #131313; }
+    .saludo h2 {
+      font-size: 5rem;
+      color: #fcfcfc; }
+  .clase8 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch; }
+    .clase8 .catalogo {
+      background-color: #00bbe0; }
+      .clase8 .catalogo h2 {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        font-size: 3rem;
+        text-align: center; }
+      .clase8 .catalogo ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: stretch;
+        font-size: 1.5rem;
+        list-style: none; }
+    .clase8 .carrito {
+      background-color: #ffdd33; }
+      .clase8 .carrito h2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        text-align: center; }
+      .clase8 .carrito ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        font-size: 1.5rem;
+        list-style: none; }
+      .clase8 .carrito .total {
+        margin-top: 8rem;
+        background-color: #fc2066; }
   /*---- DESKTOP/INDEX ----*/
   .fondo {
     background-color: #fcfcfc; }
