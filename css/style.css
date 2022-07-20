@@ -87,8 +87,6 @@ body {
 
 /*---- MOBILE ----*/
 @media only screen and (max-width: 991px) {
-  .clase8 {
-    display: none; }
   /*---- MOBILE/INDEX ----*/
   .fondo {
     background-color: #fcfcfc; }
@@ -589,55 +587,91 @@ body {
 
 /*---- DESKTOP ----*/
 @media only screen and (min-width: 992px) {
-  .saludo {
-    padding-top: 2rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: stretch;
-    background-color: #131313; }
-    .saludo h2 {
-      font-size: 5rem;
-      color: #fcfcfc; }
-  .clase8 {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: stretch; }
-    .clase8 .catalogo {
-      background-color: #00bbe0; }
-      .clase8 .catalogo h2 {
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-        font-size: 3rem;
-        text-align: center; }
-      .clase8 .catalogo ul {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: stretch;
-        font-size: 1.5rem;
-        list-style: none; }
-    .clase8 .carrito {
-      background-color: #ffdd33; }
-      .clase8 .carrito h2 {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        font-size: 3rem;
-        text-align: center; }
-      .clase8 .carrito ul {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        align-items: stretch;
-        font-size: 1.5rem;
-        list-style: none; }
-      .clase8 .carrito .total {
-        margin-top: 8rem;
-        background-color: #fc2066; }
   /*---- DESKTOP/INDEX ----*/
   .fondo {
     background-color: #fcfcfc; }
+    .fondo .ingreso {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem; }
+      .fondo .ingreso h2 {
+        font-size: 5rem; }
+      .fondo .ingreso form {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center; }
+        .fondo .ingreso form .nombre {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          font-size: 3rem; }
+    .fondo .saludo {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem; }
+      .fondo .saludo h2 {
+        font-size: 5rem; }
+        .fondo .saludo h2 span {
+          font-weight: bold;
+          color: transparent;
+          background: -webkit-linear-gradient(to right, #a91fff, #e0005a);
+          background: linear-gradient(to right, #a91fff, #e0005a);
+          -webkit-background-clip: text;
+          background-clip: text; }
+    .fondo .contendor-productos {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 10rem;
+      margin-bottom: 10rem; }
+      .fondo .contendor-productos .modal-contenedor {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        background-color: #fcfcfc;
+        width: 20%;
+        height: 100vh;
+        visibility: hidden;
+        transition: opacity 0.3 ease;
+        z-index: 100; }
+      .fondo .contendor-productos .modal-active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 5; }
+      .fondo .contendor-productos .modal-carrito {
+        width: 30rem;
+        height: 10rem;
+        background-color: #fcfcfc; }
+        .fondo .contendor-productos .modal-carrito .boton__cerrar {
+          font-size: 1.5rem;
+          background-color: #131313;
+          color: #fcfcfc;
+          border: none;
+          padding: 0.5rem; }
+    .fondo .tarjeta {
+      margin: 2rem;
+      box-shadow: rgba(0, 0, 0, 0.15) 0rem 0.5rem 2.5rem 0rem; }
+    .fondo .producto-carrito {
+      border-bottom-left-radius: 0.3rem;
+      border-top-left-radius: 0.3rem;
+      margin: 0.5rem 0;
+      padding: 0.5rem 0.1rem;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center; }
+      .fondo .producto-carrito .boton-eliminar {
+        background-color: #fcfcfc;
+        color: #131313;
+        border: none;
+        font-size: 2rem; }
   /*---- DESKTOP/INDEX/HERO ----*/
   .hero {
     height: 70vh;

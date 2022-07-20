@@ -1,8 +1,5 @@
 /*---- MOBILE ----*/
 @media only screen and (max-width: 991px){
-    .clase8{
-        display: none;
-    }
     /*---- MOBILE/INDEX ----*/
     .fondo{
         background-color: $color-fondo;
@@ -552,54 +549,94 @@
 
 /*---- DESKTOP ----*/
 @media only screen and (min-width: 992px){
-    .saludo{
-        padding-top: 2rem;
-        @include flexbox(flex, row, nowrap, center, stretch);
-        background-color: $color-primario;
-        h2{
-            font-size: 5rem;
-            color: $color-fondo;
-        }
-    }
-    .clase8{
-        @include flexbox(flex, column, nowrap, center, stretch);
-        .catalogo{
-            background-color: $color-quinario;
-            h2{
-                margin-top: 2rem;
-                margin-bottom: 5rem;
-                font-size: 3rem;
-                text-align: center;
-            }
-            ul{
-                @include flexbox(flex, row, nowrap, center, stretch);
-                font-size: 1.5rem;
-                list-style: none;
-            }
-        }
-        .carrito{
-            background-color: $color-terciario;
-            h2{
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-                font-size: 3rem;
-                text-align: center;
-            }
-            ul{
-                @include flexbox(flex, row, nowrap, space-evenly, stretch);
-                font-size: 1.5rem;
-                list-style: none;
-            }
-            .total{
-                margin-top: 8rem;
-                background-color: $color-tercerfondo;
-            }
-        }
-    }
     /*---- DESKTOP/INDEX ----*/
     .fondo{
+        .ingreso{
+            @include flexbox(flex, column, nowrap, center, center);
+            margin-top: 5rem;
+            h2{
+                font-size: 5rem;
+            }
+            form{
+                @include flexbox(flex, column, nowrap, center, center);
+                .nombre{
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    font-size: 3rem;
+                }
+            }
+        }
+        .saludo{
+            @include flexbox(flex, row, nowrap, center, center);
+            margin-top: 5rem;
+            h2{
+                font-size: 5rem;
+                span{
+                    font-weight: bold;
+                    color: transparent;
+                    background: -webkit-linear-gradient(to right, $color-secundario, $color-cuaternario);
+                    background: linear-gradient(to right, $color-secundario, $color-cuaternario);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }
+        }
         background-color: $color-fondo;
+        .contendor-productos{
+            @include flexbox(flex, row, wrap, space-evenly, center);
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+            .modal-contenedor{
+                @include flexbox(flex, row, nowrap, center, center);
+                position: fixed;
+                background-color: $color-fondo;
+                width: 20%;
+                height: 100vh;
+                visibility: hidden;
+                transition: opacity 0.3 ease;
+                z-index: 100;
+            }
+            .modal-active{
+                opacity: 1;
+                visibility: visible;
+                z-index: 5;
+            }
+            .modal-carrito{
+                width: 30rem;
+                height: 10rem;
+                background-color: $color-fondo;
+                .boton__cerrar{
+                    font-size: 1.5rem;
+                    background-color: $color-primario;
+                    color: $color-fondo;
+                    border: none;
+                    padding: 0.5rem;
+                }
+            }
+        }
+        .tarjeta{
+            margin: 2rem;
+            box-shadow: rgba(0, 0, 0, 0.15) 0rem 0.5rem 2.5rem 0rem;
+        }
+        .producto-carrito{
+            border-bottom-left-radius: 0.3rem;
+            border-top-left-radius: 0.3rem;
+            margin: 0.5rem 0;
+            padding: 0.5rem 0.1rem;
+            @include flexbox(flex, row, nowrap, space-between, center);
+            .boton-eliminar{
+                background-color: $color-fondo;
+                color: $color-primario;
+                border: none;
+                font-size: 2rem;
+            }
+        }
+        
     }
+    
+
+
+
     /*---- DESKTOP/INDEX/HERO ----*/
     .hero{
         height: 70vh;
