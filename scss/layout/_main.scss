@@ -582,51 +582,70 @@
             }
         }
         background-color: $color-fondo;
-        .contendor-productos{
+        .contenedor-productos{
             @include flexbox(flex, row, wrap, space-evenly, center);
             margin-top: 10rem;
             margin-bottom: 10rem;
             .modal-contenedor{
-                @include flexbox(flex, row, nowrap, center, center);
+                margin-top: 8rem;
+                padding: 0.5rem;
+                @include flexbox(flex, column, nowrap, flex-start, stretch);
                 position: fixed;
+                top: 0;
+                right: 0;
                 background-color: $color-fondo;
-                width: 20%;
-                height: 100vh;
                 visibility: hidden;
                 transition: opacity 0.3 ease;
                 z-index: 100;
+                .modal-carrito{
+                    width: 35rem;
+                    // height: 10rem;
+                    background-color: $color-fondo;
+                    h3{
+                        margin-top: 2rem;
+                        font-size: 2rem;
+                        font-weight: bolder;
+                        text-align: center;
+                    }
+                    .precio-producto{
+                        font-size: 2rem;
+                        font-weight: bolder;
+                    }
+                    .botonera{
+                        @include flexbox (flex, row, nowrap, space-between, center);
+                        .boton__cerrar{
+                            font-size: 1.5rem;
+                            background-color: $color-primario;
+                            color: $color-fondo;
+                            border: none;
+                            padding: 0.5rem;
+                        }
+                        .boton__vaciar{
+                            @extend .boton__cerrar;
+                            background-color: $color-cuaternario;
+                        }
+                    }
+                }
             }
             .modal-active{
                 opacity: 1;
                 visibility: visible;
                 z-index: 5;
             }
-            .modal-carrito{
-                width: 30rem;
-                height: 10rem;
-                background-color: $color-fondo;
-                .boton__cerrar{
-                    font-size: 1.5rem;
-                    background-color: $color-primario;
-                    color: $color-fondo;
-                    border: none;
-                    padding: 0.5rem;
-                }
-            }
+            
         }
         .tarjeta{
             margin: 2rem;
             box-shadow: rgba(0, 0, 0, 0.15) 0rem 0.5rem 2.5rem 0rem;
         }
         .producto-carrito{
-            border-bottom-left-radius: 0.3rem;
-            border-top-left-radius: 0.3rem;
             margin: 0.5rem 0;
             padding: 0.5rem 0.1rem;
             @include flexbox(flex, row, nowrap, space-between, center);
+            background-color: $color-fondo;
             .boton-eliminar{
-                background-color: $color-fondo;
-                color: $color-primario;
+                background-color: $color-tercerfondo;
+                color: $color-fondo;
                 border: none;
                 font-size: 2rem;
             }

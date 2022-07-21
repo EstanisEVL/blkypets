@@ -63,6 +63,8 @@ body {
     transform: translateY(0px);
     animation-timing-function: ease-out;
     opacity: 1; } }
+    .header .navbar ul .carrito .contador-carrito {
+      font-size: 1.5rem; }
     .header .navbar ul li {
       list-style: none;
       text-align: center; }
@@ -622,54 +624,69 @@ body {
           background: linear-gradient(to right, #a91fff, #e0005a);
           -webkit-background-clip: text;
           background-clip: text; }
-    .fondo .contendor-productos {
+    .fondo .contenedor-productos {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-evenly;
       align-items: center;
       margin-top: 10rem;
       margin-bottom: 10rem; }
-      .fondo .contendor-productos .modal-contenedor {
+      .fondo .contenedor-productos .modal-contenedor {
+        margin-top: 8rem;
+        padding: 0.5rem;
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
         position: fixed;
+        top: 0;
+        right: 0;
         background-color: #fcfcfc;
-        width: 20%;
-        height: 100vh;
         visibility: hidden;
         transition: opacity 0.3 ease;
         z-index: 100; }
-      .fondo .contendor-productos .modal-active {
+        .fondo .contenedor-productos .modal-contenedor .modal-carrito {
+          width: 35rem;
+          background-color: #fcfcfc; }
+          .fondo .contenedor-productos .modal-contenedor .modal-carrito h3 {
+            margin-top: 2rem;
+            font-size: 2rem;
+            font-weight: bolder;
+            text-align: center; }
+          .fondo .contenedor-productos .modal-contenedor .modal-carrito .precio-producto {
+            font-size: 2rem;
+            font-weight: bolder; }
+          .fondo .contenedor-productos .modal-contenedor .modal-carrito .botonera {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center; }
+            .fondo .contenedor-productos .modal-contenedor .modal-carrito .botonera .boton__cerrar, .fondo .contenedor-productos .modal-contenedor .modal-carrito .botonera .boton__vaciar {
+              font-size: 1.5rem;
+              background-color: #131313;
+              color: #fcfcfc;
+              border: none;
+              padding: 0.5rem; }
+            .fondo .contenedor-productos .modal-contenedor .modal-carrito .botonera .boton__vaciar {
+              background-color: #e0005a; }
+      .fondo .contenedor-productos .modal-active {
         opacity: 1;
         visibility: visible;
         z-index: 5; }
-      .fondo .contendor-productos .modal-carrito {
-        width: 30rem;
-        height: 10rem;
-        background-color: #fcfcfc; }
-        .fondo .contendor-productos .modal-carrito .boton__cerrar {
-          font-size: 1.5rem;
-          background-color: #131313;
-          color: #fcfcfc;
-          border: none;
-          padding: 0.5rem; }
     .fondo .tarjeta {
       margin: 2rem;
       box-shadow: rgba(0, 0, 0, 0.15) 0rem 0.5rem 2.5rem 0rem; }
     .fondo .producto-carrito {
-      border-bottom-left-radius: 0.3rem;
-      border-top-left-radius: 0.3rem;
       margin: 0.5rem 0;
       padding: 0.5rem 0.1rem;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      background-color: #fcfcfc; }
       .fondo .producto-carrito .boton-eliminar {
-        background-color: #fcfcfc;
-        color: #131313;
+        background-color: #fc2066;
+        color: #fcfcfc;
         border: none;
         font-size: 2rem; }
   /*---- DESKTOP/INDEX/HERO ----*/
