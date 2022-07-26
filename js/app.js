@@ -14,19 +14,6 @@ function greet(e){
     greet.innerHTML = `<h2>¡Bienvenid@ <span>${user.value}</span>!</h2>`;
     greet.className = "greet";
     main.prepend(greet);
-    // addLocalStorage();
     // Borra el formulario:
     entry.remove();
 }
-
-// const addLocalStorage = () => {
-// localStorage.setItem("greet", user.value);
-// }
-
-// window.onload = function(){
-//     const storage = localStorage.getItem("greet");
-//     if(storage){
-//         user.value = storage;
-        
-//     }
-// }
