@@ -26,9 +26,36 @@ body {
   top: 0;
   left: 0;
   z-index: 10000; }
-  .header nav button .iconoToggler {
-    background-color: #131313;
-    border-color: none; }
+  .header nav .entry {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch; }
+    .header nav .entry h2 {
+      color: #fcfcfc; }
+    .header nav .entry form {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-end; }
+      .header nav .entry form .user {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        border-radius: none; }
+  .header nav .greet {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center; }
+    .header nav .greet h2 {
+      color: #fcfcfc; }
+      .header nav .greet h2 span {
+        font-weight: bold;
+        color: transparent;
+        background: -webkit-linear-gradient(to right, #a91fff, #e0005a);
+        background: linear-gradient(to right, #a91fff, #e0005a);
+        -webkit-background-clip: text;
+        background-clip: text; }
   .header .navbar ul {
     align-items: center; }
     .header .navbar ul .carrito:hover {
@@ -63,7 +90,7 @@ body {
     transform: translateY(0px);
     animation-timing-function: ease-out;
     opacity: 1; } }
-    .header .navbar ul .carrito .contador-carrito {
+    .header .navbar ul .carrito .cart-counter {
       font-size: 1.5rem; }
     .header .navbar ul li {
       list-style: none;
@@ -592,46 +619,14 @@ body {
   /*---- DESKTOP/INDEX ----*/
   .fondo {
     background-color: #fcfcfc; }
-    .fondo .ingreso {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      margin-top: 5rem; }
-      .fondo .ingreso h2 {
-        font-size: 5rem; }
-      .fondo .ingreso form {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center; }
-        .fondo .ingreso form .nombre {
-          margin-top: 2rem;
-          margin-bottom: 2rem;
-          font-size: 3rem; }
-    .fondo .saludo {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      align-items: center;
-      margin-top: 5rem; }
-      .fondo .saludo h2 {
-        font-size: 5rem; }
-        .fondo .saludo h2 span {
-          font-weight: bold;
-          color: transparent;
-          background: -webkit-linear-gradient(to right, #a91fff, #e0005a);
-          background: linear-gradient(to right, #a91fff, #e0005a);
-          -webkit-background-clip: text;
-          background-clip: text; }
-    .fondo .contenedor-productos {
+    .fondo .product-container {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-evenly;
       align-items: center;
       margin-top: 10rem;
       margin-bottom: 10rem; }
-      .fondo .contenedor-productos .modal-contenedor {
+      .fondo .product-container .modal-container {
         margin-top: 8rem;
         padding: 0.5rem;
         display: flex;
@@ -645,38 +640,39 @@ body {
         visibility: hidden;
         transition: opacity 0.3 ease;
         z-index: 100; }
-        .fondo .contenedor-productos .modal-contenedor .modal-carrito {
+        .fondo .product-container .modal-container .modal-cart {
           width: 35rem;
           background-color: #fcfcfc; }
-          .fondo .contenedor-productos .modal-contenedor .modal-carrito h3 {
-            margin-top: 2rem;
+          .fondo .product-container .modal-container .modal-cart h3 {
+            text-transform: uppercase;
+            margin-top: 4rem;
             font-size: 2rem;
             font-weight: bolder;
             text-align: center; }
-          .fondo .contenedor-productos .modal-contenedor .modal-carrito .precio-producto {
-            font-size: 2rem;
-            font-weight: bolder; }
-          .fondo .contenedor-productos .modal-contenedor .modal-carrito .botonera {
+          .fondo .product-container .modal-container .modal-cart .product-price {
+            font-size: 2rem; }
+            .fondo .product-container .modal-container .modal-cart .product-price span {
+              font-weight: bolder;
+              text-transform: uppercase; }
+            .fondo .product-container .modal-container .modal-cart .product-price .full-price {
+              font-weight: bolder; }
+          .fondo .product-container .modal-container .modal-cart .button--container {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center; }
-            .fondo .contenedor-productos .modal-contenedor .modal-carrito .botonera .boton__cerrar, .fondo .contenedor-productos .modal-contenedor .modal-carrito .botonera .boton__vaciar {
-              font-size: 1.5rem;
-              background-color: #131313;
-              color: #fcfcfc;
-              border: none;
-              padding: 0.5rem; }
-            .fondo .contenedor-productos .modal-contenedor .modal-carrito .botonera .boton__vaciar {
-              background-color: #e0005a; }
-      .fondo .contenedor-productos .modal-active {
+      .fondo .product-container .modal-active {
         opacity: 1;
         visibility: visible;
         z-index: 5; }
-    .fondo .tarjeta {
-      margin: 2rem;
-      box-shadow: rgba(0, 0, 0, 0.15) 0rem 0.5rem 2.5rem 0rem; }
-    .fondo .producto-carrito {
+    .fondo .custom--card {
+      background-color: #fcfcfc;
+      transition: 0.3s ease; }
+      .fondo .custom--card .card--img {
+        overflow: hidden; }
+      .fondo .custom--card:hover {
+        transform: scale(1.05); }
+    .fondo .product-in-cart {
       margin: 0.5rem 0;
       padding: 0.5rem 0.1rem;
       display: flex;
@@ -684,11 +680,6 @@ body {
       justify-content: space-between;
       align-items: center;
       background-color: #fcfcfc; }
-      .fondo .producto-carrito .boton-eliminar {
-        background-color: #fc2066;
-        color: #fcfcfc;
-        border: none;
-        font-size: 2rem; }
   /*---- DESKTOP/INDEX/HERO ----*/
   .hero {
     height: 70vh;
@@ -1442,26 +1433,26 @@ body {
       color: #131313; }
 
 /*---- BOTÓN 2 ----*/
-.boton2, .boton__categorias, .boton__formulario, .boton__tienda {
+.boton2, .boton__categorias, .boton__formulario, .entry--button, .buy--button, .remove--button, .empty--button, .close--button, .boton__tienda {
   color: #fcfcfc;
-  padding: 17px 40px;
-  border-radius: 50px;
+  padding: 1.7rem 4rem;
+  border-radius: 5rem;
   border: 0;
   background-color: #131313;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 1.5rem;
   transition: all .5s ease; }
-  .boton2:hover, .boton__categorias:hover, .boton__formulario:hover, .boton__tienda:hover {
-    letter-spacing: 3px;
+  .boton2:hover, .boton__categorias:hover, .boton__formulario:hover, .entry--button:hover, .buy--button:hover, .remove--button:hover, .empty--button:hover, .close--button:hover, .boton__tienda:hover {
+    letter-spacing: 0.3rem;
     background-color: #a91fff;
     color: #fcfcfc; }
-  .boton2:active, .boton__categorias:active, .boton__formulario:active, .boton__tienda:active {
-    letter-spacing: 3px;
+  .boton2:active, .boton__categorias:active, .boton__formulario:active, .entry--button:active, .buy--button:active, .remove--button:active, .empty--button:active, .close--button:active, .boton__tienda:active {
+    letter-spacing: 0.3rem;
     background-color: #a91fff;
     color: #fcfcfc;
     box-shadow: #a91fff;
-    transform: translateY(10px);
+    transform: translateY(1rem);
     transition: 100ms; }
 
 /*---- BOTÓN CATEGORÍAS ----*/
@@ -1471,6 +1462,29 @@ body {
   background-color: #fcfcfc; }
   .boton__formulario:hover {
     background-color: #00bbe0; }
+
+.entry--button, .buy--button, .remove--button, .empty--button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem; }
+
+.buy--button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #131313; }
+
+.remove--button, .empty--button {
+  background-color: #fc2066; }
+  .remove--button:hover, .empty--button:hover {
+    background-color: #131313;
+    color: #fc2066; }
+
+.close--button {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem; }
+
+.empty--button {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem; }
 
 /*---- BOTÓN TIENDA ----*/
 .boton__tienda {

@@ -119,25 +119,25 @@
 /*---- BOTÓN 2 ----*/
 .boton2{
 	color: $color-fondo;
-	padding: 17px 40px;
-	border-radius: 50px;
+	padding: 1.7rem 4rem;
+	border-radius: 5rem;
 	border: 0;
 	background-color: $color-primario;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
-	font-size: 15px;
+	font-size: 1.5rem;
 	transition: all .5s ease;
 	&:hover {
-		letter-spacing: 3px;
+		letter-spacing: 0.3rem;
 		background-color: $color-secundario;
 		color: $color-fondo;
 		}
 	&:active {
-		letter-spacing: 3px;
+		letter-spacing: 0.3rem;
 		background-color: $color-secundario;
 		color: $color-fondo;
 		box-shadow: $color-secundario;
-		transform: translateY(10px);
+		transform: translateY(1rem);
 		transition: 100ms;
 	}
 }
@@ -153,6 +153,35 @@
 	&:hover{
 		background-color: $color-quinario;
 	}
+}
+.entry--button{
+	@extend .boton2;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+}
+.buy--button{
+	@extend .entry--button;
+	width: 100%;
+	padding: 1rem;
+	background-color: $color-primario;
+}
+.remove--button{
+	@extend .entry--button;
+	background-color: $color-tercerfondo;
+	&:hover {
+		background-color: $color-primario;
+		color: $color-tercerfondo;
+		}
+}
+.close--button{
+	@extend .boton2;
+	padding: 1rem 1.5rem;
+	font-size: 1.5rem;
+}
+.empty--button{
+	@extend .remove--button;
+	padding: 1rem 1.5rem;
+	font-size: 1.5rem;
 }
 /*---- BOTÓN TIENDA ----*/
 .boton__tienda{

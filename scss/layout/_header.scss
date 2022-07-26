@@ -7,10 +7,32 @@
     left:0;
     z-index: 10000;
     nav{
-        button{
-            .iconoToggler{
-                background-color: $color-primario;
-                border-color: none;
+        .entry{
+            @include flexbox(flex, column, nowrap, center, stretch);
+            h2{
+                color: $color-fondo;
+            }
+            form{
+                @include flexbox(flex, column, nowrap, center, flex-end);
+                .user{
+                    margin-bottom: 0.5rem;
+                    font-size: 1.5rem;
+                    border-radius: none;
+                }
+            }
+        }
+        .greet{
+            @include flexbox(flex, row, nowrap, center, center);
+            h2{
+                color: $color-fondo;
+                span{
+                    font-weight: bold;
+                    color: transparent;
+                    background: -webkit-linear-gradient(to right, $color-secundario, $color-cuaternario);
+                    background: linear-gradient(to right, $color-secundario, $color-cuaternario);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
             }
         }
     }
@@ -59,7 +81,7 @@
                     opacity: 1;
                     }
                 }
-                .contador-carrito{
+                .cart-counter{
                     font-size: 1.5rem;
                 }
             }
