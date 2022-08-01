@@ -1,10 +1,11 @@
+/*--- Modal: ----*/
 const modalContainer = document.querySelector('.modal-container');
 const openCart = document.getElementById("open");
 const closeCart = document.getElementById("close");
 const modalCart = document.querySelector('.modal-cart');
 
-
-openCart.addEventListener("click", () => {
+openCart.addEventListener("click", (e) => {
+    e.preventDefault();
     modalContainer.classList.toggle("modal-active");
 });
 closeCart.addEventListener("click", () => {

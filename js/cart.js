@@ -1,37 +1,31 @@
 /*--- Carrito de compras: ----*/
 import {products} from "./stock.js";
-// Renderiza productos y permite que el usuario los agregue al carrito:
-const productContainer = document.getElementById("product-container");
-const cartContainer = document.getElementById("cart-container");
-const emptyCart = document.getElementById("empty-cart");
-const cartCounter = document.getElementById("cart-counter");
-const fullPrice = document.getElementById("full-price");
 
-let cart = [];
-
-// Renderiza los productos:
-products.forEach((product) => {
-    const div = document.createElement("div");
-    div.classList.add("custom--card");
-    div.innerHTML = `
-                    <div class="custom--card" style="width: 25rem">
-                        <img src='${product.img}' class="img-fluid card-img-top card--img" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fs-2">${product.name}</h5>
-                            <p class="card-text fs-4">Precio: $${product.price}</p>
-                            <button class="buy--button" id="add${product.id}">COMPRAR</button>
+// Funciones:
+// Renderizar productos:
+const renderProducts = () =>{
+    products.forEach((product) => {
+        const div = document.createElement("div");
+        div.classList.add("custom--card");
+        div.innerHTML = `
+                        <div class="custom--card" style="width: 25rem">
+                            <img src='${product.img}' class="img-fluid card-img-top card--img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fs-2">${product.name}</h5>
+                                <p class="card-text fs-4">Precio: $${product.price}</p>
+                                <button class="buy--button" id="add${product.id}">COMPRAR</button>
+                            </div>
                         </div>
-                    </div>
-                    `
-    productContainer.prepend(div);
-
-    const button = document.getElementById(`add${product.id}`);
-    button.addEventListener("click", () => {
-        addToCart(product.id);
-    });
-})
-
-// Renderiza el carrito:
+                        `
+        productContainer.prepend(div);
+    
+        const button = document.getElementById(`add${product.id}`);
+        button.addEventListener("click", () => {
+            addToCart(product.id);
+        });
+    })
+}
+// Renderizar el carrito:
 const renderCart = () => {
     cartContainer.innerHTML = "";
 
@@ -55,67 +49,91 @@ const renderCart = () => {
     // Contador del carrito:
     cartCounter.innerText = cart.reduce((acc, product) => acc + product.quantity, 0);
 
-    // Cálculo del precio total:
+    // Cálcular precio total:
     fullPrice.innerText = cart.reduce((acc, product) => acc + (product.price * product.quantity), 0);
 
     // Guardar el carrito en local storage:
     addLocalStorage();
 }
-
 // Agregar productos al carrito:
 const addToCart = (productId) =>{
+    
     const exists = cart.some(product => product.id === productId);
-
-    if(exists){
+    
+    const mapProduct = () => {
         const product = cart.map(product => {
-            if(product.id === productId){
+            const addQuantity = () => {
                 product.quantity++;
                 return null;
             }
+            // Operador lógico AND:
+            product.id === productId && addQuantity();
         })
-    }else{
+    }
+    const addProduct = () => {
         const product = products.find((product) => product.id === productId);
         cart.push(product);
+        product.quantity = 1;
     }
+    // Operadores terciarios:
+    exists ? mapProduct() : addProduct();
     renderCart();
 }
-
 // Eliminar productos del carrito:
 const removeFromCart = (productId) => {
     const exists = cart.some(product => product.id === productId);
     const product = cart.find((product) => product.id === productId);
 
-    if(exists && (product.quantity > 1)){
+    const removeByOne = () => {
         const product = cart.map(product => {
-            if(product.id === productId){
+            const subtractQuantity = () =>{
                 product.quantity--;
                 return null;
             }
+            // Operador lógico AND:
+            product.id === productId && subtractQuantity();
         })
-    }else{
+    }
+    const removeSpare = () => {
         const index = cart.indexOf(product);
         cart.splice(index, 1);
     }
-    
+    // Operadores terciarios:
+    (exists && (product.quantity > 1)) ? removeByOne() : removeSpare();
     renderCart();
 }
+// Local Storage:
+const addLocalStorage = () => {
+localStorage.setItem("cart", JSON.stringify(cart));
+}
+window.onload = function(e){
+    e.preventDefault();
+    // Operador lógico OR:
+    const storageCart = JSON.parse(localStorage.getItem("cart")) || [];
+    const recoverCart = () => {
+        cart = storageCart;
+        renderCart();
+    }
+    // Operador lógico AND:
+    storageCart && recoverCart();
+}
+
+// Variables:
+const productContainer = document.getElementById("product-container");
+const cartContainer = document.getElementById("cart-container");
+const emptyCart = document.getElementById("empty-cart");
+const cartCounter = document.getElementById("cart-counter");
+const fullPrice = document.getElementById("full-price");
+
+let cart = [];
+
 // Vaciar carrito:
 emptyCart.addEventListener("click", () => {
+    // cart = [];
     cart.length = 0;
     localStorage.clear();
     renderCart();
 })
 
-// Local Storage:
-const addLocalStorage = () => {
-localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-window.onload = function(e){
-    e.preventDefault();
-    const storage = JSON.parse(localStorage.getItem("cart"));
-    if(storage){
-        cart = storage;
-        renderCart();
-    }
-}
+// Código:
+renderProducts();

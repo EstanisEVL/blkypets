@@ -1,13 +1,7 @@
 /*--- Saludo al usuario: ----*/
 // Se ingresa el nombre de usuario en el formulario e imprime el saludo en base al usuario ingresado:
-// Variables del formulario de ingreso:
-let entry = document.getElementById("entry");
-let user = document.getElementById("user");
-let form = document.getElementById("form");
-let main = document.getElementById("main");
-
-form.addEventListener("submit", greet);
-function greet(e){
+// Funciones:
+const greet = (e) =>{
     e.preventDefault();
     // Crea el saludo personalizado:
     let greet = document.createElement("h2");
@@ -17,3 +11,11 @@ function greet(e){
     // Borra el formulario:
     entry.remove();
 }
+
+// Variables:
+let entry = document.getElementById("entry");
+let user = document.getElementById("user");
+let form = document.getElementById("form");
+let main = document.getElementById("main");
+
+form.addEventListener("submit", greet);

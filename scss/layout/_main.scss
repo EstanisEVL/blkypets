@@ -553,6 +553,7 @@
     .fondo{
         background-color: $color-fondo;
         .product-container{
+            visibility: none;
             @include flexbox(flex, row, wrap, space-evenly, center);
             margin-top: 10rem;
             margin-bottom: 10rem;
@@ -564,7 +565,7 @@
                 top: 0;
                 right: 0;
                 background-color: $color-fondo;
-                visibility: hidden;
+                display: none;
                 transition: opacity 0.3 ease;
                 z-index: 100;
                 .modal-cart{
@@ -594,10 +595,9 @@
             }
             .modal-active{
                 opacity: 1;
-                visibility: visible;
+                display: block;
                 z-index: 5;
             }
-            
         }
         .custom--card{
             background-color: $color-fondo;
@@ -812,6 +812,69 @@
     /*---- DESKTOP/TIENDA/TÍTULO ----*/
     .tienda__fondo{
         background: $color-fondo;
+        .product-container{
+            @include flexbox(flex, row, wrap, space-evenly, center);
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+            .modal-container{
+                margin-top: 8rem;
+                padding: 0.5rem;
+                @include flexbox(flex, column, nowrap, flex-start, stretch);
+                position: fixed;
+                top: 0;
+                right: 0;
+                background-color: $color-fondo;
+                display: none;
+                transition: opacity 0.3 ease;
+                z-index: 100;
+                .modal-cart{
+                    width: 35rem;
+                    background-color: $color-fondo;
+                    h3{
+                        text-transform: uppercase;
+                        margin-top: 4rem;
+                        font-size: 2rem;
+                        font-weight: bolder;
+                        text-align: center;
+                    }
+                    .product-price{
+                        font-size: 2rem;
+                        span{
+                            font-weight: bolder;
+                            text-transform: uppercase;
+                        }
+                        .full-price{
+                            font-weight: bolder;
+                        }
+                    }
+                    .button--container{
+                        @include flexbox (flex, row, nowrap, space-between, center);
+                    }
+                }
+            }
+            .modal-active{
+                opacity: 1;
+                display: block;
+                z-index: 5;
+            }
+            
+        }
+        .custom--card{
+            background-color: $color-fondo;
+            transition: 0.3s ease;
+            .card--img{
+                overflow: hidden;
+            }
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+        .product-in-cart{
+            margin: 0.5rem 0;
+            padding: 0.5rem 0.1rem;
+            @include flexbox(flex, row, nowrap, space-between, center);
+            background-color: $color-fondo;
+        }
         .tienda__titulo{
             height: 60vh;
             background-image: url(../images/BannerProductos1.jpg);

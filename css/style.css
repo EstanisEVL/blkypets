@@ -620,6 +620,7 @@ body {
   .fondo {
     background-color: #fcfcfc; }
     .fondo .product-container {
+      visibility: none;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-evenly;
@@ -637,7 +638,7 @@ body {
         top: 0;
         right: 0;
         background-color: #fcfcfc;
-        visibility: hidden;
+        display: none;
         transition: opacity 0.3 ease;
         z-index: 100; }
         .fondo .product-container .modal-container .modal-cart {
@@ -663,7 +664,7 @@ body {
             align-items: center; }
       .fondo .product-container .modal-active {
         opacity: 1;
-        visibility: visible;
+        display: block;
         z-index: 5; }
     .fondo .custom--card {
       background-color: #fcfcfc;
@@ -862,6 +863,67 @@ body {
   /*---- DESKTOP/TIENDA/TÍTULO ----*/
   .tienda__fondo {
     background: #fcfcfc; }
+    .tienda__fondo .product-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 10rem;
+      margin-bottom: 10rem; }
+      .tienda__fondo .product-container .modal-container {
+        margin-top: 8rem;
+        padding: 0.5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #fcfcfc;
+        display: none;
+        transition: opacity 0.3 ease;
+        z-index: 100; }
+        .tienda__fondo .product-container .modal-container .modal-cart {
+          width: 35rem;
+          background-color: #fcfcfc; }
+          .tienda__fondo .product-container .modal-container .modal-cart h3 {
+            text-transform: uppercase;
+            margin-top: 4rem;
+            font-size: 2rem;
+            font-weight: bolder;
+            text-align: center; }
+          .tienda__fondo .product-container .modal-container .modal-cart .product-price {
+            font-size: 2rem; }
+            .tienda__fondo .product-container .modal-container .modal-cart .product-price span {
+              font-weight: bolder;
+              text-transform: uppercase; }
+            .tienda__fondo .product-container .modal-container .modal-cart .product-price .full-price {
+              font-weight: bolder; }
+          .tienda__fondo .product-container .modal-container .modal-cart .button--container {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center; }
+      .tienda__fondo .product-container .modal-active {
+        opacity: 1;
+        display: block;
+        z-index: 5; }
+    .tienda__fondo .custom--card {
+      background-color: #fcfcfc;
+      transition: 0.3s ease; }
+      .tienda__fondo .custom--card .card--img {
+        overflow: hidden; }
+      .tienda__fondo .custom--card:hover {
+        transform: scale(1.05); }
+    .tienda__fondo .product-in-cart {
+      margin: 0.5rem 0;
+      padding: 0.5rem 0.1rem;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fcfcfc; }
     .tienda__fondo .tienda__titulo {
       height: 60vh;
       background-image: url(../images/BannerProductos1.jpg);
