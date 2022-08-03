@@ -5,7 +5,7 @@ const products = [
         name: "COLLAR",
         price: 2500,
         quantity: 1,
-        img: '../images/Collares.jpg',
+        img: 'images/Collares.jpg',
         color: "azul"
     },
     {
@@ -13,7 +13,7 @@ const products = [
         name: "CORREA",
         price: 3000,
         quantity: 1,
-        img: '../images/Correas.jpg',
+        img: 'images/Correas.jpg',
         color: "azul"
     },
     {
@@ -21,7 +21,7 @@ const products = [
         name: "CHAPITA",
         price: 1000,
         quantity: 1,
-        img: '../images/DestChapitas.jpg',
+        img: 'images/DestChapitas.jpg',
         color: "negro"
     },
     {
@@ -29,7 +29,7 @@ const products = [
         name: "ARNES",
         price: 5000,
         quantity: 1,
-        img: '../images/Arneses.jpg',
+        img: 'images/Arneses.jpg',
         color: "multicolor"
     },
     {
@@ -37,7 +37,7 @@ const products = [
         name: "PRETAL",
         price: 3500,
         quantity: 1,
-        img: '../images/Pretales.jpg',
+        img: 'images/Pretales.jpg',
         color: "azul"
     },
 ];
