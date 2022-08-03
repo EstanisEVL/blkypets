@@ -12,7 +12,7 @@ const greet = (e) =>{
     Swal.fire({
         title: `¡Bienvenid@ a BLKY Pets ${user.value}!`,
         text: 'Tienda líder en accesorios para mascotas.',
-        imageUrl: '../images/LogoBLKYpng.png',
+        imageUrl: 'images/LogoBLKYpng.png',
         imageAlt: 'BLKY Logo',
     })
     // Borra el formulario:
