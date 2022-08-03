@@ -8,6 +8,13 @@ const greet = (e) =>{
     greet.innerHTML = `<h2>¡Bienvenid@ <span>${user.value}</span>!</h2>`;
     greet.className = "greet";
     main.prepend(greet);
+    // Sweet Alert:
+    Swal.fire({
+        title: `¡Bienvenid@ a BLKY Pets ${user.value}!`,
+        text: 'Tienda líder en accesorios para mascotas.',
+        imageUrl: '../images/LogoBLKYpng.png',
+        imageAlt: 'BLKY Logo',
+    })
     // Borra el formulario:
     entry.remove();
 }

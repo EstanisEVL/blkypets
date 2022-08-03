@@ -49,7 +49,7 @@ const renderCart = () => {
     // Contador del carrito:
     cartCounter.innerText = cart.reduce((acc, product) => acc + product.quantity, 0);
 
-    // Cálcular precio total:
+    // Calcular precio total:
     fullPrice.innerText = cart.reduce((acc, product) => acc + (product.price * product.quantity), 0);
 
     // Guardar el carrito en local storage:
@@ -57,13 +57,22 @@ const renderCart = () => {
 }
 // Agregar productos al carrito:
 const addToCart = (productId) =>{
-    
+
     const exists = cart.some(product => product.id === productId);
     
     const mapProduct = () => {
         const product = cart.map(product => {
             const addQuantity = () => {
                 product.quantity++;
+                // Sweet Alert:
+                Swal.fire({
+                    title: "¡Genial!",
+                    text: `¡${product.name} agregad@ al carrito!`,
+                    icon: 'success',
+                    showConfirmButton: true,
+                    timer: 2500,
+                    timerProgressBar: true,
+                })
                 return null;
             }
             // Operador lógico AND:
@@ -74,6 +83,15 @@ const addToCart = (productId) =>{
         const product = products.find((product) => product.id === productId);
         cart.push(product);
         product.quantity = 1;
+        // Sweet Alert:
+        Swal.fire({
+            title: "¡Genial!",
+            text: `¡${product.name} agregad@ al carrito!`,
+            icon: 'success',
+            showConfirmButton: true,
+            timer: 2500,
+            timerProgressBar: true,
+        })
     }
     // Operadores terciarios:
     exists ? mapProduct() : addProduct();
@@ -129,10 +147,25 @@ let cart = [];
 
 // Vaciar carrito:
 emptyCart.addEventListener("click", () => {
-    // cart = [];
-    cart.length = 0;
-    localStorage.clear();
-    renderCart();
+    // Sweet Alert:
+    Swal.fire({
+        title: `¿Estás segur@ de vaciar el carrito?`,
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Si, vaciar",
+        cancelButtonText: "No, no vaciar",
+    }).then((result) =>{
+        if(result.isConfirmed){
+            cart.length = 0;
+            localStorage.clear();
+            renderCart();
+            Swal.fire({
+                title: "Listo",
+                icon: "success",
+                text: `¡El carrito está vacío!`,
+            });
+        }
+    })
 })
 
 // Código:
