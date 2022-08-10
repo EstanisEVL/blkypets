@@ -25,14 +25,12 @@ const filterByName = () => {
             </div>
             `
         }
-        // Operador lógico AND:
         name.indexOf(userText) !== -1 && printResult();
     }
 
     const printNoResult = () => {
         result.innerHTML += `<h3>Producto no encontrado...</h3>`
     }
-    // Operador lógico AND:
     result.innerHTML === "" && printNoResult();
 }
 button.addEventListener("click", filterByName);
@@ -66,10 +64,8 @@ const filterByColor = () => {
                 // Imprimir resultado acá
             }
                 
-            // Operador lógico AND:
             contentCheck ? allFilter() : oneColorFilter();
         }
-        // Operador lógico AND:
         elementCheck && filterByColor();
 
         // display(newStore.getElement(".product-container"));
@@ -89,7 +85,6 @@ const priceValue = document.querySelector(".price--value");
 const setupPrice = () => {
     
     let maxPrice = products.map(product => product.price);
-    // Operador SPREAD:
     maxPrice = Math.max(...maxPrice);
 
     priceInput.value = maxPrice;

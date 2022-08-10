@@ -1,30 +1,85 @@
 /*--- Carrito de compras: ----*/
-import {products} from "./stock.js";
-
 // Funciones:
 // Renderizar productos:
-const renderProducts = () =>{
-    products.forEach((product) => {
+const renderProducts = async () =>{
+    try{
+        const response = await fetch("../data.json");
+        const products = await response.json();
+
+        products.forEach((product) => {
+            const div = document.createElement("div");
+            div.classList.add("custom--card");
+            div.innerHTML = `
+            <div class="custom--card" style="width: 25rem">
+            <img src='${product.img}' class="img-fluid card-img-top card--img" alt="...">
+            <div class="card-body">
+            <h5 class="card-title fs-2">${product.name}</h5>
+            <p class="card-text fs-4">Precio: $${product.price}</p>
+            <button class="buy--button" id="add${product.id}">COMPRAR</button>
+            </div>
+            </div>
+            `
+            
+            productContainer.prepend(div);
+            
+            const button = document.getElementById(`add${product.id}`);
+            
+            button.addEventListener("click", () => {
+                addToCart(product.id);
+            });
+        }); 
+    // Agregar productos al carrito:
+        const addToCart = (productId) =>{
+
+            const exists = cart.some(product => product.id === productId);
+        
+            const mapProduct = () => {
+                const product = cart.map(product => {
+                    const addQuantity = () => {
+                        product.quantity++;
+
+                        Swal.fire({
+                            title: "¡Genial!",
+                            text: `¡${product.name} agregad@ al carrito!`,
+                            icon: 'success',
+                            showConfirmButton: true,
+                            timer: 2500,
+                            timerProgressBar: true,
+                        })
+                        return null;
+                    }
+                    product.id === productId && addQuantity();
+                })
+            }
+            const addProduct = () => {
+                const product = products.find((product) => product.id === productId);
+                cart.push(product);
+                product.quantity = 1;
+
+                Swal.fire({
+                    title: "¡Genial!",
+                    text: `¡${product.name} agregad@ al carrito!`,
+                    icon: 'success',
+                    showConfirmButton: true,
+                    timer: 2500,
+                    timerProgressBar: true,
+                })
+            }
+            exists ? mapProduct() : addProduct();
+
+            renderCart();
+        }
+    }catch(error){
+        // Imprimir mensaje de error en el DOM:
         const div = document.createElement("div");
-        div.classList.add("custom--card");
         div.innerHTML = `
-                        <div class="custom--card" style="width: 25rem">
-                            <img src='${product.img}' class="img-fluid card-img-top card--img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title fs-2">${product.name}</h5>
-                                <p class="card-text fs-4">Precio: $${product.price}</p>
-                                <button class="buy--button" id="add${product.id}">COMPRAR</button>
-                            </div>
-                        </div>
+                        <h2>Error al renderizar el catálogo</h2>
                         `
+        
         productContainer.prepend(div);
-    
-        const button = document.getElementById(`add${product.id}`);
-        button.addEventListener("click", () => {
-            addToCart(product.id);
-        });
-    })
+    }
 }
+
 // Renderizar el carrito:
 const renderCart = () => {
     cartContainer.innerHTML = "";
@@ -45,7 +100,6 @@ const renderCart = () => {
             removeFromCart(product.id);
         });
     });
-
     // Contador del carrito:
     cartCounter.innerText = cart.reduce((acc, product) => acc + product.quantity, 0);
 
@@ -55,48 +109,7 @@ const renderCart = () => {
     // Guardar el carrito en local storage:
     addLocalStorage();
 }
-// Agregar productos al carrito:
-const addToCart = (productId) =>{
 
-    const exists = cart.some(product => product.id === productId);
-    
-    const mapProduct = () => {
-        const product = cart.map(product => {
-            const addQuantity = () => {
-                product.quantity++;
-                // Sweet Alert:
-                Swal.fire({
-                    title: "¡Genial!",
-                    text: `¡${product.name} agregad@ al carrito!`,
-                    icon: 'success',
-                    showConfirmButton: true,
-                    timer: 2500,
-                    timerProgressBar: true,
-                })
-                return null;
-            }
-            // Operador lógico AND:
-            product.id === productId && addQuantity();
-        })
-    }
-    const addProduct = () => {
-        const product = products.find((product) => product.id === productId);
-        cart.push(product);
-        product.quantity = 1;
-        // Sweet Alert:
-        Swal.fire({
-            title: "¡Genial!",
-            text: `¡${product.name} agregad@ al carrito!`,
-            icon: 'success',
-            showConfirmButton: true,
-            timer: 2500,
-            timerProgressBar: true,
-        })
-    }
-    // Operadores terciarios:
-    exists ? mapProduct() : addProduct();
-    renderCart();
-}
 // Eliminar productos del carrito:
 const removeFromCart = (productId) => {
     const exists = cart.some(product => product.id === productId);
@@ -108,7 +121,6 @@ const removeFromCart = (productId) => {
                 product.quantity--;
                 return null;
             }
-            // Operador lógico AND:
             product.id === productId && subtractQuantity();
         })
     }
@@ -116,23 +128,21 @@ const removeFromCart = (productId) => {
         const index = cart.indexOf(product);
         cart.splice(index, 1);
     }
-    // Operadores terciarios:
     (exists && (product.quantity > 1)) ? removeByOne() : removeSpare();
     renderCart();
 }
+
 // Local Storage:
 const addLocalStorage = () => {
 localStorage.setItem("cart", JSON.stringify(cart));
 }
 window.onload = function(e){
     e.preventDefault();
-    // Operador lógico OR:
     const storageCart = JSON.parse(localStorage.getItem("cart")) || [];
     const recoverCart = () => {
         cart = storageCart;
         renderCart();
     }
-    // Operador lógico AND:
     storageCart && recoverCart();
 }
 
@@ -140,6 +150,7 @@ window.onload = function(e){
 const productContainer = document.getElementById("product-container");
 const cartContainer = document.getElementById("cart-container");
 const emptyCart = document.getElementById("empty-cart");
+const buy = document.getElementById("buy");
 const cartCounter = document.getElementById("cart-counter");
 const fullPrice = document.getElementById("full-price");
 
@@ -147,7 +158,6 @@ let cart = [];
 
 // Vaciar carrito:
 emptyCart.addEventListener("click", () => {
-    // Sweet Alert:
     Swal.fire({
         title: `¿Estás segur@ de vaciar el carrito?`,
         icon: "warning",
@@ -159,11 +169,30 @@ emptyCart.addEventListener("click", () => {
             cart.length = 0;
             localStorage.clear();
             renderCart();
+
             Swal.fire({
                 title: "Listo",
                 icon: "success",
                 text: `¡El carrito está vacío!`,
             });
+        }
+    })
+})
+
+// Finalizar compra:
+buy.addEventListener("click", () =>{
+    Swal.fire({
+        title: '¿Querés confirmar tu compra?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Si, confirmar',
+        denyButtonText: `No, no confirmar`,
+        cancelButtonText: 'Cancelar',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire('¡Gracias por tu compra!', '', 'success')
+        } else if (result.isDenied) {
+            Swal.fire('Compra no confirmada', '', 'info')
         }
     })
 })

@@ -8,7 +8,7 @@ const greet = (e) =>{
     greet.innerHTML = `<h2>¡Bienvenid@ <span>${user.value}</span>!</h2>`;
     greet.className = "greet";
     main.prepend(greet);
-    // Sweet Alert:
+    // Saludo en la alerta:
     Swal.fire({
         title: `¡Bienvenid@ a BLKY Pets ${user.value}!`,
         text: 'Tienda líder en accesorios para mascotas.',
