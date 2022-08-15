@@ -17,7 +17,7 @@ Para probar mi sitio ingresá al siguiente [link](https://estanisevl.github.io/b
 
 Utilicé las siguientes plataformas y herramientas para el desarrollo del proyecto:
 
-<img src="images/balsamiq.png"> <img src="images/html.png"> <img src="images/css.png"> <img src="images/vscode.png"> <img src="images/git.png"> <img src="images/github.png"> <img src="images/bootstrap.png"> <img src="images/sass.png"> <img src="images/nodejs.png"> <img src="images/npm.png"> <img src="images/filezilla.png"> <img src="images/php.png">
+<img src="images/balsamiq.png"> <img src="images/html.png"> <img src="images/css.png"> <img src="images/vscode.png"> <img src="images/git.png"> <img src="images/github.png"> <img src="images/bootstrap.png"> <img src="images/sass.png"> <img src="images/nodejs.png"> <img src="images/npm.png"> <img src="images/filezilla.png"> <img src="images/php.png"> <img src="images/javascript.png">
 
 ## Historial de desarrollo
 
@@ -43,6 +43,7 @@ Utilicé las siguientes plataformas y herramientas para el desarrollo del proyec
 * 01/06/22: - Reduje el código usando mixin de flexbox y extends de botones. Modifiqué el copyright del footer. Amplié y estilicé el readme.md. Cambié el título de la sección index.
 * 02/06/22: - Comenté el código html y corregí el menú.
 * 04/06/22: - Implementé los formularios y newsletters para que funcionen correctamente. Hice las correcciones finales y la subida al servidor.
+* 14/06/22 - 09/08/22: - Incorporé funcionalidades con Javascript Vanilla.
 
 ## CoderHouse
 Proyecto desarrollado en base a los conocimientos adquiridos en [CoderHouse](https://www.coderhouse.com/).

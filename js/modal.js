@@ -12,6 +12,7 @@ closeCart.addEventListener("click", () => {
     modalContainer.classList.remove("modal-active");
 });
 
+// Carrito no cierra cuando clickeo fuera de él. ARREGLAR!
 modalContainer.addEventListener("click", () => {
     closeCart.click();
 });

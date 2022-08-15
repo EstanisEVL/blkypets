@@ -1,24 +1,33 @@
 /*--- Carrito de compras: ----*/
+document.addEventListener("DOMContentLoaded", e =>{
+    renderProducts();
+
+    // Ver de agregar las funciones de localstorage acá!
+})
+
 // Funciones:
 // Renderizar productos:
 const renderProducts = async () =>{
     try{
-        const response = await fetch("./data.json");
-        const products = await response.json();
+        const response = await fetch(`https://api.mercadolibre.com/sites/MLA/search?seller_id=241170043`);
+        const data = await response.json();
+
+        products.push(...data.results);
 
         products.forEach((product) => {
             const div = document.createElement("div");
             div.classList.add("custom--card");
+
             div.innerHTML = `
-            <div class="custom--card" style="width: 25rem">
-            <img src='${product.img}' class="img-fluid card-img-top card--img" alt="...">
-            <div class="card-body">
-            <h5 class="card-title fs-2">${product.name}</h5>
-            <p class="card-text fs-4">Precio: $${product.price}</p>
-            <button class="buy--button" id="add${product.id}">COMPRAR</button>
-            </div>
-            </div>
-            `
+                            <div class="custom--card" style="width: 25rem">
+                                <img src='${product.thumbnail}' class="img-fluid card--img" alt="producto ${product.id}">
+                                <div class="card-body">
+                                    <h5 class="card-title fs-2">${product.title}</h5>
+                                    <p class="card-text fs-4">Precio: $${product.price}</p>
+                                <button class="buy--button" id="add${product.id}">COMPRAR</button>
+                                </div>
+                            </div>
+                            `
             
             productContainer.prepend(div);
             
@@ -43,7 +52,7 @@ const renderProducts = async () =>{
                             text: `¡${product.name} agregad@ al carrito!`,
                             icon: 'success',
                             showConfirmButton: true,
-                            timer: 2500,
+                            timer: 2000,
                             timerProgressBar: true,
                         })
                         return null;
@@ -87,10 +96,10 @@ const renderCart = () => {
     cart.forEach((product) => {
         const div = document.createElement("div");
         div.className = ("product-in-cart");
-        div.innerHTML = `<p>${product.name}</p>
+        div.innerHTML = `<p>${product.title}</p>
                         <p>Precio: $${product.price}</p>
                         <p id="cantidad${product.id}">Cantidad: ${product.quantity}</p>
-                        <img src='${product.img}' class="img-fluid card-img-top w-25" alt="...">
+                        <img src='${product.thumbnail}' class="img-fluid card-img-top w-25" alt="...">
                         <button id="remove(${product.id})" class="remove--button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/><path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/></svg></button>
                         `
         cartContainer.prepend(div);
@@ -134,15 +143,15 @@ const removeFromCart = (productId) => {
 
 // Local Storage:
 const addLocalStorage = () => {
-localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cart));
 }
-window.onload = function(e){
-    e.preventDefault();
-    const storageCart = JSON.parse(localStorage.getItem("cart")) || [];
-    const recoverCart = () => {
-        cart = storageCart;
-        renderCart();
-    }
+    window.onload = function(e){
+        e.preventDefault();
+        const storageCart = JSON.parse(localStorage.getItem("cart")) || [];
+        const recoverCart = () => {
+            cart = storageCart;
+            renderCart();
+        }
     storageCart && recoverCart();
 }
 
@@ -154,6 +163,7 @@ const buy = document.getElementById("buy");
 const cartCounter = document.getElementById("cart-counter");
 const fullPrice = document.getElementById("full-price");
 
+let products = [];
 let cart = [];
 
 // Vaciar carrito:
@@ -167,7 +177,7 @@ emptyCart.addEventListener("click", () => {
     }).then((result) =>{
         if(result.isConfirmed){
             cart.length = 0;
-            localStorage.clear();
+            localStorage.removeItem("cart");
             renderCart();
 
             Swal.fire({
@@ -180,22 +190,86 @@ emptyCart.addEventListener("click", () => {
 })
 
 // Finalizar compra:
-buy.addEventListener("click", () =>{
+const checkout = async () => {
     Swal.fire({
-        title: '¿Querés confirmar tu compra?',
-        showDenyButton: true,
-        showCancelButton: true,
-        confirmButtonText: 'Si, confirmar',
-        denyButtonText: `No, no confirmar`,
-        cancelButtonText: 'Cancelar',
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire('¡Gracias por tu compra!', '', 'success')
-        } else if (result.isDenied) {
-            Swal.fire('Compra no confirmada', '', 'info')
-        }
+        title: '¡Gracias por tu compra!',
+        text: 'En breve serás redirigido a la plataforma de pago.',
+        imageUrl: '../images/logo0.png',
+        imageAlt: 'BLKY PETS compra',
     })
-})
+    const productsToMap = cart.map(element => {
+        let newElement = {
+            title: element.title,
+            description: element.attributes,
+            picture_url: element.thumbnail,
+            category_id: element.category_id,
+            quantity: element.quantity,
+            currency_id: "ARS",
+            unit_price: element.price
+        }
+        return newElement;
+    }) 
 
-// Código:
-renderProducts();
+    let response = await fetch("https://api.mercadopago.com/checkout/preferences", {
+        method: "POST",
+        headers: {
+            Authorization: "Bearer TEST-1096348196128667-081313-6c8f5ec60cb252fcc2b5636704f3ec6c-241170043"
+        },
+        body: JSON.stringify({
+            items: productsToMap
+        })
+    })
+
+    let data = await response.json();
+    
+    window.open(data.init_point, "_blank");
+}
+// Agregar condición de que haya productos en el carrito para activar!
+buy.addEventListener("click", checkout)
+
+
+// BORRAR después de agregar más datos al llamado
+// curl -X POST \
+//       'https://api.mercadopago.com/checkout/preferences' \
+//       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+//       -H 'Content-Type: application/json' \ 
+//       -d '{
+//   "items": [
+//     {
+//       "title": "Dummy Title",
+//       "description": "Dummy description",
+//       "picture_url": "http://www.myapp.com/myimage.jpg",
+//       "category_id": "car_electronics",
+//       "quantity": 1,
+//       "currency_id": "U$",
+//       "unit_price": 10
+//     }
+//   ],
+//   "payer": {
+//     "phone": {},
+//     "identification": {},
+//     "address": {}
+//   },
+//   "payment_methods": {
+//     "excluded_payment_methods": [
+//       {}
+//     ],
+//     "excluded_payment_types": [
+//       {}
+//     ]
+//   },
+//   "shipments": {
+//     "free_methods": [
+//       {}
+//     ],
+//     "receiver_address": {}
+//   },
+//   "back_urls": {},
+//   "differential_pricing": {},
+//   "tracks": [
+//     {
+//       "type": "google_ad"
+//     }
+//   ],
+//   "metadata": {}
+// }'

@@ -1,6 +1,4 @@
 /*--- Filtros de búsqueda: ----*/
-import {products} from "./stock.js";
-
 const search = document.getElementById("search");
 const button = document.getElementById("search-button");
 const result = document.getElementById("product-container");

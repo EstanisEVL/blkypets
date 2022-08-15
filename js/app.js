@@ -1,23 +1,5 @@
 /*--- Saludo al usuario: ----*/
-// Se ingresa el nombre de usuario en el formulario e imprime el saludo en base al usuario ingresado:
-// Funciones:
-const greet = (e) =>{
-    e.preventDefault();
-    // Crea el saludo personalizado:
-    let greet = document.createElement("h2");
-    greet.innerHTML = `<h2>¡Bienvenid@ <span>${user.value}</span>!</h2>`;
-    greet.className = "greet";
-    main.prepend(greet);
-    // Saludo en la alerta:
-    Swal.fire({
-        title: `¡Bienvenid@ a BLKY Pets ${user.value}!`,
-        text: 'Tienda líder en accesorios para mascotas.',
-        imageUrl: 'images/LogoBLKYpng.png',
-        imageAlt: 'BLKY Logo',
-    })
-    // Borra el formulario:
-    entry.remove();
-}
+import {greet} from "./greet.js"
 
 // Variables:
 let entry = document.getElementById("entry");
