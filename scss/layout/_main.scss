@@ -553,7 +553,6 @@
     .fondo{
         background-color: $color-fondo;
         .product-container{
-            visibility: none;
             @include flexbox(flex, row, wrap, space-evenly, center);
             margin-top: 10rem;
             margin-bottom: 10rem;

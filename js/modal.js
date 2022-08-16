@@ -1,8 +1,9 @@
 /*--- Modal: ----*/
-const modalContainer = document.querySelector('.modal-container');
+const mainContainer = document.querySelector(".main-container");
+const modalContainer = document.querySelector(".modal-container");
 const openCart = document.getElementById("open");
 const closeCart = document.getElementById("close");
-const modalCart = document.querySelector('.modal-cart');
+const cartModal = document.querySelector(".modal-cart");
 
 openCart.addEventListener("click", (e) => {
     e.preventDefault();
@@ -12,10 +13,15 @@ closeCart.addEventListener("click", () => {
     modalContainer.classList.remove("modal-active");
 });
 
-// Carrito no cierra cuando clickeo fuera de él. ARREGLAR!
 modalContainer.addEventListener("click", () => {
     closeCart.click();
+    console.log("click");
 });
-modalCart.addEventListener("click", (e) => {
+mainContainer.addEventListener("click", () => {
+    closeCart.click();
+    console.log("click");
+});
+
+cartModal.addEventListener("click", (e) => {
     e.stopPropagation();
 });

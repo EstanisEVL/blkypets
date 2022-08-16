@@ -1,4 +1,7 @@
 /*--- Filtros de búsqueda: ----*/
+import {products, renderCart} from "./cart.js"
+import {renderProducts} from "./render-products.js";
+
 const search = document.getElementById("search");
 const button = document.getElementById("search-button");
 const result = document.getElementById("product-container");
@@ -8,22 +11,32 @@ const colorFilter = document.querySelector(".color--filter");
 const filterByName = () => {
     result.innerHTML = "";
     const userText = search.value.toLowerCase();
+
     for(let product of products){
-        let name = product.name.toLowerCase();
+        let name = product.title.toLowerCase();
 
         const printResult = () => {
             result.innerHTML += `
             <div class="custom--card" style="width: 25rem">
-                <img src='${product.img}' class="img-fluid card-img-top card--img" alt="...">
+                <img src='${product.thumbnail}' class="img-fluid card--img" alt="producto ${product.id}">
                 <div class="card-body">
-                    <h5 class="card-title fs-2">${product.name}</h5>
+                    <h5 class="card-title fs-2">${product.title}</h5>
                     <p class="card-text fs-4">Precio: $${product.price}</p>
                     <button class="buy--button" id="add${product.id}">COMPRAR</button>
                 </div>
             </div>
             `
+            const buyButton = document.getElementById(`add${product.id}`);
+
+            buyButton.addEventListener("click", () => {
+                addToCart(product.id);
+            });
+            
+            
+            
         }
         name.indexOf(userText) !== -1 && printResult();
+
     }
 
     const printNoResult = () => {
@@ -33,6 +46,48 @@ const filterByName = () => {
 }
 button.addEventListener("click", filterByName);
 search.addEventListener("keyup", filterByName);
+
+// Agregar productos al carrito:
+const addToCart = (productId) =>{
+
+    const exists = cart.some(product => product.id === productId);
+
+    const mapProduct = () => {
+        const product = cart.map(product => {
+            const addQuantity = () => {
+                product.quantity++;
+
+                Swal.fire({
+                    title: "¡Genial!",
+                    text: `¡${product.name} agregad@ al carrito!`,
+                    icon: 'success',
+                    showConfirmButton: true,
+                    timer: 2000,
+                    timerProgressBar: true,
+                })
+                return null;
+            }
+            product.id === productId && addQuantity();
+        })
+    }
+    const addProduct = () => {
+        const product = products.find((product) => product.id === productId);
+        cart.push(product);
+        product.quantity = 1;
+
+        Swal.fire({
+            title: "¡Genial!",
+            text: `¡${product.name} agregad@ al carrito!`,
+            icon: 'success',
+            showConfirmButton: true,
+            timer: 2500,
+            timerProgressBar: true,
+        })
+    }
+    exists ? mapProduct() : addProduct();
+
+    renderCart();
+}
 
 // Filtrar por color (product.color):
 const filterByColor = () => {
