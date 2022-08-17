@@ -811,6 +811,14 @@
     /*---- DESKTOP/TIENDA/TÍTULO ----*/
     .tienda__fondo{
         background: $color-fondo;
+        .search-filters{
+            .filter--container{
+                .button--container{
+                    @include flexbox (flex, row, nowrap, flex-start, center);
+                    gap: 2rem;
+                }
+            }
+        }
         .product-container{
             @include flexbox(flex, row, wrap, space-evenly, center);
             margin-top: 10rem;
@@ -896,39 +904,39 @@
         }
     }
     /*---- DESKTOP/TIENDA/CATEGORÍAS ----*/
-    .tienda__categorias{
-        margin-top: 5rem;
-        background-color: $color-segundofondo;
-        .categorias__divGrande{
-            background-color: $color-segundofondo;
-            @include flexbox(flex, row, nowrap, space-evenly, center);
-            text-decoration: none;
-            color: $color-primario;
-            transition: all 0.5s;
-            &:hover{
-                background-color: $color-primario;
-                color: $color-fondo;
-            }
-        }
-        .categorias__divChico{
-            background-color: $color-segundofondo;
-            @include flexbox(flex, column, nowrap, center, center);
-            text-decoration: none;
-            color: $color-primario;
-            transition: all 0.5s;
-            &:hover{
-                background-color: $color-primario;
-                color: $color-fondo;
-            }
-            h2{
-                padding: 2rem 0 2rem 0;
-            }
-        }
-        .categorias__divGrande2{
-            @extend .categorias__divGrande;
-            margin-top: 6rem;
-        }
-    }
+    // .tienda__categorias{
+    //     margin-top: 5rem;
+    //     background-color: $color-segundofondo;
+    //     .categorias__divGrande{
+    //         background-color: $color-segundofondo;
+    //         @include flexbox(flex, row, nowrap, space-evenly, center);
+    //         text-decoration: none;
+    //         color: $color-primario;
+    //         transition: all 0.5s;
+    //         &:hover{
+    //             background-color: $color-primario;
+    //             color: $color-fondo;
+    //         }
+    //     }
+    //     .categorias__divChico{
+    //         background-color: $color-segundofondo;
+    //         @include flexbox(flex, column, nowrap, center, center);
+    //         text-decoration: none;
+    //         color: $color-primario;
+    //         transition: all 0.5s;
+    //         &:hover{
+    //             background-color: $color-primario;
+    //             color: $color-fondo;
+    //         }
+    //         h2{
+    //             padding: 2rem 0 2rem 0;
+    //         }
+    //     }
+    //     .categorias__divGrande2{
+    //         @extend .categorias__divGrande;
+    //         margin-top: 6rem;
+    //     }
+    // }
     /*---- DESKTOP/TIENDA/NEWSLETTER ----*/
     .tienda__newsletter{
         margin-top: 5rem;

@@ -18,7 +18,7 @@ const greet = (e) =>{
         text: 'Tienda líder en accesorios para mascotas.',
         
         // Corregir rutas de imágen para que aparezcan en las distintas secciones sin romperse:
-        imageUrl: 'images/LogoBLKYpng.png',
+        imageUrl: '../images/LogoBLKYpng.png',
         imageAlt: 'BLKY Logo',
     })
     addLocalStorage();

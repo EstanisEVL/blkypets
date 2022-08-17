@@ -862,6 +862,12 @@ body {
   /*---- DESKTOP/TIENDA/TÍTULO ----*/
   .tienda__fondo {
     background: #fcfcfc; }
+    .tienda__fondo .search-filters .filter--container .button--container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2rem; }
     .tienda__fondo .product-container {
       display: flex;
       flex-flow: row wrap;
@@ -943,37 +949,6 @@ body {
       margin-top: 5rem;
       margin-bottom: 5rem; }
   /*---- DESKTOP/TIENDA/CATEGORÍAS ----*/
-  .tienda__categorias {
-    margin-top: 5rem;
-    background-color: #f5f5f5; }
-    .tienda__categorias .categorias__divGrande, .tienda__categorias .categorias__divGrande2 {
-      background-color: #f5f5f5;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-evenly;
-      align-items: center;
-      text-decoration: none;
-      color: #131313;
-      transition: all 0.5s; }
-      .tienda__categorias .categorias__divGrande:hover, .tienda__categorias .categorias__divGrande2:hover {
-        background-color: #131313;
-        color: #fcfcfc; }
-    .tienda__categorias .categorias__divChico {
-      background-color: #f5f5f5;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      color: #131313;
-      transition: all 0.5s; }
-      .tienda__categorias .categorias__divChico:hover {
-        background-color: #131313;
-        color: #fcfcfc; }
-      .tienda__categorias .categorias__divChico h2 {
-        padding: 2rem 0 2rem 0; }
-    .tienda__categorias .categorias__divGrande2 {
-      margin-top: 6rem; }
   /*---- DESKTOP/TIENDA/NEWSLETTER ----*/
   .tienda__newsletter {
     margin-top: 5rem;

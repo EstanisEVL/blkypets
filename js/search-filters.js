@@ -1,93 +1,86 @@
 /*--- Filtros de búsqueda: ----*/
-import {products, renderCart} from "./cart.js"
-import {renderProducts} from "./render-products.js";
+import {cart, renderCart} from "./cart.js"
+import {products, renderProducts} from "./render-products.js";
+
 
 const search = document.getElementById("search");
 const button = document.getElementById("search-button");
 const result = document.getElementById("product-container");
 const colorFilter = document.querySelector(".color--filter");
 
-// Filtrar por nombre:
-const filterByName = () => {
-    result.innerHTML = "";
-    const userText = search.value.toLowerCase();
+const categoryBtns = document.querySelectorAll(".btn-filter-by-category");
+const storeProducts = document.querySelectorAll(".custom--card");
 
-    for(let product of products){
-        let name = product.title.toLowerCase();
-
-        const printResult = () => {
-            result.innerHTML += `
-            <div class="custom--card" style="width: 25rem">
-                <img src='${product.thumbnail}' class="img-fluid card--img" alt="producto ${product.id}">
-                <div class="card-body">
-                    <h5 class="card-title fs-2">${product.title}</h5>
-                    <p class="card-text fs-4">Precio: $${product.price}</p>
-                    <button class="buy--button" id="add${product.id}">COMPRAR</button>
-                </div>
-            </div>
-            `
-            const buyButton = document.getElementById(`add${product.id}`);
-
-            buyButton.addEventListener("click", () => {
-                addToCart(product.id);
-            });
-            
-            
-            
+for(let i = 0; i < categoryBtns.length; i++){
+    categoryBtns[i].addEventListener("click", (e) => {
+        e.preventDefault();
+        const category = categoryBtns[i].textContent;
+        
+        if(category == "Todos"){
+            storeProducts.display = "none";
         }
-        name.indexOf(userText) !== -1 && printResult();
-
-    }
-
-    const printNoResult = () => {
-        result.innerHTML += `<h3>Producto no encontrado...</h3>`
-    }
-    result.innerHTML === "" && printNoResult();
+    });
 }
-button.addEventListener("click", filterByName);
-search.addEventListener("keyup", filterByName);
 
-// Agregar productos al carrito:
-const addToCart = (productId) =>{
 
-    const exists = cart.some(product => product.id === productId);
+// const filterByCategory = (e) => {
+    
+// }
 
-    const mapProduct = () => {
-        const product = cart.map(product => {
-            const addQuantity = () => {
-                product.quantity++;
 
-                Swal.fire({
-                    title: "¡Genial!",
-                    text: `¡${product.name} agregad@ al carrito!`,
-                    icon: 'success',
-                    showConfirmButton: true,
-                    timer: 2000,
-                    timerProgressBar: true,
-                })
-                return null;
-            }
-            product.id === productId && addQuantity();
-        })
-    }
-    const addProduct = () => {
-        const product = products.find((product) => product.id === productId);
-        cart.push(product);
-        product.quantity = 1;
+// button.addEventListener("click", filterByName);
+// search.addEventListener("keyup", filterByName);
 
-        Swal.fire({
-            title: "¡Genial!",
-            text: `¡${product.name} agregad@ al carrito!`,
-            icon: 'success',
-            showConfirmButton: true,
-            timer: 2500,
-            timerProgressBar: true,
-        })
-    }
-    exists ? mapProduct() : addProduct();
+// Filtrar por nombre:
+// const filterByName = () => {
+//     result.innerHTML = "";
+//     const userText = search.value.toLowerCase();
 
-    renderCart();
-}
+//     for(let product of products){
+//         let name = product.title.toLowerCase();
+
+//         const printResult = () => {
+//             result.innerHTML += `
+//             <div class="custom--card" style="width: 25rem">
+//                 <img src='${product.thumbnail}' class="img-fluid card--img" alt="producto ${product.id}">
+//                 <div class="card-body">
+//                     <h5 class="card-title fs-2">${product.title}</h5>
+//                     <p class="card-text fs-4">Precio: $${product.price}</p>
+//                     <button class="buy--button" id="add${product.id}">COMPRAR</button>
+//                 </div>
+//             </div>
+//             `
+//             const buyButton = document.getElementById(`add${product.id}`);
+
+//             buyButton.addEventListener("click", () => {
+//                 // addToCart(product.id);
+//                 console.log("click");
+//             });
+//         }
+//         name.indexOf(userText) !== -1 && printResult();
+//     }
+
+//     const printNoResult = () => {
+//         result.innerHTML += `<h3>Producto no encontrado...</h3>`
+//     }
+//     result.innerHTML === "" && printNoResult();
+// }
+
+
+
+// const filterByName = () => {
+//     let userText = search.value.toLowerCase();
+
+//     if(userText = ""){
+//         renderProducts;
+//     }
+// }
+
+
+
+
+
+
 
 // Filtrar por color (product.color):
 const filterByColor = () => {
@@ -127,7 +120,7 @@ const filterByColor = () => {
     })
 }
 
-filterByColor();
+// filterByColor();
 
 // INTEGRAR LOS RESULTADOS AL CARRITO
 
@@ -161,5 +154,3 @@ const setupPrice = () => {
         // }
     })
 }
-
-setupPrice();

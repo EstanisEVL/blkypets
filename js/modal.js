@@ -15,11 +15,9 @@ closeCart.addEventListener("click", () => {
 
 modalContainer.addEventListener("click", () => {
     closeCart.click();
-    console.log("click");
 });
 mainContainer.addEventListener("click", () => {
     closeCart.click();
-    console.log("click");
 });
 
 cartModal.addEventListener("click", (e) => {
