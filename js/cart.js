@@ -1,4 +1,8 @@
 /*--- Carrito de compras: ----*/
+import {removeFromCart} from "./remove-from-cart.js"
+import {emptyCart} from "./empty-cart.js"
+import {checkout} from "./checkout.js"
+
 document.addEventListener("DOMContentLoaded", e =>{
     // e.preventDefault();
     const storageCart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -43,119 +47,24 @@ const renderCart = () => {
     addLocalStorage();
 }
 
-// Eliminar productos del carrito:
-const removeFromCart = (productId) => {
-    const exists = cart.some(product => product.id === productId);
-    const product = cart.find((product) => product.id === productId);
-
-    const removeByOne = () => {
-        const product = cart.map(product => {
-            const subtractQuantity = () =>{
-                product.quantity--;
-                return null;
-            }
-            product.id === productId && subtractQuantity();
-        })
-    }
-    const removeSpare = () => {
-        const index = cart.indexOf(product);
-        cart.splice(index, 1);
-    }
-    (exists && (product.quantity > 1)) ? removeByOne() : removeSpare();
-    renderCart();
-}
-
-
-
-
-const cartContainer = document.getElementById("cart-container");
-const emptyCart = document.getElementById("empty-cart");
-const buy = document.getElementById("buy");
-const cartCounter = document.getElementById("cart-counter");
-const fullPrice = document.getElementById("full-price");
-
-let products = [];
-let cart = [];
-
-// Vaciar carrito:
-emptyCart.addEventListener("click", () => {
-    Swal.fire({
-        title: `¿Estás segur@ de vaciar el carrito?`,
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonText: "Si, vaciar",
-        cancelButtonText: "No, no vaciar",
-    }).then((result) =>{
-        if(result.isConfirmed){
-            cart.length = 0;
-            localStorage.removeItem("cart");
-            renderCart();
-
-            Swal.fire({
-                title: "Listo",
-                icon: "success",
-                text: `¡El carrito está vacío!`,
-            });
-        }
-    })
-})
-
-// Finalizar compra:
-const checkout = async () => {
-    Swal.fire({
-        title: '¡Gracias por tu compra!',
-        text: 'En breve serás redirigido a la plataforma de pago.',
-        imageUrl: '../images/logo0.png',
-        imageAlt: 'BLKY PETS compra',
-    })
-
-    const productsToMap = cart.map(element => {
-        let newElement = {
-            title: element.title,
-            description: element.attributes,
-            picture_url: element.thumbnail,
-            category_id: element.category_id,
-            quantity: element.quantity,
-            currency_id: "ARS",
-            unit_price: element.price
-        }
-        return newElement;
-    }) 
-
-    let response = await fetch("https://api.mercadopago.com/checkout/preferences", {
-        method: "POST",
-        headers: {
-            Authorization: "Bearer TEST-1096348196128667-081313-6c8f5ec60cb252fcc2b5636704f3ec6c-241170043"
-        },
-        body: JSON.stringify({
-            items: productsToMap
-        })
-    })
-
-    let data = await response.json();
-    
-    window.open(data.init_point, "_blank");
-    
-    emptyCartPurchase();
-}
-const emptyCartPurchase = () => {
-    cart.length = 0;
-    localStorage.removeItem("cart");
-    renderCart();
-    const div = document.createElement("div");
-        div.className = ("product-in-cart");
-        div.innerHTML = `
-                        <h2 fs-2>¡Gracias por tu compra! Refrescá la página para realizar otro pedido.</h2>
-                        `
-        cartContainer.prepend(div);
-}
-
-// Agregar condición de que haya productos en el carrito para activar!
-buy.addEventListener("click", checkout)
 // Local Storage:
 const addLocalStorage = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
+
+
+
+const cartContainer = document.getElementById("cart-container");
+const cartCounter = document.getElementById("cart-counter");
+const fullPrice = document.getElementById("full-price");
+const buy = document.getElementById("buy");
+
+// let products = [];
+let cart = [];
+
+// Agregar condición de que haya productos en el carrito para activar!
+buy.addEventListener("click", checkout);
+
 
 // BORRAR después de agregar más datos al llamado
 // curl -X POST \
@@ -203,4 +112,4 @@ const addLocalStorage = () => {
 //   "metadata": {}
 // }'
 
-export {products, cart, renderCart};
+export {cart, cartContainer, renderCart};

@@ -1,5 +1,5 @@
 /*--- Saludo al usuario: ----*/
-import {greet} from "./greet.js"
+import {greet} from "./welcome.js"
 
 // Variables:
 let entry = document.getElementById("entry");

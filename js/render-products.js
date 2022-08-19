@@ -1,5 +1,8 @@
 /* ---- Renderizar productos ----*/
-import {cart, renderCart} from "./cart.js"
+// import {cart, renderCart} from "./cart.js"
+import {renderCategoryButtons} from "./render-buttons.js"
+import {searchByName} from "./search-filters.js"
+import {addToCart} from "./add-to-cart.js"
 
 document.addEventListener("DOMContentLoaded", e =>{
     // // e.preventDefault();
@@ -12,36 +15,8 @@ document.addEventListener("DOMContentLoaded", e =>{
     renderCategoryButtons();
     renderProducts();
 })
-// Renderiza los botones de categorías desde la api de Mercado Libre:
-const renderCategoryButtons = async () => {
-    try{
-        const response = await fetch(`https://api.mercadolibre.com/sites/MLA/search?seller_id=241170043`);
-        const data = await response.json();
 
-        categories.push(...data.available_filters[0].values)
-
-        categories.forEach((category) => {
-            
-            const btnFilterByCategory = document.createElement("button");
-            btnFilterByCategory.classList.add("btn", "btn-dark", "mb-2", "btn-filter-by-category");
-            
-            btnFilterByCategory.innerHTML = `${category.name}`;
-            
-            buttonContainer.prepend(btnFilterByCategory);
-        })
-    }
-    catch{
-        // Imprimir mensaje de error en el DOM
-        let div = document.createElement("div");
-        div.innerHTML = `
-                        <h2>Error al renderizar el catálogo</h2>
-                        `
-        
-        productContainer.prepend(div);
-    }
-}
-
-
+// Renderizar productos desde la api de Mercado Libre:
 const renderProducts = async () => {
     try{
         const response = await fetch(`https://api.mercadolibre.com/sites/MLA/search?seller_id=241170043`);
@@ -72,48 +47,6 @@ const renderProducts = async () => {
                 addToCart(product.id);
             });
         }); 
-    // Agregar productos al carrito:
-        const addToCart = (productId) =>{
-
-            const exists = cart.some(product => product.id === productId);
-        
-            const mapProduct = () => {
-                const product = cart.map(product => {
-                    const addQuantity = () => {
-                        product.quantity++;
-
-                        Swal.fire({
-                            title: "¡Genial!",
-                            text: `¡${product.title} agregad@ al carrito!`,
-                            icon: 'success',
-                            showConfirmButton: true,
-                            timer: 2000,
-                            timerProgressBar: true,
-                        })
-                        return null;
-                    }
-                    product.id === productId && addQuantity();
-                })
-            }
-            const addProduct = () => {
-                const product = products.find((product) => product.id === productId);
-                cart.push(product);
-                product.quantity = 1;
-
-                Swal.fire({
-                    title: "¡Genial!",
-                    text: `¡${product.title} agregad@ al carrito!`,
-                    icon: 'success',
-                    showConfirmButton: true,
-                    timer: 2500,
-                    timerProgressBar: true,
-                })
-            }
-            exists ? mapProduct() : addProduct();
-
-            renderCart();
-        }
-        
     }catch{
         // Imprimir mensaje de error en el DOM:
         let div = document.createElement("div");
@@ -127,9 +60,11 @@ const renderProducts = async () => {
 
 // Variables:
 const productContainer = document.getElementById("product-container");
-const buttonContainer = document.getElementById("button-container");
+const button = document.getElementById("search-button");
 let products = [];
-let categories = [];
 
 
-export {products, renderProducts};
+// Código:
+searchByName(products);
+
+export {products, productContainer, renderProducts};

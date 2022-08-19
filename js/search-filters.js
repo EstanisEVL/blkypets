@@ -1,31 +1,70 @@
 /*--- Filtros de búsqueda: ----*/
 import {cart, renderCart} from "./cart.js"
-import {products, renderProducts} from "./render-products.js";
+import {products, productContainer, renderProducts} from "./render-products.js";
+import {addToCart} from "./add-to-cart.js";
 
 
-const search = document.getElementById("search");
-const button = document.getElementById("search-button");
-const result = document.getElementById("product-container");
-const colorFilter = document.querySelector(".color--filter");
+const searchByName = products => {
+    const search = document.getElementById("search");
+    
+    search.addEventListener("keyup", () => {
+        productContainer.innerHTML = "";
+        const userText = document.getElementById("search").value;
 
-const categoryBtns = document.querySelectorAll(".btn-filter-by-category");
-const storeProducts = document.querySelectorAll(".custom--card");
-
-for(let i = 0; i < categoryBtns.length; i++){
-    categoryBtns[i].addEventListener("click", (e) => {
-        e.preventDefault();
-        const category = categoryBtns[i].textContent;
-        
-        if(category == "Todos"){
-            storeProducts.display = "none";
+        if(userText){
+            const newStore = products.filter((product) => {
+                let name = product.title.toLowerCase();
+                
+                if(name.startsWith(userText)){
+                    return product;
+                }
+            })
+            console.log(newStore);
+            newStore.forEach((product) => {
+                const div = document.createElement("div");
+                div.classList.add("custom--card");
+    
+                div.innerHTML = `
+                                <div class="custom--card" style="width: 25rem">
+                                    <img src='${product.thumbnail}' class="img-fluid card--img" alt="producto ${product.id}">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-2">${product.title}</h5>
+                                        <p class="card-text fs-4">Precio: $${product.price}</p>
+                                    <button class="buy--button" id="add${product.id}">COMPRAR</button>
+                                    </div>
+                                </div>
+                                `
+                
+                productContainer.prepend(div);
+                
+                const button = document.getElementById(`add${product.id}`);
+                
+                button.addEventListener("click", () => {
+                    addToCart(product.id);
+                });
+            }); 
+            if(newStore.length < 1){
+                productContainer.innerHTML = `<h3>Producto no encontrado...</h3>`;
+            }
+        }else{
+            renderProducts(products);
         }
-    });
+    })
 }
 
+export {searchByName};
 
-// const filterByCategory = (e) => {
-    
+// for(let i = 0; i < categoryBtns.length; i++){
+//     categoryBtns[i].addEventListener("click", (e) => {
+//         e.preventDefault();
+//         const category = categoryBtns[i].textContent;
+        
+//         if(category == "Todos"){
+//             storeProducts.display = "none";
+//         }
+//     });
 // }
+
 
 
 // button.addEventListener("click", filterByName);
@@ -68,20 +107,6 @@ for(let i = 0; i < categoryBtns.length; i++){
 
 
 
-// const filterByName = () => {
-//     let userText = search.value.toLowerCase();
-
-//     if(userText = ""){
-//         renderProducts;
-//     }
-// }
-
-
-
-
-
-
-
 // Filtrar por color (product.color):
 const filterByColor = () => {
     let colors = ["todos", ...new Set(products.map((product) => product.color))];
@@ -120,7 +145,6 @@ const filterByColor = () => {
     })
 }
 
-// filterByColor();
 
 // INTEGRAR LOS RESULTADOS AL CARRITO
 
