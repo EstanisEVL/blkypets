@@ -1,7 +1,7 @@
 /*---- BOTONES ----*/
 .boton{
 	background-color: transparent;
-	border: 2px solid $color-primario;
+	border: 0.2rem solid $color-primario;
 	border-radius: 0;
 	box-sizing: border-box;
 	color: $color-fondo;
@@ -174,14 +174,31 @@
 		}
 }
 .close--button{
-	@extend .boton2;
-	padding: 1rem 1.5rem;
-	font-size: 1.5rem;
+	color: $color-fondo;
+	border-radius: 50%;
+	border: none;
+	background-color: $color-primario;
+	text-transform: uppercase;
+	width: 2rem;
+	height: 2rem;
+	font-size: 0.75rem;
+	transition: all 0.5s ease;
+	&:hover{
+		color: $color-primario;
+		background-color: $color-fondo;
+		border: 0.1rem solid $color-primario;
+	}
 }
 .empty--button{
 	@extend .remove--button;
-	padding: 1rem 1.5rem;
-	font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+}
+.buy--button{
+	@extend .boton2;
+	&:hover{
+		background-color: $color-quinario;
+	}
 }
 /*---- BOTÓN TIENDA ----*/
 .boton__tienda{

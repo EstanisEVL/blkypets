@@ -1,0 +1,24 @@
+.custom-card{
+    @include flexbox(flex, column, nowrap, center, center);
+    background-color: $color-fondo;
+    transition: 0.3s ease;
+    margin: 1.5rem;
+    padding: 1rem;
+    .custom-card-img{
+        transition: all 0.5s ease;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    .custom-card-body{
+        @include flexbox(flex, column, nowrap, center, center);
+        .custom-card-title{
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+        .custom-card-text{
+            font-size: 1rem;
+        }
+
+    }
+}

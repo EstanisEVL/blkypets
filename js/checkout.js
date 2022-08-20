@@ -1,9 +1,10 @@
-// Finalizar compra:
-import {products, productContainer, renderProducts} from "./render-products.js";
+/*--- Finalizar compra: ----*/
 import {cart, cartContainer, renderCart} from "./cart.js";
 
 const checkout = async () => {
+    // Si el carrito no está vacío:
     if(cart != ""){
+        // Sweet alert agradeciendo por la compra e informando la redirección a la página de pago:
         Swal.fire({
             title: '¡Gracias por tu compra!',
             text: 'En breve serás redirigido a la plataforma de pago.',
@@ -35,19 +36,26 @@ const checkout = async () => {
         })
     
         let data = await response.json();
+    
+        // Se abre la página de pago en una nueva ventana:
         let params = "width=1000,height=500,left=500,top=250";
-        
+
         window.open(data.init_point, "_blank", params);
         
+        // Se elimina el contenido del carrito tras la compra:
         emptyCartPurchase();
     }
+    // Si el carrito está vacío:
     else{
         Swal.fire({
             title: 'Oops, el carrito está vacío',
+            icon: "warning",
             text: 'Por favor agregá al menos un producto al carrito para comprar.',
         })
     }
 }
+
+// Vaciar carrito después de la compra:
 const emptyCartPurchase = () => {
     cart.length = 0;
     localStorage.removeItem("cart");
@@ -59,5 +67,51 @@ const emptyCartPurchase = () => {
                         `
         cartContainer.prepend(div);
 }
+// BORRAR después de agregar más datos al llamado en productsToMap():
+// curl -X POST \
+//       'https://api.mercadopago.com/checkout/preferences' \
+//       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+//       -H 'Content-Type: application/json' \ 
+//       -d '{
+//   "items": [
+//     {
+//       "title": "Dummy Title",
+//       "description": "Dummy description",
+//       "picture_url": "http://www.myapp.com/myimage.jpg",
+//       "category_id": "car_electronics",
+//       "quantity": 1,
+//       "currency_id": "U$",
+//       "unit_price": 10
+//     }
+//   ],
+//   "payer": {
+//     "phone": {},
+//     "identification": {},
+//     "address": {}
+//   },
+//   "payment_methods": {
+//     "excluded_payment_methods": [
+//       {}
+//     ],
+//     "excluded_payment_types": [
+//       {}
+//     ]
+//   },
+//   "shipments": {
+//     "free_methods": [
+//       {}
+//     ],
+//     "receiver_address": {}
+//   },
+//   "back_urls": {},
+//   "differential_pricing": {},
+//   "tracks": [
+//     {
+//       "type": "google_ad"
+//     }
+//   ],
+//   "metadata": {}
+// }'
+
 
 export {checkout};

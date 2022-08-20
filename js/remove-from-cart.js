@@ -18,7 +18,10 @@ const removeFromCart = (productId) => {
         const index = cart.indexOf(product);
         cart.splice(index, 1);
     }
+
     (exists && (product.quantity > 1)) ? removeByOne() : removeSpare();
+
+    
     renderCart();
 }
 

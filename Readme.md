@@ -1,7 +1,7 @@
 <img src="images/LogoBLKYpng.png">
 
-# BLKY Pets - Proyecto para el curso de desarrollo web CoderHouse
-**Versión 1.0**
+# BLKY Pets - Proyecto para la carrera de Desarrollo Frontend React de CoderHouse
+**Versión 2.0**
 
 Mi primer proyecto, BLKY Pets, es un sitio web diseñado para la venta de accesorios para mascotas en formato e-commerce.
 
