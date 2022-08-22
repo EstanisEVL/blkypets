@@ -801,18 +801,12 @@ body {
   /*---- DESKTOP/TIENDA/TÍTULO ----*/
   .tienda__fondo {
     background: #fcfcfc; }
-    .tienda__fondo .search-filters .filter--container .button--container {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 2rem; }
     .tienda__fondo .product-container {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-evenly;
       align-items: center;
-      margin-top: 10rem;
+      margin-top: 5rem;
       margin-bottom: 10rem; }
       .tienda__fondo .product-container .modal-container {
         margin-top: 4rem;
@@ -1453,7 +1447,6 @@ body {
   font-size: 1rem; }
 
 .buy--button {
-  width: 100%;
   padding: 1rem;
   background-color: #131313; }
 
@@ -1490,29 +1483,32 @@ body {
   padding: 0.5rem 2rem;
   font-size: 1rem; }
 
-.custom-card {
+.custom-card .custom-card-content {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   background-color: #fcfcfc;
   transition: 0.3s ease;
-  margin: 1.5rem;
-  padding: 1rem; }
-  .custom-card .custom-card-img {
-    transition: all 0.5s ease; }
-    .custom-card .custom-card-img:hover {
-      transform: scale(1.05); }
-  .custom-card .custom-card-body {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  transition: all 0.5s ease; }
+  .custom-card .custom-card-content:hover {
+    transform: scale(1.1); }
+  .custom-card .custom-card-content .custom-card-img {
+    width: 50%; }
+  .custom-card .custom-card-content .custom-card-body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center; }
-    .custom-card .custom-card-body .custom-card-title {
+    .custom-card .custom-card-content .custom-card-body .custom-card-title {
+      width: 75%;
+      text-align: center;
       margin-top: 1rem;
       font-size: 1.5rem; }
-    .custom-card .custom-card-body .custom-card-text {
-      font-size: 1rem; }
+    .custom-card .custom-card-content .custom-card-body .custom-card-text {
+      font-size: 1.25rem; }
 
 .btn--facebook {
   transition: all 0.5s; }

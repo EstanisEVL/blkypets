@@ -748,17 +748,9 @@
     /*---- DESKTOP/TIENDA/TÍTULO ----*/
     .tienda__fondo{
         background: $color-fondo;
-        .search-filters{
-            .filter--container{
-                .button--container{
-                    @include flexbox (flex, row, nowrap, flex-start, center);
-                    gap: 2rem;
-                }
-            }
-        }
         .product-container{
             @include flexbox(flex, row, wrap, space-evenly, center);
-            margin-top: 10rem;
+            margin-top: 5rem;
             margin-bottom: 10rem;
             .modal-container{
                 margin-top: 4rem;

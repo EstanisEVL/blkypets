@@ -1,24 +1,28 @@
 .custom-card{
-    @include flexbox(flex, column, nowrap, center, center);
-    background-color: $color-fondo;
-    transition: 0.3s ease;
-    margin: 1.5rem;
-    padding: 1rem;
-    .custom-card-img{
+    .custom-card-content{
+        @include flexbox(flex, column, nowrap, center, center);
+        background-color: $color-fondo;
+        transition: 0.3s ease;
+        margin-top: 1.5rem;
+        padding: 1rem;
         transition: all 0.5s ease;
         &:hover{
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
-    }
-    .custom-card-body{
-        @include flexbox(flex, column, nowrap, center, center);
-        .custom-card-title{
-            margin-top: 1rem;
-            font-size: 1.5rem;
+        .custom-card-img{
+            width: 50%;
         }
-        .custom-card-text{
-            font-size: 1rem;
+        .custom-card-body{
+            @include flexbox(flex, column, nowrap, center, center);
+            .custom-card-title{
+                width: 75%;
+                text-align: center;
+                margin-top: 1rem;
+                font-size: 1.5rem;
+            }
+            .custom-card-text{
+                font-size: 1.25rem;
+            }
         }
-
     }
 }
