@@ -14,6 +14,7 @@ const greet = (e) =>{
     createMessage();
     // Alerta:
     Swal.fire({
+        width: "50rem",
         title: `¡Bienvenid@ a BLKY Pets ${user.value}!`,
         text: 'Tienda líder en accesorios para mascotas.',
         

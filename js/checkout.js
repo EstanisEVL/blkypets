@@ -66,7 +66,7 @@ const emptyCartPurchase = () => {
         div.className = ("after-purchase");
         div.innerHTML = `
                         <h2>¡Gracias por tu compra!</h2>
-                        <p>Podés agregar más productos si querés realizar otro pedido.</p>
+                        <p>Tu pedido fue confirmado. Si querés hacer otra compra volvé a agregar productos al carrito.</p>
                         `
         cartContainer.prepend(div);
 }

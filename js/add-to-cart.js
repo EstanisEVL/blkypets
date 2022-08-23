@@ -14,11 +14,10 @@ const addToCart = (productId) =>{
                 Swal.fire({
                     width: "50rem",
                     title: "¡Genial!",
+                    imageUrl: `${product.thumbnail}`,
                     text: `¡${product.title.split(" ")[0]} ${product.title.split(" ")[1]} ${product.title.split(" ")[2]}... agregad@ al carrito!`,
                     icon: 'success',
                     showConfirmButton: true,
-                    timer: 2000,
-                    timerProgressBar: true,
                 })
                 return null;
             }
@@ -33,11 +32,10 @@ const addToCart = (productId) =>{
         Swal.fire({
             width: "50rem",
             title: "¡Genial!",
+            imageUrl: `${product.thumbnail}`,
             text: `¡${product.title.split(" ")[0]} ${product.title.split(" ")[1]} ${product.title.split(" ")[2]}... agregad@ al carrito!`,
             icon: 'success',
             showConfirmButton: true,
-            timer: 2500,
-            timerProgressBar: true,
         })
     }
     exists ? mapProduct() : addProduct();
