@@ -753,7 +753,7 @@
             margin-top: 5rem;
             margin-bottom: 10rem;
             .modal-container{
-                margin-top: 4rem;
+                margin-top: 6rem;
                 padding: 0.5rem;
                 @include flexbox(flex, column, nowrap, flex-start, stretch);
                 position: fixed;
@@ -812,12 +812,24 @@
             padding: 0.5rem 0.1rem;
             @include flexbox(flex, row, nowrap, space-between, center);
             background-color: $color-fondo;
+            
             p{
                 font-size: 1.25rem;
             }
             img{
                 width: 5rem;
                 height: 5rem;
+            }
+        }
+        .after-purchase{
+            h2{
+                margin-bottom: 2rem;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            p{
+                margin-bottom: 2rem;
+                font-size: 1.5rem;
             }
         }
         .tienda__titulo{

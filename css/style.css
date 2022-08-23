@@ -809,7 +809,7 @@ body {
       margin-top: 5rem;
       margin-bottom: 10rem; }
       .tienda__fondo .product-container .modal-container {
-        margin-top: 4rem;
+        margin-top: 6rem;
         padding: 0.5rem;
         display: flex;
         flex-flow: column nowrap;
@@ -873,6 +873,13 @@ body {
       .tienda__fondo .product-in-cart img {
         width: 5rem;
         height: 5rem; }
+    .tienda__fondo .after-purchase h2 {
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 1.5rem; }
+    .tienda__fondo .after-purchase p {
+      margin-bottom: 2rem;
+      font-size: 1.5rem; }
     .tienda__fondo .tienda__titulo {
       height: 60vh;
       background-image: url(../images/BannerProductos1.jpg);
@@ -1509,6 +1516,15 @@ body {
       font-size: 1.5rem; }
     .custom-card .custom-card-content .custom-card-body .custom-card-text {
       font-size: 1.25rem; }
+
+.swal2-container .swal2-title {
+  font-size: 3rem; }
+
+.swal2-container .swal2-html-container {
+  font-size: 1.8rem; }
+
+.swal2-container .swal2-actions .swal2-styled {
+  font-size: 1.25rem; }
 
 .btn--facebook {
   transition: all 0.5s; }

@@ -6,6 +6,7 @@ const checkout = async () => {
     if(cart != ""){
         // Sweet alert agradeciendo por la compra e informando la redirección a la página de pago:
         Swal.fire({
+            width: "50rem",
             title: '¡Gracias por tu compra!',
             text: 'En breve serás redirigido a la plataforma de pago.',
             imageUrl: '../images/logo0.png',
@@ -48,6 +49,7 @@ const checkout = async () => {
     // Si el carrito está vacío:
     else{
         Swal.fire({
+            width: "50rem",
             title: 'Oops, el carrito está vacío',
             icon: "warning",
             text: 'Por favor agregá al menos un producto al carrito para comprar.',
@@ -61,9 +63,10 @@ const emptyCartPurchase = () => {
     localStorage.removeItem("cart");
     renderCart();
     const div = document.createElement("div");
-        div.className = ("product-in-cart");
+        div.className = ("after-purchase");
         div.innerHTML = `
-                        <h2 fs-2>¡Gracias por tu compra! Podés agregar más productos si querés realizar otro pedido.</h2>
+                        <h2>¡Gracias por tu compra!</h2>
+                        <p>Podés agregar más productos si querés realizar otro pedido.</p>
                         `
         cartContainer.prepend(div);
 }

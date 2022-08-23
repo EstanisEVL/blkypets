@@ -12,8 +12,9 @@ const addToCart = (productId) =>{
                 product.quantity++;
 
                 Swal.fire({
+                    width: "50rem",
                     title: "¡Genial!",
-                    text: `¡${product.title} agregad@ al carrito!`,
+                    text: `¡${product.title.split(" ")[0]} ${product.title.split(" ")[1]} ${product.title.split(" ")[2]}... agregad@ al carrito!`,
                     icon: 'success',
                     showConfirmButton: true,
                     timer: 2000,
@@ -30,8 +31,9 @@ const addToCart = (productId) =>{
         product.quantity = 1;
 
         Swal.fire({
+            width: "50rem",
             title: "¡Genial!",
-            text: `¡${product.title} agregad@ al carrito!`,
+            text: `¡${product.title.split(" ")[0]} ${product.title.split(" ")[1]} ${product.title.split(" ")[2]}... agregad@ al carrito!`,
             icon: 'success',
             showConfirmButton: true,
             timer: 2500,
