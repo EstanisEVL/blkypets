@@ -3,6 +3,7 @@ import {removeFromCart} from "./remove-from-cart.js"
 import {emptyCart} from "./empty-cart.js"
 import {checkout} from "./checkout.js"
 
+// Recuperar carrito del localStorage:
 document.addEventListener("DOMContentLoaded", e =>{
     const storageCart = JSON.parse(localStorage.getItem("cart")) || [];
     const recoverCart = () => {
@@ -36,14 +37,14 @@ const renderCart = () => {
     // Contador del carrito:
     cartCounter.innerText = cart.reduce((acc, product) => acc + product.quantity, 0);
 
-    // Calcular precio total:
+    // Calculo del precio total:
     fullPrice.innerText = cart.reduce((acc, product) => acc + (product.price * product.quantity), 0);
 
-    // Guardar el carrito en local storage:
+    // Guardar carrito en localStorage:
     addLocalStorage();
 }
 
-// Local Storage:
+// Guardar carrito en localStorage:
 const addLocalStorage = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
 }

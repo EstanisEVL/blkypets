@@ -5,18 +5,20 @@ document.addEventListener("DOMContentLoaded", e =>{
     renderProducts();
 })
 
-// Renderizar productos desde la api de Mercado Libre:
+// Renderizar productos desde la API de MercadoLibre:
 const renderProducts = async () => {
     try{
+        // Petición a la API de MercadoLibre:
         const response = await fetch(`https://api.mercadolibre.com/sites/MLA/search?seller_id=241170043`);
         const data = await response.json();
 
+        // Crear nuevo arreglo con los resultados de la petición:
         products.push(...data.results);
 
+        // Recorrer el arreglo e imprimir cada producto en la sección tienda del sitio:
         products.forEach((product) => {
             const div = document.createElement("div");
             div.classList.add("custom-card");
-
             div.innerHTML = `
                             <div class="custom-card-content" style="width: 25rem">
                                 <img src='${product.thumbnail}' class="img-fluid custom-card-img" alt="producto ${product.id}">
@@ -30,19 +32,18 @@ const renderProducts = async () => {
             
             productContainer.prepend(div);
             
+            // Asignarle la funcionalidad de agregar al carrito al botón "comprar":
             const button = document.getElementById(`add${product.id}`);
-            
             button.addEventListener("click", () => {
                 addToCart(product.id);
             });
         }); 
     }catch{
-        // Imprimir mensaje de error en el DOM:
+        // Si la petición es rechazada se imprime un mensaje de error en el DOM:
         let div = document.createElement("div");
         div.innerHTML = `
                         <h2>Error al renderizar el catálogo</h2>
                         `
-        
         productContainer.prepend(div);
     }
 }

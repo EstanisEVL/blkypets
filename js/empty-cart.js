@@ -12,7 +12,7 @@ emptyCart.addEventListener("click", () => {
             icon: "warning",
             showCancelButton: true,
             confirmButtonText: "Si, vaciar",
-            cancelButtonText: "No, no vaciar",
+            cancelButtonText: "No, no vaciar"
         }).then((result) =>{
             if(result.isConfirmed){
                 // Se vacía el carrito:
@@ -24,7 +24,7 @@ emptyCart.addEventListener("click", () => {
                 Swal.fire({
                     title: "Listo",
                     icon: "success",
-                    text: `¡El carrito está vacío!`,
+                    text: `¡El carrito está vacío!`
                 });
             }
         })
@@ -34,7 +34,7 @@ emptyCart.addEventListener("click", () => {
         Swal.fire({
             title: "Oops",
             icon: "warning",
-            text: `¡El carrito ya está vacío!`,
+            text: `¡El carrito ya está vacío!`
         });
     }
 })

@@ -4,7 +4,7 @@ import {cart, cartContainer, renderCart} from "./cart.js";
 const checkout = async () => {
     // Si el carrito no está vacío:
     if(cart != ""){
-        // Sweet alert agradeciendo por la compra e informando la redirección a la página de pago:
+        // Mensaje agradeciendo por la compra e informando la redirección a la página de pago:
         Swal.fire({
             width: "50rem",
             title: '¡Gracias por tu compra!',
@@ -12,7 +12,8 @@ const checkout = async () => {
             imageUrl: '../images/logo0.png',
             imageAlt: 'BLKY PETS compra',
         })
-    
+        
+        // Crea un nuevo elemento con las propiedades a enviar a la API de pago:
         const productsToMap = cart.map(element => {
             let newElement = {
                 title: element.title,
@@ -26,6 +27,7 @@ const checkout = async () => {
             return newElement;
         }) 
     
+        // Petición a la API de MercadoPago:
         let response = await fetch("https://api.mercadopago.com/checkout/preferences", {
             method: "POST",
             headers: {
@@ -62,59 +64,15 @@ const emptyCartPurchase = () => {
     cart.length = 0;
     localStorage.removeItem("cart");
     renderCart();
-    const div = document.createElement("div");
-        div.className = ("after-purchase");
-        div.innerHTML = `
-                        <h2>¡Gracias por tu compra!</h2>
-                        <p>Tu pedido fue confirmado. Si querés hacer otra compra volvé a agregar productos al carrito.</p>
-                        `
-        cartContainer.prepend(div);
-}
-// BORRAR después de agregar más datos al llamado en productsToMap():
-// curl -X POST \
-//       'https://api.mercadopago.com/checkout/preferences' \
-//       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-//       -H 'Content-Type: application/json' \ 
-//       -d '{
-//   "items": [
-//     {
-//       "title": "Dummy Title",
-//       "description": "Dummy description",
-//       "picture_url": "http://www.myapp.com/myimage.jpg",
-//       "category_id": "car_electronics",
-//       "quantity": 1,
-//       "currency_id": "U$",
-//       "unit_price": 10
-//     }
-//   ],
-//   "payer": {
-//     "phone": {},
-//     "identification": {},
-//     "address": {}
-//   },
-//   "payment_methods": {
-//     "excluded_payment_methods": [
-//       {}
-//     ],
-//     "excluded_payment_types": [
-//       {}
-//     ]
-//   },
-//   "shipments": {
-//     "free_methods": [
-//       {}
-//     ],
-//     "receiver_address": {}
-//   },
-//   "back_urls": {},
-//   "differential_pricing": {},
-//   "tracks": [
-//     {
-//       "type": "google_ad"
-//     }
-//   ],
-//   "metadata": {}
-// }'
 
+    // Imprimir mensaje de agradecimiento por la compra en el modal del carrito:
+    const div = document.createElement("div");
+    div.className = ("after-purchase");
+    div.innerHTML = `
+                    <h2>¡Gracias por tu compra!</h2>
+                    <p>Tu pedido fue confirmado. Si querés hacer otra compra volvé a agregar productos al carrito.</p>
+                    `
+    cartContainer.prepend(div);
+}
 
 export {checkout};
