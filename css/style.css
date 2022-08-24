@@ -823,7 +823,9 @@ body {
         transition: opacity 0.3 ease;
         z-index: 100; }
         .tienda__fondo .product-container .modal-container .modal-cart {
-          width: 40rem;
+          overflow-y: scroll;
+          width: 50rem;
+          height: 50vh;
           background-color: #fcfcfc;
           padding: 1rem; }
           .tienda__fondo .product-container .modal-container .modal-cart .modal-header {

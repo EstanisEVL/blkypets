@@ -764,7 +764,9 @@
                 transition: opacity 0.3 ease;
                 z-index: 100;
                 .modal-cart{
-                    width: 40rem;
+                    overflow-y: scroll;
+                    width: 50rem;
+                    height: 50vh;
                     background-color: $color-fondo;
                     padding: 1rem;
                     .modal-header{
@@ -812,7 +814,6 @@
             padding: 0.5rem 0.1rem;
             @include flexbox(flex, row, nowrap, space-between, center);
             background-color: $color-fondo;
-            
             p{
                 font-size: 1.25rem;
             }
